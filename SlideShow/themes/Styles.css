@@ -1,0 +1,14 @@
+﻿body 
+{
+	background-color: #ccccaa;	
+	color: black;
+	font-family: sans-serif;
+}
+
+section {
+	display: none;
+}
+
+section.current {
+	display: block;
+}
