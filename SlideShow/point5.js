@@ -1,5 +1,4 @@
 ﻿/// <reference path="../scripts/jquery-1.6.4.js" />
-/// <reference path="../scripts/modernizr.js" />
 
 if (!jQuery) throw "jQuery required";
 
@@ -70,13 +69,14 @@ var p5 = {
 		upArrow: 38,
 		pageUp: 33,
 		home: 36,
-		end: 35
+		end: 35,
+		s: 83
 	},
 
 	isSpecialKeyDown: function (event) {
 		return event.altKey || event.ctrlKey;
 	},
-
+	
 	onkeydown: function (event) {
 		if (p5.isSpecialKeyDown(event)) {
 			return;
@@ -93,7 +93,7 @@ var p5 = {
 			case p5.keys.upArrow:
 			case p5.keys.pageUp:
 				p5.moveBackward();
-				break;
+				break;	
 		}
 	}
 };
