@@ -33,3 +33,15 @@ tr:nth-child(2n+2)
 {
   background-color: #aaaaaa;
 }
+
+#content {
+	border: 3px solid black;
+}
+
+.borderradius #content 
+{
+	border: 1px solid black;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+}
