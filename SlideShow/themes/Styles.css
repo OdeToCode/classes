@@ -3,12 +3,34 @@
 	background-color: #ccccaa;	
 	color: black;
 	font-family: sans-serif;
+	text-align: center;
+	background-image: linear-gradient(left bottom, rgb(204,204,153) 4%, rgb(181,181,174) 52%);
+	background-image: -o-linear-gradient(left bottom, rgb(204,204,153) 4%, rgb(181,181,174) 52%);
+	background-image: -moz-linear-gradient(left bottom, rgb(204,204,153) 4%, rgb(181,181,174) 52%);
+	background-image: -webkit-linear-gradient(left bottom, rgb(204,204,153) 4%, rgb(181,181,174) 52%);
+	background-image: -ms-linear-gradient(left bottom, rgb(204,204,153) 4%, rgb(181,181,174) 52%);
+	background-image: -webkit-gradient(linear,left bottom,right top,color-stop(0.04, rgb(204,204,153)),	color-stop(0.52, rgb(181,181,174)));
 }
 
 section {
 	display: none;
 }
 
+section > h1 {
+	font-size: 32px;
+}
+
 section.current {
 	display: block;
+	margin-top: 20px;
+}
+
+footer 
+{
+	position: absolute;
+	bottom: 10px;
+	right: 100px;
+	text-align: right;
+	font-size: smaller;
+	color: #800000;	
 }
