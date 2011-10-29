@@ -21,8 +21,7 @@ section > h1 {
 }
 
 section.current {
-	display: block;
-	margin-top: 20px;
+	display: block;	
 }
 
 footer 
@@ -33,4 +32,19 @@ footer
 	text-align: right;
 	font-size: smaller;
 	color: #800000;	
+}
+
+.container {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	width: 90%;
+	height: 1px;
+	overflow: visible;
+}
+
+.vcenter512 {	
+	position: absolute;
+	top: -256px;	
+	height: 512px;
 }

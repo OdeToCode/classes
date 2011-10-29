@@ -1,21 +1,36 @@
 ﻿/// <reference path="../scripts/jquery-1.6.4.js" />
+/// <reference path="../scripts/underscore.js" />
 
 if (!jQuery) throw "jQuery required";
 
 var p5 = {
 	startShow: function () {
+		$("section").each(function (index) {
+			var section = $(this);
+			if (!section.attr("id")) {
+				section.attr("id", index);
+			}
+		});
 		$(window).keydown($.proxy(p5.onkeydown, p5));
 		p5.moveForward();
 	},
 
 	moveForward: function () {
-		var currentSlide = $("section.current");
-		var nextSlide = currentSlide.next("section");
-		if (!nextSlide.length) {
-			nextSlide = $("section:first");
+		move($.fn.next, "section:first");
+	},
+
+	moveBackward: function () {
+		move($.fn.prev, "section:last");
+	},
+
+	move: function (nextFunc, fallbackSelector) {
+		var current = $("section.current");
+		var next = nextFunc("section");
+		if (!next.length) {
+			next = $(fallbackSelector);
 		}
-		currentSlide.removeClass("current");
-		nextSlide.addClass("current");
+		current.removeClass("current");
+		next.addClass("current");
 	},
 
 	keys: {
@@ -45,6 +60,11 @@ var p5 = {
 			case p5.keys.pageDown:
 			case p5.keys.space:
 				p5.moveForward();
+				break;
+			case p5.keys.leftArrow:
+			case p5.keys.upArrow:
+			case p5.keys.pageUp:
+				p5.moveBackward();
 				break;
 		}
 	}
