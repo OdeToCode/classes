@@ -1,36 +1,64 @@
 ﻿/// <reference path="../scripts/jquery-1.6.4.js" />
-/// <reference path="../scripts/underscore.js" />
+/// <reference path="../scripts/modernizr.js" />
 
 if (!jQuery) throw "jQuery required";
 
 var p5 = {
 	startShow: function () {
+		p5.assignSectionIds();
+		$(window).keydown($.proxy(p5.onkeydown, p5));
+
+		if (window.location.hash) {
+			p5.moveTo(window.location.hash);
+		}
+		else {
+			p5.moveForward();
+		}
+	},
+
+	assignSectionIds: function () {
 		$("section").each(function (index) {
 			var section = $(this);
 			if (!section.attr("id")) {
-				section.attr("id", index);
+				section.attr("id", index + 1);
 			}
 		});
-		$(window).keydown($.proxy(p5.onkeydown, p5));
-		p5.moveForward();
 	},
 
 	moveForward: function () {
-		move($.fn.next, "section:first");
+		p5.move(function (current) {
+			var result = current.next("section");
+			if (!result.length) {
+				result = $("section:first");
+			}
+			return result;
+		});
 	},
 
 	moveBackward: function () {
-		move($.fn.prev, "section:last");
+		p5.move(function (current) {
+			var result = current.prev("section");
+			if (!result.length) {
+				result = $("section:last");
+			}
+			return result;
+		});
 	},
 
-	move: function (nextFunc, fallbackSelector) {
+	moveTo: function (id) {
+		p5.move(function () {
+			return $("section" + id);
+		});
+	},
+
+	move: function (nextFunc) {
 		var current = $("section.current");
-		var next = nextFunc("section");
-		if (!next.length) {
-			next = $(fallbackSelector);
-		}
+		var next = nextFunc(current);
+
 		current.removeClass("current");
 		next.addClass("current");
+		window.history.pushState({ id: next.attr("id").toString() }, null,
+		                         "#" + next.attr("id").toString());
 	},
 
 	keys: {
