@@ -99,6 +99,7 @@ var p5 = {
 };
 
 $(function () {
+    prettyPrint();
 	p5.startShow();
 });
 
