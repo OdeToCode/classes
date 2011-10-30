@@ -29,15 +29,22 @@ section.current {
 	z-index: 10;
 }
 
-pre {
-	font-size: 20px;
-	font-family: monospace;
-    padding: 5px;
-    background-color: #ffffcc;
-    margin-top: 10px;
+pre.prettyprint {
+	font-size: 20px;	
+	line-height: 1.2em;	
+    background-color: #ffffcc;	    
     border-radius: 5px;
     box-shadow: 5px 5px 5px black;
 }
+
+img {
+	box-shadow: 5px 5px 5px black;
+}
+
+progress, meter, details {
+	margin: 10px;
+}
+
 
 footer 
 {
@@ -58,4 +65,8 @@ li {
 
 .center {
 	text-align: center;
+}
+
+input {
+	margin: 10px;
 }
