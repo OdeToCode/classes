@@ -87,11 +87,13 @@ var p5 = {
 			case p5.keys.downArrow:
 			case p5.keys.pageDown:
 			case p5.keys.space:
-				p5.moveForward();
+				event.preventDefault();
+                p5.moveForward();
 				break;
 			case p5.keys.leftArrow:
 			case p5.keys.upArrow:
 			case p5.keys.pageUp:
+                event.preventDefault();
 				p5.moveBackward();
 				break;	
 		}

@@ -40,10 +40,10 @@
 	<section>
 		<div class="row">			
 			<h1 class="span16 center">What is HTML 5?</h1>			
-			<ul class="row span4 offset4">
+			<ul class="row span8 offset4">
 				<li>New elements</li>
 				<li>New APIs</li>
-				<li>New styles</li>
+				<li>New style declarations</li>
 			</ul>
 		</div>
 		<div class="row">
@@ -73,7 +73,7 @@
 	<section>
 		<h1 class="row span16 center">Pure CSS</h1>			
 		<div class="row">
-            <pre class="prettyprint span12">
+            <pre class="prettyprint span16">
 #umbrella
 {
     box-shadow: 1px 1px 1px #000;
@@ -88,13 +88,13 @@
     opacity: 0.5;
 }
             </pre>
-            <img class="span4" src="images/umbrella.jpg" />
 		</div>
+        <img class="row span8 center offset4" src="images/umbrella.jpg" />
 	</section>
 	
 	<section>
 		<h1 class="row span16 center">Why HTML5?</h1>
-		<ul class="row span16">
+		<ul class="row span8 offset4">
 			<li>Better user experience</li>
 			<li>You don't throw anything away</li>
 			<li>Many parts are ready <em>today</em></li>
@@ -114,7 +114,7 @@
     </section>
 
 	<section>
-		<h1 class="row span8 center">Descriptive markup</h1>
+		<h1 class="row span16 center">Descriptive markup</h1>
         <ul class="row span16">
             <li>Headers</li>
             <li>Footers</li>
@@ -127,6 +127,36 @@
 &lt;article&gt; Blah blah blah &lt;/article&gt;
 &lt;footer&gt; (c) Acme Inc &lt;/footer&gt;
         </pre>
+	</section>
+
+    <section>
+            <h1 class="row span16 center">Improved forms</h1>
+            <div class="row span4 offset4">
+                <input type="number" min="0" max="10" step="2" />
+            </div>
+            <div class="row span8 offset4">
+                <input class="row span8 offset4" type="range" min="1" max="100" />
+            </div>
+            <div class="row span4 offset8">
+                <input class="row span4 offset8" type="date" />
+            </div>
+
+            <pre class="row span16 prettyprint">
+&lt;input type=&quot;number&quot; min=&quot;0&quot; max=&quot;10&quot; step=&quot;2&quot; /&gt;
+&lt;input type=&quot;range&quot; min=&quot;1&quot; max=&quot;100&quot; /&gt;
+&lt;input type=&quot;date&quot; /&gt;
+            </pre>
+        </section>
+
+    <section>
+		<h1 class="row span16 center">Where does it work?</h1>
+        <ul class="row offset4 span8">
+            <li>On tablets</li>
+            <li>On smartphones</li>
+            <li>On desKtops</li>
+            <li>Almost everywhere!</li>
+        </ul>
+        <a class="row span8 offset4" href="http://caniuse.com/" target="_blank">Can I Use?</a>
 	</section>
 
     <section>

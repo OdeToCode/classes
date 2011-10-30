@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9d7b338-0d6b-4a15-aa4e-5fe97f5b5d00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/bitmask.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/html5play.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-apollo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-clj.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-css.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-go.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-hs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-lisp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-lua.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-ml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-n.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-proto.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-scala.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-sql.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-tex.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-vb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-vhdl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-wiki.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-xq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/lang-yaml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/prettify.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SlideShow/prettify/prettify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SlideShow/images/umbrella.jpg" afterPath="$PROJECT_DIR$/SlideShow/images/umbrella.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SlideShow/point5.js" afterPath="$PROJECT_DIR$/SlideShow/point5.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SlideShow/sample.htm" afterPath="$PROJECT_DIR$/SlideShow/sample.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SlideShow/themes/otc.css" afterPath="$PROJECT_DIR$/SlideShow/themes/otc.css" />
@@ -97,35 +68,7 @@
     <favorites_list name="html5play" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="sample.htm" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SlideShow/sample.htm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="28" selection-start="4567" selection-end="4567" vertical-scroll-proportion="0.6694215">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prettify.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SlideShow/prettify/prettify.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="7" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="point5.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SlideShow/point5.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="18" selection-start="1701" selection-end="1701" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -139,8 +82,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/SlideShow/point5.js" />
         <option value="$PROJECT_DIR$/SlideShow/prettify/prettify.css" />
+        <option value="$PROJECT_DIR$/SlideShow/themes/otc.css" />
+        <option value="$PROJECT_DIR$/SlideShow/point5.js" />
         <option value="$PROJECT_DIR$/SlideShow/sample.htm" />
       </list>
     </option>
@@ -200,6 +144,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="html5play" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html5play" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html5play" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SlideShow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html5play" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html5play" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SlideShow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -391,19 +367,30 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SlideShow/sample.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="37" selection-start="5469" selection-end="5469" vertical-scroll-proportion="0.38016528">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SlideShow/prettify/prettify.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="7" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0" />
+        <state line="100" column="7" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.6728972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SlideShow/themes/otc.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="29" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.817757">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SlideShow/point5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="18" selection-start="1701" selection-end="1701" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SlideShow/sample.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="28" selection-start="4567" selection-end="4567" vertical-scroll-proportion="0.6694215">
+        <state line="97" column="39" selection-start="1938" selection-end="1938" vertical-scroll-proportion="0.6728972">
           <folding />
         </state>
       </provider>
