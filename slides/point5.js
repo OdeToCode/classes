@@ -101,6 +101,11 @@ var p5 = {
 };
 
 $(function () {
+	
+	$("section > h1").addClass("row span16 center");
+	$("section > ul").addClass("row span16");
+	$("section > pre").addClass("row span16 prettyprint");
+	
     prettyPrint();
 	p5.startShow();
 });

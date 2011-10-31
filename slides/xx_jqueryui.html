@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Introduction to HTML 5</title>
+	<title>jQuery UI</title>
 	<meta charset="utf-8"/>
 	<link href="themes/bootstrap.css" rel="stylesheet" />
 	<link href="themes/otc.css" rel="stylesheet" />
@@ -17,13 +17,13 @@
 	<section>
 		<div class="vwrapper">
 			<div class="center vcentercell">
-				<img src="images/jqueryuilogo.png">
+				<img src="images/jqueryuilogo.png" alt="jQuery UI">
 			</div>
 		</div>
 	</section>
 	
 	<section>
-		<h1 class="row span16 center">What is it?</h1>
+		<h1>What is it?</h1>
 		<ul class="row span16">
 			<li>Widgets</li>
 			<li>Effects</li>
@@ -66,15 +66,573 @@
 	<section>
 		<h1  class="row span16 center">The jQuery UI Way</h1>
 		<ul class="row span16">
-			<li>Download an existing theme</li>
-			<li>Roll your own themes</li>
-			<li>Just start from scratch (ugh!)</li>
+			<li>Every method takes an options object</li>
+			<li>Every widget has events and methods</li>
+			<li>Every widget expects a default HTML structure</li>
 		</ul>
+		<pre class="row span16 prettyprint">
+$(function(){
+	
+    $("#myelement").accordion({collapsible:true});
+
+});</pre>
 	</section>
 	
+	<section>
+		<h1 class="row span16 center">Options</h1>
+		<ul class="row span16">
+			<li>Options always documented</li>
+			<li>Options always have a default</li>
+			<li>You can also find options in the source</li>
+		</ul>
+		<pre class="row span16 prettyprint">
+$(function(){
+
+    $("#accordion").accordion("{collapsible:true,autoHeight:false}");
+
+});</pre>
+	</section>
 	
+	<section>
+		<h1 class="row span16 center">Icons</h1>
+		<ul class="row span16">
+			<li>Icons are CSS sprites</li>
+			<li>Icons placed using CSS</li>
+		</ul>
+		<pre class="row span16 prettyprint">
+$(function(){
+
+    $("#accordion").accordion({collapsible:true,autoheight:false,
+                              icons: { header: "ui-icon-arrow-1-s", 
+                                       headerSelected: "ui-icon-arrow-1-e"}
+    });
+
+});</pre>
+	</section>	
+
+	<section>
+		<h1 class="row span16 center">Methods</h1>
+		<ul class="row span16">
+			<li>Not invoked like you might think...</li>
+			<li>Common methods inherited</li>
+			<li><ul>
+				<li>enable</li>
+				<li>disable</li>
+				<li>option</li>
+			</ul></li>
+		</ul>
+		<pre class="row span16 prettyprint">
+			
+$("#accordion").accordion("activate", 1);
+
+
+</pre>
+	</section>	
+	
+	<section>
+		<h1>Events</h1>
+		<ul>
+			<li>Every event has <i>event</i> and <i>ui</i> parameters</li>
+			<li>ui properties depend on widget and event</li>
+		</ul>
+		<pre>		
+$("#accordion").accordion({change: function(event, ui){
+	$("body").append($("div").text(ui.newHeader));
+}});
+ 
+</pre>
+	</section>	
+	
+	<section>
+		<h1>Themes</h1>
+		<ul>
+			<li>More than just colors and icons</li>
+			<li>Look in the DOM explorer to see CSS at work</li>
+		</ul>	
+		<pre>
+&lt;div id=&quot;accordion&quot; class=&quot;ui-accordion ui-widget&quot;&gt;
+    &lt;h4 class=&quot;ui-accordion-header ui-state-active&quot;&gt;
+        &lt;span class=&quot;ui-icon ui-icon-triangle-1-s&quot;&gt;&lt;/span&gt;
+        &lt;a href=&quot;#&quot;&gt;First header&lt;/a&gt;
+    &lt;/h4&gt;
+    &lt;div class=&quot;ui-accordion-content ui-accordion-content-active&quot;&gt;
+        Lorem ipsum
+    &lt;/div&gt;
+    ... 
+&lt;/div&gt;
+		</pre>
+	</section>
+	
+	<section>
+	    <h1>Autocomplete</h1>
+	    <ul>
+	        <li>Give the user some suggestions</li>
+	        <li>Can use in-memory or remote data</li>
+	    </ul>
+	    <div class="row span8 offset4">
+	        <div>
+                <input id="technology" type="text">
+                <input type="button" value="submit">
+            </div>
+            <script>
+                $(function(){
+
+                    $("#technology").autocomplete({delay: 500, minLength: 4,
+                                                   source: ["Windows", "Windows Phone", 
+                                                            "Apple OS/X", "All",
+                                                            "Android", "iOS"]});
+                });
+            </script>
+	    </div>    
+	</section>
+		
+	<section>
+	    <h1>Options</h1>
+	    <ul>
+	        <li>delay</li>
+	        <li>minLength</li>
+	        <li>source is an array, or a URL</li>
+	    </ul>    
+	    <pre>
+	        
+$("#technology").autocomplete({delay: 500, minLength: 4,
+                               select: function() { $("#form").submit() },
+                               source: [...]);   
+        </pre>
+	</section>	
+		
+	<section>
+	    <h1>Server data</h1>
+	    <ul>
+	        <li>Use your framework's JSON serializer</li>
+	        <li>Return strings</li>
+	        <li>Or object with label and/or value properties</li>
+	    </ul>
+	    <pre>
+	        
+            // TODO
+	    </pre>
+	</section>    
+
+    <section>
+        <h1>Some Autocomplete Events</h1>
+        <ul>
+            <li>open</li>
+            <li>select</li>
+            <li>close</li>
+        </ul>    
+        <pre>
+            
+$("#technology").autocomplete({delay: 500, minLength: 4,
+                               select: function() { $("#form").submit() },
+                               source: [...]);
+        </pre>
+    </section>
+	
+	<section>
+        <h1>The Button</h1>
+        <ul>
+            <li>Transforms buttons and links into theme-able buttons</li>
+            <li>Works with radio buttons</li>
+            <li>Works with checkboxes</li>
+        </ul> 
+        <div id="radios" class="row span8 offset4">
+        	<input type="radio" id="radio1" name="radio" /><label for="radio1"> 1</label>
+        	<input type="radio" id="radio2" name="radio" checked="checked" /><label for="radio2"> 2</label>
+        	<input type="radio" id="radio3" name="radio" /><label for="radio3"> 3</label>
+        </div>
+        <div id="checks" class="row span8 offset4">
+        	<input type="checkbox" id="check1" /><label for="check1">A</label>
+        	<input type="checkbox" id="check2" /><label for="check2">B</label>
+        	<input type="checkbox" id="check3" /><label for="check3">C</label>
+        </div>
+        <script>
+            $(function(){
+                $("#radios").buttonset();
+                $("#checks").buttonset();
+            });
+        </script>
+	</section>
+	
+	<section>
+	    <h1>Button Options</h1>
+	    <ul>
+	        <li>icons</li>
+	        <li>text</li>
+	        <li>label</li>
+	    </ul>
+	    <pre>
+	        
+$("#submit").button({icons: { primary: "ui-icon-gear"}});	        
+	    </pre>
+	</section>
+	
+	<section>
+        <h1>Datepicker</h1>
+        <ul>
+            <li>Adds a calendar widget to an input control</li>
+            <li>Keyboard accessible</li>
+            <li>Localizable</li>
+        </ul>
+        <div class="row span16 center">
+            <input type="text" id="theDate">
+            <script>
+                $(function(){
+                   $("#theDate").datepicker(); 
+                });
+            </script>
+        </div>
+     </section>
+	
+	<section>
+         <h1>Datepicker Localization</h1>
+         <ul>
+             <li>Use a localized script from jqueryui.com</li>
+             <li>Script will set default locale</li>
+             <li>Can also set locale programmatically</li>
+         </ul>
+         <pre>
+             
+$( "#datepicker" ).datepicker( $.datepicker.regional[ "fr" ] );
+        </pre>     
+    </section>
+    
+	 <section>
+	     <h1>Other Datepicker options</h1>
+	     <ul>
+	         <li>maxDate</li>
+	         <li>minDate</li>
+	         <li>numberOfMonths</li>
+	         <li>showButtonPanel</li>
+	         <li>showAnim</li>
+	     </ul>
+	     <pre>
+ 
+$(function(){
+    $("#theDate").datepicker({showWeek: true, numberOfMonths:2}); 
+});
+	     </pre>
+	</section>
+
+     <section>
+	     <h1>Datepicker events</h1>
+	     <ul>
+	         <li>onSelect</li>
+	         <li>beforeShowDay ([selectable, class, tooltip])</li>
+	     </ul>
+	     <pre>
+$(function(){
+   $("#theDate").datepicker({
+       beforeShowDay: function(date){
+           if(date.getDate() == 11){
+               return [false, "*", "not the 11th!"]
+           }
+           return [true, "*", ""];
+       }
+   }); 
+});
+	     </pre>
+	</section>
+
+	<section>
+   	     <h1>Datepicker methods</h1>
+   	     <ul>
+   	         <li>hide</li>
+   	         <li>show</li>
+   	         <li>getDate</li>
+   	         <li>setDate</li>
+   	     </ul>
+   	     <pre>
+
+$("#theDate").datepicker("setDate", "1/1/2001");
+
+   	     </pre>
+   	</section>
+
+     <section>
+         <h1>Dialog</h1>
+         <ul>
+             <li>Floating window</li>
+             <li>Title bar and content</li>
+         </ul>
+         <div class="row span16 center">
+             <div id="dialog" title="Hello!">
+             	<p>The Internet is tired and is taking the day off.</p>
+             </div>
+			<button id="openDialog">Open</button>
+			<script>
+				$(function(){
+					$("#dialog").dialog({autoOpen:false})
+					$("#openDialog").button().click(function(){
+						$("#dialog").dialog("open");
+					});
+				})
+			</script>
+         </div>
+     </section>
+
+	<section>
+		<h1>Dialog options</h1>
+		<ul>
+			<li>autoOpen</li>
+			<li>closeText</li>
+			<li>model</li>
+		</ul>
+		<pre>
+
+$(function(){
+    $("#dialog").dialog({autoOpen:false})
+    $("#openDialog").button().click(function(){
+	    $("#dialog").dialog("open");
+    });
+})
+		</pre>
+	</section>
+
+	<section>
+		<h1>Dialog Events</h1>
+		<ul>
+			<li>open</li>
+			<li>close</li>
+			<li>Note: button events wired in "buttons" option</li>
+		</ul>	
+		<pre>
+$("#dialog").dialog({
+	buttons: {
+		"Yes": function() { /* ... */ },
+		"No": function() { /* ... */ }
+	}
+});
+		</pre>
+	</section>
+
+	<section>
+		<h1>Progressbar</h1>
+		<ul>
+			<li>Progress indicator</li>
+			<li>Just like the HTML 5 progress element</li>
+		</ul>
+		<div class="row span16 center">
+			<div id="progress"></div>
+			<script>
+				$(function() {
+					$("#progress").progressbar({value: 59});
+				});
+			</script>
+		</div>
+	</section>
+
+	<section>
+		<h1>Slider</h1>
+		<ul>
+			<li>A slider input</li>
+			<li>Another native widget in HTML 5</li>
+		</ul>
+		<div class="row span16 center">
+			<div id="slider"></div>
+			<script>
+				$(function() {
+					$("#slider").slider();
+				});
+			</script>
+		</div>
+	</section>
+
+	<section>
+		<h1>Slider Options</h1>
+		<ul>
+			<li>min</li>
+			<li>max</li>
+			<li>step</li>
+			<li>orientation</li>
+		</ul>
+		<pre>
+			
+$("#slider").slider({orientation:"vertical"});
+		</pre>
+	</section>
+
+	<section>
+		<h1>Slider Events</h1>
+		<ul>
+			<li>slide</li>
+			<li>change</li>
+			<li>stop</li>		
+		</ul>
+		<pre>
+
+$(function() {
+   $("#slider").slider({change:
+       function(event, ui){
+           var value = ui.value;
+           // ...
+       }
+   });
+});
+		</pre>
+	</section>
+
+	<section>
+		<h1>Tabs</h1>
+		<ul>
+			<li>Break content into sections</li>
+			<li>User switches by clicking or hovering</li>
+		</ul>
+		<div class="row span16 center">
+			<div id="tabs">
+				<ul>
+					<li><a href="#tabs-1">Nunc tincidunt</a></li>
+					<li><a href="#tabs-2">Proin dolor</a></li>
+					<li><a href="#tabs-3">Aenean lacinia</a></li>
+				</ul>
+				<div id="tabs-1">
+					<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+				</div>
+				<div id="tabs-2">
+					<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+				</div>
+				<div id="tabs-3">
+					<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+					<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+				</div>
+			</div>
+			<script>
+				$(function(){
+					$("#tabs").tabs();
+				})
+			</script>
+		</div>
+	</section>
+
+	<section>
+		<h1>Tab Options</h1>
+		<ul>
+			<li>event</li>
+			<li>selected</li>
+		</ul>
+		<pre>
+
+$("#tabs").tabs({event:"mouseover"});
+		</pre>	
+	</section>
+
+
+	<section>
+		<h1 id="draggable">Draggables</h1>
+		<ul>
+			<li>Allow user to drag any DOM element</li>
+			<li>Doesn't work with touch by default</li>
+		</ul>
+		<pre>
+$(function(){
+    $("#draggable").draggable();
+});
+		</pre>
+		<script>
+			$(function(){
+				$("#draggable").draggable();
+			});
+		</script>
+	</section>
+
+	<section>
+		<h1>Draggable Options and Events</h1>
+		<ul>
+			<li>axis</li>
+			<li>grid</li>
+			<li>start</li>
+			<li>drag</li>
+			<li>stop</li>
+		</ul>
+		<pre>
+			
+$("#draggable").draggable({axis:"x"});
+		</pre>
+	</section>
+
+	<section>
+		<h1 class="draggable">Droppable</h1>
+		<ul>
+			<li class="draggable">Make selected elements droppable</li>
+			<li class="draggable">Specify acceptable drag items</li>
+		</ul>
+		<div id="d1" class="row span4" style="background-color:red;height:100px"></div>
+		<div id="d2" class="row span4" style="background-color:blue;height:100px"></div>
+		<div id="d3" class="row span4" style="background-color:green;height:100px"></div>
+		<div id="d4" class="row span4" style="background-color:black;height:100px"></div>
+		<script>
+			$(function(){
+				$(".draggable").draggable();
+				$("#d1").droppable({ drop: onDrop	});
+				$("#d2").droppable({accept: "h1", drop: onDrop});
+				$("#d3").droppable({accept: "li", drop: onDrop});
+				$("#d4").droppable({accept: "div", drop: onDrop});
+				
+				function onDrop(event, ui){
+					$(this).css({"background-color" : "white"});
+				}
+			});
+		</script>
+	</section>
+
+	<section>
+		<h1>Sortables</h1>
+		<ul id="sortables">
+			<li>Drag and drop to rearrange elements</li>
+			<li>Connect two lists</li>
+			<li>Or rearrange a single list</li>
+		</ul>
+		<pre>
+$(function(){
+    $("#sortables").sortable();
+});
+		</pre>
+		<script>
+			$(function(){
+				$("#sortables").sortable();
+			});
+		</script>
+	</section>
+
+	<section>
+		<h1 class="draggable">Effects</h1>
+		<ul>
+			<li>Animate almost any property</li>
+			<li>Show and hide effects</li>
+			<li>Easing and more</li>
+		</ul>
+		<div class="row">
+			<div id="d5" class="span4" style="background-color:red;height:100px"></div>
+			<div id="d6" class="span4" style="background-color:blue;height:100px"></div>
+			<div id="d7" class="span4" style="background-color:green;height:100px"></div>
+			<div id="d8" class="span4" style="background-color:black;height:100px"></div>
+		</div>
+		<script>
+			$(function(){
+				$(".draggable").draggable();
+				$("#d5").droppable({ drop: onDrop	});
+				$("#d6").droppable({accept: "h1", drop: onDrop});
+				$("#d7").droppable({accept: "li", drop: onDrop});
+				$("#d8").droppable({accept: "div", drop: onDrop});
+
+				function onDrop(event, ui){
+					$(this).animate({"backgroundColor" : "white", width:"50"}, 1000);
+				}
+			});
+		</script>
+	</section>
+
+	<section>
+		<h1>Summary</h1>
+		<ul>
+			<li>Widgets</li>
+			<li>Interactions</li>
+			<li>Effects</li>
+		</ul>
+	</section>
+
 	<footer>
-		(c) 2011 OdeToCode LLC
+			(c) 2011 OdeToCode LLC
 	</footer>
 </body>
 </html>
