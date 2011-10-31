@@ -32,4 +32,5 @@ log.txt
 *.docstates
 *.mp4
 *.mov
-.idea/
+.idea
+.DS_Store

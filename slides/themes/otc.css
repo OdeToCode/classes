@@ -70,3 +70,14 @@ li {
 input {
 	margin: 10px;
 }
+
+.vwrapper{
+	display:table;
+	width: 100%;
+	height: 100%;
+}
+
+.vcentercell {
+	display:table-cell;
+	vertical-align: middle;
+}
