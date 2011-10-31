@@ -32,3 +32,4 @@ log.txt
 *.docstates
 *.mp4
 *.mov
+.idea/

@@ -1,0 +1,8 @@
+body{
+    background-color: #cccccc;
+}
+
+article {
+    box-shadow: 15px 15px 15px  black;
+    border-radius: 15px;
+}

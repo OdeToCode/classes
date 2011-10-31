@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Lab 01 - Introduction</title>
+	<meta charset="utf-8"/>
+	<link href="../../styles.css" rel="stylesheet">
+    <link href="../../prettify/prettify.css" rel="stylesheet" />
+	<script src="../../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+	<script src="../../prettify/prettify.js" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        Lab 01 - Introduction
+    </header>
+    <section>
+        <h1>Overview</h1>
+        <p>
+            In this lab we'll create a simple HTML 5 page. You can use the HTML
+            editor of your choice - Visual Studio, Notepad, TextMate, or vi. You
+            also use any browser you like. Create your files in the <em>before</em>
+            directory of this lab. You can find a completed solution in the after
+            directory.
+        </p>
+    </section>
+
+    <section>
+        <h1>Creating the page</h1>
+        <p>
+            Create a new HTML page - <strong>page.html</strong>
+            <ol>
+                <li>
+                    Give the page an HTML 5 doctype
+                </li>
+                <li>
+                    Set the language of the page to english (or your preferred language).
+                    The language is specified on the html element
+                </li>
+                <li>
+                    Add a head tag to the page with a title element inside. Pick your own title.
+                </li>
+                <li>
+                    Using a meta tag, set the character encoding for the page to utf-8.
+
+                </li>
+                <li>
+                    Add an empty body tag to the page.
+                </li>
+            </ol>
+        </p>
+        <p>
+            The page should look similar to the following.
+        </p>
+        <pre class="prettyprint">
+&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;My first lab&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </section>
+
+    <section>
+        <h1>Adding some content</h1>
+
+        <p>
+            In this section we want to create an online newspaper using HTML 5 semantic markup.
+        </p>
+
+        <ol>
+             <li>
+                 Pick up some articles from your favorite news site
+                 (perhaps <a href="http://www.reuters.com/news/oddlyEnough" target="_blank">Reuters</a>),
+                 or make up your own news.
+             </li>
+            <li>
+                 Use the news content as the content for your page. You should be able to use the following
+                elements to add meaning to the page.
+                <ul>
+                    <li>section</li>
+                    <li>article</li>
+                    <li>summary</li>
+                    <li>hgroup</li>
+                    <li>figure / figcaption</li>
+                </ul>
+            </li>
+            <li>
+                If you need help understanding what an element means, feel free to
+                look at articles on the web, or refer to the <a href="http://dev.w3.org/html5/spec/Overview.html" target="_blank">W3C</a>
+            </li>
+        </ol>
+        <p>
+            The result might look something like the following (the following would be inside the body elements, of course).
+        </p>
+        <pre class="prettyprint">
+&lt;section&gt;
+    &lt;article&gt;
+        &lt;header&gt;
+            &lt;hgroup&gt;
+                &lt;h1&gt;Millions of escaped bees shut down highway&lt;/h1&gt;
+                &lt;h2&gt;Truck overturns&lt;/h2&gt;
+            &lt;/hgroup&gt;
+            &lt;date datetime=&quot;2010-10-25&quot;&gt;Oct 25th, 2010&lt;/date&gt;
+        &lt;/header&gt;
+        &lt;p&gt;
+            Local beekeepers worked through the night to gather the escaped bees.
+            Officials said there was a net over the beehives but bees still managed
+            to escape after the truck overturned.
+        &lt;/p&gt;
+    &lt;/article&gt;
+&lt;/section&gt;
+        </pre>
+    </section>
+
+    <section>
+        <h1>Validation</h1>
+        <ol>
+            <li>Take your source code to the <a href="http://validator.w3.org/" target="_blank">W3C Validator</a></li>
+            <li>Click on "Validate By Direct Input"</li>
+            <li>Paste your code into the validator, click "Check", and review the results</li>
+            <li>The markup shown in the last section will generate a validation error. If your code
+                doesn't have an error, use the markup from the previous section to see what an error looks
+                like (hint: one of the elements should be changed).
+            </li>
+            <li>Ensure the source code passes validation checks as HTML 5</li>
+        </ol>
+    </section>
+
+    <section>
+        <h1>Adding Some Style</h1>
+        <ol>
+            <li>Create an new CSS file (you might name it styles.css)</li>
+            <li>
+                Add a link in your html page to use the style sheet.
+                Remember in HTML 5 you don't need a type attribute.
+            </li>
+            <li>
+                Set the style for the body of your page to have a
+                light grey background (#cccccc), or some other color
+                of your preference.
+            </li>
+            <li>
+                Use <a href="http://caniuse.com/">caniuse.com</a> to determine if your browser supports a
+                box shadow, and if it requires a vendor prefix. Typing in the search box will take
+                you directly to a feature.
+            </li>
+            <li>
+                Add a box shadow to the article (or section) elements in your page.
+                Refer to the <a href="http://www.w3.org/TR/css3-background/" target="_blank">W3C spec section 7.2</a> for help.
+            </li>
+            <li>
+                Experiment with different shadow lengths and using the inset keyword to create different effects.
+            </li>
+            <li>
+                Once the shadow looks good (and square), find out if your browser supports a border radius, and
+                make the shadow curve.
+            </li>
+        </ol>
+        <p>
+            The result might look like the following.
+        </p>
+        <pre class="prettyprint">
+body{
+    background-color: #cccccc;
+}
+
+article {
+    box-shadow: 15px 15px 15px  black;
+    border-radius: 15px;
+}
+        </pre>
+    </section>
+
+    <script type="text/javascript">
+        $(function(){
+           prettyPrint();
+        });
+    </script>
+</body>
+</html>

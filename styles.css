@@ -1,7 +1,8 @@
 ﻿body
 {
 	background-color: #cccc99;
-	font-family: Arial, Helvetica, sans-serif;	
+	font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2em;
 }
 
 table
@@ -44,4 +45,12 @@ tr:nth-child(2n+2)
 	border-radius: 12px;
 	-moz-border-radius: 12px;
 	-webkit-border-radius: 12px;
+}
+
+section {
+    border-bottom: 2px solid black;
+}
+
+ol{
+    line-height: 2.0em;
 }
