@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Lab XX - jQuery UI</title>
+	<meta charset="utf-8"/>
+	<link href="../../styles.css" rel="stylesheet">
+    <link href="../../prettify/prettify.css" rel="stylesheet" />
+	<script src="../../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+	<script src="../../prettify/prettify.js" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        Lab XX - jQuery UI
+    </header>
+    <section>
+        <h1>Overview</h1>
+        <p>
+            In this lab we'll download jQuery UI and use the features inside on the 
+			jqueryui.html page in the before folder of this lab. 
+        </p>
+    </section>
+
+    <section>
+        <h1>Getting Started</h1>
+        <ol>
+			<li>Open the jqueryui.html page from the before directory of this lab in a browser.</li>
+			<li>Note the page is not using any jQuery UI components.</li>
+			<li>Go to <a href="http://jqueryui.com" target="_blank">jqueryui.com</a> and download jQuery UI. 
+				Make sure to select all components. Make sure to pick your favorite theme. 
+				</li>
+			<li>
+				Extract the download into the before directory of this lab. 
+			</li>
+			<li>
+				Your page will need to include a script reference to jQuery. You'll find a 
+				minified version in the js folder of the extracted download. 
+			</li>
+			<li>
+				Your page will also need to reference jQuery UI (also in the js folder of the 
+				download).
+			</li>
+			<li>
+				Add a link to the style sheet for jQuery UI. You'll find it in the css directory. 
+			</li>
+			<li>
+				Create a script.js file in the before folder. Add a script tag to reference this file 
+				from the jqueryui.html page. The script.js file is where we will write all of our script. 
+			</li>
+		</ol>
+		<p>At this point your header should look like the following.</p>
+		<pre class="prettyprint">
+			
+&lt;head&gt;
+    &lt;title&gt;jquery ui&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/vader/jquery-ui-1.8.16.custom.css&quot; media=&quot;screen&quot;&gt;
+    &lt;script src=&quot;js/jquery-1.6.4.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/scripts/jquery-ui-1.8.16.custom.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+		</pre>
+    </section>
+
+	<section>
+		<h1>Accordian</h1>
+		<p>In the script.js file you created, add the code to fulfill the following requirements for the 
+			accordion section of jqueryui.html. 
+			Use the <a href="http://jqueryui.com/demos/" target="_blank">jQuery UI documentation</a> to  
+			help complete the requirements. 
+		</p> 
+		<ol>
+			<li>The "accordion" div should turn into an accordion widget with two headers</li>
+			<li>The icons on the headers should be triangles inside circles ("ui-icon-circle-triangle e and s")</li>
+			<li>Allow all sections of the accordion to collapse</li>
+			<li>The accordion should initially appear with the second section open</li>
+		</ol>
+		<p>Refer to the script in the after folder if you get stuck.</p>
+	</section>
+
+	<section>
+		<h1>Autocomplete</h1>
+		<p>Add code to script.js to complete the following requirements</p>
+		<ol>
+			<li>When the user types in the input with an id of technology, setup autocomplete 
+				functionality with the following technologies: Windows, Windows Phone, Office, 
+				Azure, ASP.NET.</li>
+			<li>The user should type at least 2 characters before the autocomplete list appears</li>
+		</ol>
+	</section>
+
+	<section>
+		<h1>Button</h1>
+		<p>Add code to script.js to complete the following requirements</p>
+		<ol>
+			<li>Turn the button, link, and submit button in the buttons section into 
+				jQuery themed buttons.</li>
+			<li>Turn the radio buttons into a jQuery UI button set.</li>
+			<li>Turn the checkboxes into a jQuery UI button set.</li>
+		</ol>
+	</section>
+
+	<section>
+		<h1>Datepicker</h1>
+		<p>Add code to script.js to complete the following requirements</p>
+		<ol>
+			<li>Add a datepicker to the input with an id of "theDate".</li>
+			<li>Don't allow the datepicker to move past January 1, 2011</li>
+			<li>Allow the user to change the year by selecting the year from 
+				a drop down list (hint: see changeYear).</li>
+		</ol>
+	</section>
+	
+	<section>
+		<h1>Dialog</h1>
+		<p>Add code to script.js to complete the following.</p>
+		<ol>
+			<li>Create a dialog from the div with an id of "dialog".</li>
+			<li>Don't let the dialog automatically open when the page loads.'</li>
+			<li>Add a button in the dialog section that, when clicked, opens
+				the dialog.</li>
+			<li>Add an "Ok" button to the dialog. When the user clicks the button
+				the dialog should close.</li>
+		</ol>
+	</section>
+	
+	<section>
+		<h1>Progressbar</h1>
+		<p>In the progressbar section, see if you can create a progressbar that 
+			moves from 0 to 100 over 20 seconds. 
+			Hint: use <a href="https://developer.mozilla.org/en/window.setInterval" target="_blacnk">setInterval</a>.
+			</p>
+	</section>
+	
+	<section>
+		<h1>Slider</h1>
+		<p>
+			In the slider section, create a slider widget. Add a div to the section that will display
+			the value of the slider when it changes.
+		</p>
+	</section>
+	
+	<section>
+		<h1>Tabs</h1>
+		<p>
+			In the tabs section, move all the content into tabs that will appear when the user hovers the
+			mouse over the tab header. 
+		</p>
+	</section>
+	
+	<section>
+		<h1>Draggables</h1>
+		<p>In the draggables section, make the "Draggables" header draggable, but only left and right.</p>
+	</section>
+	
+	<section>
+		<h1>Droppable</h1>
+		<p>In the droppable section, allow the "Droppable" header to drop into the red and blue blocks. 
+			When the header is dropped on these blocks, change the color to white.
+			Make the header revert to its previous position if not dropped on a valid drop target.
+		</p>
+	</section>
+	
+	<section>
+		<h1>Complete!</h1>
+		<p>You've completed the jQuery UI lab and should have a solid understanding of this wonderful library!</p>
+	</section>
+
+    <script type="text/javascript">
+        $(function(){
+           prettyPrint();
+        });
+    </script>
+</body>
+</html>
