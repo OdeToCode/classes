@@ -1,0 +1,525 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Forms with HTML 5</title>
+	<meta charset="utf-8"/>
+	<link href="themes/bootstrap.css" rel="stylesheet" />
+	<link href="themes/otc.css" rel="stylesheet" />
+    <link href="../prettify/prettify.css" rel="stylesheet" />
+	<script src="../scripts/jquery-1.6.4.js" type="text/javascript"></script>		
+	<script src="../prettify/prettify.js" type="text/javascript"></script>
+    <script src="point5.js" type="text/javascript"></script>
+
+</head>
+<body>
+	<section>		
+		<h1>Forms with</h1>
+		<svg viewBox="0 0 512 512">
+			<title>HTML5 Logo</title>  
+			<polygon fill="#E44D26" points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512 			"/>
+			<polygon fill="#F16529" points="256,480.523 376.03,447.246 404.27,130.894 256,130.894 			"/>
+			<polygon fill="#EBEBEB" points="256,268.217 195.91,268.217 191.76,221.716 256,221.716 256,176.305 255.843,176.305 142.132,176.305 143.219,188.488 154.38,313.627 256,313.627"/>
+			<polygon fill="#EBEBEB" points="256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 256,433.399"/>
+			<path d="M108.382,0h23.077v22.8h21.11V0h23.078v69.044H152.57v-23.12h-21.11v23.12h-23.077V0z"/>
+			<path d="M205.994,22.896h-20.316V0h63.72v22.896h-20.325v46.148h-23.078V22.896z"/>
+			<path d="M259.511,0h24.063l14.802,24.26L313.163,0h24.072v69.044h-22.982V34.822l-15.877,24.549h-0.397l-15.888-24.549v34.222h-22.58V0z"/>
+			<path d="M348.72,0h23.084v46.222h32.453v22.822H348.72V0z"/>
+			<polygon fill="#FFFFFF" points="255.843,268.217 255.843,313.627 311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 349.162,268.217"/>
+			<polygon fill="#FFFFFF" points="255.843,176.305 255.843,204.509 255.843,221.605 255.843,221.716 365.385,221.716 365.385,221.716 365.531,221.716 366.442,211.509 368.511,188.488 369.597,176.305"/>
+		</svg>		
+	</section>					
+
+	<section>
+		<h1>Forms are simple, right?</h1>
+		<ul>
+			<li>Add a form tag</li>
+			<li>Add a few inputs</li>
+			<li>Add a submit button</li>
+			<li>Call it a day!</li>
+		</ul>
+		<pre>
+
+&lt;form action=&quot;/user/edit&quot; method=&quot;post&quot;&gt;
+	&lt;input type=&quot;text&quot; name=&quot;firstName&quot; value=&quot;Scott&quot; /&gt;
+	&lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+&lt;/form&gt;		
+		</pre>
+	</section>
+
+	<section>
+		<h1>What really happens...</h1>
+		<ul>
+			<li>Add a form tag</li>
+			<li>Add a few inputs</li>
+			<li>Find some widgets to input dates</li>
+			<li>Find a regex to validate emails</li>
+			<li>Find a library to support client validation</li>
+			<li>Add styles for your error messages</li>
+			<li>And so on ...</li>
+		</ul>
+	</section>
+
+	<section>
+		<h1>New in HTML5</h1>
+		<ul>
+			<li>New form elements</li>
+			<li>New input types</li>
+			<li>New attributes</li>
+			<li>Behaviors previously only possible with script</li>
+			<li>However <a href="http://caniuse.com/#search=datalist" target="_black">...</a></li>
+		</ul>
+	</section>
+
+	<section>
+		<h1>Required Attribute</h1>
+		<ul>
+			<li>Field must contain a value</li>
+			<li>Works with inputs</li>
+			<li>Consider aria-required, too</li>
+		</ul>
+		<pre>
+ 
+&lt;form&gt;
+  &lt;input name=&quot;firstName&quot; type=&quot;text&quot; required&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Save&quot;&gt;
+&lt;/form&gt;
+		</pre>
+		<div class="row span16 center">
+			<form>
+				<input name="firstName" type="text" required>
+				<input type="submit" value="Save">
+			</form>
+		</div>
+	</section>
+
+	<section>
+		<h1>Styling Required Fields</h1>
+		<ul>
+			<li>:required</li>
+			<li>:valid</li>
+			<li>:invalid</li>
+		</ul>
+		<pre>
+ 
+#requiredStyle input:invalid
+{
+  background-color:#ee0000;
+}		
+		</pre>
+		<div id="requiredStyle" class="row span16 center">
+			<form>
+				<input name="firstName" type="text" required>
+				<input type="submit" value="Save">
+			</form>
+			<style>
+				#requiredStyle input:invalid
+				{
+					background-color:#ee0000;
+				}
+			</style>
+		</div>
+	</section>
+
+	<section>
+		<h1>Placeholder Attribute</h1>
+		<ul>
+			<li>A watermark for text inputs</li>
+			<li>Placeholder dissapears when input receives focus</li>
+			<li>Placeholder text is text only (per the standard)</li>
+		</ul>
+		<pre>
+&lt;form&gt;
+  &lt;input name=&quot;q&quot; placeholder=&quot;Search the movie listings&quot;&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Search&quot;&gt;
+&lt;/form&gt;				
+		</pre>
+		<div class="row span16 center">
+			<form>
+				<input name="q" placeholder="Search the movie listings">
+				<input type="submit" value="Search">
+			</form>
+		</div>
+	</section>
+
+	<section>
+		<h1>Pattern Attribute</h1>
+		<ul>
+			<li>Regular expression validation</li>
+			<li>Make sure the user knows the pattern!</li>	
+		</ul>
+		<pre>
+&lt;form&gt;
+  &lt;label for=&quot;ip4address&quot;&gt;Enter an IPv4 address:&lt;/label&gt;
+  &lt;input name=&quot;ip4address&quot; pattern=&quot;\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b&quot;&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Go&quot;&gt;
+&lt;/form&gt;
+		</pre>
+		<div class="row span16">
+			<form>
+				<label for="ip4address">Enter an IPv4 address:</label>
+				<input name="ip4address" pattern="\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b">
+				<input type="submit" value="Go">
+			</form>
+		</div>
+	</section>
+
+	<section>
+		<h1>Disabled Attribute</h1>
+		<ul>
+			<li>Yes, it has been around</li>
+			<li>Now works on fieldsets</li>
+			<li>Can apply styles with :disabled</li>
+			<li>Disabled values are not submitted</li>
+		</ul>
+		<pre>
+ 
+&lt;input name=&quot;ip4address&quot; disabled&gt;		
+		</pre>
+		<div class="row span16">
+			<form>
+				<label for="ip4address">Enter an IPv4 address:</label>
+				<input name="ip4address" disabled>
+				<input type="submit" value="Go">
+			</form>
+		</div>
+	</section>
+
+	<section>
+		<h1>Readonly</h1>
+		<ul>
+			<li>Can recieve focus</li>
+			<li>Will submit value</li>
+			<li>User cannot edit</li>
+		</ul>
+		<pre>
+ 
+&lt;input name=&quot;ip4address&quot; readonly value=&quot;10.10.10.10&quot;&gt;
+		</pre>
+		<div class="row span16">
+			<form>
+				<label for="ip4address">Enter an IPv4 address:</label>
+				<input name="ip4address" readonly value="10.10.10.10">
+				<input type="submit" value="Go">
+			</form>
+		</div>
+	</section>
+
+	<section>
+		<h1>Other Attributes</h1>
+		<ul>
+			<li>multiple - allows multiple values (file, email)</li>
+			<li>form - associate an input or fieldset with a specific form</li>
+		</ul>
+	</section>
+
+	<section>
+		<h1>Autocomplete</h1>
+		<ul>
+			<li>Allows a browser to prompt the user</li>
+			<li>Allows a browser to save a password</li>
+			<li><strong>The default is on</strong></li>
+			<li>Turn off for sensitive information</li>
+		</ul>
+		<div class="row span16 center">
+			<form>
+				<input type="text" name="firstName" placeholder="First Name"/>
+				<input type="text" name="creditcard" autocomplete="off" placeholder="CC#"/>
+				<input type="submit" value="Save"/>
+			</form>
+		</div>
+	</section>
+
+	<section>
+		<h1>Autofocus</h1>
+		<ul>
+			<li>Browser directs focus to field automatically</li>
+			<li>Resolves many edge case problems</li>
+		</ul>
+		<pre>
+ 
+ &lt;form&gt;
+ 	&lt;input name=&quot;city&quot; placeholder=&quot;Your country&quot;/&gt;
+	&lt;input name=&quot;q&quot; autofocus placeholder=&quot;Search the movie listings&quot;&gt;
+	&lt;input type=&quot;submit&quot; value=&quot;Search&quot;&gt;
+&lt;/form&gt;		
+		</pre>
+		<div class="row span16 center">
+			<form>
+				<input name="city" placeholder="Your country"/>
+				<input name="q" autofocus placeholder="Search the movie listings">
+				<input type="submit" value="Search">
+			</form>
+		</div>
+	</section>
+
+	<section>
+		<h1>Datalist element</h1>
+		<ul>
+			<li>Text field with pre-defined autocomplete options</li>			
+			<li>One datalist can work with mulitple inputs</li>
+		</ul>
+		<pre>
+ 
+&lt;label for=&quot;movieTitle&quot;&gt;Favorite Movie&lt;/label&gt;
+&lt;input type=&quot;text&quot; name=&quot;moveTitle&quot; list=&quot;movies&quot;/&gt;
+&lt;datalist id=&quot;movies&quot;&gt;
+  &lt;option value=&quot;Star Wars&quot;&gt; 
+  &lt;option value=&quot;Hairspray&quot;&gt;
+  ...
+&lt;/datalist&gt;					
+		</pre>
+		<div class="row span16">
+			<label for="movieTitle">Favorite Movie</label>
+			<input type="text" name="moveTitle" list="movies"/>
+			<datalist id="movies">
+				<option value="Star Wars">
+				<option value="Terminator">
+				<option value="Hairspray">
+				<option value="Titanic">
+			</datalist>			
+			<a href="http://caniuse.com/#search=datalist" target="_blank">Can I use it?</a>
+		</div>
+	</section>
+
+	<section>
+		<h1>New input types</h1>
+		<ul>
+			<li>All previous types (text, radio, password) still work</li>
+			<li>13 new input types</li>
+			<li>*Work with <em>every</em> browser</li>
+		</ul>
+	</section>
+
+	<section>
+		<h1>Search</h1>
+		<ul>
+			<li>Stylistic differences from type='text'</li>
+			<li>Better visual clues (search icon on iOS)</li>
+		</ul>
+		<pre>
+ 
+&lt;input type=&quot;text&quot; placeholder=&quot;Search the listings&quot; /&gt;
+&lt;input type=&quot;search&quot; placeholder=&quot;Search the listings&quot; /&gt;		
+		</pre>
+		<div class="row span16 center">
+			<input type="text" placeholder="Search the listings" />
+			<input type="search" placeholder="Search the listings" />
+		</div>
+	</section>
+
+	<section>
+		<h1>Email</h1>
+		<ul>
+			<li>Optimized for email address entry</li>
+			<li>Supports mutiple values</li>
+		</ul>
+		<pre>
+&lt;input type=&quot;email&quot;/&gt;			
+		</pre>
+		<div class="row span8 center">
+			<img src="images/iosemail.png"/>
+		</div>
+		<div class="span8">
+			<form>
+				<input type="email"/>
+				<input type="submit"/>
+			</form>			
+		</div>
+	</section>
+
+	<section>
+		<h1>url</h1>
+		<ul>
+			<li>Like email, creates custom keypad</li>
+			<li>Some browsers help with the http:// part</li>
+		</ul>
+		<pre>
+&lt;input type=&quot;url&quot; placeholder=&quot;Your favorite site&quot;/&gt;
+		</pre>
+		<div class="row span16">
+			<input type="url" placeholder="Your favorite site"/>
+		</div>
+	</section>
+
+	<section>
+		<h1>tel (telephone)</h1>
+		<ul>
+			<li>Browser doesn't enforce any rules</li>
+			<li>Can open number pad for devices</li>
+		</ul>
+				<pre>
+&lt;input type=&quot;tel&quot; placeholder=&quot;Your favorite site&quot;/&gt;
+		</pre>
+		<div class="row span16">
+			<input type="tel" placeholder="Home number"/>
+		</div>
+	</section>
+
+	<section>
+		<h1>number</h1>
+		<ul>
+			<li>Generally uses a spinner widget</li>
+			<li>Devices generally use a numeric keypad</li>
+			<li>Should provide min and max values</li>
+			<li>Can provide a step value</li>
+		</ul>
+		<pre>
+ 
+&lt;input type=&quot;number&quot; min=&quot;10&quot; max=&quot;100&quot; step=&quot;10&quot;/&gt;
+		</pre>
+		<div class="row span16">
+			<form>
+				<input type="number" min="10" max="100" step="10"/>
+				<input type="submit"/>
+			</form>
+		</div>
+
+	</section>
+
+	<section>
+		<h1>Custom error messages</h1>
+		<ul>
+			<li>Use setCustomValidity</li>
+		</ul>
+		<pre>
+ 
+$("#oddNumber").change(function () {
+	var value = $(this).val();
+	if (value % 2 == 0) {
+		this.setCustomValidity("Must be odd!");
+	} else {
+		this.setCustomValidity("");
+	}
+});		
+		</pre>
+		<div class="row span16">
+			<form>
+				<input id="oddNumber" type="number" min="9" max="99" step="2"/>
+				<input type="submit"/>
+			</form>
+			<script>
+				$(function () {
+					$("#oddNumber").change(function () {
+						var value = $(this).val();
+						if (value % 2 == 0) {
+							this.setCustomValidity("Must be odd!");
+						} else {
+							this.setCustomValidity("");
+						}
+					});
+				})
+			</script>
+		</div>
+	</section>
+
+	<section>
+		<h1>range</h1>
+		<ul>
+			<li>Generally uses a slider widget</li>
+			<li>Also allows min, max, step</li>
+		</ul>
+		<pre>
+ 
+ &lt;input type=&quot;range&quot; min=&quot;1&quot; max=&quot;100&quot; step=&quot;10&quot;/&gt;		
+		</pre>
+		<div class="row span16 center">
+			<input type="range" min="1" max="100" step="10"/>
+		</div>
+	</section>
+
+	<section>
+		<h1>color</h1>
+		<ul>
+			<li>A color picker</li>
+		</ul>
+				<pre>
+ 
+&lt;input type=&quot;color&quot; /&gt; 
+		</pre>
+		<div class="row span16 center">
+			<input type="color" />
+		</div>
+	</section>
+
+	<section>
+		<h1>Dates and Times</h1>
+		<ul>
+			<li>date (year month day)</li>
+			<li>month (year and month)</li>
+			<li>week (week number)</li>
+			<li>time (24 hour clock)</li>
+			<li>datetime (assumes UTC)</li>
+			<li>datetime-local (no timezone)</li>
+		</ul>
+		<pre>
+		
+&lt;input type=&quot;date&quot;/&gt;		
+		</pre>
+		<div class="row span16">
+			<input type="date"/>		
+		</div>
+	</section>
+
+	<section>
+		<h1>output element</h1>
+		<ul>
+			<li>Generally the result of a calculation</li>			
+			<li>Name and value will submit with form</li>
+		</ul>
+				<pre>
+
+&lt;input type=&quot;output&quot; id=&quot;Output1&quot;/&gt;		
+&lt;script&gt;
+	$(function () {
+		$(&quot;#result&quot;).val(2 + 2);
+	})
+&lt;/script&gt;	
+		</pre>
+		<div class="row span16">
+			<output id="result"></output>		
+			<script>
+				$(function () {
+					$("#result").val(2 + 2);
+				})
+			</script>
+		</div>
+	</section>
+
+	<section>
+		<h1>keygen element</h1>
+		<ul>
+			<li>To generate public-private keypair</li>
+			<li>Keytype attribute supports rsa only</li>
+		</ul>
+		<pre>
+ 
+&lt;keygen keytype=&quot;rsa&quot;/&gt;
+		</pre>
+		<div class="row span16">
+			<keygen keytype="rsa"/>
+			<input type="submit" value="Generate"/>
+		</div>
+	</section>
+
+	<section>
+		<h1>About the form ...</h1>
+		<ul>
+			<li>action not required</li>
+			<li>novalidate attribute turns off validation</li>
+			<li>autocomplete attribute valid on form</li>
+		</ul>
+	</section>
+
+	<section>
+		<h1>Summary</h1>
+		<ul>
+			<li>HTML5 forms solve real world problems</li>
+			<li>HTML5 forms work with real world platforms</li>
+		</ul>
+	</section>
+
+	<footer>
+		(c) 2011 OdeToCode LLC
+	</footer>
+</body>
+</html>
