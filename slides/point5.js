@@ -1,6 +1,7 @@
 ﻿/// <reference path="../scripts/jquery-1.6.4.js" />
 
 if (!jQuery) throw "jQuery required";
+if (!prettyPrint) throw "google-code-prettifier required";
 
 var p5 = {
 	startShow: function () {
