@@ -47,7 +47,7 @@ var p5 = {
 
 	moveTo: function (id) {
 		p5.move(function () {
-			return $("section" + id);
+			return $(id);
 		});
 	},
 

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Draconian Company Support Form</title>
+</head>
+<body>
+	<form>
+		<header>
+			<h2>Support Request Form</h2>
+			<div>How can we help?</div>
+		</header>
+		<ul>
+			<li>
+				<label for="firstName">First Name</label>
+				<input id="firstName" name="firstName" type="text" required autofocus />							
+				<label for="lastName">Last Name</label>
+				<input id="lastName" name="lastName" type="text" required />			
+			</li>
+			<li>
+				<label for="email">Email</label>
+				<input id="email" name="email" type="email" spellcheck="false" required autocomplete="false" />			
+			</li>
+			<li>
+				<label for="phone">Phone Number</label>			
+				<input id="phone" name="phone" type="tel" required pattern="^(1?(-?\d{3})-?)?(\d{3})(-?\d{4})$" />
+			</li>
+			<li>
+				<label for="pageUrl">URL of Problem Page</label>
+				<input type="url" name="pageUrl" id="pageUrl" required />
+			</li>
+
+			<li>
+				<label for="times"># of times this has happened today</label>
+				<input type="number" min="1" max="1000" name="times" id="times" required />
+			</li>
+		<li>
+			<label for="frustration">Frustration</label>
+			<div>
+				<span>A little</span>
+				<input type="range" min="1" max="11" id="frustration" name="frustration" />
+				<span>Nuclear</span>
+			</div>
+		</li>
+		<li>
+			<label for="dateOfIncident">Date of Incident</label>
+			<input type="date" id="dateOfIncident" name="dateOfIncident" required />
+		</li>
+		<li>
+			<label for="description">
+				Please describe in detail what happened. 
+			</label>
+			<div>
+				<textarea rows="10" cols="70" name="description"></textarea>
+			</div>
+		</li>
+		<li>
+			<label for="os">
+				Operating System
+			</label>
+			<input type="text" id="os" name="os" list="oslist" required />				
+			<datalist id="oslist">
+				<option value="Windows 7"></option>
+				<option value="Windows 8"></option>
+				<option value="Mac OS/X"></option>
+				<option value="Linux"></option>
+			</datalist>
+		</li>
+		<li>
+			<label for="browser">Browser</label>			
+			<input id="browser" name="browser" type="text" list="browserList" required></input>						
+			<datalist id="browserList">
+				<option value="IE"></option>
+				<option value="Chrome"></option>
+				<option value="Safari"></option>
+			</datalist>
+		</li>
+		<li>			
+			<input id="saveForm" name="saveForm" type="submit" value="Submit" />
+		</li>
+	</ul>
+	</form>
+</body>
+</html>
+
+		<!--	<option value="Windows XP">Windows XP </option>
+					<option value="Windows Vista">Windows Vista </option>
+					<option value="Mac OS X">Mac OS X </option>
+					<option value="Linux">Linux </option>
+					<option value="Other">Other </option>
+				</select>
+			</div>
+			<p class="instruct" id="P1">
+				<small>This is required.</small></p>
+		</li>
+		<li id="Li1" class="rightHalf      ">
+			<label class="desc" id="Label1" for="Field5">
+				Browser <span id="Span1" class="req">*</span>
+			</label>
+			<div>
+				<select id="Select1" name="Field5" class="field select medium" tabindex="10">
+					<option value="" selected="selected"></option>
+					<option value="Internet Explorer 6">Internet Explorer 6 </option>
+					<option value="Internet Explorer 7">Internet Explorer 7 </option>
+					<option value="Firefox 1.5">Firefox 1.5 </option>
+					<option value="Firefox 2.0">Firefox 2.0 </option>
+					<option value="Safari 2">Safari 2 </option>
+					<option value="Safari 3">Safari 3 </option>
+					<option value="Opera">Opera </option>
+					<option value="Other">Other </option>
+		-->

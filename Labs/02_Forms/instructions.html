@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Lab 02 - HTML 5 Forms</title>
+	<meta charset="utf-8"/>
+	<link href="../../styles.css" rel="stylesheet">
+    <link href="../../prettify/prettify.css" rel="stylesheet" />
+	<script src="../../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+	<script src="../../prettify/prettify.js" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        Lab 02 - HTML 5 Forms
+    </header>
+    <section>
+        <h1>Overview</h1>
+        <p>
+            The Draconian Company IT department needs your help. They have a web page where users 
+			can report bugs for internal applications, but all the users say the 
+			form is difficult to use, and time consuming to fill out from a mobile device. 
+        </p>
+		<p>
+			Open up the current support page in the before directory of this lab. See how many 
+			improvements you can make to the page while completing the requirements listed below. 
+			Refer to the redesigned page in the after folder if you need some tips. 
+		</p>
+    </section>
+
+	<section>
+		<h1>Requirements</h1>
+		<ol>
+			<li>All fields are required. Currently users submit pages with blank data.</li>
+			<li>The page should open with focus in the first name field</li>
+			<li>The email address should be validated as an email address, and open the 
+				keyboard with an "@" sign on the CTO's iPhone. 
+			</li>
+			<li>
+				The user should not be allowed to use auto completion for thier email address.
+				Draconian wants them to type the entire address everytime there is a bug, to 
+				make sure they really want the bug fixed.
+			</li>
+			<li>The phone number entry should be 7, 10, or 11 digits. Hyphens are optional.
+				The phone number entry should also use the special phone entry keyboard on mobile.
+			</li>
+			<li>
+				The page URL should be a valid URL. 
+			</li>
+			<li>
+				The "number of times this has happened" field should use a spinner control to 
+				allow the user to increment a number. The valid range is 1 to 1000.
+			</li>
+			<li>
+				The frustration level input should be a slider control yielding a value between
+				1 and 11 inclusive. To the left of the slider use the text "a little", to the 
+				right of the slider use the text "nuclear". 
+			</li>
+			<li>
+				Validate the date of the incident as a full date (day, month, and year). 
+			</li>
+			<li>
+				The operating system entry should auto-complete with a value of 
+				Window 7, Windows 8, Mac OS/X, or Linux. 
+			</li>
+			<li>
+				The browser input should autocomplete using one of IE, Chrome, Safari, or Opera.
+			</li>
+		</ol>
+	</section>
+    
+
+	<section>
+		<h1>Complete!</h1>
+		<p>Congratulations on completing the lab. Draconian Company will be happy to make life
+		easier for thier employees.
+		For extra credit, find some other places where you can make the page better using HTML 5.
+		</p>
+	</section>
+
+    <script type="text/javascript">
+        $(function(){
+           prettyPrint();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Draconian Company Support Form</title>
+</head>
+<body>
+	<form id="supportForm" name="supportForm" method="post">
+	<div class="header">
+		<h2>Support Request Form</h2>
+		<div>How can we help?</div>
+	</div>	
+	<ul>
+		<li>
+			<label for="name">First Name</label>			
+			<input id="firstName" name="firstName" type="text" />				
+			<label for="lastName">Last Name</label>
+			<input id="lastName" name="lastName" type="text" />				
+		</li>
+		<li>
+			<label for="email">Email</label>
+			<input id="email" name="email" type="text" />
+		</li>
+		<li>
+			<label for="phone">Phone Number</label>
+			<input id="phone" name="phone" type="text" />
+		</li>
+		<li>
+			<label for="pageUrl">URL of Problem Page</label>
+			<input type="text" name="pageUrl" id="pageUrl" />
+		</li>
+		<li>
+			<label for="times">Number of times this has happened today</label>
+			<input type="text" name="times" id="times" />
+		</li>
+		<li>
+			<label for="frustration">Frustration</label>
+			<div>
+				<p>On a scale of 1 to 11, how frustrated are you?</p>
+				<input type="text" id="frustration" name="frustration" />
+			</div>
+		</li>
+		<li>
+			<label for="dateOfIncident">Date of Incident</label>
+			<input type="text" id="dateOfIncident" name="dateOfIncident"/>
+		</li>
+		<li>
+			<label for="description">
+				Please describe in detail what happened. 
+			</label>
+			<div>
+				<textarea rows="10" cols="70" name="description"></textarea>
+			</div>
+		</li>
+		<li>
+			<label for="os">
+				Operating System
+			</label>
+			<input type="text" id="os" name="os"/>				
+		</li>
+		<li>
+			<label for="browser">Browser</label>			
+			<input id="browser" name="browser" type="text"></input>						
+		</li>
+		<li>			
+			<input id="saveForm" name="saveForm" type="submit" value="Submit" />
+		</li>
+	</ul>
+	</form>
+</body>
+</html>
