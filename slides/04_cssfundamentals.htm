@@ -1,0 +1,501 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>CSS Fundamentals</title>
+	<link href="themes/bootstrap.css" rel="stylesheet" />
+	<link href="../prettify/prettify.css" rel="stylesheet" />
+	<link href="themes/otc.css" rel="stylesheet" />	
+	<script src="../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+	<script src="../prettify/prettify.js" type="text/javascript"></script>
+	<script src="point5.js" type="text/javascript"></script>
+</head>
+<body>
+	<section>		
+		<h1>CSS Fundamentals</h1>
+		<svg viewBox="0 0 512 512">
+			<title>HTML5 Logo</title>  
+			<polygon fill="#E44D26" points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512 			"/>
+			<polygon fill="#F16529" points="256,480.523 376.03,447.246 404.27,130.894 256,130.894 			"/>
+			<polygon fill="#EBEBEB" points="256,268.217 195.91,268.217 191.76,221.716 256,221.716 256,176.305 255.843,176.305 142.132,176.305 143.219,188.488 154.38,313.627 256,313.627"/>
+			<polygon fill="#EBEBEB" points="256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 256,433.399"/>
+			<path d="M108.382,0h23.077v22.8h21.11V0h23.078v69.044H152.57v-23.12h-21.11v23.12h-23.077V0z"/>
+			<path d="M205.994,22.896h-20.316V0h63.72v22.896h-20.325v46.148h-23.078V22.896z"/>
+			<path d="M259.511,0h24.063l14.802,24.26L313.163,0h24.072v69.044h-22.982V34.822l-15.877,24.549h-0.397l-15.888-24.549v34.222h-22.58V0z"/>
+			<path d="M348.72,0h23.084v46.222h32.453v22.822H348.72V0z"/>
+			<polygon fill="#FFFFFF" points="255.843,268.217 255.843,313.627 311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 349.162,268.217"/>
+			<polygon fill="#FFFFFF" points="255.843,176.305 255.843,204.509 255.843,221.605 255.843,221.716 365.385,221.716 365.385,221.716 365.531,221.716 366.442,211.509 368.511,188.488 369.597,176.305"/>
+		</svg>		
+	</section>
+	<section>
+		<h1>Why CSS?</h1>
+		<ul>
+			<li>Because this is ugly</li>
+			<li>Inline styles don't scale</li>
+		</ul>
+		<pre>
+ 
+ &lt;h1 stlye=&quot;color:white;&quot;&gt;I&#39;m On A Plane&lt;/h1&gt;
+ &lt;p style=&quot;color:red;text-align:center&quot;&gt;No really, when I wrote this 
+  I was on an airplane. 
+  &lt;/p&gt;
+		</pre>
+	</section>
+	<section>
+		<h1>CSS Specifications</h1>
+		<div class="row span16 center">
+			<table>			
+				<thead>				
+					<th>Version</th>
+					<th>Year</th>
+					<th>Features</th>
+				</thead>
+				<tr>
+					<td>CSS 1</td>
+					<td>1996</td>
+					<td>Fonts, Colors, Spacing</td>
+				</tr>
+				<tr>
+					<td>CSS 2.1</td>
+					<td>2004</td>
+					<td>Layout, positioning</td>
+				</tr>
+				<tr>
+					<td>CSS 3</td>
+					<td>In progress</td>
+					<td>Effects, Sizeing, Speech</td>
+				</tr>
+			</table>
+		</div>
+	</section>
+
+		<section>
+		<h1>Style Rules</h1>
+		<ul>
+			<li class="red">Selector</li>
+			<li>Propertyname:value</li>
+		</ul>
+		<pre>
+&lt;li class=&quot;red&quot;&gt;Selector&lt;/li&gt;
+ 
+&lt;style&gt;
+.red 
+{
+  color :#ff0000;
+}
+&lt;/style&gt;
+
+		</pre>
+		<style>
+			.red 
+			{
+				color:#ff0000;
+			}
+		</style>
+	</section>
+
+	<section>
+		<h1>What is a selector?</h1>
+		<ul>
+			<li>Pattern used to identify elements</li>
+		</ul>
+		<pre>
+body {
+  background-color: #cccc99;
+}</pre>
+		<pre>
+#menu {
+  background-color: #ff0000;
+}</pre>
+				<pre>
+.tookTitle {
+  font-style: "italic";
+}</pre>	
+	</section>
+
+	<section>
+		<h1>Other selectors</h1>	
+		<pre>
+/* descendant */
+div p {
+	background-color: #ddddaa;
+}</pre>
+		<pre>
+/* child */
+div > p {
+	background-color: #ddddaa;
+}</pre>
+		<pre>
+/* attribute */
+img[alt=spacer] {
+	padding: 0px;
+}</pre>
+		<pre>
+/* psuedo class */
+a:visited {
+	color: #dddddd;
+}</pre>
+	</section>
+	
+	<section>
+		<h1>CSS 3 Psuedo Classes</h1>
+		<ul>
+			<li>:enabled</li>
+			<li>:disabled</li>
+			<li>:target</li>
+			<li>:valid, :invalid</li>
+			<li>:required, :optional</li>
+			<li>:read-only, :read-write</li>
+			<li>:hover anywhere</li>
+			<li>:first-child, :last-child, :nth-child, :empty</li>
+			<li>:not</li>
+		</ul>	
+	</section>
+
+	<section>
+		<h1>Special Selectors</h1>
+		<ul>
+			<li>:before, :after</li>
+			<li>:selection</li>
+		</ul>
+		<pre>
+&lt;a class=&quot;specialLink&quot; href=&quot;http://odetocode.com/blogs/scott&quot;&gt;My blog&lt;/a&gt;
+&lt;style&gt;
+a.specialLink::after
+{
+ content : &quot; (&quot; attr(href) &quot;)&quot;;
+}
+&lt;/style&gt;</pre>
+		<div>
+			<a class="specialLink" href="http://odetocode.com/blogs/scott">My blog</a>
+			<style>
+				a.specialLink::after
+				{
+					content: " (" attr(href) ")";
+				}
+				::selection
+				{
+					color:yellow;					
+				}
+			</style>
+		</div>
+
+	</section>
+
+	<section>
+		<h1>What works?</h1>
+		<ul>			
+			<li><a href="images/"http://caniuse.com/#search=sel" target="_blank">Can I Use?</a></li>
+			<li><a href="http://tools.css3.info/selectors-test/test.html" target="_blank">CSS Selectors Test</a></li>
+		</ul>
+	</section>
+
+	<section>
+		<h1>How to specify values</h1>
+		<ul>
+			<li>Keywords
+				<ul>
+					<li>thin, thick, larger</li>
+				</ul>
+			</li>
+			<li>Physical measurements
+				<ul>
+					<li>in, mm, pt, pc</li>
+				</ul>
+			</li>
+			<li>Relative measurements
+				<ul>
+					<li>%, em</li>
+				</ul>
+			</li>
+			<li>Colors
+				<ul>
+					<li>#rrggbb, rbg(r,g,b)</li>
+				</ul>
+			</li>
+			<li>Fonts
+				<ul>
+					<li>Helvetica, sans-serif</li>
+				</ul>			
+			</li>			
+		</ul>
+	</section>
+
+	<section>
+		<h1>Colorful CSS3</h1>
+		<ul>
+			<li>RGBA adds an alpha component</li>
+			<li>No official support for #rrggbbaa</li>
+			<li>There is a specification for rgba(r,g,b,a)</li>
+		</ul>
+		<pre>
+&lt;div style=&quot;background-color:rgba(255, 0, 0, .2)&quot;&gt;&lt;/div&gt;		
+		</pre>
+		<div class="row span8 center">
+			<div style="height:100px;width=100px;background-color:rgba(255, 0, 0, .2)"></div>
+		</div>
+	</section>
+
+	<section>
+		<h1>HSL</h1>
+		<ul>
+			<li>Hue (from red to magenta)</li>
+			<li>Saturation (% from gray to full hue)</li>
+			<li>Lightness (% black to white)</li>
+			<li>More intuitive for designers</li>
+			<li>Use hsl, or hsla</li>
+		</ul>
+		<pre>
+&lt;div style=&quot;background-color:hsla(200, 50%, 50%, .2)&quot;&gt;&lt;/div&gt;
+		</pre>
+		<div class="row span8 center">
+			<div style="height:100px;background-color:hsla(200, 50%, 50%, .6)"></div>
+		</div>
+	</section>
+
+	<section>
+		<h1>Opacity</h1>
+		<ul>
+			<li>Official in CSS 3</li>
+			<li>Sets opacity for an element and it's children.</li>
+		</ul>
+		<pre>
+&lt;div style=&quot;opacity:0.2&quot;&gt;
+	&lt;div style=&quot;background-color:#ff0000&quot;&gt;&lt;/div&gt;
+	&lt;div style=&quot;background-color:#00ff00&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+		<div class="row span8 center" style="opacity:0.2">
+			<div style="height:100px;background-color:#ff0000"></div>
+			<div style="height:100px;background-color:#00ff00"></div>
+		</div>
+	</section>
+
+	<section>
+		<h1>The Cascade Hasn't Changed</h1>
+		<ul>
+			<li>User agent style sheet (least important)</li>
+			<li>User stylesheet (more important)</li>
+			<li>Author style sheet (most important)</li>
+			<li>Inline styles (always win)</li>
+			<li>Last rule wins</li>			
+		</ul>
+	</section>
+
+	<section>
+		<h1>CSS Resets</h1>
+		<ul>
+			<li>A popular feature in many CSS frameworks</li>
+			<li>The original <a href="http://meyerweb.com/eric/tools/css/reset/" target="_blank">Meyer</a> reset.</li>
+			<li>Also in Bootstrap, 960gs, and many more</li>
+		</ul>
+		<pre>
+html, body, div, span, applet, object, iframe ... {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}		
+		</pre>
+	</section>
+
+	<section>
+		<h1>Specificty Is The Same</h1>
+		<ul>
+			<li>More specific rules trump less specific rules</li>
+			<li>#output trumps div</li>			
+		</ul>
+		<img class="row span12 offset4 center" src="images/specificity.png"/>
+	</section>
+
+	<section>
+		<h1>Specificity Examples</h1>
+		<pre>
+*               /* a=0 b=0 c=0 -> specificity =   0 */
+LI              /* a=0 b=0 c=1 -> specificity =   1 */
+UL LI           /* a=0 b=0 c=2 -> specificity =   2 */
+UL OL+LI        /* a=0 b=0 c=3 -> specificity =   3 */
+H1 + *[REL=up]  /* a=0 b=1 c=1 -> specificity =  11 */
+UL OL LI.red    /* a=0 b=1 c=3 -> specificity =  13 */
+LI.red.level    /* a=0 b=2 c=1 -> specificity =  21 */
+#x34y           /* a=1 b=0 c=0 -> specificity = 100 */
+#s12:not(FOO)   /* a=1 b=0 c=1 -> specificity = 101 */		
+		</pre>
+	</section>
+
+	<section>
+		<h1>Inheritance</h1>
+		<ul>
+			<li>The DOM puts elements into a parent-child relationship</li>
+			<li>Children inherit some property values from parents
+				<ul>
+					<li>font-size: yes</li>
+					<li>border: no</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h1>CSS3: Media Queries</h1>
+		<ul>
+			<li>Extend the functionality of media types</li>
+			<li>Check for speciifc media features
+				<ul>
+					<li>width</li>
+					<li>height</li>
+					<li>color</li>
+					<li>resolution</li>
+				</ul>
+			</li>
+			<pre>
+&lt;link rel=&quot;stylesheet&quot; 
+         media=&quot;screen and (min-width: 1024px)&quot; 
+         href=&quot;wide.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; 
+         media=&quot;screen and (min-width: 641px) and (max-width:1023px)&quot; 
+         href=&quot;medium.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; 
+         media=&quot;screen and (max-width: 640px)&quot; 
+         href=&quot;narrow.css&quot;&gt;			
+</pre>
+			
+		</ul>
+	</section>
+
+	<section>
+		<h1>New in CSS3: Rounded Corners</h1>
+		<ul>
+			<li>Set border-radius width</li>
+		</ul>
+		<pre>
+&lt;div id=&quot;rounded&quot;&gt;&lt;/div&gt;
+&lt;style&gt;
+#rounded  {
+	height:100px;					
+	background-color:rgb(255, 0, 0);
+	border-radius:15px;
+	-moz-border-radius: 15px;
+}					
+&lt;/style&gt;
+		</pre>
+		<div class="row span16 center">
+			<div id="rounded"></div>
+			<style>
+				#rounded 
+				{
+					height:100px;					
+					background-color:rgb(255, 0, 0);
+					border-radius:15px;
+					-moz-border-radius: 15px;
+				}					
+			</style>
+		</div>
+	</section>
+
+	<section>
+		<h1>Vendor prefixes</h1>
+		<ul>
+			<li>Used to implement CSS extensions</li>
+			<li>Many browsers first implemented CSS 3 features with prefixes
+				<ul>
+					<li>-ms- Microsoft</li>
+					<li>mso-	Microsoft Office</li>
+					<li>-moz- Gecko</li>
+					<li>-o- Opera</li>
+					<li>-webkit- Chrome Safari</li>
+					<li>-khtml- Konqueror</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h1>New: text-shadow </h1>		
+		<pre>
+
+.shadowText {
+   text-shadow: 10px 10px white;							 
+   line-height: 1.2em;	
+}
+		</pre>
+		<div class="row span16 center shadowText">
+			“Difficult" and "impossible" are cousins often mistaken for one another, 
+			with very little in common."
+		</div>
+		<style>
+			.shadowText 
+			{
+				text-shadow: 10px 10px white;							 
+				line-height: 1.2em;	
+			}
+		</style>
+	</section>
+
+	<section>
+		<h1>New in CSS3: Box Shadows</h1>
+		<ul>
+			<li>Set border-radius width</li>
+		</ul>
+		<pre>
+
+.shadowBox 
+{
+	height:100px;					
+	background-color:rgb(255, 0, 0);
+	border-radius:15px;
+	box-shadow: 10px 10px 10px maroon;
+}			
+		</pre>
+		<div class="row span16 center">
+			<div class="shadowBox"></div>
+			<style>
+				.shadowBox 
+				{
+					height:100px;					
+					background-color:red;
+					border-radius:15px;
+					box-shadow: 10px 10px 10px maroon;
+				}					
+			</style>
+		</div>
+	</section>
+
+	<section>
+		<h1>New in CSS3: Multiple Background Images</h1>
+		<ul>
+			<li>Images will layer</li>
+			<li>Stacking order is important</li>
+		</ul>
+		<pre>
+background: url("images/background2.png") no-repeat top left,
+            url("images/background3.png") no-repeat bottom right,
+            url("images/background1.jpg");
+		</pre>
+		
+			<div class="row span16 center backImages"></div>
+			<style>
+				.backImages 
+				{
+					width:350px;
+					height:321px;
+					
+					background: url("images/background2.png") no-repeat top left,
+							    url("images/background3.png") no-repeat bottom right,
+								url("images/background1.jpg");
+				}					
+			</style>		
+	</section>
+
+	<section>
+		<h1>Summary</h1>
+		<ul>
+			<li>Selectors</li>
+			<li>Cascade</li>
+			<li>Inheritance</li>
+		</ul>
+	</section>
+
+</body>
+</html>

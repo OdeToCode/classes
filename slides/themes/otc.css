@@ -35,6 +35,8 @@ pre.prettyprint {
     background-color: #ffffcc;	    
     border-radius: 5px;
     box-shadow: 5px 5px 5px black;
+	font-weight: bold;
+	font-family: consolas, monospace;	
 }
 
 img {
@@ -44,7 +46,6 @@ img {
 progress, meter, details {
 	margin: 10px;
 }
-
 
 footer 
 {
@@ -80,4 +81,8 @@ input {
 .vcentercell {
 	display:table-cell;
 	vertical-align: middle;
+}
+
+table {
+	font-size: 20px;
 }
