@@ -1,0 +1,34 @@
+﻿body 
+{
+	background-color: #662222;
+	color: white;
+}
+
+#logo {
+	font-size: 42px;
+	text-align: center;	
+	text-shadow: -5px 5px 10px #999999;
+}
+
+a {
+	color: white;
+}
+
+#topNav {
+	background-color: rgba(0, 0, 0, 0.5);	
+	font-size: smaller;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px black;
+}
+
+#topNav li {
+	list-style: none;
+	display: inline;
+	padding: 10px;
+	margin: 0px;
+}
+
+#topNav li:hover {
+	background-color: rgba(255, 50, 50, 1);
+	font-size: larger;
+}
