@@ -1,10 +1,271 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <title></title>
+	<meta charset="utf-8"/>
+    <title>Modern JavaScript</title>
+	<link href="../../qunit/qunit.css" rel="stylesheet" type="text/css" />	
+	<script src="../../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+	<script src="../../scripts/underscore.js" type="text/javascript"></script>
+	<script src="../../qunit/qunit.js" type="text/javascript"></script>
 </head>
 <body>
 	
+	<h1 id="qunit-header">QUnit Test Suite</h1>
+	<h2 id="qunit-banner"></h2>
+	<div id="qunit-testrunner-toolbar"></div>
+	<h2 id="qunit-userAgent"></h2>
+	<ol id="qunit-tests"></ol>
+	<div id="qunit-fixture">test markup</div>
+
+
+	<script>
+
+		module("Types");
+
+		test("Built-in types", function () {
+			strictEqual(typeof ("Joy"), "string");
+			strictEqual(typeof (2),     "number");
+			strictEqual(typeof (true),  "boolean");
+			strictEqual(typeof(alert), "function");
+			strictEqual(typeof(window), "object");			
+		});
+
+		test("Objects have properties and methods", function () {
+			strictEqual(typeof(navigator.geolocation), "object");
+			strictEqual(typeof(navigator.geolocation.getCurrentPosition), "function");
+		});
+
+
+		test("New and Object literal are equivalent", function () {
+
+			var e1 = new Object();
+			e1.name = "Scott";
+			e1.department = "Engineering";
+
+			var e2 = {
+				name: "Scott",
+				department: "Engineering"
+			};
+
+			deepEqual(e1, e2);
+		});
+
+		test("Objects are hashtables", function () {
+			var e1 = {
+				name: "Scott",
+				department: "Engineering"
+			};
+
+			strictEqual(e1["name"], e1.name);
+		});
+
+		test("Functions are objects", function () {
+
+			function add(x, y) {
+				return x + y;
+			}
+
+			var f = add;
+			strictEqual(8, f(5, 3));
+		});
+
+		test("functions as methods", function () {
+			var employee = {
+				name: "Scott",
+				department: "Engineering",
+				changeDepartment: function (newDepartment) {
+					this.department = newDepartment;
+				}
+			};
+
+			employee.changeDepartment("sales");
+			strictEqual(employee.department, "sales");
+		});
+
+		test("Factory method", function () {
+			function createEmployee(name, department) {
+				return {
+					name: name,
+					department: department
+				};
+			}
+
+			var e = createEmployee("Scott", "Engineering");
+			
+			strictEqual(e.name, "Scott");
+		});
+
+		test("Constructor function", function () {
+
+			function Employee(name, department) {
+				this.name = name;
+				this.department = department;
+			}
+
+			var employee = new Employee("Scott", "Engineering");
+
+			strictEqual(employee.name, "Scott");
+
+		});
+
+		test("simulating a constructor", function () {
+			function Employee(name, department) {
+				this.name = name;
+				this.department = department;
+			}
+
+			var employee = {};
+
+			Employee.call(employee, "Scott", "Department");
+
+			strictEqual(employee.name, "Scott");
+		});
+
+		test("inheritance", function () {
+
+			var employee = {};
+			ok(employee.toString);
+
+			var array = [];
+			ok(array.push);
+			ok(array.reverse);
+				
+		});
+
+		test("inherits from prototype", function () {
+
+			var o = { };
+
+			strictEqual(o.toString,
+				Object.getPrototypeOf(o).toString);
+
+		});
+
+		test("psuedoclassical inheritance", function () {
+
+			var Employee = function (name, department) {
+				this.name = name;
+				this.department = department;
+			};
+
+			Employee.prototype = {
+				setDepartment: function (newDepartment) {
+					this.department = newDepartment;
+				},
+				giveRaise: function(newSalary) {
+					// ...
+				}
+			};
+
+			var e = new Employee("Scott", "Engineering");
+			e.setDepartment("Sales");
+
+			strictEqual(Object.getPrototypeOf(e), Employee.prototype);
+			strictEqual(e.department, "Sales");
+		});
+								
+		test("Window is global", function () {
+			globalVar = "I am global";
+			strictEqual(globalVar, window.globalVar);
+		});
+
+		test("Always use var", function () {
+
+			function doWork() {
+				x = 3;
+				// ...
+			}
+
+			doWork();
+			strictEqual(x, 3);
+
+		});
+
+		test("Namespaces", function () {
+			var Acme = {};
+			Acme.Employee = function (name, department) {
+				// ...
+			};
+
+			var employee = new Acme.Employee("Scott", "Engineering");
+
+			ok(employee);
+		});
+
+		test("Encapsulation", function () {
+
+			var Employee = function (name, department) {
+				this.getName = function () {
+					return name;
+				};
+
+				this.getDepartment = function () {
+					return department;
+				};
+			};
+
+			var e = new Employee("Scott", "Engineering");
+			strictEqual(e.getName(), "Scott");
+		});
+
+		test("Module", function () {
+
+			var Employee = function (name, department) {
+
+				var getName = function () {
+					return name;
+				};
+				var setName = function (newName) {
+					name = newName;
+				};
+
+				return {
+					getName: getName,
+					setName: setName
+				};
+			};
+
+			var e = Employee("Scott", "Engineering");
+			e.setName("Poonam");
+
+			strictEqual(e.getName(), "Poonam");    
+        });
+
+        test("Singleton", function () {
+            var Manager = function () {
+
+                var privateState = "secret";
+                function setSecret(newSecret) {
+                    privateState = newSecret;
+                }
+
+                return {
+                    "setSecret": setSecret
+                };
+
+            } ();
+
+            ok(Manager.setSecret);
+
+        });
+
+        test("Augmentation", function () {
+            var employee = { /* ... */
+            };
+
+            (function (o) {
+
+                var secret = "secret";
+                o.pluginMethod = function () {
+                    // ... secret available
+                };
+
+            })(employee);
+        });
+        
+	</script>
+
+
 </body>
 </html>

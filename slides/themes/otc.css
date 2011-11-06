@@ -83,6 +83,10 @@ input {
 	vertical-align: middle;
 }
 
+.nextText {
+	font-size: 10px;
+}
+
 table {
 	font-size: 20px;
 }

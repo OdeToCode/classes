@@ -59,6 +59,20 @@ var p5 = {
 		next.addClass("current");
 		window.history.pushState({ id: next.attr("id").toString() }, null,
 		                         "#" + next.attr("id").toString());
+		p5.setNextText();
+	},
+
+	setNextText: function () {
+		var current = $("section.current");
+		var next = current.next("section");
+		var header = (next && $("h1", next).text()) || "";
+		var nextDiv = $(".nextText");
+		if (!nextDiv.length) {
+			nextDiv = $("<div></div>").addClass("nextText");
+			nextDiv.css({ position: "absolute", bottom: 0, left: 0 });
+			$("body").append(nextDiv);
+		}
+		nextDiv.text("Next: " + header);				
 	},
 
 	keys: {
@@ -77,7 +91,7 @@ var p5 = {
 	isSpecialKeyDown: function (event) {
 		return event.altKey || event.ctrlKey;
 	},
-	
+
 	onkeydown: function (event) {
 		if (p5.isSpecialKeyDown(event)) {
 			return;
@@ -89,14 +103,14 @@ var p5 = {
 			case p5.keys.pageDown:
 			case p5.keys.space:
 				event.preventDefault();
-                p5.moveForward();
+				p5.moveForward();
 				break;
 			case p5.keys.leftArrow:
 			case p5.keys.upArrow:
 			case p5.keys.pageUp:
-                event.preventDefault();
+				event.preventDefault();
 				p5.moveBackward();
-				break;	
+				break;
 		}
 	}
 };

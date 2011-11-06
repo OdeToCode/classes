@@ -30,12 +30,403 @@
 	</section>		
 
 	<section>
-		<h1>Why use an (html|css) framework?</h1>
+		<h1>JavaScript</h1>
 		<ul>
-			<li>Good starting points</li>
-			<li>Faster development</li>		
+			<li>It's dynamic</li>
+			<li>It's functional</li>
+			<li>It has some great features</li>
+			<li>But it has a dark side ...</li>		
 		</ul>
 	</section>
+
+	<section>
+		<h1>QUnit</h1>
+		<ul>
+			<li>Simple unit testing for JavaScript</li>
+			<li>Include qunit.js</li>
+			<li>Include qunit.css</li>
+			<li>Include the boilerplate markup</li>
+		</ul>
+		<pre>
+&lt;h1 id=&quot;qunit-header&quot;&gt;QUnit Test Suite&lt;/h1&gt;
+&lt;h2 id=&quot;qunit-banner&quot;&gt;&lt;/h2&gt;
+&lt;div id=&quot;qunit-testrunner-toolbar&quot;&gt;&lt;/div&gt;
+&lt;h2 id=&quot;qunit-userAgent&quot;&gt;&lt;/h2&gt;
+&lt;ol id=&quot;qunit-tests&quot;&gt;&lt;/ol&gt;
+&lt;div id=&quot;qunit-fixture&quot;&gt;test markup&lt;/div&gt;		
+		</pre>
+	</section>
+
+	<section>
+		<h1>QUnit Tests</h1>
+		<ul>
+			<li>Wrap test code in a function</li>
+			<li>Use ok, strictEqual, deepEqual, equal ...</li>
+		</ul>
+		<pre>
+
+test("Test the value of true", function () {
+	ok(true);
+});		
+		</pre>
+	</section>
+
+	<section>
+		<h1>JavaScript is weakly typed</h1>
+		<ul>
+			<li>But - there are built-in types</li>
+			<li>Variables can point to anything - anytime</li>
+		</ul>
+		<pre>
+strictEqual(typeof ("Joy"), "string");
+strictEqual(typeof (2),     "number");
+strictEqual(typeof (true),  "boolean");
+strictEqual(typeof(window), "object");		
+		</pre>
+	</section>
+
+	<section>
+		<h1>JavaScript is Object Oriented</h1>
+		<ul>
+			<li>Objects have state and behavior</li>
+			<li>But - there are no "class" definitions</li>
+		</ul>
+		<pre>
+strictEqual(typeof(navigator.geolocation), "object");
+strictEqual(typeof(navigator.geolocation.getCurrentPosition), "function")			
+		</pre>
+	</section>
+
+	<section>
+		<h1>Creating objects</h1>
+		<ul>
+			<li>You can use the new operator, but ...</li>		
+			<li>Everyone else will use an object literal</li>
+		</ul>
+		<pre>
+
+var e1 = new Object();
+e1.name = "Scott";
+e1.department = "Engineering";
+
+var e2 = {
+    name: "Scott",
+    department: "Engineering"
+};		
+		</pre>
+	</section>
+
+	<section>
+		<h1>Objects are just hashtables</h1>
+		<ul>
+			<li>Use . or []</li>
+		</ul>
+		<pre>
+
+var e1 = {
+    name: "Scott",
+    department: "Engineering"
+};
+
+strictEqual(e1["name"], e1.name);		
+		</pre>
+	</section>
+
+	<section>
+		<h1>Functions are objects, too</h1>
+		<ul>
+			<li>Pass them as parameters</li>
+			<li>Assign them to variables</li>
+		</ul>
+		<pre>
+
+function add(x, y) {
+    return x + y;
+}
+
+var f = add;
+strictEqual(8, f(5, 3));		
+		</pre>
+	</section>
+
+	<section>
+		<h1>Functions as methods</h1>
+		<ul>
+			<li>Functions invoked via an object</li>
+			<li><em>this</em> keyword is <b>not</b> optional</li>
+		</ul>
+		<pre>
+var employee = {
+
+  name: "Scott",
+  department: "Engineering",
+  changeDepartment: function (newDepartment) {
+    this.department = newDepartment;
+  }
+};		
+		</pre>
+	</section>
+
+	<section>
+		<h1>Consistency?</h1>
+		<ul>
+			<li>How to make consistent objects?</li>
+			<li>A factory method?</li>			
+		</ul>
+		<pre>
+
+function createEmployee(name, department) {
+    return {
+	    name: name,
+		department: department
+	};
+}
+
+var e = createEmployee("Scott", "Engineering");
+			
+strictEqual(e.name, "Scott");		
+		</pre>
+	</section>
+
+	<section>
+		<h1>Constructor Functions</h1>
+		<ul>
+			<li>Used with the new operator</li>
+			<li>Capital first letter by convention</li>
+		</ul>
+		<pre>
+
+function Employee(name, department) {
+	this.name = name;
+	this.department = department;
+}
+
+var employee = new Employee("Scott", "Engineering");		
+		</pre>
+	</section>
+
+	<section>
+		<h1>What <em>new</em> Will Do</h1>
+		<ul>
+			<li>Create a new, empty object</li>
+			<li>Invoke constructor passing object as "this"</li>
+			<li>And one more important thing...</li>
+		</ul>
+		<pre>
+	
+function Employee(name, department) {
+	this.name = name;
+	this.department = department;
+}
+
+var employee = {};
+
+Employee.call(employee, "Scott", "Department");			
+		</pre>
+	</section>
+
+	<section>
+		<h1>Inheritance</h1>
+		<ul>
+			<li>What else does new do?</li>
+			<li>Initializes a secret link between objects</li>
+			<li>The secret link gives us inheritance</li>			
+		</ul>
+		<pre>
+
+var employee = {};
+ok(employee.toString);		
+		</pre>
+	</section>
+
+	<section>
+		<h1>Prototypes & Inheritance</h1>
+		<ul>
+			<li>Every object has a prototype</li>
+			<li>Runtime looks into prototype to resolve members</li>
+			<li>This is prototypal inheritance</li>
+		</ul>
+		<pre>
+ 		
+var o = { };
+
+strictEqual(o.toString,
+	Object.getPrototypeOf(o).toString);		
+		</pre>
+	</section>
+
+	<section>
+		<h1>Psedoclassical Inheritance</h1>
+		<ul>
+			<li>Relies on constructor functions</li>
+			<li>and prototype assignment</li>
+		</ul>
+		<pre>
+
+var Employee = function (name, department) {
+	this.name = name; 
+	this.department = department;
+};
+
+var e = new Employee("Scott", "Engineering");
+strictEqual(Object.getPrototypeOf(e), Employee.prototype);
+		</pre>
+	</section>
+
+	<section>
+		<h1>Prototype property</h1>
+		<ul>
+			<li>Is not the "prototype" for an object</li>
+			<li>It's the prototype assigned by new</li>
+		</ul>
+		<pre>
+		
+Employee.prototype = {
+	setDepartment: function (newDepartment) {
+		this.department = newDepartment;
+	},
+	giveRaise: function(newSalary) {
+		// ...
+	}
+};
+		</pre>
+	</section>
+
+	<section>
+		<h1>Scope</h1>
+		<ul>
+			<li>There is function scope</li>
+			<li>There is global scope</li>
+			<li>There is no block { } scope</li>
+			<li><strong>Always</strong> use a var keyword</li>
+		</ul>
+		<pre>
+
+function doWork() {
+	x = 3;
+	// ...
+}
+
+doWork();
+var result = x === 3;		
+		</pre>
+	</section>
+
+	<section>
+		<h1>Namespaces</h1>
+		<ul>
+			<li>There are none</li>
+			<li>But we can fake them ...</li>
+		</ul>
+		<pre>
+		
+var Acme = {};
+Acme.Employee = function (name, department) {
+    // ...
+};
+
+var employee = new Acme.Employee("Scott", "Engineering");
+		</pre>
+	</section>
+
+	<section>
+		<h1>Encapsulation</h1>
+		<ul>
+			<li>Can be done with closures</li>
+		</ul>
+		<pre>
+		
+var Employee = function (name, department) {
+    this.getName = function () {
+        return name;
+    };
+	
+    this.getDepartment = function () {
+        return department;
+    };
+};
+		</pre>
+	</section>
+
+	<section>
+		<h1>Module Pattern</h1>
+		<ul>
+			<li>Closures on a large scale</li>
+			<li>Cleaner code</li>			
+		</ul>
+		<pre>
+		
+var Employee = function (name, department) {
+	var getName = function () {
+		return name;
+	};
+	var setName = function (newName) {
+		name = newName;
+	};
+
+	return {
+		getName: getName,
+		setName: setName
+	};
+};
+		</pre>
+	
+	</section>
+
+    <section>
+        <h1>Singletons</h1>
+        <ul>
+            <li>Can also use the module pattern</li>
+            <li>And a self executing function</li>
+        </ul>
+        <pre>
+        
+var Manager = function () {
+        
+    var privateState = "secret";
+    function setSecret(newSecret) {
+        privateState = newSecret;
+    }
+        
+    return {
+        "setSecret": setSecret
+    };
+        
+} ();
+        </pre>
+    </section>
+
+    <section>
+        <h1>Augmenting Objects</h1>
+        <ul>
+            <li>Self executing functions with a parameter</li>
+        </ul>
+        <pre>
+        
+var employee = { /* ... */ };
+
+(function (o) {
+
+    var secret = "secret";
+    o.pluginMethod = function () {
+        // ... secret available
+    };
+
+})(employee);
+        </pre>
+    </section>
+
+    <section>
+        <h1>Summary</h1>
+        <ul>
+            <li>Functions are powerful abstractions</li>
+            <li>Be careful with scope</li>
+        </ul>
+    </section>
+
+	<footer>
+		(c) 2011 OdeToCode LLC
+	</footer>
 
 </body>
 </html>
