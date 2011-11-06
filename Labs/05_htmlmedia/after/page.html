@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>HTML 5 Video Lab</title>
+</head>
+<body>
+
+<h1>HTML5 Video Events and API</h1>
+
+  <div>
+    <video id='video' controls preload='none'>
+        <source src="../media/sample.mov"></source>
+        <p>Your user agent does not support the HTML5 Video element.</p>
+    </video>
+    <div id='buttons'>      
+      <button id="play">play</button>
+      <button id="pause">pause</button>
+      <button id="incCurrentTime">currentTime + 10s</button>
+      <button id="decCurrentTime">currentTime - 10s</button>
+      <button id="incRate">playbackRate +</button>
+      <button id="decRate">playbackRate -</button>
+      <button id="incVolume">volume +</button>
+      <button id="decVolume">volume -</button>
+    </div>
+    <hr/>
+    <table summary='Media Events'>
+      <caption>Media Events</caption>
+      <tbody id='events'>
+        <tr>
+            <td>Errors: <span id="errorCount">0</span></td>            
+            <td>Can Play: <span id="canPlayCount">0</span></td>
+            <td>CanPlayThrough: <span id="canPlayThroughCount">0</span></td>
+        </tr>
+        <tr>
+            <td>Ended: <span id="endedCount">0</span></td>
+            <td>Playing: <span id="playingCount">0</span></td>
+            <td>Seeking: <span id="seekingCount">0</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <hr/>
+    <table summary='Media Properties'>
+      <caption>Media Properties</caption>
+      <tbody id='properties'>
+        <tr>
+            <td>Error <span id="errorValue"></span></td>
+            <td>NetworkState <span id="networkStateValue"></span></td>
+            <td>ReadyState <span id="readyStateValue"></span></td>
+        </tr>
+        <tr>
+            <td>Paused <span id="pausedValue"></span></td>
+            <td>Muted <span id="mutedValue"></span></td>
+            <td>Current Time <span id="currentTimeValue"></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<script>
+
+    var player = function () {
+        var video = document.getElementById("video");
+        var events = ["error", "canPlay", "canPlayThrough", "ended", "playing", "seeking"];
+        var properties = ["error", "networkState", "readyState", "paused", "muted", "currentTime"];
+        var commands = ["play", "pause", "incCurrentTime", "decCurrentTime", "incRate", "decRate", "incVolume", "decVolume"];
+
+        for (var i in events) {
+            video.addEventListener(events[i], eventHandler, true);
+        }
+
+        setInterval(function () {
+            // thunk it
+            updateProperties();
+        }, 1000);
+
+        for (var i in commands) {
+            // don't close around i!
+            addCommand(commands[i]);
+        }
+
+        function addCommand(command) {
+            var element = document.getElementById(command);
+            element.addEventListener("click", function () {
+                // index in!
+                player[command]();
+            }, true);
+        }
+
+        function eventHandler(e) {
+            var type = e.type;
+            var element = document.getElementById(type + "Count");
+            // note: innerText isn't cross browser compatible
+            var value = parseInt(element.innerText) + 1;
+            element.innerText = value;
+        }
+
+        function updateProperties() {
+            for (var i in properties) {
+                var value = video[properties[i]];
+                var element = document.getElementById(properties[i] + "Value");
+                element.innerText = value;
+            }
+        }
+
+        return {
+            play: function () { video.play(); },
+            pause: function () { video.pause(); },
+            incCurrentTime: function () { video.currentTime += 10; },
+            decCurrentTime: function () { video.currentTime -= 10; },
+            incRate: function () { video.playbackRate += 0.5; },
+            decRate: function () { video.playbackRate -= 0.5; },
+            incVolume: function () { video.volume += 1; },
+            decColume: function () { video.volume -= 1; }
+        };
+
+    } ();
+
+</script>
+
+</body>
+</html>

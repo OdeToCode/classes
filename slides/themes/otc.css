@@ -39,7 +39,7 @@ pre.prettyprint {
 	font-family: consolas, monospace;	
 }
 
-img {
+img, video {
 	box-shadow: 5px 5px 5px black;
 }
 

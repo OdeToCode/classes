@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>HTML5 Media</title>
+	<link href="themes/bootstrap.css" rel="stylesheet" />
+	<link href="../prettify/prettify.css" rel="stylesheet" />
+	<link href="themes/otc.css" rel="stylesheet" />	
+	<script src="../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+	<script src="../prettify/prettify.js" type="text/javascript"></script>
+	<script src="point5.js" type="text/javascript"></script>
+</head>
+<body>
+	<section>		
+		<h1>HTML5 Media</h1>
+		<svg viewBox="0 0 512 512">
+			<title>HTML5 Logo</title>  
+			<polygon fill="#E44D26" points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512 			"/>
+			<polygon fill="#F16529" points="256,480.523 376.03,447.246 404.27,130.894 256,130.894 			"/>
+			<polygon fill="#EBEBEB" points="256,268.217 195.91,268.217 191.76,221.716 256,221.716 256,176.305 255.843,176.305 142.132,176.305 143.219,188.488 154.38,313.627 256,313.627"/>
+			<polygon fill="#EBEBEB" points="256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 256,433.399"/>
+			<path d="M108.382,0h23.077v22.8h21.11V0h23.078v69.044H152.57v-23.12h-21.11v23.12h-23.077V0z"/>
+			<path d="M205.994,22.896h-20.316V0h63.72v22.896h-20.325v46.148h-23.078V22.896z"/>
+			<path d="M259.511,0h24.063l14.802,24.26L313.163,0h24.072v69.044h-22.982V34.822l-15.877,24.549h-0.397l-15.888-24.549v34.222h-22.58V0z"/>
+			<path d="M348.72,0h23.084v46.222h32.453v22.822H348.72V0z"/>
+			<polygon fill="#FFFFFF" points="255.843,268.217 255.843,313.627 311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 349.162,268.217"/>
+			<polygon fill="#FFFFFF" points="255.843,176.305 255.843,204.509 255.843,221.605 255.843,221.716 365.385,221.716 365.385,221.716 365.531,221.716 366.442,211.509 368.511,188.488 369.597,176.305"/>
+		</svg>		
+	</section>
+	
+    <section>
+		<h1>HTML5 Open Media</h1>
+        <ul>
+            <li>Rich media typically done with &lt;embed&gt; and &lt;object&gt; tags</li>
+            <li>Now we have &lt;video&gt; and &lt;audio&gt;</li>
+        </ul>
+        <pre>
+&lt;video src=&quot;media/sample.mov&quot; width=&quot;640&quot; height=&quot;360&quot; controls&gt;
+    &lt;strong&gt;HTML5 video element not supported&lt;/strong&gt;
+&lt;/video&gt;        
+        </pre>
+        <div class="row span16 center">
+            <video src="media/sample.mov" width="640"  controls>
+                <strong>HTML5 video element not supported</strong>
+            </video>               
+        </div>
+	</section>
+
+    <section>
+        <h1>It's Never That Easy</h1>
+        <ul>
+            <li>Different browsers support different formats</li>
+            <li><a href="http://caniuse.com/webm" target="_blank">WebM VP8</a></li>
+            <li><a href="http://caniuse.com/mpeg4" target="_blank">MPEG-4/H.264</a></li>
+            <li><a href="http://caniuse.com/ogv" target="_blank">Ogg/Theora</a></li> 
+            <li>Everything on the web is lossy</li>
+        </ul>
+        <pre>
+
+&lt;video width=&quot;640&quot; height=&quot;360&quot; controls&gt;
+    &lt;source src=&#39;movie.webm&#39; type=&#39;video/webm; codecs=&quot;vp8.0, vorbis&quot;&#39;/&gt;
+    &lt;source src=&#39;movie.ogv&#39; type=&#39;video/ogg; codecs=&quot;theora, vorbis&quot;&#39;/&gt;
+    &lt;source src=&#39;movie.mp4&#39; type=&#39;video/mp4; codecs=&quot;avc1.4D401E, mp4a.40.2&quot;&#39;/&gt;
+&lt;/video&gt; 
+        </pre>
+    </section>
+
+    <section>
+        <h1>WebM</h1>
+        <ul>
+            <li>Royalty free video format</li>
+            <li>.webm</li>
+            <li>Sponsered by Google</li>
+            <li>Supported by YouTube, Skype, NVIDIA</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>MPEG4</h1>
+        <ul>
+            <li>"Advanced Video Coding"</li>
+            <li>.mp4 or .m4v</li>
+            <li>Developed by Motion Picture Experts Group et. al.</li>
+            <li>Blu-ray, Adobe, Silverlight</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Theora video, Vorbis audio</h1>
+        <ul>
+            <li>Open, free codec</li>
+            <li>.ogv</li>
+            <li>Developed by Xiph.Org</li>
+            <li>Ogg is a container for multiple audio and video streams</li>                        
+        </ul>
+        <div class="row span16 center">
+            <img src="http://www.xiph.org/images/logos/fish_xiph_org.png" style="background-color:white" alt="xiph"/>
+        </div>
+    </section>
+
+    <section>
+        <h1>Encoders</h1>
+        <ul>
+            <li><a href="http://www.mirovideoconverter.com/" target="_blank">MiroVideoConverter</a> (free)</li>
+        </ul>
+        <div class="row span16 center">
+            <img src="http://www.mirovideoconverter.com/i/windows.gif" alt="encoder" style="background-color:white"/>
+        </div>
+    </section>
+
+    <section>
+        <h1>Fallback strategies</h1>
+        <ul>
+            <li>Fallback to Flash or Silverlight</li>
+            <li>Provide a download link</li>
+        </ul>
+        <pre>
+        
+&lt;video width=&quot;640&quot; height=&quot;360&quot; controls&gt;
+    &lt;source src=&#39;movie.webm&#39; type=&#39;video/webm; codecs=&quot;vp8.0, vorbis&quot;&#39;/&gt;
+    &lt;source src=&#39;movie.ogv&#39; type=&#39;video/ogg; codecs=&quot;theora, vorbis&quot;&#39;/&gt;
+    &lt;source src=&#39;movie.mp4&#39; type=&#39;video/mp4; codecs=&quot;avc1.4D401E, mp4a.40.2&quot;&#39;/&gt;    
+    &lt;a href=&quot;sample.wmv&quot;&gt;Download the video&lt;/a&gt;
+&lt;/video&gt; 
+        
+        </pre>
+    </section>
+
+    <section>
+        <h1>MIME Types</h1>
+        <ul>
+            <li>Ensure the server sends the proper headers</li>            
+        </ul>
+        <div class="row span16 center">
+            <img src="images/mimetypes.png" alt="mime types"/>
+        </div>
+    </section>
+
+    <section>
+        <h1>Pros and Cons</h1>
+        <ul>
+            <li>Pros
+                <ul>
+                    <li>Accessible</li>
+                    <li>Works on mobile</li>
+                </ul>
+            </li>
+            <li>Cons
+                <ul>
+                    <li>No DRM</li>
+                    <li>No streaming</li>
+                    <li>Need lots of encoding</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Video Controls</h1>
+        <ul>
+            <li>Enable with controls attribute</li>
+            <li>Actual controls depend on browser</li>
+            <ul>
+                <li>Pause / Play/ Stop</li>
+                <li>Volume</li>
+                <li>Full Screen</li>
+                <li>Slider with progress bar</li>
+            </ul>
+        </ul>
+        <div class="row span16 center">
+            <video src="media/sample2.mov" width="600"  controls>                
+            </video>               
+        </div>
+    </section>
+
+    <section>
+        <h1>Video attributes</h1>
+        <ul>
+            <li>autoplay</li>
+            <li>loop</li>
+            <li>preload (auto metadata none)</li>
+            <li>muted</li>
+            <li>poster (a loading image src)</li>
+        </ul>
+        <pre>
+&lt;video src=&quot;media/sample.mov&quot; width=&quot;640&quot; height=&quot;360&quot; controls preload=&quot;none&quot;&gt;       
+        </pre>
+    </section>
+
+    <section>
+        <h1>Styles</h1>
+        <ul>
+            <li>Use CSS to set width and height</li>
+            <li>Can also apply hover and transform effects</li>
+        </ul>
+        <pre>
+.transparentMovie  {
+    opacity: 0.5;
+}
+.transparentMovie:hover  {
+    opacity: 1.0;
+}</pre>
+        <div class="row span16 center">
+            <video class="transparentMovie" src="media/sample.mov" controls />       
+            <style>
+                .transparentMovie
+                {
+                    width:400px;
+                    opacity: 0.5;
+                }
+                .transparentMovie:hover
+                {
+                    opacity: 1.0;
+                }                
+            </style>
+        </div>
+
+    </section>
+
+    <section>
+        <h1>Programmability</h1>
+        <ul>
+            <li>play() and pause()</li>            
+        </ul>        
+        <div class="row span16 center">            
+            <div style="line-height:2em">
+                <a id="play" href="#">Play</a>
+                <span id="position"></span>
+                <span id="duration"></span>
+            </div>
+            <video id="vidnocontrol" src="media/sample2.mov" width="600">                
+            </video>               
+        </div>
+        
+        <script>
+            $(function () {
+                $("#play").click(function () {
+                    var video = $("#vidnocontrol").get(0);
+                    if (video.paused) {
+                        video.play();
+                        $(this).text("Pause");
+                    } else {
+                        video.pause();
+                        $(this).text("Play");     
+                        
+                    }
+                    return false;
+                });
+            });
+        </script>
+    </section>
+
+    <section>
+        <h1>Events</h1>
+        <ul>
+            <li>error</li>            
+            <li>play</li>
+            <li>pause</li>
+            <li>ended</li>
+        </ul>        
+    </section>
+
+    <section>
+        <h1>Audio</h1>
+        <ul>
+            <li>Very similar to video</li>
+            <li><a href="http://caniuse.com/audio" target="_blank">Widely supported</a></li>
+            <li>Many of the same APIs and events</li>
+        </ul>
+        <div class="row span16 center">
+            <audio src="media/sample.mp3" controls>                
+            </audio>
+        </div>
+        <pre>
+
+&lt;audio src=&quot;media/sample.mp3&quot; controls&gt;                
+&lt;/audio&gt;        
+        </pre>
+    </section>
+
+    <section>
+        <h1>Formats</h1>
+        <ul>
+            <li>Same story as video</li>
+            <li><a href="http://textopia.org/androidsoundformats.html">Sound format test page</a></li>
+        </ul>
+        <pre>
+&lt;audio controls&gt;                
+  &lt;source src=&quot;sample.mp3&quot;&gt;&lt;/source&gt;
+  &lt;source src=&quot;sample.ogg&quot;&gt;&lt;/source&gt;
+  &lt;source src=&quot;sample.aac&quot;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+        </pre>
+    </section>
+
+    <section>
+        <h1>MPEG-1 Audio Layer 3</h1>
+        <ul>
+            <li>Commonly known as MP3</li>
+            <li>Widely accepted</li>
+            <li>Patent encumbered</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Advanced Audio Coding (AAC)</h1>
+        <ul>
+            <li>The chosen format by Apple</li>
+            <li>Patent encumbered</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Vorbis (Ogg Vorbis)</h1>
+        <ul>
+            <li>Open and free</li>
+            <li>Patent encumbered</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Summary</h1>
+        <ul>
+            <li>Media works everywhere (when you have the right format)</li>
+            <li>Fully programmable and CSS ready</li>
+        </ul>
+    </section>
+
+    <footer>
+		(c) 2011 OdeToCode LLC
+	</footer>
+
+</body>
+</html>

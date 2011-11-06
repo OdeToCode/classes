@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Media</title>
+    <script src="../../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+</head>
+<body>
+    <video id="eventsource" src="../../slides/media/sample.mov" controls style="display:none"></video>           
+    <hr/>
+    <div id="currentTime">
+    </div>
+    <script>
+        $(function () {
+            $("#eventsource").bind("timeupdate", function () {
+                $("#currentTime").text(this.currentTime);
+            }).bind("canplaythrough", function () {
+                $(this).show();
+            }).click(function () {
+                this.webkitEnterFullscreen();
+            });
+        });
+    </script>                
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>HTML 5 Video Lab</title>
+</head>
+<body>
+
+<h1>HTML5 Video Events and API</h1>
+
+  <div>
+    <video id='video' controls preload='none'>
+       <p>Your user agent does not support the HTML5 Video element.</p>
+    </video>
+    <div id='buttons'>
+      <button id="load">load</button>
+      <button id="play">play</button>
+      <button id="pause">pause</button>
+      <button id="incCurrentTime">currentTime + 10s</button>
+      <button id="decCurrentTime">currentTime - 10s</button>
+      <button id="incRate">playbackRate +</button>
+      <button id="decRate">playbackRate -</button>
+      <button id="incVolume">volume +</button>
+      <button id="decVolume">volume -</button>
+    </div>
+    <hr/>
+    <table summary='Media Events'>
+      <caption>Media Events</caption>
+      <tbody id='events'>
+        <tr>
+            <td>Errors: <span id="errorCount">0</span></td>            
+            <td>Can Play: <span id="canPlayCount">0</span></td>
+            <td>CanPlayThrough: <span id="canPlayThroughCount">0</span></td>
+        </tr>
+        <tr>
+            <td>Ended: <span id="endedCount">0</span></td>
+            <td>Playing: <span id="playingCount">0</span></td>
+            <td>Seeking: <span id="seekingCount">0</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <hr/>
+    <table summary='Media Properties'>
+      <caption>Media Properties</caption>
+      <tbody id='properties'>
+        <tr>
+            <td>Error <span id="errorValue"></span></td>
+            <td>NetworkState <span id="networkStateValue"></span></td>
+            <td>ReadyState <span id="readtStateValue"></span></td>
+        </tr>
+        <tr>
+            <td>Paused <span id="pausedValue"></span></td>
+            <td>Muted <span id="mutedValue"></span></td>
+            <td>Current Time <span id="currentTimeValue"></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

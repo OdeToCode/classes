@@ -31,6 +31,7 @@ DebugLog.*
 log.txt
 *.docstates
 *.mp4
+*.mp3
 *.mov
 .idea
 .DS_Store
