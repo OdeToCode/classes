@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>jQuery Fundamentals</title>
+	<link href="themes/bootstrap.css" rel="stylesheet" />
+	<link href="../prettify/prettify.css" rel="stylesheet" />
+	<link href="themes/otc.css" rel="stylesheet" />	
+	
+    <script src="../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+	<script src="../prettify/prettify.js" type="text/javascript"></script>
+	<script src="point5.js" type="text/javascript"></script>
+</head>
+<body>
+	<section>		
+		<h1>jQuery Fundamentals</h1>
+		<svg viewBox="0 0 512 512">
+			<title>HTML5 Logo</title>  
+			<polygon fill="#E44D26" points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512 			"/>
+			<polygon fill="#F16529" points="256,480.523 376.03,447.246 404.27,130.894 256,130.894 			"/>
+			<polygon fill="#EBEBEB" points="256,268.217 195.91,268.217 191.76,221.716 256,221.716 256,176.305 255.843,176.305 142.132,176.305 143.219,188.488 154.38,313.627 256,313.627"/>
+			<polygon fill="#EBEBEB" points="256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 256,433.399"/>
+			<path d="M108.382,0h23.077v22.8h21.11V0h23.078v69.044H152.57v-23.12h-21.11v23.12h-23.077V0z"/>
+			<path d="M205.994,22.896h-20.316V0h63.72v22.896h-20.325v46.148h-23.078V22.896z"/>
+			<path d="M259.511,0h24.063l14.802,24.26L313.163,0h24.072v69.044h-22.982V34.822l-15.877,24.549h-0.397l-15.888-24.549v34.222h-22.58V0z"/>
+			<path d="M348.72,0h23.084v46.222h32.453v22.822H348.72V0z"/>
+			<polygon fill="#FFFFFF" points="255.843,268.217 255.843,313.627 311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 349.162,268.217"/>
+			<polygon fill="#FFFFFF" points="255.843,176.305 255.843,204.509 255.843,221.605 255.843,221.716 365.385,221.716 365.385,221.716 365.531,221.716 366.442,211.509 368.511,188.488 369.597,176.305"/>
+		</svg>		
+	</section>
+	
+    <section>
+		<h1>jQuery - Write Less Do More</h1>
+		<ul>
+			<li>Open source project started by <a href="http://ejohn.org/" target="_blank">John Resig</a></li>
+			<li>Goals
+                <ul>
+                    <li>Leverage CSS Selectors</li>
+                    <li>No syntactic fluff</li>
+                    <li>Lightweight / Compatible / Extensibe</li>
+                </ul>
+            </li>
+		</ul>
+        <pre>
+
+$('#header > b').click(function() {
+    alert($(this).text());
+});
+$('.content').mouseover(function() {
+    $(this).text('Content replaced');
+});        
+        </pre>
+	</section>
+	
+    <section>
+        <h1>The jQuery Function</h1>
+        <ul>
+            <li>jQuery is aliased to $</li>
+            <li>Arguments are analyzed</li>
+        </ul>
+        <pre>
+    
+jQuery(&quot;&lt;div&gt;Hello, World&lt;/div&gt;&quot;).appendTo(document.body);    
+$(&quot;div&quot;).wrapInner(&quot;&lt;h1&gt;&lt;/h1&gt;&quot;);
+        
+        </pre>
+    </section>
+    
+    <section>
+        <h1>DOM Ready</h1>
+        <ul>
+            <li>Start scripting when DOM is ready</li>            
+        </ul>
+        <pre>
+        
+jQuery(document).ready(function() {
+  jQuery(&quot;&lt;div&gt;Hello, World&lt;/div&gt;&quot;).appendTo(document.body);      
+});
+
+$(function() {
+  $(&quot;&lt;div&gt;Hello, World&lt;/div&gt;&quot;).appendTo(document.body);  
+});        
+        </pre>
+    </section>
+
+    <section>
+        <h1>jQuery & Selectors</h1>
+        <ul>
+            <li>Easiest way to find DOM elements</li>
+        </ul>
+        <pre>
+        
+var byName = $("div");
+var byClass = $(".prettyPrint");        
+var byId = $("#theMovie");
+var byAttribute = $("form[method='post']");
+var psuedoToo = $("ul#menu li:first");
+var specific = $("div:has(ul)");
+        </pre>
+    </section>
+
+    <section>
+        <h1>Filtering</h1>
+        <pre>
+ 
+var externalLinks = $('a').filter('.external');
+        </pre>
+    </section>
+
+    <section>
+        <h1>After Selection - Do Something</h1>
+        <ul>
+            <li>Wire up events</li>
+            <li>Manipulate attributes</li>
+            <li>Kick-off animations</li>
+            <li>Server communication</li>
+        </ul>
+        <pre>
+
+$("video").hide();
+$("menu").show();        
+        </pre>
+    </section>
+
+    <section>
+        <h1>Attribute manipulation</h1>
+        <ul>
+            <li>html</li>
+            <li>val</li>
+            <li>text</li>
+            <li>attr</li>
+        </ul>
+        <pre>
+        
+$("a:contains('Scott')").attr("href", "http://odetocode.com/blogs/scott");
+        </pre>
+    </section>
+
+    <section>
+        <h1>CSS Manipulation</h1>
+        <ul>
+            <li>css</li>
+            <li>addClass / removeClass</li>
+        </ul>
+        <pre>
+
+$("section pre").addClass("row span16 prettyprint");
+
+$("footer").css(
+    { 
+      position: "absolute", 
+      bottom: 0, left: 0 
+    }
+);
+        </pre>
+    </section>
+
+    <section>
+        <h1>Events</h1>
+        <ul>
+            <li>Dedicated events methods (click)</li>
+            <li>Generic bind method</li>
+        </ul>
+        <pre>
+        
+$("a#openMenu").click(function(){
+    $("#menu").show();
+    return false;
+});
+        </pre>
+    </section>
+
+    <section>
+        <h1>Delegted events</h1>
+        <ul>
+            <li>Effecient with large # of elements</li>
+            <li>Catch events from future elements</li>
+        </ul>
+        <pre>
+        
+$("#dataTable tbody tr").on("click", function(event){
+	alert($(this).text());
+});
+
+$("#dataTable tbody").on("click", "tr", function(event){
+	alert($(this).text());
+});
+        </pre>
+    </section>
+
+    <section>
+        <h1>Event Trigger</h1>
+        <ul>
+            <li>Programatically trigger events</li>
+            <li>Not just browser events ...</li>
+        </ul>
+        <pre>
+
+$('#menu').trigger('click');        
+$('#observer').trigger('warning.threshold');
+        </pre>
+    </section>
+
+    <section>
+        <h1 id="slideTheCode">Animations</h1>
+        <ul>
+            <li>Sliding</li>
+            <li>Fading</li>
+            <li>Custom animations</li>
+        </ul>
+        <pre>
+        
+$("#slideTheCode").click(function () {
+    var target = $("slideTheCode").next("pre");
+    if (target.is(":visible")) {
+        target.slideUp();
+    } else {
+        target.slideDown();
+    }
+});        
+        </pre>
+        <script>
+            $("#slideTheCode").click(function () {
+                var target = $(this).next("pre");
+                if (target.is(":visible")) {
+                    target.slideUp();
+                } else {
+                    target.slideDown();
+                }
+            });
+        </script>
+    </section>
+
+    <section>
+        <h1>Data</h1>
+        <ul>
+            <li>Store arbitrary data in DOM elements</li>
+        </ul>
+        <pre>
+        
+$('#codeSample').data('secret', 52);
+$('body').data('key', { name: 'scott', department: 'sales' });
+        </pre>
+    </section>
+
+    <section>
+        <h1>Chaining</h1>
+        <ul>
+            <li>Every method call returns the set</li>
+        </ul>
+        <pre>
+        
+$(this).slideDown()
+       .css({color: "blue"});
+        </pre>
+    </section>
+
+    <section>
+        <h1>Traversal</h1>
+        <pre>
+ 
+$('li:eq(1)').next();
+$('li:eq(1)').prev();
+$('li:eq(1)').parent();
+$('li:eq(1)').nextAll();
+$('li:eq(1)').prevAll();
+$('li:eq(1)').parent().children();
+$('li:eq(1)').parent().children(':last');        
+        </pre>
+    </section>
+
+    <section>
+        <h1>AJAX Features</h1>
+        <ul>
+            <li>load</li>
+            <li>get</li>
+            <li>post</li>
+            <li>getJSON</li>
+            <li>ajax</li>
+        </ul>
+        <pre>
+        
+$.ajax({
+  type: "POST",
+  url: "some.php",
+  data: "name=John&location=Boston",
+}).done(function( msg ) {
+  alert( "Data Saved: " + msg );
+});
+        </pre>
+    </section>
+
+    <section>
+        <h1>Plugins</h1>
+        <ul>
+            <li>Huge ecosystem of plugins</li>
+            <li>Widgets</li>
+            <li>Validation</li>
+            <li>Communication</li>
+            <li>Shims</li>
+        </ul>
+        <pre>
+
+$("input[type='date']").datepicker();        
+        </pre>
+    </section>
+
+    <section>
+        <h1>Plugins are easy</h1>
+        <pre>
+(function ($) {
+    $.fn.awesome = function () {
+        return this.each(function () {
+            $(this).html("Awesome!");
+        });
+    };
+})(jQuery);
+
+// ...
+
+$("section").awesome();        
+        </pre>
+    </section>
+
+    <section>
+        <h1>Utilities</h1>
+        <ul>
+            <li>each</li>
+            <li>proxy</li>
+            <li>isArray, isNumeric, isFunction</li>
+        </ul>
+        <pre>
+
+$(window).keydown($.proxy(p5.onkeydown, p5));
+
+$("section").each(function (index) {
+  var section = $(this);
+  if (!section.attr("id")) {
+    section.attr("id", index + 1);
+  }
+});       
+        </pre>
+    </section>
+
+	<section>
+		<h1>Summary</h1>
+		<ul>
+			<li>Selectors</li>
+			<li>Events</li>
+			<li>DOM Manipulation</li>
+		</ul>
+	</section>
+
+    <footer>
+		(c) 2011 OdeToCode LLC
+	</footer>
+
+</body>
+</html>
