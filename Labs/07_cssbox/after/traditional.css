@@ -1,0 +1,46 @@
+﻿/* Traditional 3 column layout */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    height: 30px;
+    padding-top: 10px;
+    font-size: 1.5em;
+    background-color: lightgray;
+}
+
+nav {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 100px;    
+    background-color: lightyellow;
+}
+
+aside {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    width: 100px;    
+    background-color: lightyellow;
+}
+
+article {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10px;
+    
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+    background-color: maroon;
+    color: white;
+}

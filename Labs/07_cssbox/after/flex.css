@@ -1,0 +1,54 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    height: 30px;
+    padding-top: 10px;
+    font-size: 1.5em;
+    background-color: lightgray;
+}
+
+#main {
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: start;
+    -webkit-box-align: start;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: start;
+    -moz-box-align: start;
+
+    display: box;
+    box-orient: horizontal;
+    box-pack: start;
+    box-align: start;                
+}
+
+
+nav {
+    width: 10%;
+    background-color: lightgoldenrodyellow;    
+}
+
+aside {
+    width: 10%;
+    background-color: lightgoldenrodyellow;    
+}
+
+article {
+    width: 70%;
+    -webkit-box-flex: 1;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+    background-color: maroon;
+    color: white;
+}
