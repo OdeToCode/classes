@@ -1,0 +1,564 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>CSS - Layouts and Boxes</title>
+	<link href="themes/bootstrap.css" rel="stylesheet" />
+	<link href="../prettify/prettify.css" rel="stylesheet" />
+	<link href="themes/otc.css" rel="stylesheet" />	
+	
+    <script src="../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+	<script src="../prettify/prettify.js" type="text/javascript"></script>
+	<script src="point5.js" type="text/javascript"></script>
+</head>
+<body>
+    <section>		
+		<h1>CSS Layout</h1>
+		<svg viewBox="0 0 512 512">
+			<title>HTML5 Logo</title>  
+			<polygon fill="#E44D26" points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512 			"/>
+			<polygon fill="#F16529" points="256,480.523 376.03,447.246 404.27,130.894 256,130.894 			"/>
+			<polygon fill="#EBEBEB" points="256,268.217 195.91,268.217 191.76,221.716 256,221.716 256,176.305 255.843,176.305 142.132,176.305 143.219,188.488 154.38,313.627 256,313.627"/>
+			<polygon fill="#EBEBEB" points="256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 256,433.399"/>
+			<path d="M108.382,0h23.077v22.8h21.11V0h23.078v69.044H152.57v-23.12h-21.11v23.12h-23.077V0z"/>
+			<path d="M205.994,22.896h-20.316V0h63.72v22.896h-20.325v46.148h-23.078V22.896z"/>
+			<path d="M259.511,0h24.063l14.802,24.26L313.163,0h24.072v69.044h-22.982V34.822l-15.877,24.549h-0.397l-15.888-24.549v34.222h-22.58V0z"/>
+			<path d="M348.72,0h23.084v46.222h32.453v22.822H348.72V0z"/>
+			<polygon fill="#FFFFFF" points="255.843,268.217 255.843,313.627 311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 349.162,268.217"/>
+			<polygon fill="#FFFFFF" points="255.843,176.305 255.843,204.509 255.843,221.605 255.843,221.716 365.385,221.716 365.385,221.716 365.531,221.716 366.442,211.509 368.511,188.488 369.597,176.305"/>
+		</svg>		
+	</section>
+	
+    <section>
+        <h1>The Box Model</h1>
+        <ul>
+            <li>Every element lives in a box</li>
+            <li>Even if the box is not visible</li>
+        </ul>
+        <div class="row span8 offset4 center">        
+            <div style="background-color:Lime; border:5px solid black;height:100px;padding-top:90px;">
+                div
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h1>Every box has ...</h1>
+        <ul>
+            <li>Margin</li>
+            <li>Border</li>
+            <li>Padding</li>
+        </ul>
+        <div class="row span8 offset4 center">
+        
+            <div style="background-color:Yellow; border:5px solid black;padding:25px;">
+                <div style="background-color:Grey; border:5px solid black;height:100px;padding-top:90px;">
+                    div
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <section>
+        <h1>A Box Has 4 Sides!</h1>    
+        <ul>
+            <li>top, right, botton, left</li>
+        </ul>
+        <pre>
+
+ul li { 
+    padding-left: 5px; 
+    margin: 0 3px 0 3px; 
+    border-bottom: 3px solid black; 
+} 
+        </pre>
+    </section>
+
+    <section>
+        <h1>Computing Metrics</h1>
+        <ul>
+            <li>Width, padding, margin, and border are additive</li>
+            <li>Often the source of confusion</li>
+            <li>What's the total width of #theDiv?</li>
+        </ul>
+        <pre>
+#theDiv {
+    background-color: red;
+    padding: 10px;
+    width: 100px;
+    margin: 10px;
+    border: 2px solid black;
+}        
+        </pre>
+        <div class="row span4 offset4 center">
+            <div id="theDiv"></div>
+        </div>
+        <style>
+#theDiv {
+    background-color: red;
+    padding: 10px;
+    width: 100px;
+    margin: 10px;
+    border: 2px solid black;
+}                
+        </style>
+    </section>
+
+        <section>
+        <h1>Working with &lt;ul&gt; and &lt;ol&gt;</h1>
+        <ul>
+            <li>list-style-type</li>    
+            <li>list-style-position</li>
+        </ul>
+        <div class="row span16" id="lists">
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+        </div>
+        <style>
+            #lists ul
+            {
+                list-style-type:square;
+                background-color: #cc9999;
+                list-style-position:inside; 
+                border: 1px solid green;                       
+            }            
+        </style>
+    </section>
+
+    <section>
+        <h1>CSS menu</h1>
+        <div class="row span16">
+            <menu id="listmenu">
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">CSS</a></li>                    
+                </ul>      
+            </menu>
+        </div>
+        <style>
+            #listmenu {
+               width:100%;       
+               float:left;       
+               border-top:1px solid #069;        
+               border-bottom:1px solid #069;     
+               font-size:.8em;
+               background-color:#CCF;       
+               margin-top:20px;      
+            }
+            #listmenu ul 
+            {
+                margin:0 0 0 30px;        
+            }
+            #listmenu li 
+            {
+               float:left;       
+               list-style-type:none;        
+               background-color:#FFA;        
+               border-right:1px solid #069;        
+            }
+            #listmenu li:first-child 
+            {
+               border-left:1px solid #069;        
+            }
+            #listmenu li:hover 
+            {
+               background-color:#FFF;       
+            }
+            #listmenu a 
+            {
+               padding:0 6px;        
+               text-decoration:none;        
+               color:#069;        
+            }
+            #listmenu a:hover 
+            {
+               color:#F33;
+            }       
+        </style>
+   </section>
+
+    <section>
+        <h1>Collapsing Margins</h1>
+        <ul>
+            <li>Horizontal margins never collapse</li>
+            <li>Vertical margins almost always collapse</li>
+        </ul>
+         <div class="row span8 offset4 center">
+        
+            <div style="background-color:Yellow;margin:25px;">
+                <div style="background-color:Grey; border:5px solid black;height:50px;padding-top:45px;">
+                    div
+                </div>
+            </div>
+           
+           <div style="background-color:Yellow; margin:25px;">
+                <div style="background-color:Grey; border:5px solid black;height:50px;padding-top:45px;">
+                    div
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1>Display & Visibility</h1>
+        <ul>
+            <li>block versus inline</li>
+            <li>inline-block</li>
+            <li>none</li> 
+            <li>hidden elements reserve space</li>           
+        </ul>
+        
+        <div class="row span16">
+            <div id="d1">d1</div>
+            <div id="d2">d2</div>
+            <div id="d3">d3</div>
+        </div>
+        <style>
+            
+            #d1, #d2, #d3
+            {
+                               
+            }
+            
+            #d1
+            {
+                background-color:Green;                
+                padding:5px;
+            }
+            #d2
+            {
+                background-color:Yellow;                                
+                padding:5px;
+            }
+            #d3
+            {
+                background-color:Red;
+                padding:5px;
+            }
+        </style>
+
+    </section>
+
+    <section>
+        <h1>Table Displays</h1>
+        <ul>
+            <li>display:table</li>
+            <li>display:table-cell</li>
+        </ul>
+
+        <div id="dt" class="row span16">
+            <div id="dt1">d1</div>
+            <div id="dt2">d2</div>
+            <div id="dt3">d3</div>
+        </div>
+        <style>
+            
+            #dt1, #dt2, #dt3
+            {
+                height:50px;                
+            }
+            
+            #dt
+            {
+                display:table;
+            }
+            
+            #dt1
+            {
+                background-color:Green;                
+                padding:5px;
+            }
+            #dt2
+            {
+                background-color:Yellow;                                
+                padding:5px;
+            }
+            #dt3
+            {
+                background-color:Red;
+                padding:5px;
+            }
+        </style>
+
+    </section>
+
+     <section>
+        <h1>Positioning</h1>
+        <ul>
+            <li>static (default)</li>
+            <li>absolute</li>
+            <li>fixed</li>
+            <li>relative</li>
+        </ul> 
+                        <div class="row span16">
+            <div id="d7">d7</div>
+            <div id="d8">d8</div>
+            <div id="d9">d9</div>
+        </div>
+        <style>
+            
+            #d7, #d8, #d9
+            {               
+               margin:5px;               
+            }
+            
+            #d7
+            {             
+                background-color:Green;                
+                padding:5px;
+            }
+            #d8
+            {             
+                background-color:Yellow;                                
+                padding:5px;
+            }
+            #d9
+            {                
+                background-color:Red;
+                padding:5px;
+            }
+        </style>   
+    </section>
+
+    <section>
+        <h1>Floating</h1>
+        <ul>
+            <li>Normal flow - block elements appear on a new line</li>
+            <li>float property can float a block element "up"</li>
+            <li>clear can reusme the normal flow</li>
+        </ul>
+        <div class="row span16">
+            <div id="d4">d4</div>
+            <div id="d5">d5</div>
+            <div id="d6">d6</div>
+        </div>
+        <style>
+            
+            #d4, #d5, #d6
+            {               
+               margin:5px;               
+            }
+            
+            #d4
+            {             
+                background-color:Green;                
+                padding:5px;
+            }
+            #d5
+            {             
+                background-color:Yellow;                                
+                padding:5px;
+            }
+            #d6
+            {                
+                background-color:Red;
+                padding:5px;
+            }
+        </style>
+    </section>
+
+   <section>
+        <h1>Two column layout</h1>
+        <ul>
+            <li>Many possible approaches</li>
+        </ul>
+
+        <div id="layout1" class="row span16">
+            <nav>
+                <ul>
+                    <li><a href="#">link1</a></li>
+                    <li><a href="#">link2</a></li>
+                    <li><a href="#">link2</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h2>Content</h2>
+                <p>blah blah blah blah blah blah blah blah
+                   blah blah blah blah blah blah blah blah
+                   blah blah blah blah blah blah blah blah
+                   blah blah blah blah blah blah blah blah
+                </p>
+                <p>more blah blah blah blah blah blah blah blah
+                   blah blah blah blah blah blah blah blah
+                   blah blah blah blah blah blah blah blah
+                   blah blah blah blah blah blah blah blah
+                </p>
+            </article>
+            <style>
+                #layout1
+                {
+                    background-color:lightgray;                    
+                }
+              
+            </style>
+        </div>
+   </section>
+
+   <section>
+        <h1>Three column layout</h1>
+        <ul>
+            <li>Again - many possible approaches</li>
+        </ul>
+
+        <div id="layout2" class="row span16">
+            <header>
+                My place!
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#">link1</a></li>
+                    <li><a href="#">link2</a></li>
+                    <li><a href="#">link2</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h2>Content</h2>
+                <p>blah blah blah blah blah blah blah blah
+                   blah blah blah blah blah blah blah blah
+                   blah blah blah blah blah blah blah blah
+                   blah blah blah blah blah blah blah blah
+                </p>
+                <p>more blah blah blah blah blah blah blah blah
+                   blah blah blah blah blah blah blah blah
+                   blah blah blah blah blah blah blah blah
+                   blah blah blah blah blah blah blah blah
+                </p>
+            </article>
+            <aside>
+                <div>Ad space</div>
+                <div>Link space</div>
+                <div>Stat space</div>
+            </aside>
+            <footer>
+                (c) Acme Inc.
+            </footer>
+            <style>
+                #layout2
+                {
+                    background-color:lightgray;                    
+                }                               
+            </style>
+        </div>
+   </section>   
+
+   <section>
+    <h1>New: Flexbox</h1>
+        <ul>
+            <li>Optimized for interface design</li>
+            <li>Generally need vendor prefix</li>
+        </ul>
+
+        <div id="flexDiv" class="row span16">
+            <div id="f1">f1</div>
+            <div id="f2">f2</div>
+            <div id="f3">f3</div>
+        </div>
+        <style>
+            
+            #flexDiv
+            {
+                display: -webkit-box;
+                -webkit-box-orient: horizontal;
+                -webkit-box-pack: center;
+                -webkit-box-align: center;
+                text-align:center;
+                width:600px;
+            }
+            
+            #f1, #f2, #f3
+            {                  
+               margin:5px;  
+               height: 200px;
+               /*width:150px; */
+            }
+            
+            #f1
+            {             
+                background-color:Green;                
+                padding:5px;
+                -webkit-box-flex: 1;
+            }
+            #f2
+            {             
+                background-color:Yellow;                                
+                padding:5px;
+                -webkit-box-flex: 2;                
+            }
+            #f3
+            {                
+                background-color:Red;
+                padding:5px;                
+            }
+        </style>
+   </section>
+
+    <section>
+        <h1>New: Multi-column layout</h1>
+        <div class="row span16">
+            <h2>Excerpt from the Saga Of Hakon Herdebreid </h2>
+            <div class="columns">
+            <p>Hakon, King Sigurd's son, was chosen chief of the troop which had
+            followed King Eystein, and his adherents gave him the title of king. He was ten
+            years old. At that time he had with him Sigurd, a son of Halvard Hauld of Reyr,
+            and Andreas and Onund, the sons of Simon, his foster-brothers, and many chiefs,
+            friends of King Sigurd and King Eystein; and they went first up to Gautland.</p>
+
+            <p>King Inge took possession of all the estates they had left behind, and
+            declared them banished. Thereafter King Inge went to Viken, and was sometime
+            also in the north of the country. Gregorius Dagson was in Konungahella, where
+            the danger was greatest, and had beside him a strong and handsome body of men,
+            with which he defended the country.</p>
+
+            <p>The summer after (A.D. 1158) Hakon came with his men, and proceeded to
+            Konungahella with a numerous and handsome troop. Gregorius was then in the town,
+            and summoned the bondes and townspeople to a great Thing, at which he desired
+            their aid; but he thought the people did not hear him with much favour, so he
+            did not much trust them.</p>
+            </div>        
+        </div>
+        <style>
+            div.columns
+            {
+                -webkit-column-count:3;
+                -webkit-column-gap: 0.5em;
+                -webkit-column-rule: thin solid black;
+                background-color:lightgrey;
+                padding:10px;
+            }
+        </style>
+    </section>
+
+    <section>
+        <h1>New: Grid Layout</h1>
+        <pre>
+#grid { 
+    display: grid;     
+    grid-columns: auto minmax(min-content, 1fr);
+    grid-rows: auto minmax(min-content, 1fr) auto
+ }
+
+ #title    { grid-column: 1; grid-row: 1 }
+ #score    { grid-column: 1; grid-row: 3 }
+ #stats    { grid-column: 1; grid-row: 2; grid-row-align: start }
+ #board    { grid-column: 2; grid-row: 1; grid-row-span: 2 }
+ #controls { grid-column: 2; grid-row: 2; grid-column-align: center }        
+ </pre>
+    
+    </section>
+
+    <section>
+        <h1>Summary</h1>
+        <ul>
+            <li>CSS3 layout features are exciting!</li>
+            <li>Columns, Grids, FlexBox</li>
+        </ul>
+    </section>
+
+</body>
+</html>
