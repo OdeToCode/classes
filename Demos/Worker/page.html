@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>WebWorkers</title>
+    <script src="../../scripts/jquery-1.6.4.js" type="text/javascript"></script>   
+    <style>
+        #calculationOutput span
+        {
+            margin:5px;
+            font-size:12px;
+        }
+    
+    </style>
+</head>
+<body>
+    <button id="startCalculation">Start Calculation</button>
+    <div id="calculationOutput"></div>
+
+    <script>
+        $(function () {
+            $("#startCalculation").click(function() {
+                var worker = new Worker("primeCalculation.js");
+                worker.onmessage = function(event) {
+                    $("#calculationOutput").append($("<div>").text(event.data));
+                };
+            });
+        });    
+    </script>    
+</body>
+</html>

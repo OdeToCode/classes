@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>WebSockets</title>
+    <script src="../../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div id="echoOutput">
+    
+    </div>
+
+    <input type="text" id="echoInput"/>
+    <button id="sendEcho">Send</button>
+
+    <script>
+        /* event.target.URL, event.data */
+
+        $(function () {            
+            var socket = new WebSocket("ws://echo.websocket.org");
+            socket.onopen = onSocketOpen;
+            socket.onerror = onSocketError;
+            socket.onmessage = onSocketMessage;
+            socket.onclose = onSocketClose;
+
+
+            var echoInput = $("#echoInput");
+            var echoOutput = $("#echoOutput");
+            var sendEcho = $("#sendEcho");
+
+            sendEcho.click(function () {
+                var message = echoInput.val();
+                echoInput.val("");
+                socket.send(message);                
+            });
+
+            function onSocketOpen(event) {
+                echoOutput.text("Socket opened to " + event.target.URL);
+            }
+
+            function onSocketError(event) {
+                echoOutput.text("Error: " + event.data);
+            }
+
+            function onSocketMessage(event) {
+                echoOutput.text(event.data);
+            }
+
+            function onSocketClose(event) {
+                echoOutput.text("Socket closed");
+            }
+        });
+                     
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Web Workers and Web Sockets</title>
+	<link href="themes/bootstrap.css" rel="stylesheet" />
+	<link href="../prettify/prettify.css" rel="stylesheet" />
+	<link href="themes/otc.css" rel="stylesheet" />	
+	
+    <script src="../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+	<script src="../prettify/prettify.js" type="text/javascript"></script>
+	<script src="point5.js" type="text/javascript"></script>
+</head>
+<body>
+    <section>		
+		<h1>Web Workers and Web Sockets</h1>
+		<svg viewBox="0 0 512 512">
+			<title>HTML5 Logo</title>  
+			<polygon fill="#E44D26" points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512 			"/>
+			<polygon fill="#F16529" points="256,480.523 376.03,447.246 404.27,130.894 256,130.894 			"/>
+			<polygon fill="#EBEBEB" points="256,268.217 195.91,268.217 191.76,221.716 256,221.716 256,176.305 255.843,176.305 142.132,176.305 143.219,188.488 154.38,313.627 256,313.627"/>
+			<polygon fill="#EBEBEB" points="256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 256,433.399"/>
+			<path d="M108.382,0h23.077v22.8h21.11V0h23.078v69.044H152.57v-23.12h-21.11v23.12h-23.077V0z"/>
+			<path d="M205.994,22.896h-20.316V0h63.72v22.896h-20.325v46.148h-23.078V22.896z"/>
+			<path d="M259.511,0h24.063l14.802,24.26L313.163,0h24.072v69.044h-22.982V34.822l-15.877,24.549h-0.397l-15.888-24.549v34.222h-22.58V0z"/>
+			<path d="M348.72,0h23.084v46.222h32.453v22.822H348.72V0z"/>
+			<polygon fill="#FFFFFF" points="255.843,268.217 255.843,313.627 311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 349.162,268.217"/>
+			<polygon fill="#FFFFFF" points="255.843,176.305 255.843,204.509 255.843,221.605 255.843,221.716 365.385,221.716 365.385,221.716 365.531,221.716 366.442,211.509 368.511,188.488 369.597,176.305"/>
+		</svg>		
+	</section>
+	
+    <section>
+        <h1>Web Sockets</h1>
+        <ul>
+            <li>Two way communication with a remote host</li>
+            <li>Bi-directional</li>
+            <li>Full duplex</li>            
+            <li><a href="http://caniuse.com/#search=socket" target="_blank">Can I Use?</a></li>
+        </ul>
+        <div class="row span16 center">
+            <img src="images/realtime.png" alt="real time!"/>
+        </div>
+    </section>
+
+    <section>
+        <h1>Tradition</h1>
+        <ul>
+            <li>The web has used request/response for 20+ years</li>            
+            <li>Long polling</li>
+            <li>Forever frames</li>
+            <li>Infinite POSTs</li>
+            <li>All of them have overhead</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>WebSockets</h1>
+        <ul>
+            <li>Supports TCP (ws) and SSL (wss)</li>
+            <li>Origin based security</li>
+            <li>Payload framed by 2 bytes</li>
+            <li><a href="http://dev.w3.org/html5/websockets/" target="_blank">API by W3C</a></li>
+            <li><a href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-03" target="_blank">Protocol by HyBi</a></li>
+        </ul>
+        <pre>
+
+var socket = new WebSocket("ws://echo.websocket.org");
+socket.send(message);                        
+        </pre>
+    </section>
+
+    <section>
+        <h1>Handshakes</h1>
+        <ul>
+            <li>Currently in flux</li>  
+            <li>Ensures client and server can communicate</li>          
+            <li>HTTP GET with Upgrade header (HTTP 1.1)</li> 
+            <li>Can setup tunnel through proxies</li>            
+        </ul>
+        <div class="row span16 center">
+            <img src="images/wireshark.png" alt="wireshark capture"/>
+        </div>
+    </section>
+
+   <section>
+        <h1>Events</h1>
+        <ul>
+            <li>open</li>
+            <li>close</li>
+            <li>error</li>
+            <li>message</li>
+        </ul>
+        <pre>
+        
+socket.onmessage = onSocketMessage;
+
+function onSocketMessage(event) {
+    alert(event.data);
+}            
+        </pre>
+    </section>
+
+     <section>
+        <h1>WebSockets versus XmlHttpRequest</h1>
+        <ul>
+            <li>WebSockets can cross domains</li>
+            <li>WebSockets do not use HTTP</li>
+            <li>WebSockets are duplex</li>
+            <li>WebSockets have different threat models</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Security</h1>
+        <ul>
+            <li>Authentication and Authorization</li>
+            <li>Beware: encoding, DOS attacks, data formats</li>
+            <li>ws is plaintext, wss is encrypted</li>
+            <li>Validate the origin</li>
+            <li>XSS is a concern</li>
+            <li>Anyone with a socket library can connect</li>
+        </ul>
+    </section>    
+
+    <section>
+        <h1>WebWorkers</h1>
+        <ul>
+            <li>JavaScript is a single threaded language</li>
+            <li>Pro: <a href="http://therichwebexperience.com/blog/douglas_crockford/2008/02/threads_are_evil" target="_blank">Threads are Evil</a></li>
+            <li>Con: threads can be useful, too (setTimeout, setInterval)</li>            
+        </ul>
+    </section>
+
+    <section>
+        <h1>Background Services</h1>
+        <ul>
+            <li>WebWorkers run in the background</li>            
+            <li>WebWorkers run in parallel</li>
+            <li>Event driven communication (message ports)</li>
+            <li>Still in flux</li>
+            <li>Heavyweight</li>
+            <li><a href="http://caniuse.com/#search=worker" target="_blank">Can I Use?</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Dedicated Worker</h1>
+        <ul>
+            <li>One to one communication via message port</li>
+            <li>Start the worker with a script</li>
+        </ul>
+        <pre>
+        
+var worker = new Worker("primeCalculation.js");
+worker.onmessage = function(event) {
+    $("#calculationOutput").append($("&lt;div&gt;").text(event.data));
+};        
+        </pre>
+    </section>
+
+    <section>
+        <h1>Worker Dos and Don'ts</h1>
+        <ul>
+            <li>No access to DOM, window, document, parent</li>                
+            <li>Can post messages</li>           
+            <li>Can use sockets, XHR</li> 
+            <li>Can use timers, location, application cache</li>
+            <li>Span sub-workers</li>
+            <li>Import scripts (importScripts('script1.js');)</li>
+            <li>Refer to 'self' and 'this'</li>
+        </ul>
+    
+    </section>
+
+    <section>
+        <h1>Events</h1>
+        <ul>
+            <li>onmessage</li>
+            <li>onerror</li>
+            <li>WebWorkers can wait in a message loop for a message</li>            
+        </ul>
+        <pre>
+        
+var employee = {name: "Scott", id: 1};
+postMessage(employee);        
+        </pre>
+    </section>
+
+    <section>
+        <h1>Shared WebWorkers</h1>
+        <ul>
+            <li>Many windows can use the same worker</li>
+            <li>Worker maintains many connections</li>            
+        </ul>
+    </section>
+
+    <section>
+        <h1>Summary</h1>
+        <ul>
+            <li>WebSockets for real time communication</li>
+            <li>WebWorkers to free the UI thread</li>
+        </ul>
+    </section>
+
+    <footer>
+		(c) 2011 OdeToCode LLC
+	</footer>
+
+</body>
+</html>
