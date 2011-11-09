@@ -1,0 +1,687 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Canvas and SVG</title>
+	<link href="themes/bootstrap.css" rel="stylesheet" />
+	<link href="../prettify/prettify.css" rel="stylesheet" />
+	<link href="themes/otc.css" rel="stylesheet" />		
+    <script src="../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+	<script src="../prettify/prettify.js" type="text/javascript"></script>
+	<script src="point5.js" type="text/javascript"></script>
+</head>
+<body>
+    <section>		
+		<h1>Drawing with Canvas and SVG</h1>
+		<svg viewBox="0 0 512 512">
+			<title>HTML5 Logo</title>  
+			<polygon fill="#E44D26" points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512 			"/>
+			<polygon fill="#F16529" points="256,480.523 376.03,447.246 404.27,130.894 256,130.894 			"/>
+			<polygon fill="#EBEBEB" points="256,268.217 195.91,268.217 191.76,221.716 256,221.716 256,176.305 255.843,176.305 142.132,176.305 143.219,188.488 154.38,313.627 256,313.627"/>
+			<polygon fill="#EBEBEB" points="256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 256,433.399"/>
+			<path d="M108.382,0h23.077v22.8h21.11V0h23.078v69.044H152.57v-23.12h-21.11v23.12h-23.077V0z"/>
+			<path d="M205.994,22.896h-20.316V0h63.72v22.896h-20.325v46.148h-23.078V22.896z"/>
+			<path d="M259.511,0h24.063l14.802,24.26L313.163,0h24.072v69.044h-22.982V34.822l-15.877,24.549h-0.397l-15.888-24.549v34.222h-22.58V0z"/>
+			<path d="M348.72,0h23.084v46.222h32.453v22.822H348.72V0z"/>
+			<polygon fill="#FFFFFF" points="255.843,268.217 255.843,313.627 311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 349.162,268.217"/>
+			<polygon fill="#FFFFFF" points="255.843,176.305 255.843,204.509 255.843,221.605 255.843,221.716 365.385,221.716 365.385,221.716 365.531,221.716 366.442,211.509 368.511,188.488 369.597,176.305"/>
+		</svg>		
+	</section>
+        
+    <section>
+        <h1>The Canvas</h1>
+        <ul>
+            <li>A scriptable bitmap for 2d graphics</li>
+            <li>Simple API - 45 methods</li>
+            <li>Starts out blank</li>
+            <li><a href="http://www.ro.me/">Extreme</a></li>
+        </ul>
+        <div class="row span16 center">
+            <canvas width="300" height="200" style="border: 1px solid black"></canvas>
+        </div>
+        <pre>
+        
+&lt;canvas width=&quot;300&quot; height=&quot;200&quot;&gt;&lt;/canvas&gt;
+        </pre>        
+    </section>	
+    
+    <section>
+        <h1>Canvas Context</h1>
+        <ul>
+            <li>Gateway to the API</li>
+            <li>Doesn't remember what you do...</li>
+            <li>0,0 is upper left</li>
+        </ul>
+        <div class="row span16 center">
+            <canvas id="canvas1" width="300" height="200" style="border: 1px solid black"></canvas>
+            <script>
+                $(function () {
+                    var canvas = $("#canvas1").get(0);
+                    var context = canvas.getContext("2d");
+                    context.fillRect(25, 25, 250, 150);
+                });
+            </script>
+        </div>
+        <pre>
+        
+var canvas = $("#myCanvas").get(0);
+var context = canvas.getContext("2d");
+context.fillRect(25, 25, 250, 150);
+        </pre>        
+    </section>	
+
+    <section>
+        <h1>Drawing Boxes</h1>
+        <ul>
+            <li>fillStyle, fillRect</li>
+            <li>Doesn't remember what you do...</li>
+            <li>To clear a canvas, set a dimension property</li>
+        </ul>
+        <div class="row span16 center">
+            <canvas id="canvas2" width="300" height="200"></canvas>
+            <script>
+                $(function () {
+                    var canvas = $("#canvas2").get(0);
+                    var ctx = canvas.getContext("2d");
+                                                            
+                    ctx.fillStyle = "rgba(255, 0, 0, 0.5)";
+                    ctx.fillRect(25, 25, 250, 150);
+                    ctx.fillStyle = "#00ff00";
+                    ctx.fillRect(0, 0, 50, 50);
+                    ctx.clearRect(170, 90, 20, 20);
+                });
+            </script>
+        </div>
+        <pre>
+        
+ctx.fillStyle = "rgba(255, 0, 0, 0.5)";
+ctx.fillRect(25, 25, 250, 150);
+ctx.fillStyle = "#00ff00";
+ctx.fillRect(0, 0, 50, 50);
+ctx.clearRect(170, 90, 20, 20);
+        </pre>        
+    </section>	
+
+    <section>
+        <h1>Dynamic Canvas</h1>
+        <pre>
+        
+for (var i = 0; i < 6; i++) {
+    for (var j = 0; j < 6; j++) {
+        ctx.fillStyle = 'rgb(' + Math.floor(255 - 42.5 * i) + ',' +
+                         Math.floor(255 - 42.5 * j) + ',0)';
+         ctx.fillRect(j * 30, i * 30, 30, 30);
+    }
+}  
+        </pre>        
+        <div class="row span16 center">
+            <canvas id="canvas3" width="300" height="200"></canvas>
+            <script>
+                $(function () {
+                    var canvas = $("#canvas3").get(0);
+                    var ctx = canvas.getContext("2d");
+                    for (var i = 0; i < 6; i++) {
+                        for (var j = 0; j < 6; j++) {
+                            ctx.fillStyle = 'rgb(' + Math.floor(255 - 42.5 * i) + ',' +
+                       Math.floor(255 - 42.5 * j) + ',0)';
+                            ctx.fillRect(j * 30, i * 30, 30, 30);
+                        }
+                    }                    
+                });
+            </script>
+        </div>       
+    </section>	
+
+    <section>
+        <h1>Paths</h1>
+        <ul>
+            <li>moveTo</li>
+            <li>lineTo</li>
+            <li>stroke</li>
+        </ul>
+        <div class="row span16 center">
+            <canvas id="canvas4" width="300" height="200"></canvas>
+            <script>
+                $(function () {
+                    var canvas = $("#canvas4").get(0);
+                    var ctx = canvas.getContext("2d");
+                    for (var x = 0; x <= 300; x += 10) {
+                        ctx.moveTo(x, 0);
+                        ctx.lineTo(x, 200);
+                    }
+                    for (var y = 0; y <= 200; y += 10) {
+                        ctx.moveTo(0, y);
+                        ctx.lineTo(300, y);
+                    }
+                    ctx.stroke();
+                });
+            </script>
+        </div>
+        <pre>
+        
+for (var x = 0; x &lt;= 300; x += 10) {
+    ctx.moveTo(x, 0);
+    ctx.lineTo(x, 200);
+}
+ctx.stroke();
+        </pre>        
+    </section>	
+
+    <section>
+        <h1>Arcs</h1>
+        <div class="row span16 center">
+            <canvas id="canvasArc" width="300" height="200"></canvas>
+            <script>
+                $(function () {
+                    var canvas = $("#canvasArc").get(0);
+                    var ctx = canvas.getContext("2d");
+
+                    ctx.arc(150, 150, 50, 0, 2 * Math.PI);
+                    ctx.fill();
+
+                });
+            </script>
+        </div>
+        <pre>
+        
+var canvas = $("#canvasArc").get(0);
+var ctx = canvas.getContext("2d");
+
+ctx.arc(150, 100, 50, 0, 2 * Math.PI);
+ctx.fill();
+        </pre>        
+    </section>
+
+    <section>
+        <h1>Arcs and Curves</h1>
+        <ul>
+            <li>arc</li>
+            <li>quadraticCurve</li>
+            <li>bezier curve</li>
+        </ul>
+        <div class="row span16 center">
+            <canvas id="canvasCurve" width="200" height="200"></canvas>
+        </div>
+        <script>
+            
+            var canvas = document.getElementById("canvasCurve");        
+            var ctx = canvas.getContext('2d');
+
+            roundedRect(ctx,12,12,150,150,15);
+            roundedRect(ctx,19,19,150,150,9);
+            roundedRect(ctx,53,53,49,33,10);
+            roundedRect(ctx,53,119,49,16,6);
+            roundedRect(ctx,135,53,49,33,10);
+            roundedRect(ctx,135,119,25,49,10);
+    
+            ctx.beginPath();
+            ctx.arc(37,37,13,Math.PI/7,-Math.PI/7,false);
+            ctx.lineTo(34,37);
+            ctx.fill();
+
+            
+            for(i=0;i<8;i++){
+                ctx.fillRect(51+i*16,35,4,4);
+             }
+            for(i=0;i<6;i++){
+                ctx.fillRect(115,51+i*16,4,4);
+            }   
+            for(i=0;i<8;i++){
+                ctx.fillRect(51+i*16,99,4,4);
+            }
+
+            // character 2
+            ctx.beginPath();
+            ctx.moveTo(83,116);
+            ctx.lineTo(83,102);
+            ctx.bezierCurveTo(83,94,89,88,97,88);
+            ctx.bezierCurveTo(105,88,111,94,111,102);
+            ctx.lineTo(111,116);
+            ctx.lineTo(106.333,111.333);
+            ctx.lineTo(101.666,116);
+            ctx.lineTo(97,111.333);
+            ctx.lineTo(92.333,116);
+            ctx.lineTo(87.666,111.333);
+            ctx.lineTo(83,116);
+            ctx.fill();
+            ctx.fillStyle = "white";
+            ctx.beginPath();
+            ctx.moveTo(91,96);
+            ctx.bezierCurveTo(88,96,87,99,87,101);
+            ctx.bezierCurveTo(87,103,88,106,91,106);
+            ctx.bezierCurveTo(94,106,95,103,95,101);
+            ctx.bezierCurveTo(95,99,94,96,91,96);
+            ctx.moveTo(103,96);
+            ctx.bezierCurveTo(100,96,99,99,99,101);
+            ctx.bezierCurveTo(99,103,100,106,103,106);
+            ctx.bezierCurveTo(106,106,107,103,107,101);
+            ctx.bezierCurveTo(107,99,106,96,103,96);
+            ctx.fill();
+            ctx.fillStyle = "black";
+            ctx.beginPath();
+            ctx.arc(101,102,2,0,Math.PI*2,true);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(89,102,2,0,Math.PI*2,true);
+            ctx.fill();        
+
+            function roundedRect(ctx,x,y,width,height,radius){
+                ctx.beginPath();
+                ctx.moveTo(x,y+radius);
+                ctx.lineTo(x,y+height-radius);
+                ctx.quadraticCurveTo(x,y+height,x+radius,y+height);
+                ctx.lineTo(x+width-radius,y+height);
+                ctx.quadraticCurveTo(x+width,y+height,x+width,y+height-radius);
+                ctx.lineTo(x+width,y+radius);
+                ctx.quadraticCurveTo(x+width,y,x+width-radius,y);
+                ctx.lineTo(x+radius,y);
+                ctx.quadraticCurveTo(x,y,x,y+radius);
+                ctx.stroke();
+            }
+        </script>
+
+    </section>
+
+    <section>
+        <h1>Text</h1>
+        <ul>
+            <li>font</li>
+            <li>fillText</li>
+        </ul>
+        <div class="row span16 center">
+            <canvas id="canvas5" width="300" height="200"></canvas>
+            <script>
+                $(function () {
+                    var canvas = $("#canvas5").get(0);
+                    var ctx = canvas.getContext("2d");                                        
+                    ctx.fillRect(0, 0, 300, 200);
+                    ctx.font = "45px sans-serif";
+                    ctx.fillStyle = "#ff0000";
+                    ctx.fillText("Hello!", 90, 110);                    
+                });
+            </script>
+        </div>
+        <pre>
+
+ctx.font = "45px sans-serif";
+ctx.fillStyle = "#ff0000";
+ctx.fillText("Hello!", 75, 100);        
+        </pre>        
+    </section>	
+
+    <section>
+        <h1>Gradients</h1>
+        <ul>
+            <li>Linear gradients</li>
+            <li>Radial gradients</li>
+        </ul>
+        <div class="row span16 center">
+            <canvas id="canvas6" width="300" height="200"></canvas>
+            <script>
+                $(function () {
+                    var canvas = $("#canvas6").get(0);
+                    var ctx = canvas.getContext("2d");
+                    var radgrad = ctx.createRadialGradient(45, 45, 10, 52, 50, 30);
+                    radgrad.addColorStop(0, '#A7D30C');
+                    radgrad.addColorStop(0.9, '#019F62');
+                    radgrad.addColorStop(1, 'rgba(1,159,98,0)');
+
+                    var radgrad2 = ctx.createRadialGradient(105, 105, 20, 112, 120, 50);
+                    radgrad2.addColorStop(0, '#FF5F98');
+                    radgrad2.addColorStop(0.75, '#FF0188');
+                    radgrad2.addColorStop(1, 'rgba(255,1,136,0)');
+
+                    var radgrad3 = ctx.createRadialGradient(195, 15, 15, 202, 20, 40);
+                    radgrad3.addColorStop(0, '#00C9FF');
+                    radgrad3.addColorStop(0.8, '#00B5E2');
+                    radgrad3.addColorStop(1, 'rgba(0,201,255,0)');
+
+                    var radgrad4 = ctx.createRadialGradient(0, 150, 50, 0, 140, 90);
+                    radgrad4.addColorStop(0, '#F4F201');
+                    radgrad4.addColorStop(0.8, '#E4C700');
+                    radgrad4.addColorStop(1, 'rgba(228,199,0,0)');
+
+                    // draw shapes
+                    ctx.fillStyle = radgrad4;
+                    ctx.fillRect(0, 0, 300, 200);
+                    ctx.fillStyle = radgrad3;
+                    ctx.fillRect(0, 0, 300, 200);
+                    ctx.fillStyle = radgrad2;
+                    ctx.fillRect(0, 0, 300,200);
+                    ctx.fillStyle = radgrad;
+                    ctx.fillRect(0, 0, 300,200);
+                });
+            </script>
+        </div>
+        <pre>
+
+var radgrad = ctx.createRadialGradient(0, 150, 50, 0, 140, 90);
+radgrad.addColorStop(0, '#F4F201');
+radgrad.addColorStop(0.8, '#E4C700');
+radgrad.addColorStop(1, 'rgba(228,199,0,0)');
+ctx.fillStyle = radgrad;
+ctx.fillRect(0, 0, 300, 200);     
+        </pre>        
+    </section>	    
+
+    <section>
+        <h1>Images and Image Data</h1>
+        <ul>
+            <li>Use &lt;img&gt; or new Image()</li>
+            <li>Draw to canvas after loading</li>
+            <li><a href="http://www.nihilogic.dk/labs/imagefx/" target="_blank">Effects!</a></li>
+        </ul>
+        <div class="row span16 center">
+            <canvas id="canvas7" width="300" height="200"></canvas>
+            <script>
+                $(function () {
+                    var canvas = $("#canvas7").get(0);
+                    var ctx = canvas.getContext("2d");
+                    var image = new Image();
+                    image.src = "images/background1.jpg";
+                    image.onload = function () {
+                        ctx.drawImage(image, 0, 0, 300, 200);
+                    };
+
+                    $("#canvas7").click(function() {
+                        var image = ctx.getImageData(0, 0, 150, 100);
+                        var pixels = image.data;
+                        for (var i = 0, n = pixels.length; i < n; i += 4) {
+                            var grayscale = pixels[i] * .3 +
+                                            pixels[i + 1] * .59 + 
+                                            pixels[i + 2] * .11;                            
+                            pixels[i] = grayscale;   // red
+                            pixels[i + 1] = grayscale;   // green
+                            pixels[i + 2] = grayscale;   // blue
+                        }
+                        ctx.putImageData(image, 0, 0);
+                    });
+                });
+            </script>
+        </div>
+        <pre>
+
+var image = new Image();
+image.src = "images/background1.jpg";
+image.onload = function () {
+ctx.drawImage(image, 0, 0, 300, 200);
+        </pre>        
+    </section>	    
+
+    <section>
+        <h1>Video</h1>
+        <div class="row">
+            <video class="span8" id="videoSample" width="400"  src="media/sample2.mov" controls></video>
+            <canvas class="span8" id="canvasVideo" width="400" height="185"></canvas>            
+            <script>
+                $(function () {
+                    var canvas = $("#canvasVideo").get(0);
+                    var ctx = canvas.getContext("2d");                    
+                    var video = $("#videoSample").bind("play",
+                        function () {
+                            drawThunk(video.get(0), ctx);                            
+                        }
+                    );
+                });
+
+                function drawThunk(video, ctx) {
+                    draw(video, ctx);
+                    setTimeout(function () {
+                        drawThunk(video, ctx);
+                    }, 20);
+                }
+                
+                function draw(video, ctx) {
+                    ctx.drawImage(video, 0, 0, 400, 185);
+                    var imageData = ctx.getImageData(0, 0, 400, 185);
+                    var pixelData = imageData.data;
+
+                    for (var i = 0; i < pixelData.length; i += 4) {
+                        var red = pixelData[i];
+                        var green = pixelData[i + 1];
+                        var blue = pixelData[i + 2];
+
+                        var amount = Math.random();
+                        
+                        var grayscale = red * amount + green * amount + blue * amount;
+                        pixelData[i] = grayscale;
+                        pixelData[i + 1] = grayscale;
+                        pixelData[i + 2] = grayscale;
+                    }
+                    imageData.data = pixelData;
+                    ctx.putImageData(imageData, 0, 0);
+
+                }
+            </script>
+        </div>
+        <pre>
+
+ctx.drawImage(video, 0, 0, 400, 200);
+var imageData = ctx.getImageData(0, 0, 400, 200);
+var pixelData = imageData.data;        
+        </pre>        
+    </section>	    
+
+    <section>
+        <h1>Saving and Restoring</h1>
+        <ul>
+            <li>Settings are global</li>
+            <li>Use save and restore</li>
+        </ul>
+        <div class="row span16 center">
+            <canvas id="canvasSave" width="300" height="200"></canvas>
+            <script>
+                $(function () {
+                    var canvas = $("#canvasSave").get(0);
+                    var ctx = canvas.getContext("2d");
+
+                    ctx.fillStyle = "#ff0000";
+                    ctx.fillRect(150, 100, 45, 45);
+                    
+                    ctx.rotate(5 * Math.PI / 180);
+                    ctx.fillStyle = "#00ff00";
+                    ctx.fillRect(150, 100, 45, 45);
+
+                    ctx.rotate(10 * Math.PI / 180);
+                    ctx.fillStyle = "#0000ff";
+                    ctx.fillRect(150, 100, 45, 45);
+                });
+            </script>
+        </div>
+        <pre>
+        
+ctx.save();
+ctx.rotate(5 * Math.PI / 180);
+ctx.fillStyle = "#00ff00";
+ctx.fillRect(150, 100, 45, 45);
+ctx.restore();
+        </pre>   
+    </section>
+
+    <section>
+        <h1>Canvas Security</h1>
+        <ul>
+            <li>Protection against information leakage</li>
+            <li>origin-clean flag</li>
+            <li>Check on getImageData()</li>
+            <li>Origin checks on toDataUrl()</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Canvas Accessibility</h1>
+        <ul>
+            <li>Fallback content</li>
+            <li>Focus management (very new)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>SVG</h1>
+        <ul>
+            <li>Scalable Vector Graphics</li>
+            <li>Geometry based</li>
+            <li>Full DOM support</li> 
+            <li><a href="http://upload.wikimedia.org/wikipedia/commons/1/13/2010_US_Senate_special_election_in_New_York.svg" target="_blank" >New York</a></li>           
+        </ul>
+        <div class="row span16 center" style="height:300px">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 195 82">
+              <title>SVG logo combined with the W3C logo, set horizontally</title>
+              <desc>The logo combines three entities displayed horizontally: the W3C logo with the text 'W3C'; the drawing of a flower or star shape with eight arms; and the text 'SVG'. These three entities are set horizontally.</desc>
+  
+              <text x="0" y="75" font-size="83" fill-opacity="0" font-family="Trebuchet" letter-spacing="-12">W3C</text>
+              <text x="180" y="75" font-size="83" fill-opacity="0" font-family="Trebuchet" font-weight="bold">SVG</text>
+              <defs>
+                <g id="SVG" fill="#005A9C">
+                  <path id="S" d="M 5.482,31.319 C2.163,28.001 0.109,23.419 0.109,18.358 C0.109,8.232 8.322,0.024 18.443,0.024 C28.569,0.024 36.782,8.232 36.782,18.358 L26.042,18.358 C26.042,14.164 22.638,10.765 18.443,10.765 C14.249,10.765 10.850,14.164 10.850,18.358 C10.850,20.453 11.701,22.351 13.070,23.721 L13.075,23.721 C14.450,25.101 15.595,25.500 18.443,25.952 L18.443,25.952 C23.509,26.479 28.091,28.006 31.409,31.324 L31.409,31.324 C34.728,34.643 36.782,39.225 36.782,44.286 C36.782,54.412 28.569,62.625 18.443,62.625 C8.322,62.625 0.109,54.412 0.109,44.286 L10.850,44.286 C10.850,48.480 14.249,51.884 18.443,51.884 C22.638,51.884 26.042,48.480 26.042,44.286 C26.042,42.191 25.191,40.298 23.821,38.923 L23.816,38.923 C22.441,37.548 20.468,37.074 18.443,36.697 L18.443,36.692 C13.533,35.939 8.800,34.638 5.482,31.319 L5.482,31.319 L5.482,31.319 Z"/>
+                  <path id="V" d="M 73.452,0.024 L60.482,62.625 L49.742,62.625 L36.782,0.024 L47.522,0.024 L55.122,36.687 L62.712,0.024 L73.452,0.024 Z"/>
+                  <path id="G" d="M 91.792,25.952 L110.126,25.952 L110.126,44.286 L110.131,44.286 C110.131,54.413 101.918,62.626 91.792,62.626 C81.665,62.626 73.458,54.413 73.458,44.286 L73.458,44.286 L73.458,18.359 L73.453,18.359 C73.453,8.233 81.665,0.025 91.792,0.025 C101.913,0.025 110.126,8.233 110.126,18.359 L99.385,18.359 C99.385,14.169 95.981,10.765 91.792,10.765 C87.597,10.765 84.198,14.169 84.198,18.359 L84.198,44.286 L84.198,44.286 C84.198,48.481 87.597,51.880 91.792,51.880 C95.981,51.880 99.380,48.481 99.385,44.291 L99.385,44.286 L99.385,36.698 L91.792,36.698 L91.792,25.952 L91.792,25.952 Z"/>
+                </g>
+              </defs>
+              <g shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality">
+                <g>
+                  <g id="logo" transform="scale(0.24) translate(0, 35)">
+                    <g stroke-width="38.0086" stroke="#000">
+                      <g id="svgstar" transform="translate(150, 150)">
+                        <path id="svgbar" fill="#EDA921" d="M-84.1487,-15.8513 a22.4171,22.4171 0 1 0 0,31.7026 h168.2974 a22.4171,22.4171 0 1 0 0,-31.7026 Z"/>
+                        <use xlink:href="#svgbar" transform="rotate(45)"/>
+                        <use xlink:href="#svgbar" transform="rotate(90)"/>
+                        <use xlink:href="#svgbar" transform="rotate(135)"/>
+                      </g>
+                    </g>
+                    <use xlink:href="#svgstar"/>
+                  </g>
+                  <g id="SVG-label">
+                    <use xlink:href="#SVG" transform="scale(1.08) translate(65,10)"/>
+                  </g>
+                </g>
+              </g>
+            </svg>                
+        </div>
+    </section>
+
+    <section>
+        <h1>Basic SVG</h1>
+        <div class="row span16 center">
+            <svg width="200" height="200">
+                <circle cx="100" cy="100" r="50" fill="red" stroke-width="5" >                    
+                </circle>
+            </svg>
+        </div>
+        <pre>
+        
+&lt;svg width=&quot;200&quot; height=&quot;200&quot;&gt;
+    &lt;circle cx=&quot;100&quot; cy=&quot;100&quot; r=&quot;50&quot; fill=&quot;red&quot;&gt;                    
+    &lt;/circle&gt;
+&lt;/svg&gt;
+        </pre>
+    </section>
+
+    <section>
+        <h1>SVG and the DOM</h1>
+        <div class="row span16 center">
+            <svg width="200" height="200">
+                <circle class="svgcircle" cx="100" cy="100" r="50">                    
+                </circle>
+            </svg>
+        </div>
+        <style>
+            .svgcircle
+            {
+                fill:red;
+                stroke-width:5;
+                stroke:black;
+            }                
+        </style>
+        <pre>
+
+.svgcircle
+{
+    fill:red;
+    stroke-width:5;
+    stroke:black;
+}                        
+        </pre>
+    </section>
+
+    <section>
+        <h1>SVG and Script</h1>
+                <div class="row span16 center">
+            <svg width="200" height="200">
+                <circle class="svgcircle" cx="100" cy="100" r="50">                    
+                </circle>
+            </svg>
+        </div>
+        <style>
+            .svgcircle:hover
+            {
+                fill:yellow;                
+                stroke:red;
+            }                
+        </style>
+        <script>
+            $(function () {
+                $(".svgcircle").click(function () {
+                    var circle = $(this);
+                    circle.attr("r", parseInt(circle.attr("r")) + 10);
+                });
+            });            
+        </script>
+        <pre>
+
+$(".svgcircle").click(function () {
+    var circle = $(this);
+    circle.attr("r", parseInt(circle.attr("r")) + 10);
+});                       
+        </pre>
+    </section>
+
+    <section>
+        <h1>Canvas versus SVG</h1>
+        <div class="row span16 center">
+        
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Canvas</th>
+                    <th>SVG</th>
+                </tr>
+                <tr>
+                    <td>Abstraction</td>
+                    <td>Pixels</td>
+                    <td>Shapes</td>
+                </tr>
+                <tr>
+                    <td>Interaction</td>
+                    <td>Script</td>
+                    <td>Script or CSS</td>
+                </tr>
+                <tr>
+                    <td>Perf</td>
+                    <td>Small surface, large # objects</td>
+                    <td>Large surface, small # objects</td>
+                </tr>
+                <tr>
+                    <td>Capture</td>
+                    <td>Video and Images</td>
+                    <td>Static</td>
+                </tr>
+            </table>
+        
+        </div>
+    </section>
+
+    <section>
+        <h1>Summary</h1>
+        <ul>
+            <li>SVG for detail and scalability</li>
+            <li>Canvas for low level pixel work</li>
+        </ul>
+    </section>
+
+    <footer>
+		(c) 2011 OdeToCode LLC
+	</footer>
+
+</body>
+</html>
