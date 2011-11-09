@@ -88,5 +88,18 @@ input {
 }
 
 table {
-	font-size: 20px;
+	font-size: 22px;
+}
+
+table th {
+    background-color: maroon;
+    color: white;
+}
+
+table tr {
+    background-color: #aaaaaa;
+}
+
+section div, section pre {
+    margin: 10px;
 }
