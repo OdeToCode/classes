@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Infrastructure Libraries</title>
+	<link href="themes/bootstrap.css" rel="stylesheet" />
+	<link href="../prettify/prettify.css" rel="stylesheet" />
+	<link href="themes/otc.css" rel="stylesheet" />		
+    <script src="../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+	<script src="../prettify/prettify.js" type="text/javascript"></script>
+    <script src="../scripts/raphael.js" type="text/javascript"></script>
+    <script src="../scripts/g-raphael.js" type="text/javascript"></script>
+    <script src="../scripts/g-line.js" type="text/javascript"></script>
+	<script src="point5.js" type="text/javascript"></script>
+</head>
+<body>
+    <section>		
+		<h1>JavaScript Libraries</h1>
+		<svg viewBox="0 0 512 512">
+			<title>HTML5 Logo</title>  
+			<polygon fill="#E44D26" points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512 			"/>
+			<polygon fill="#F16529" points="256,480.523 376.03,447.246 404.27,130.894 256,130.894 			"/>
+			<polygon fill="#EBEBEB" points="256,268.217 195.91,268.217 191.76,221.716 256,221.716 256,176.305 255.843,176.305 142.132,176.305 143.219,188.488 154.38,313.627 256,313.627"/>
+			<polygon fill="#EBEBEB" points="256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 256,433.399"/>
+			<path d="M108.382,0h23.077v22.8h21.11V0h23.078v69.044H152.57v-23.12h-21.11v23.12h-23.077V0z"/>
+			<path d="M205.994,22.896h-20.316V0h63.72v22.896h-20.325v46.148h-23.078V22.896z"/>
+			<path d="M259.511,0h24.063l14.802,24.26L313.163,0h24.072v69.044h-22.982V34.822l-15.877,24.549h-0.397l-15.888-24.549v34.222h-22.58V0z"/>
+			<path d="M348.72,0h23.084v46.222h32.453v22.822H348.72V0z"/>
+			<polygon fill="#FFFFFF" points="255.843,268.217 255.843,313.627 311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 349.162,268.217"/>
+			<polygon fill="#FFFFFF" points="255.843,176.305 255.843,204.509 255.843,221.605 255.843,221.716 365.385,221.716 365.385,221.716 365.531,221.716 366.442,211.509 368.511,188.488 369.597,176.305"/>
+		</svg>		
+	</section>
+        
+    <section>
+        <h1>Modernizr</h1>
+        <ul>
+            <li>Enables HTML 5 in IE < 9</li>
+            <li>Provides feature detection</li>
+            <li>Script loader </li>
+            <li><a href="http://www.modernizr.com/" target="_blank">http://www.modernizr.com/</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>HTML5 Shim</h1>
+        <ul>
+            <li>IE < 9 doesn't style unknown elements</li>
+            <li>Modernizr makes the elements known</li>
+        </ul>
+        <pre>
+
+&lt;head&gt;
+    &lt;title&gt;...&lt;/title&gt;
+    &lt;script src=&quot;../../scripts/modernizr.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+        </pre>
+    </section>
+
+    <section>
+        <h1>Feature Detection</h1>
+        <ul>
+            <li>Because user-agent sniffing is obsolete</li>
+            <li>Modernizr doesn't add any features</li>
+            <li>Build a custom download with feature tests you care about</li>
+        </ul>
+        <pre>
+            
+if (Modernizr.canvas) {
+    // .. canvas action
+}
+        </pre>
+    </section>
+
+    <section>
+        <h1>Progressive Enhancement</h1>
+        <ul>
+            <li>Emphasizes accesibiliy and semantic markup</li>
+            <li>Take advantage of advanced features</li>
+            <li>Layer in capabilities</li>
+        </ul>
+        <pre>
+               
+&lt;html class=&quot; js flexbox canvas canvastext webgl no-touch geolocation 
+             postmessage websqldatabase indexeddb hashchange history draganddrop 
+             websockets rgba hsla multiplebgs backgroundsize borderimage 
+             borderradius boxshadow textshadow opacity cssanimations csscolumns 
+             cssgradients cssreflections csstransforms csstransforms3d 
+             csstransitions fontface generatedcontent video audio localstorage 
+             sessionstorage webworkers applicationcache svg inlinesvg smil 
+             svgclippaths&quot;&gt;
+&lt;head&gt;
+        </pre>
+    </section>
+
+    <section>
+        <h1>Using Modernizr Classes</h1>
+        <pre>
+        
+.box {
+   border-bottom: 1px solid #666;
+   border-right: 1px solid #777;
+}
+
+.boxshadow div.box {
+   border: none;
+   -webkit-box-shadow: #666 1px 1px 1px;
+   -moz-box-shadow: #666 1px 1px 1px;
+   box-shadow: #666 1px 1px 1px;
+}
+        </pre>
+    </section>
+
+    <section>
+        <h1>Polyfills</h1>
+        <ul>
+            <li>Shims for HTML 5 Features</li>
+            <li>A growing <a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">collection</a> of shims</li>
+            <li>Pick wisely</li>
+        </ul>
+        <pre>
+        
+Modernizr.load({
+  test: Modernizr.geolocation,
+  yep : 'geo.js',
+  nope: 'geo-polyfill.js'
+});
+        </pre>
+    </section>
+
+    <section>
+        <h1>Underscore</h1>
+        <ul>
+            <li>Functional Utility Belt</li>            
+        </ul>
+        <pre>
+        
+_.each([1, 2, 3], function(num){ alert(num); });        
+        </pre>
+    </section>
+
+    <section>
+        <h1>Underscore Map Filter Reduce</h1>
+        <ul>
+            <li>Like having LINQ in JavaScript</li>
+        </ul>
+        <pre>
+        
+var featureMap =
+    _(_.keys(Modernizr))
+        .chain()
+        .filter(noFunctionsOrPrivates)
+        .map(toNameAndResult)
+        .sortBy(name)
+        .value();
+
+function noFunctionsOrPrivates(key) {
+    return typeof Modernizr[key] !== "function" &&
+	        key.substring(0, 1) != "_";
+}        
+        </pre>
+    </section>
+
+    <section>
+        <h1>Memoization</h1>
+        <pre>
+
+var fibonacci = _.memoize(function(n) {
+  return n < 2 ? n : fibonacci(n - 1) + fibonacci(n - 2);
+});        
+        </pre>
+    </section>
+
+<section>
+        <h1>Once</h1>
+        <pre>
+// From the source:        
+// Returns a function that will be executed at most one time, no matter how
+// often you call it. Useful for lazy initialization.
+_.once = function(func) {
+    var ran = false, memo;
+    return function() {
+      if (ran) return memo;
+      ran = true;
+      return memo = func.apply(this, arguments);
+    };
+  };
+        </pre>
+    </section>
+
+    <section>
+        <h1>Throttle & Debounce</h1>
+        <pre>
+        
+var throttled = _.throttle(updatePosition, 100);
+var lazyLayout = _.debounce(calculateLayout, 300);
+
+// From the source:
+// Internal function used to implement `_.throttle` and `_.debounce`.
+  var limit = function(func, wait, debounce) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var throttler = function() {
+        timeout = null;
+        func.apply(context, args);
+      };
+      if (debounce) clearTimeout(timeout);
+      if (debounce || !timeout) timeout = setTimeout(throttler, wait);
+    };
+  };
+        </pre>
+    </section>
+    
+    <section>
+        <h1>Raphael</h1>
+        <ul>
+            <li>A library for working with SVG</li>
+            <li>Falls back to VML for IE < 8</li>
+        </ul>
+        <div id="r1" class="row span16 center" style="height:200px">
+               
+        </div>
+        <script>            
+            var paper = Raphael($("#r1").get(0), 320, 200);            
+            var circle = paper.circle(160, 100, 95);            
+            circle.attr("fill", "#ff0000");
+            circle.attr("stroke-width", 5);
+            circle.attr("stroke", "#000000");
+            
+        </script>
+    </section>
+
+    <section>
+        <h1>Creating Raphael</h1>
+        <pre>
+        
+var paper = Raphael(element, 320, 200);
+        </pre>
+    </section>
+
+    <section>
+        <h1>Primitives</h1>
+        <div id="r2" class="row span16 center" style="height:200px">
+               
+        </div>
+        <pre>
+        
+var paper = Raphael($("#r2").get(0), 320, 200);
+var circle = paper.circle(160, 100, 25);
+circle.attr("fill", "#ff0000");
+
+var rect = paper.rect(10, 10, 50, 50, 5);
+rect.attr("fill", "#00ff00");
+
+var ellipse = paper.ellipse(200, 125, 10, 10);
+ellipse.attr("stroke", "black");
+        </pre>
+        <script>
+            var paper = Raphael($("#r2").get(0), 320, 200);
+            var circle = paper.circle(160, 100, 25);
+            circle.attr("fill", "#ff0000");
+
+            var rect = paper.rect(10, 10, 50, 50, 5);
+            rect.attr("fill", "#00ff00");
+
+            var ellipse = paper.ellipse(200, 125, 10, 10);
+            ellipse.attr("stroke", "black");
+        </script>
+    </section>
+
+    <section>
+        <h1>Animation</h1>
+        <div id="ranimate" class="row span16 center" style="height:200px">
+               
+        </div>
+        <pre>
+        
+$("#ranimate").click(function () {
+    circle.animate(
+    {
+        cx: 20, cy: 20, r:85
+    }, 2000);
+});
+        </pre>
+        <script>
+            var paper = Raphael($("#ranimate").get(0), 320, 200);
+            var circle = paper.circle(160, 100, 25);
+            circle.attr("fill", "#ff0000");
+
+            $("#ranimate").click(function () {
+                circle.animate({
+                        cx: 20, cy: 20, r:85
+                    }, 2000);
+            });
+        </script>
+    </section>
+
+    <section>
+        <h1>Paths</h1>
+           <div id="rpath" class="row span16 center" style="height:200px">               
+        </div>
+        <pre>
+        
+var path = paper.path("M150 0 L75 200 L225 200 Z");
+        </pre>
+        <script>
+            var paper = Raphael($("#rpath").get(0), 320, 200);
+            var path = paper.path("M150 0 L75 200 L225 200 Z");            
+        </script>
+    </section>    
+
+    <section>
+        <h1>Plugins</h1>
+           <div id="rgraph" class="row span16 center" style="height:450px">               
+        </div>
+        <script>
+            var r = Raphael($("#rgraph").get(0), 600, 450);
+            txtattr = { font: "12px sans-serif" };
+                
+                var x = [], y = [], y2 = [], y3 = [];
+
+                for (var i = 0; i < 1e6; i++) {
+                    x[i] = i * 10;
+                    y[i] = (y[i - 1] || 0) + (Math.random() * 7) - 3;
+                    y2[i] = (y2[i - 1] || 150) + (Math.random() * 7) - 3.5;
+                    y3[i] = (y3[i - 1] || 300) + (Math.random() * 7) - 4;
+                }
+
+                r.text(160, 10, "Simple Line Chart (1000 points)").attr(txtattr);
+                r.text(480, 10, "shade = true (10,000 points)").attr(txtattr);;
+                r.text(160, 250, "shade = true & nostroke = true (1,000,000 points)").attr(txtattr);
+                r.text(480, 250, "Symbols, axis and hover effect").attr(txtattr);
+
+                r.linechart(10, 10, 300, 220, x, [y.slice(0, 1e3), y2.slice(0, 1e3), y3.slice(0, 1e3)]).hoverColumn(function () {
+                    this.set = r.set(
+                        r.circle(this.x, this.y[0]),
+                        r.circle(this.x, this.y[1]),
+                        r.circle(this.x, this.y[2])
+                    );
+                }, function () {
+                    this.set.remove();
+                });
+
+                r.linechart(330, 10, 300, 220, x, [y.slice(0, 1e4), y2.slice(0, 1e4), y3.slice(0, 1e4)], { shade: true });
+                r.linechart(10, 250, 300, 220, x, [y, y2, y3], { nostroke: true, shade: true });
+
+                var lines = r.linechart(330, 250, 300, 220, [[1, 2, 3, 4, 5, 6, 7],[3.5, 4.5, 5.5, 6.5, 7, 8]], [[12, 32, 23, 15, 17, 27, 22], [10, 20, 30, 25, 15, 28]], { nostroke: false, axis: "0 0 1 1", symbol: "circle", smooth: true }).hoverColumn(function () {
+                    this.tags = r.set();
+
+                    for (var i = 0, ii = this.y.length; i < ii; i++) {
+                        this.tags.push(r.tag(this.x, this.y[i], this.values[i], 160, 10).insertBefore(this).attr([{ fill: "#fff" }, { fill: this.symbols[i].attr("fill") }]));
+                    }
+                }, function () {
+                    this.tags && this.tags.remove();
+                });
+
+                lines.symbols.attr({ r: 6 });
+            
+        </script>
+    </section>    
+
+    <section>
+        <h1>Summary</h1>
+        <ul>
+            <li>Modernizr for building modern web sites</li>
+            <li>Underscore as a utility belt</li>
+            <li>Raphael for fancy graphics</li>
+        </ul>
+    </section>
+
+
+    <footer>
+		(c) 2011 OdeToCode LLC
+	</footer>
+
+</body>
+</html>
