@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>CSS Animations and Transitions</title>
+	<link href="themes/bootstrap.css" rel="stylesheet" />
+	<link href="../prettify/prettify.css" rel="stylesheet" />
+	<link href="themes/otc.css" rel="stylesheet" />		
+    <script src="../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+	<script src="../prettify/prettify.js" type="text/javascript"></script>
+	<script src="point5.js" type="text/javascript"></script>
+</head>
+<body>
+    <section>		
+		<h1>CSS 3 Animations and Transitions</h1>
+		<svg viewBox="0 0 512 512">
+			<title>HTML5 Logo</title>  
+			<polygon fill="#E44D26" points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512 			"/>
+			<polygon fill="#F16529" points="256,480.523 376.03,447.246 404.27,130.894 256,130.894 			"/>
+			<polygon fill="#EBEBEB" points="256,268.217 195.91,268.217 191.76,221.716 256,221.716 256,176.305 255.843,176.305 142.132,176.305 143.219,188.488 154.38,313.627 256,313.627"/>
+			<polygon fill="#EBEBEB" points="256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 256,433.399"/>
+			<path d="M108.382,0h23.077v22.8h21.11V0h23.078v69.044H152.57v-23.12h-21.11v23.12h-23.077V0z"/>
+			<path d="M205.994,22.896h-20.316V0h63.72v22.896h-20.325v46.148h-23.078V22.896z"/>
+			<path d="M259.511,0h24.063l14.802,24.26L313.163,0h24.072v69.044h-22.982V34.822l-15.877,24.549h-0.397l-15.888-24.549v34.222h-22.58V0z"/>
+			<path d="M348.72,0h23.084v46.222h32.453v22.822H348.72V0z"/>
+			<polygon fill="#FFFFFF" points="255.843,268.217 255.843,313.627 311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 349.162,268.217"/>
+			<polygon fill="#FFFFFF" points="255.843,176.305 255.843,204.509 255.843,221.605 255.843,221.716 365.385,221.716 365.385,221.716 365.531,221.716 366.442,211.509 368.511,188.488 369.597,176.305"/>
+		</svg>		
+	</section>
+        
+    <section>
+        <h1>Transitions</h1>
+        <ul>
+            <li>Properties change over time</li>
+            <li><a href="http://www.w3.org/TR/css3-transitions/" target="_blank">Can I Use?</a></li>
+        </ul>
+        <div id="t1" class="row span16 center">
+            This &lt;div&gt; will transition
+        </div>
+        <style>
+            #t1
+            {
+                background-color:#ff0000;  
+                border: 5px solid black;
+                padding:10px;              
+                border-radius: 10px;
+            }
+            #t1:hover
+            {
+                background-color:#00ff00;
+                border-radius: 20px;
+                /*-webkit-transition-property: background;
+                -webkit-transition-duration: 2s;
+                -webkit-transition-timing-function: ease;*/
+            }
+        </style>
+        <pre>
+
+.easy {        
+    transition-property: background;
+    transition-duration: 2s;
+    transition-timing-function: ease;        
+}
+        </pre>
+    </section>
+
+    <section>
+        <h1>Timing</h1>
+        <ul>
+            <li>ease</li>
+            <li>linear</li>
+            <li>ease-in</li>
+            <li>ease-out</li>
+            <li>ease-in-out</li>
+            <li>cubic-bezier <a href="http://matthewlein.com/ceaser/" target="_blank">(ceasar)</a></li>
+        </ul>
+        <div class="row span16 center">
+            <img src="images/ease.png" style="position:relative; left:40px; top:-250px;" alt="easing-e"/>
+        </div>
+    </section>
+
+    <section>
+        <h1>Transition Delay</h1>
+        <ul>
+            <li>transition-delay to delay the transition</li>
+        </ul>
+        <pre>
+        
+.easy {        
+    transition-property: background;
+    transition-duration: 2s;
+    transition-timing-function: ease;        
+    transition-delay: 0.5s;
+}
+        </pre>    
+    </section>
+
+    <section>
+        <h1>Transition States</h1>
+        <ul>
+            <li>Query property during transition will show intermediate state</li>
+            <li>Automatic reversals if interrupted</li>
+        </ul>
+        <div id="t2" class="row span16 center">
+            This &lt;div&gt; will transition
+        </div>
+        <style>
+            #t2
+            {
+                background-color:#ff0000;  
+                border: 5px solid black;
+                padding:10px;              
+                border-radius: 10px;
+                -webkit-transition: background 2s ease;
+                
+            }
+            #t2:hover
+            {
+                background-color:#00ff00;
+                border-radius: 20px;                
+            }
+        </style>
+        <pre>
+
+.easy {        
+    /* shortcut syntax */
+    transition: background 2s ease;
+}
+        </pre>
+    </section>
+
+    <section>
+        <h1>Animatable Properties</h1>
+        <ul>
+            <li>Colors, gradients</li>
+            <li>Sizes, positions</li>
+            <li>z-index, opacity</li>
+        </ul>
+        <div id="t3" class="row span16 center">
+            This &lt;div&gt; will transition
+        </div>
+        <style>
+            #t3
+            {
+                background-color:#ff0000;  
+                border: 5px solid black;
+                padding:10px;  
+                color:Black;            
+                opacity:0.2;
+                -webkit-border-radius: 10px;
+                -webkit-transition-property: all;
+                -webkit-transition-duration: 1s;
+                -webkit-transition-timing-function: ease;
+            }
+            #t3:hover
+            {
+                background-color:#00ff00;                
+                color:White;
+                opacity: 1.0;
+                border-radius: 20px;                
+            }
+        </style>
+    </section>
+
+    <section>
+        <h1>CSS Translations</h1>
+        <div class="translationwrapper" class="row span16 center">
+            <div class="skew">Skew me</div>
+            <div class="scale">Scale me</div>        
+            <div class="translate">Translate me</div>
+            <div class="rotate">Rotate me</div>
+        </div>
+
+        <style>
+            .translationwrapper > div
+            {
+                display:inline-block;
+                background-color:Yellow;
+                font-weight:bold;
+                padding: 20px;            
+                border: 4px solid black;    
+                border-radius: 12px;
+            }
+            
+            .skew {
+	            -webkit-transform:skew(35deg);	
+            }
+            .scale {
+	            -webkit-transform:scale(1.0,1.5);	
+            }
+            .rotate {
+	            -webkit-transform:rotate(45deg);	
+            }
+            .translate {
+	            -webkit-transform:translate(10px, 20px);
+            }        
+        </style>
+        <pre>
+        
+.skew {
+	transform:skew(35deg);	
+}
+.scale {
+	transform:scale(1,0.5);	
+}
+.rotate {
+	transform:rotate(45deg);	
+}
+.translate {
+	transform:translate(10px, 20px);
+}                
+        </pre>
+    </section>
+
+    <section>
+        <h1>Translation and Flow</h1>
+        <ul>
+            <li>Similar to position:relative</li>
+            <li>Translations don't impact the normal flow</li>
+            <li>Always translate with respect to self</li>
+            <li>Some browsers only allow translation of block elements</li>
+        </ul>
+        <pre>
+        
+.scalerotate
+{
+    -webkit-transform: scale(2) rotate(15deg);
+}
+        </pre>
+        <div class="translationwrapper" class="row span16 center">
+            <div class="scalerotate">Scale and rotate</div>
+        </div>
+        <style>
+            div.scalerotate
+            {
+                -webkit-transform: scale(2) rotate(15deg);
+                background-color:mediumvioletred;
+                
+            }
+        </style>
+    </section>
+
+    <section>
+        <h1>Transformation Origin</h1>
+        <ul>
+            <li>Defaults to the center of the box</li>
+            <li>Use transform-origin</li>
+        </ul>
+        <div class="translationwrapper">
+            <div class="c1">C1</div>
+            <div class="c2">C2</div>
+            <div class="c3">C3</div>
+            <div class="c4">C4</div>
+        </div>
+        <style>
+            div.c1
+            {
+                background-color:Aqua;
+                border-radius:45px;
+                -webkit-transform-origin: 0 0;
+                -webkit-transform: rotate(10deg);
+            }
+            div.c2
+            {
+                background-color:orange;
+                border-radius:45px;
+                -webkit-transform-origin: 20% 20%;
+                -webkit-transform: rotate(30deg);
+            }
+            div.c3
+            {
+                background-color:indigo;
+                border-radius:45px;
+                -webkit-transform-origin: 40% 40%;
+                -webkit-transform: rotate(30deg);
+            }
+            div.c4
+            {
+                background-color:yellow;
+                border-radius:45px;
+                -webkit-transform-origin: 60% 60%;
+                -webkit-transform: rotate(30deg);
+            }
+        </style>
+        <pre>
+        
+ div.c4
+{
+    background-color:yellow;
+    border-radius:45px;
+    transform-origin: 60% 60%;
+    transform: rotate(30deg);
+}
+        </pre>
+    </section>
+
+    <section>
+        <h1>Translations and Transitions Together</h1>
+        <div id="ttt" class="row span16 center">
+            This &lt;div&gt; will transition
+        </div>
+        <style>
+            #ttt
+            {
+                background-color:indigo;  
+                border: 5px solid black;
+                opacity: 0.8;
+                color:White;
+                padding:10px;              
+                border-radius: 20px;
+                -webkit-transition: all 1s ease-in-out;                
+            }
+            #ttt:hover
+            {
+                opacity: 1.0;
+                -webkit-transform: rotate(5deg);                
+            }
+        </style>
+        <pre>
+        
+#ttt
+{
+    -webkit-transition: all 1s ease-in-out;                
+}
+#ttt:hover
+{
+    -webkit-transform: rotate(5deg);                
+}
+        </pre>
+    </section>
+
+    <section>
+        <h1>CSS3 Animations</h1>
+        <ul>
+            <li>Adds keyframes</li>
+        </ul>
+        <div class="row span16 center">
+            <div id="animBox">Hover me!</div>
+        </div>
+        <style>
+            @-webkit-keyframes resize {
+	            0% {
+		            padding: 0;
+	            }
+	            50% {
+		            padding: 0 20px;
+		            background-color:rgba(255,0,0,0.2);		
+	            }
+	            100% {
+		            padding: 0 100px;
+		            background-color:rgba(255,0,0,0.9);
+	            }
+            }
+             
+            #animBox {	            
+	            margin:0 auto;	 
+	            width:100px;           
+	            height: 100px;
+	            border:5px black solid;
+	            background-color:rgba(255,0,0,0.7);
+            }
+
+            #animBox:hover {
+	            -webkit-animation-name: resize;
+	            -webkit-animation-duration: 1s;
+	            -webkit-animation-iteration-count: 4;
+	            -webkit-animation-direction: alternate;	
+            }     
+        </style>
+        <pre>
+ @keyframes resize {
+   0% {  padding: 0; }
+   50% {
+       padding: 0 20px;
+       background-color:rgba(255,0,0,0.2);		
+   }
+   100% {
+       padding: 0 100px;
+       background-color:rgba(255,0,0,0.9);
+   }
+}</pre>
+    </section>
+
+    <section>
+        <h1>Flipping Out</h1>
+        <div class="row span16 center">
+            <div id="f1_container">
+	            <div id="f1_card" class="shadow">
+		            <div class="front face">
+			            <img src="images/background1.jpg"/>
+		            </div>
+		            <div class="back face center">
+			            <p>Pretty cool, heh?</p>
+		            </div>
+ 		        </div>
+            </div>
+        </div>
+        <style>
+            #f1_container {
+	            position: relative;
+	            margin: 10px auto;
+	            width: 450px;
+	            height: 281px;
+	            z-index: 1;
+            }
+            .face.back {
+	            display: none;
+            }
+
+            #f1_container {
+	            -webkit-perspective: 1000;				
+            }
+            #f1_card {
+	            width: 100%;
+	            height: 100%;	
+	            -webkit-transform-style: preserve-3d;
+	            -webkit-transition: all 1.0s linear;	
+            }
+            #f1_container:hover #f1_card {
+	            -webkit-transform: rotateY(180deg);
+	            box-shadow: -5px 5px 5px #aaa;
+            }
+            .face {
+	            position: absolute;
+	            width: 100%;
+	            height: 100%;
+	            -webkit-backface-visibility: hidden;
+            }
+            .face.back {
+	            display: block;
+	            -webkit-transform: rotateY(180deg);
+	            box-sizing: border-box;
+	            padding: 10px;
+	            color: white;
+	            text-align: center;
+	            background-color: #000;
+            }        
+        </style>
+    </section>
+
+    <section>
+        <h1>Summary</h1>
+        <ul>
+            <li>Remember to be subtle</li>
+            <li>Remember to use vendor prefixes</li>
+        </ul>
+    </section>
+
+    <footer>
+		(c) 2011 OdeToCode LLC
+	</footer>
+
+</body>
+</html>

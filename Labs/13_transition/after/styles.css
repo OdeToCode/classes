@@ -1,0 +1,26 @@
+﻿.fxButton
+{
+    background-color: mediumaquamarine;
+    border: 3px solid black;
+    font-size: 24px;
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    color: black;
+    text-align: center;
+    -webkit-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.fxButton:hover
+{
+    font-size: 28px;
+    -webkit-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    box-shadow: inset 0px 0px 20px black;
+}
+
