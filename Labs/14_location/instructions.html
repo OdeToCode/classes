@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Transitions</title>
+	<meta charset="utf-8"/>
+	<link href="../../styles.css" rel="stylesheet">
+    <link href="../../prettify/prettify.css" rel="stylesheet" />
+	<script src="../../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+	<script src="../../prettify/prettify.js" type="text/javascript"></script>        
+</head>
+<body>
+    <header>
+        Mapping
+    </header>
+
+    <section>
+        <h1>Overview</h1>
+        <p>
+            The goal of this lab is to display a Google map centered on your current location (using geolocation).
+            The page.html file in the before folder contains all the libraries and markup you need (the Google 
+            map APIs are already included, and as of V3 you no longer need an API key to use the API).
+        </p>
+        <p>
+            All you'll need to do is add some script to the page to display the map correctly. You might find
+            the following code helpful in centering a Google map on a particular position. <strong>Make sure
+            you provide an error handler for the geolocation call. </strong> Try to display a message after
+            turning off geolocation to see how the error handling works. 
+        </p>
+        <pre>
+        
+var position = new google.maps.LatLng(lat, lng);
+var options = {
+     zoom: 8,
+     center: position,
+     mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+var map = new google.maps.Map(document.getElementById("map_canvas"), options);
+        </pre>
+        <p>Good luck!</p>
+    </section>
+    
+    <script type="text/javascript">
+        $(function(){
+           prettyPrint();
+        });
+    </script>
+</body>
+</html>

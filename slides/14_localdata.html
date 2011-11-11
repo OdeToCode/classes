@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Geolocation and Offline Apps</title>
+	<link href="themes/bootstrap.css" rel="stylesheet" />
+	<link href="../prettify/prettify.css" rel="stylesheet" />
+	<link href="themes/otc.css" rel="stylesheet" />		
+    <script src="../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+	<script src="../prettify/prettify.js" type="text/javascript"></script>
+	<script src="point5.js" type="text/javascript"></script>
+</head>
+<body>
+    <section>		
+		<h1>Geolocation and Offline Apps</h1>
+		<svg viewBox="0 0 512 512">
+			<title>HTML5 Logo</title>  
+			<polygon fill="#E44D26" points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512 			"/>
+			<polygon fill="#F16529" points="256,480.523 376.03,447.246 404.27,130.894 256,130.894 			"/>
+			<polygon fill="#EBEBEB" points="256,268.217 195.91,268.217 191.76,221.716 256,221.716 256,176.305 255.843,176.305 142.132,176.305 143.219,188.488 154.38,313.627 256,313.627"/>
+			<polygon fill="#EBEBEB" points="256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 256,433.399"/>
+			<path d="M108.382,0h23.077v22.8h21.11V0h23.078v69.044H152.57v-23.12h-21.11v23.12h-23.077V0z"/>
+			<path d="M205.994,22.896h-20.316V0h63.72v22.896h-20.325v46.148h-23.078V22.896z"/>
+			<path d="M259.511,0h24.063l14.802,24.26L313.163,0h24.072v69.044h-22.982V34.822l-15.877,24.549h-0.397l-15.888-24.549v34.222h-22.58V0z"/>
+			<path d="M348.72,0h23.084v46.222h32.453v22.822H348.72V0z"/>
+			<polygon fill="#FFFFFF" points="255.843,268.217 255.843,313.627 311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 349.162,268.217"/>
+			<polygon fill="#FFFFFF" points="255.843,176.305 255.843,204.509 255.843,221.605 255.843,221.716 365.385,221.716 365.385,221.716 365.531,221.716 366.442,211.509 368.511,188.488 369.597,176.305"/>
+		</svg>		
+	</section>
+    
+    <section>
+        <h1>Geolocation</h1>
+        <ul>
+            <li>Depends on device</li>
+            <li>IP address</li>
+            <li>Wireless connection</li>
+            <li>Cell tower</li>
+            <li>GPS hardware</li>
+            <li><a href="http://caniuse.com/#search=geo" target="_blank">Can I Use?</a></li>
+        </ul>
+    </section>    
+    
+    <section>
+        <h1>Geolocation Security</h1>
+        <ul>
+            <li>User may be prompted</li>
+            <li>Some user agents can disable</li>
+        </ul>
+        <div class="row span16 center">
+            <img src="images/geoblock.png" alt="blocked!"/>
+        </div>
+    </section>
+
+    <section>
+        <h1>Geolocation API</h1>
+        <ul>
+            <li>getCurrentPosition</li>
+            <li>watchPosition</li>
+            <li>clearPosition</li>
+        </ul>
+        <div id="g1" class="row span16 center">
+        </div>
+        <script>
+            $(function() {
+                navigator.geolocation.getCurrentPosition(displayPosition, positionError);
+            });
+            
+            function displayPosition(position) {
+                console.log(position);
+                
+                var anchor = $("<a>");
+                anchor.attr("href", "http://www.bing.com/maps/?v=2&cp=" + position.coords.latitude + "~-" + position.coords.longitude + "&lvl=13&dir=0&sty=r&form=LMLTCC");
+                anchor.attr("target", "_blank");
+                anchor.text("Go to the map");
+                $("#g1").append(anchor);
+            }
+            
+            function positionError(error) {
+                console.log(error);
+            }
+            
+        </script>
+        <pre>
+        
+navigator.geolocation.getCurrentPosition(success, error, options);
+        </pre>
+    </section>
+
+    <section>
+        <h1>More Information</h1>
+        <ul>
+            <li>altitude (meters)</li>
+            <li>accuracy</li>
+            <li>altitudeAccuracy</li>
+            <li>heading (degrees)</li>
+            <li>speed</li>
+            <li>timestamp</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Errors</h1>
+        <ul>
+            <li>denied</li>
+            <li>unavailable</li>
+            <li>timeout</li>
+            <li>error</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Watch Position</h1>
+        <ul>
+            <li>Invokes callback whenever user changes location</li>
+            <li>Returns a handle</li>
+            <li>Call clearWatch() to stop watching (passing the handle)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>WebStorage</h1>
+        <ul>
+            <li>Session storage</li>
+            <li>Local storage (5MB)</li>
+            <li>Not like cookies</li>
+            <li>Scoped to an origin</li>
+        </ul>        
+        <div id="favColor" class="span16 center row">My favorite color</div>
+        <script>
+            $(function () {
+                localStorage.setItem("favoriteColor", "#ff0000");
+                $("#favColor").css({ "color": localStorage.getItem("favoriteColor") });                                
+            });
+        </script>
+        <pre>
+        
+localStorage.setItem("favoriteColor", color);
+sessionStorage["temp"] = number;
+...
+
+localStorage["favoriteColor"]; // returns null if not available
+        </pre>
+    </section>
+
+    <section>
+        <h1>Application Cache</h1>
+        <ul>
+            <li>Caches the entire app locally</li>
+            <li>Works on mobile!</li>
+        </ul>
+    </section>
+ 
+    <section>
+        <h1>Manifest</h1>
+        <ul>
+            <li>.appcache served as text/cache-manifest</li>
+        </ul>
+        <pre>
+        
+CACHE MANIFEST
+# 2010-11-17-v0.0.1
+
+# Explicitly cached entries
+CACHE:
+index.html
+stylesheet.css
+images/logo.png
+        </pre>
+    </section>
+
+    <section>
+        <h1>Network Section</h1>
+        <ul>
+            <li>A whitelist of things that require a connection</li>
+            <li>Should almost always use a * here</li>
+        </ul>
+        <pre>
+        
+CACHE MANIFEST
+# 2010-11-17-v0.0.1
+
+# Explicitly cached entries
+CACHE:
+index.html
+stylesheet.css
+images/logo.png
+
+NETWORK:
+*
+        </pre>
+    </section>
+
+    <section>
+        <h1>Pointing to the manifest</h1>
+        <ul>
+            <li>Should point to the manifest on every page</li>
+            <li>User agent might prompt the user to cache the application</li>
+            <li>Assume you have 5MB to work with</li>
+        </ul>
+        <pre>
+        
+&lt;html manifest=&quot;/cache.manifest&quot;&gt;   
+        </pre>
+    </section>
+
+    <section>
+        <h1>Refreshing the Cache</h1>
+        <ul>
+            <li>When manifest changes, browser will update the offline site</li>
+            <li>Good idea to keep a version number (in a comment)</li>
+            <li>navigator.online will tell you if browser is online</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Summary</h1>
+        <ul>
+            <li>GeoLocation</li>
+            <li>WebStorage</li>
+            <li>ApplicationCache</li>
+        </ul>
+    </section>
+
+    <footer>
+		(c) 2011 OdeToCode LLC
+	</footer>
+
+</body>
+</html>
