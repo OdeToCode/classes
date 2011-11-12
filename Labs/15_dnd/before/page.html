@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DND</title>
+    <script src="../../../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+    <style>
+        .draggables div
+        {
+            background-color: mediumaquamarine;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            display: inline-block;
+            border: 5px solid black;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .draggables header
+        {
+            background-color: mediumblue;
+            color: White;
+            padding: 10px;
+        }
+        
+        .dragging
+        {
+            opacity: 0.4;
+        }
+        
+        .dragTarget
+        {
+            opacity: 0.6;
+        }
+        
+        .dragover
+        {
+            opacity: 1.0;
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1>DND</h1>
+    </header>
+    <div class="draggables">
+        <div id="d1">
+            <header>A</header>
+        </div>
+        <div id="d2">
+            <header>B</header>
+        </div>
+        <div id="d3">
+            <header>C</header>
+        </div>
+    </div>
+</body>
+</html>

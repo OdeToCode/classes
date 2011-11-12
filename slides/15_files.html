@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Dragging Dropping and File Systems</title>
+	<link href="themes/bootstrap.css" rel="stylesheet" />
+	<link href="../prettify/prettify.css" rel="stylesheet" />
+	<link href="themes/otc.css" rel="stylesheet" />		
+    <script src="../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+	<script src="../prettify/prettify.js" type="text/javascript"></script>
+    <script src="../scripts/jquery.history.js" type="text/javascript"></script>
+	<script src="point5.js" type="text/javascript"></script>
+    <style>
+            .draggables div
+            {
+                background-color:mediumaquamarine;
+                height:200px;
+                width:200px;
+                margin:10px;
+                display:inline-block;
+                border: 5px solid black;
+                border-radius: 5px;
+            }
+            .draggables header
+            {
+                background-color:mediumblue;
+                color:White;
+                padding:10px;
+            }
+        </style>
+</head>
+<body>
+    <section>		
+		<h1>Dragging, Dropping, and File Systems</h1>
+		<svg viewBox="0 0 512 512">
+			<title>HTML5 Logo</title>  
+			<polygon fill="#E44D26" points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512 			"/>
+			<polygon fill="#F16529" points="256,480.523 376.03,447.246 404.27,130.894 256,130.894 			"/>
+			<polygon fill="#EBEBEB" points="256,268.217 195.91,268.217 191.76,221.716 256,221.716 256,176.305 255.843,176.305 142.132,176.305 143.219,188.488 154.38,313.627 256,313.627"/>
+			<polygon fill="#EBEBEB" points="256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 256,433.399"/>
+			<path d="M108.382,0h23.077v22.8h21.11V0h23.078v69.044H152.57v-23.12h-21.11v23.12h-23.077V0z"/>
+			<path d="M205.994,22.896h-20.316V0h63.72v22.896h-20.325v46.148h-23.078V22.896z"/>
+			<path d="M259.511,0h24.063l14.802,24.26L313.163,0h24.072v69.044h-22.982V34.822l-15.877,24.549h-0.397l-15.888-24.549v34.222h-22.58V0z"/>
+			<path d="M348.72,0h23.084v46.222h32.453v22.822H348.72V0z"/>
+			<polygon fill="#FFFFFF" points="255.843,268.217 255.843,313.627 311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 349.162,268.217"/>
+			<polygon fill="#FFFFFF" points="255.843,176.305 255.843,204.509 255.843,221.605 255.843,221.716 365.385,221.716 365.385,221.716 365.531,221.716 366.442,211.509 368.511,188.488 369.597,176.305"/>
+		</svg>		
+	</section>
+    
+    <section>
+        <h1>Dragging</h1>
+        <ul>
+            <li>Images, Text, and Anchors are draggable by default</li>
+            <li>Others: draggable=true</li>
+        </ul>
+        <div class="row span16 center">
+            <div class="draggables">
+              <div draggable="true"><header>A</header></div>
+              <div draggable="true"><header>B</header></div>
+              <div ><header>C</header></div>
+            </div>        
+        </div>        
+        <pre>
+        
+&lt;div id=&quot;Div1&quot;&gt;
+    &lt;div draggable=&quot;true&quot;&gt;&lt;header&gt;A&lt;/header&gt;&lt;/div&gt;
+    &lt;div draggable=&quot;true&quot;&gt;&lt;header&gt;B&lt;/header&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;header&gt;C&lt;/header&gt;&lt;/div&gt;
+&lt;/div&gt;  
+        </pre>
+    </section>    
+    
+    <section>
+        <h1>Dropping</h1>
+        <ul>
+            <li>Text inputs are droppable by default</li>
+            <li>For others - handle the events</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Events</h1>
+        <ul>
+            <li>
+                For draggable
+                <ul>
+                    <li>dragstart, drag, dragend</li>                       
+                </ul>
+            </li>
+            <li>
+                For droppable
+                <ul>
+                    <li>dragenter, dragleave, dragover, drop</li>
+                </ul>
+            </li>            
+        </ul>
+        <div class="row">
+            <div class="draggables span8 center">
+              <div id="eventsource" draggable="true"><header>A</header></div>              
+            </div>        
+            <span class="span8" id="dragEventOutput">
+            </span>
+        </div>        
+        <script>
+            $(function () {
+                $("#eventsource").bind("dragstart drag dragenter dragleave dragover drop dragend", function (event) {
+                    $("#dragEventOutput").append(
+                        "<br/>"+event.type
+                    );
+                });
+            });
+        </script>
+    </section>
+
+    <section>
+        <h1>dragover and drop</h1>    
+        <ul>
+            <li>Set on drop target</li>
+            <li>Use preventDefault to allow drop</li>
+            <li>Use dataTransfer to tunnel data</li>
+        </ul>
+        <pre>
+        
+$("#target").bind("dragover", function (e) {
+    e.preventDefault();
+    // ...
+}).bind("drop", function (e) {
+    e.originalEvent.dataTransfer ...    
+});
+        </pre>
+
+    </section>
+
+    <section>
+        <h1>Dropping files</h1>
+        <pre>
+
+var files = e.dataTransfer.files;
+  for (var i = 0, f; f = files[i]; i++) {
+    // Read the File objects in this FileList.
+}            
+        </pre>
+    </section>
+
+    <section>
+        <h1>File System APIs</h1> 
+        <ul>
+            <li>Read and write files from local filesystem</li>
+            <li>Can create data URIs</li>
+        </ul>   
+        <pre>
+        
+var reader = new FileReader();
+reader.onload = function (readerEvent) {
+    img.attr("src", readerEvent.target.result);
+};
+
+reader.readAsDataURL(file);
+        </pre>
+    </section>
+
+    <section>
+        <h1>Local File System</h1>
+        <ul>
+            <li>Very early specification</li>
+            <li><a href="http://caniuse.com/#search=file system" target="_blank">Can I Use?</a></li>
+        </ul>
+        <pre>
+        
+window.requestFileSystem  = window.requestFileSystem || 
+                            window.webkitRequestFileSystem;
+window.requestFileSystem(window.TEMPORARY, 5*1024*1024, onInitFs);
+
+function onInitFs(fs) {
+
+  fs.root.getFile('log.txt', {create: true}, function(fileEntry) {
+    fileEntry.createWriter(function(writer) {  
+        var bb = new BlobBuilder();
+        bb.append('Hello World!');
+        writer.write(bb.getBlob('text/plain'));
+    });
+  }
+}       
+        </pre>
+    </section>
+   
+    <section>
+        <h1>History</h1>
+        <ul>
+            <li>Can still go back and forward</li>
+            <li>Can now also pusState, popState, replaceState</li>
+        </ul>
+        <pre>
+        
+window.history.pushState({ id: next.attr("id").toString() }, null,
+                           "#" + next.attr("id").toString());        
+        </pre>
+    </section>
+
+    <section>
+        <h1>Hash change</h1>
+        <ul>
+            <li>onhashchange can detect change in URL</li>
+            <li>Commonly used with history, AJAX heavy pages</li>            
+        </ul>
+        <pre>
+        
+window.onhashchanged = function() {
+    // reload state 
+}
+        </pre>
+    </section>
+
+    <section>
+        <h1>Summary</h1>
+        <ul>
+            <li>Drag and Drop</li>
+            <li>File system</li>
+            <li>History</li>
+        </ul>
+    </section>
+
+    <footer>
+		(c) 2011 OdeToCode LLC
+	</footer>
+
+</body>
+</html>

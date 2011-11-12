@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drag Drop</title>    
+    <link rel="stylesheet" href="../../styles.css" media="screen">
+    <script src="../../scripts/jquery-1.6.4.js"></script>    
+    <style>
+        .draggables div
+        {
+            background-color: mediumaquamarine;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            display: inline-block;
+            border: 5px solid black;
+            border-radius: 5px;
+            text-align:center;
+        }
+        .draggables header
+        {
+            background-color: mediumblue;
+            color: White;
+            padding: 10px;
+        }
+        
+        .dragging 
+        {
+            opacity: 0.4;
+        }
+                
+        .dragTarget
+        {
+            opacity: 0.6;
+        }                
+                       
+        .dragover
+        {
+            opacity: 1.0;
+        }
+        
+        #dropAnything
+        {
+            border: 5px dashed black;
+            background-color:palegoldenrod;
+            height:200px;
+        }
+    </style>
+    <script>
+//  events:
+//        dragstart
+//        drag
+//        dragenter
+//        dragleave
+//        dragover
+//        drop
+//        dragend
+//  jQuery event: e.originalEvent.dataTransfer
+//          setData getData effectAllowed dropEffect setDragImage
+//
+        $(function () {
+            $("div[draggable]").bind("dragstart", function (e) {
+                $(this).addClass("dragging");
+                e.originalEvent.dataTransfer.setData("text", "#" + $(this).attr("id"));
+
+            }).bind("dragend", function (e) {
+                $(this).removeClass("dragging");
+            });
+            
+            $("#trash").bind("dragover", function (e) {
+                e.preventDefault();
+                $(this).addClass("dragover");
+            }).bind("dragleave", function (e) {
+                $(this).removeClass("dragover");
+            }).bind("drop", function (e) {
+                e.preventDefault();
+                var source = e.originalEvent.dataTransfer.getData("text");
+                $(source).hide("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <div class="draggables">
+            <div id="d1" draggable="true">
+                <header>A</header>
+            </div>
+            <div id="d2" draggable="true">
+                <header>B</header>
+            </div>
+            <div id="d3" draggable="true">
+                <header>C</header>
+            </div>            
+        </div>
+        <div>
+            <img id="trash" class="dragTarget" src="recycle.png" alt="recycle!"/>
+        </div>
+    </div>
+    <hr/>
+    <div>
+        <p>
+        Drop stuff below
+        </p>
+        <div id="dropAnything">
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $("#dropAnything").bind("dragover dragenter dragexit", function (e) {
+                return false;
+            }).bind("drop", function (e) {
+                var list = $(this).children("ul").first();
+                var item = $("<li>");
+                var text = e.originalEvent.dataTransfer.getData("text");
+                if (text) {
+                    item.text(text);
+                }
+                if (e.originalEvent.dataTransfer.files.length) {
+                    var file = e.originalEvent.dataTransfer.files[0];
+                    item.text(file.fileName);
+
+                    var img = $("<img>");
+                    item.append(img);
+
+                    var reader = new FileReader();
+                    reader.onload = function (readerEvent) {
+                        img.attr("src", readerEvent.target.result);
+                    };
+
+                    reader.readAsDataURL(file);
+                }
+                list.append(item);
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

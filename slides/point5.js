@@ -7,7 +7,8 @@ if (!prettyPrint) throw "google-code-prettifier required";
 var p5 = {
     startShow: function () {
         p5.assignSectionIds();
-        $(window).keydown($.proxy(p5.onkeydown, p5));
+        $(window).bind("keydown", $.proxy(p5.onkeydown, p5))
+                 .bind("hashchange", $.proxy(p5.hashchange, p5));
 
         if (window.location.hash) {
             p5.moveTo(window.location.hash);
@@ -113,6 +114,10 @@ var p5 = {
                 p5.moveBackward();
                 break;
         }
+    },
+
+    hashchange: function () {
+        p5.startShow();
     }
 };
 
