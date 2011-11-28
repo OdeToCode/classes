@@ -6,20 +6,30 @@
     <script src="../../scripts/jquery-1.6.4.js" type="text/javascript"></script>
 </head>
 <body>
-    <video id="eventsource" src="../../slides/media/sample.mov" controls style="display:none"></video>           
+    <video id="video" src="../../slides/media/sample.mov" controls></video>           
     <hr/>
     <div id="currentTime">
     </div>
+    <div id="buffered"></div>
+    <div id="dimensions"></div>
     <script>
         $(function () {
-            $("#eventsource").bind("timeupdate", function () {
+
+            $("#video").bind("timeupdate", function () {
                 $("#currentTime").text(this.currentTime);
-            }).bind("canplaythrough", function () {
-                $(this).show();
-            }).click(function () {
-                this.webkitEnterFullscreen();
+                for (var i = 0; i < this.buffered.length; i++) {
+                    $("#buffered").empty().append("<div> Buffered " + this.buffered.start(i) + " to " + this.buffered.end(i) + "</div>");
+                }
             });
+
+            
+            $("#video").bind("loadedmetadata", function () {
+                var width = this.videoWidth;
+                var height = this.videoHeight;                                
+            });
+
         });
+
     </script>                
 
 </body>

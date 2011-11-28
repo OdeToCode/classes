@@ -66,7 +66,7 @@
 			<li>New input types</li>
 			<li>New attributes</li>
 			<li>Behaviors previously only possible with script</li>
-			<li>However <a href="http://caniuse.com/#search=datalist" target="_black">...</a></li>
+			<li>However <a href="http://caniuse.com/#search=datalist" target="_blank">...</a></li>
 		</ul>
 	</section>
 
@@ -150,14 +150,14 @@
 		<pre>
 &lt;form&gt;
   &lt;label for=&quot;ip4address&quot;&gt;Enter an IPv4 address:&lt;/label&gt;
-  &lt;input name=&quot;ip4address&quot; pattern=&quot;\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b&quot;&gt;
+  &lt;input id=&quot;ip4address&quot; pattern=&quot;\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b&quot;&gt;
   &lt;input type=&quot;submit&quot; value=&quot;Go&quot;&gt;
 &lt;/form&gt;
 		</pre>
 		<div class="row span16">
 			<form>
 				<label for="ip4address">Enter an IPv4 address:</label>
-				<input name="ip4address" pattern="\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b">
+				<input id="ip4address" pattern="\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b">
 				<input type="submit" value="Go">
 			</form>
 		</div>
@@ -177,8 +177,8 @@
 		</pre>
 		<div class="row span16">
 			<form>
-				<label for="ip4address">Enter an IPv4 address:</label>
-				<input name="ip4address" disabled>
+				<label for="ip4address2">Enter an IPv4 address:</label>
+				<input name="ip4address2" disabled>
 				<input type="submit" value="Go">
 			</form>
 		</div>
@@ -198,7 +198,7 @@
 		<div class="row span16">
 			<form>
 				<label for="ip4address">Enter an IPv4 address:</label>
-				<input name="ip4address" readonly value="10.10.10.10">
+				<input id="ip4address" readonly value="10.10.10.10">
 				<input type="submit" value="Go">
 			</form>
 		</div>
@@ -269,14 +269,16 @@
 &lt;/datalist&gt;					
 		</pre>
 		<div class="row span16">
-			<label for="movieTitle">Favorite Movie</label>
-			<input type="text" name="moveTitle" list="movies"/>
-			<datalist id="movies">
-				<option value="Star Wars">
-				<option value="Terminator">
-				<option value="Hairspray">
-				<option value="Titanic">
-			</datalist>			
+            <form>
+        	    <datalist id="movieList">
+				    <option value="Star Wars">
+				    <option value="Terminator">
+				    <option value="Hairspray">
+				    <option value="Titanic">
+			    </datalist>		
+			    <label for="movieTitle">Favorite Movie</label>
+			    <input type="text" id="moveTitle" list="movieList"/>
+            </form>			
 			<a href="http://caniuse.com/#search=datalist" target="_blank">Can I use it?</a>
 		</div>
 	</section>
