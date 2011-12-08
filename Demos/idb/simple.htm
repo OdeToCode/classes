@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>IndexDB</title>
+    <script src="../../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <button id="open">Open Database</button>
+    <button id="version" disabled>Check Version</button>
+    <button id="write" disabled>Write Object</button>
+    <button id="read" disabled>Read Object</button>
+    <div id="output"></div>
+
+    <script>
+
+        (function () {
+            "use strict";
+            var version = "1.4";
+            var database;
+            var IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction || window.mozIDBTransaction;
+            var IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange || window.mozIDBKeyRange;
+
+            function openDatabase() {
+                var factory = window.indexedDB || window.webkitIndexedDB || window.mozIndexDB;
+                var request = factory.open("Test", "A Test Database");
+                request.onerror = log;
+                request.onsuccess = function (event) {
+                    log(event);
+                    database = event.target.result;
+                    $("#version").removeAttr("disabled");
+                    $("#open").attr("disabled", "");
+                };
+            }
+
+            function checkVersion() {
+                if (version != database.version) {
+                    var request = database.setVersion(version);
+                    request.onerror = log;
+                    request.onblocked = log;
+                    request.onsuccess = function (event) {
+                        log(event);
+                        database.createObjectStore("widgets", { autoIncrement: true, keyPath:"id" });
+                        $("#read, #write").removeAttr("disabled");
+                    };
+                } else {
+                    $("#read, #write").removeAttr("disabled");
+                }
+            }
+
+            function writeDatabase() {
+                var transaction = database.transaction("widgets", IDBTransaction.READ_WRITE);
+                var objectStore = transaction.objectStore("widgets");
+                var request = objectStore.put({     
+                    
+                    name: "Widgety Widget " + new Date().getTime()
+                });
+                request.onerror = log;
+                request.onsuccess = log;
+            }
+
+            function readDatabase() {
+                var transaction = database.transaction("widgets", IDBTransaction.READ);
+                var objectStore = transaction.objectStore("widgets");
+                var keyRange = IDBKeyRange.lowerBound(0);
+                var cursorRequest = objectStore.openCursor(keyRange);
+                cursorRequest.onerror = log;
+                cursorRequest.onsuccess = function (event) {
+                    var result = event.target.result;
+                    logWidget(result.value);
+                    result.continue();
+                };
+            }
+            
+            function logWidget(widget) {
+                widget = widget.id + ":" + widget.name;
+                $("<div></div>")
+                .text(widget)
+                .appendTo("#output");
+            }           
+            
+            function log(event) {
+                $("<div></div>")
+                .text(event.type + " " + event.target.constructor.name)
+                .appendTo("#output");
+            }
+
+
+            $(function () {
+                $("#open").click(function () {
+                    openDatabase();
+                });
+
+                $("#version").click(function () {
+                    checkVersion();
+                });
+
+                $("#read").click(function () {
+                    readDatabase();
+                });
+
+                $("#write").click(function () {
+                    writeDatabase();
+                });
+                
+                $("#delete").click(function () {
+                    deleteDatabase();
+                });
+            });
+
+        })();
+        
+    </script>
+</body>
+</html>
