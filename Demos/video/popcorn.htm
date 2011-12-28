@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Media</title>
+    <script src="../../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+    <script src="popcorn.js" type="text/javascript"></script>
+</head>
+<body>
+    <video id="video" src="../../slides/media/sample.mov" controls></video>           
+    <div id="timeline"></div>
+    <hr/>    
+    <script>
+        $(function () {
+
+            var pop = Popcorn("#video");
+
+            pop.timeline({
+                start: 1,
+                end: 8,
+                target: "timeline",
+                title: "This is a title",
+                text: "this is some interesting text that goes inside",
+                innerHTML: "Click here for <a href='http://www.google.ca'>Google</a>",
+                direction: "up"
+            }).timeline({
+                start: 10,
+                end: 25,
+                target: "timeline",
+                title: "double as interesting",
+                text: "this is some interesting text that goes inside",
+                innerHTML: "Maybe a button? <button onClick=\"window.location.href='http://www.google.com'\">Click Me</button>",
+                direction: "up"
+            }).timeline({
+                start: 20,
+                end: 700,
+                target: "timeline",
+                title: "3x as interesting",
+                text: "this is some interesting text that goes inside",
+                innerHTML: "",
+                direction: "up"
+            });
+//                .wordriver({
+//                start: 5,                    
+//                end: 15,                     
+//                text: "Hello Kitty",         
+//                target: "timeline",      
+//                color: "red"    
+//            });
+
+
+            pop.play();
+        });
+
+    </script>                
+
+</body>
+</html>
