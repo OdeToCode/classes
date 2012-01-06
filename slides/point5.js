@@ -61,7 +61,10 @@ var p5 = {
         next.addClass("current");
         window.history.pushState({ id: next.attr("id").toString() }, null,
 		                         "#" + next.attr("id").toString());
-        p5.setNextText();
+        
+        if (p5.options.showNextText) {
+            p5.setNextText();
+        }
     },
 
     setNextText: function () {
@@ -118,6 +121,10 @@ var p5 = {
 
     hashchange: function () {
         p5.startShow();
+    },
+    
+    options: {
+        showNextText: true
     }
 };
 
