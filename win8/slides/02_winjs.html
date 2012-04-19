@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>WinJS</title>
+    <link href="themes/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../prettify/prettify.css" rel="stylesheet" type="text/css" />
+    <link href="themes/otc.css" rel="stylesheet" type="text/css" />
+    <script src="../prettify/prettify.js" type="text/javascript"></script>
+    <script src="../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+    <script src="../scripts/point5.js" type="text/javascript"></script>
+</head>
+<body>
+    <section>
+        <h1>Windows 8 and JavaScript</h1>
+        <div class="row span16 center">
+            <img src="images/win8.png" alt="win8 architecture" />
+        </div>
+    </section>
+
+    <section>
+        <h1>No page navigation</h1>
+        <ul>
+            <li>Global scope never resets</li>
+            <li>Complex apps need multiple scripts</li>
+            <li>JavaScript has global scope and function scope</li>
+        </ul>
+        <pre>
+
+// modules
+(function() {
+    // namespaces
+    MyStuff.DoSomething(); 
+})();
+        </pre>
+    </section>
+
+    <section>
+        <h1>WinJS Namespace helper</h1>
+        <pre>
+
+WinJS.Namespace.define("Otc.Utility",
+{
+    bigZero: function () { return 0; }
+});
+        </pre>
+    </section>
+
+    <section>
+        <h1>Exporting from a Module</h1>
+        <pre>
+
+(function () {    
+    function privateImpl() { };
+    function publicThing() { };
+
+    WinJS.Namespace.define("Otc.Utility",
+    {
+        publicThing: publicThing
+    });
+})();
+        </pre>
+    </section>
+
+    <section>
+        <h1>Modules and Parameters</h1>
+        <ul>
+            <li>For clarity and performance</li>
+        </ul>
+        <pre>
+
+(function (global, undefined) {
+
+ // ...
+    
+})(this);
+        </pre>
+    </section>
+
+    <section>
+        <h1>Class helpers</h1>
+        <pre>
+
+var Point = WinJS.Class.define(
+    function (x, y) {
+        this.x = x;
+        this.y = y;
+    },
+    {
+        add: function (p) {
+            return new Point(this.x + p.x, this.y + p.y);
+        }
+    }
+);
+        </pre>
+    </section>
+
+    <section>
+        <h1>Mixins</h1>
+        <ul>
+            <li>Adds methods to a class prototype</li>
+        </ul>
+        <pre>
+
+var PointEx = WinJS.Class.mix(Point, {
+    format: function () {
+        return this._point.x + ":" + this._point.y;
+    }
+});
+        </pre>
+    </section>
+
+    <section>
+        <h1>WinJS.Application</h1>
+        <ul>
+            <li>Lifetime events</li>
+            <li>start</li>
+            <pre>
+
+WinJS.Application.start();
+            </pre>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Promises</h1>
+        <ul>
+            <li>Nearly everything is (and should be) async</li> 
+            <li>Callbacks and event handlers</li>
+            <li>A <a href="http://wiki.commonjs.org/wiki/Promises/A" target="_blank">promise</a> is an object that is a promise for a later value</li>
+        </ul>
+        <pre>
+
+ WinJS.xhr({ url: "http://..." })
+      .then(function (result) {
+
+});
+
+        </pre>
+    </section>
+
+    <section>
+        <h1>Controls</h1>
+        <ul>
+            <li>WinJS controls add behavior to DOM elements</li>
+            <li>Declarative or programmatic</li>
+            <li>Accessed as winControl on DOM element</li>
+        </ul>
+        <pre>
+
+&lt;div data-win-control="WinJS.UI.AppBar"&gt;
+	&lt;!--...--&gt;
+&lt;/div&gt;
+        </pre>
+    </section>
+
+    <section>
+        <h1>Data binding</h1>
+        <ul>
+            <li>One way binding</li>
+            <li>Declarative or programmatic</li>
+            <li>Requires observables objects</li>
+        </ul>
+        <pre>
+
+&ltdiv id="output" data-win-bind="innerText:productName"&gt;
+
+&lt;/div&gt;
+        </pre>
+    </section>
+
+    <section>
+        <h1>Templates</h1>
+        <ul>
+            <li>Declarative and Programmatic</li>
+            <li>Individual nodes and hierarchical</li>
+        </ul>
+        <pre>
+
+&lt;div data-win-control="WinJS.Binding.Template"&gt;
+	&lt;p data-win-bind="innerHTML:productName"&gt;&lt;/p&gt;
+&lt;/div&gt;
+        </pre>
+    </section>
+
+    <section>
+        <h1>Navigation</h1>
+        <ul>
+            <li>Generally single page</li>
+            <li>State and scripts stay around</li>
+            <li>Navigate fragments</li>
+        </ul>
+        <pre>
+    
+WinJS.Navigation.addEventHandler("navigated", navigated);
+WinJS.Navigation.navigate("/html/home.html");
+
+function navigated(e) {
+    WinJS.UI.Fragments.clone(e.detail.location, e.detail.state)
+         .then(function(frag){
+            var host = document.getElementById("content");
+            host.innerHTML = "";
+            host.appendChild(frag);                
+         });            
+}
+        </pre>
+    </section>
+
+    <section>
+        <h1>What about other libraries?</h1>
+        <ul>
+            <li>They all just work</li>
+            <li>jQuery</li>
+            <li>jQuery UI</li>
+            <li>YUI</li>
+            <li>Raphael</li>
+            <li>Underscore</li>
+            <li>Etc...</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Things That Don't Work</h1>
+        <ul>
+            <li>XHR is slightly different</li>
+            <li>Security is different</li>
+            <li>Web Content versus Local Content</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Summary</h1>
+        <ul>
+            <li>WinJS is a library for desktop applications</li>
+            <li>Use as many pieces as you need</li>
+            <li>Mix in other libraries, too</li>
+        </ul>
+    </section>
+
+</body>
+</html>

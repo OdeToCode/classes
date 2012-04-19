@@ -1,0 +1,66 @@
+﻿body
+{
+	background-color: #cccc99;
+	font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2em;
+}
+
+table
+{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+caption {
+	font-weight: bold;
+}
+
+th
+{
+	font-weight: bold;
+	font-size: smaller;	
+	color: #333333;
+	border-bottom: 3px solid #990000;
+}
+td
+{
+	padding: 0;
+	border: 0;
+	margin: 0;	
+}
+
+tr:nth-child(2n+2) 
+{
+  background-color: #aaaaaa;
+}
+
+#content {
+	border: 3px solid black;
+}
+
+.borderradius #content 
+{
+	border: 1px solid black;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+}
+
+section {
+    border-bottom: 2px solid black;
+}
+
+ol{
+    line-height: 2.0em;
+}
+
+pre.prettyprint
+{    
+    line-height:1.5em;    
+    padding: 5px;
+    background-color:#ddddaa;
+    border: 2px solid black;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px black;
+}

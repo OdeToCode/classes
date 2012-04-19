@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="7f4a51e2-dcc4-405c-9ef8-101562141b7c" Version="1.0.0.0" Publisher="CN=bitmask" />
+  <Properties>
+    <DisplayName>Reader</DisplayName>
+    <Description>Reader</Description>
+    <PublisherDisplayName>bitmask</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="en-US" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="Hello" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Hello" ForegroundText="light" BackgroundColor="#0084FF" InitialRotationPreference="portrait">
+        <DefaultTile ShowName="true" />
+        <SplashScreen Image="images\splashscreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

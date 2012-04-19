@@ -1,0 +1,35 @@
+﻿body {
+
+}
+
+@media screen and (-ms-view-state: full-screen)
+{
+    #full { display:block; }
+    #fill { display:none; }
+    #snap { display:none; }
+    #portrait { display:none; }
+}
+
+@media screen and (-ms-view-state: fill)
+{
+    #full { display:none; }
+    #fill { display:block; }
+    #snap { display:none; }
+    #portrait { display:none; }
+}
+
+@media screen and (-ms-view-state: snapped)
+{
+    #full { display:none; }
+    #fill { display:none; }
+    #snap { display:block; }
+    #portrait { display:none; }
+}
+		
+@media screen and (-ms-view-state: device-portrait)
+{
+    #full { display:none; }
+    #fill { display:none; }
+    #snap { display:none; }
+    #portrait { display:block; }
+}

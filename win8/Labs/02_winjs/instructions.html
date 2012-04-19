@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Introduction to WinJS</title>
+    <link href="../styles.css" rel="stylesheet" type="text/css" />
+    <script src="../../scripts/jquery-1.6.4.js" type="text/javascript"></script>
+    <script src="../../prettify/prettify.js" type="text/javascript"></script>
+    <link href="../../prettify/prettify.css" rel="stylesheet" type="text/css" />
+    <script>
+        $(function () {
+            $("pre").addClass("prettyprint");
+            prettyPrint();
+        });
+</script>
+</head>
+<body>
+    <h2>Overview</h2>
+    <p>In this lab, we'll build a simple RSS reader.
+    </p>
+    <p>
+        You'll be working in the before directory of this lab. A completed
+        version of the application exists in the after folder.
+    </p>
+    <h2>Create the Application</h2>
+    <ol>
+        <li>Open Visual Studio 2011.</li>
+        <li>From the File -> New Project menu, create a blank 
+            Metro (JavaScript) application. Name the project Reader 
+            and place it in the before directory of this lab.
+        </li>
+        <li>
+            Give your app a title (h1), and a div with an id of "posts". 
+            The title can be the name of your blog (or your favorite blog). 
+            Also provide a div with the status of the download. 
+            <pre>
+&lt;body&gt;
+    &lt;h1&gt;OdeToCode&lt;/h1&gt;
+    &lt;div id="status"&gt;&lt;/div&gt;
+    &lt;div id=&quot;posts&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;</pre>
+        </li>        
+        <li>In the app's default.js file, use the WinJS.xhr method 
+            to download the RSS feed of your favorite blog after the app activates. 
+            Use the promise returned by xhr to invoke a callback 
+            for success and error conditions (named onDownload and 
+            onDownloadError respectively). Before download, set the 
+            status display to "downloading". 
+            <pre>
+
+document.getElementById("status").textContent = "Downloading";
+WinJS.xhr({ url: "http://feeds.feedburner.com/OdeToCode?format=xml" })
+     .then(onDownloaded, onDownloadError);  
+            </pre>
+        </li>
+        <li>
+            Implement the onDownloadError function. 
+            The onDownloadError handler should set the status display to "error".            
+            <pre>
+
+function onDownloadError() {
+    document.getElementById("status").textContent = "Error";
+}
+            </pre>
+        </li>
+        <li>
+            Implement the onDownload handler, which will receive an XmlHttpRequest object.
+            Note the responseXML property will be an <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms763809(v=vs.85).aspx" target="_blank">XML DOM</a>
+            with methods like selectNodes. You can use these methods to parse the items out of the RSS feed. 
+            Display the title item inside a div that you will append to the "posts" div. 
+            <pre>
+    
+function onDownloaded(xhr) {
+    document.getElementById("status").textContent = "";
+    var items = xhr.responseXML.selectNodes("//item");        
+    var posts = document.getElementById("posts");
+
+    for (var i = 0, len = items.length; i < len; i++) {
+        var item = items[i];            
+        var newDiv = document.createElement("div");
+        newDiv.textContent = item.selectSingleNode("title").text;
+        posts.appendChild(newDiv);
+    }
+}</pre>
+            <img src="images/reader01.png" alt="reader1" />
+        </li>
+        <h2>Templates</h2>
+        <ol>
+            <li>Instead of constructing HTML by hand, let's use templates</li>
+            <li>Add markup to your default page for a template that 
+                will display a publication title and pubDate. Give each piece
+                of a data a different class name so they can be styled 
+                independently. 
+                <pre>
+
+&lt;div id=&quot;postTemplate&quot; data-win-control=&quot;WinJS.Binding.Template&quot;&gt;
+    &lt;div data-win-bind=&quot;textContent: postTitle&quot; class=&quot;postTitle&quot; &gt;&lt;/div&gt;
+    &lt;div data-win-bind=&quot;textContent: postDate&quot; class=&quot;postDate&quot; &gt;&lt;/div&gt;
+    
+&lt;/div&gt;</pre>
+            </li>
+            <li>
+                Add some CSS styles to your default.css page so that the title displays in bold, 
+                and the date displays with a smaller font.
+                <pre>
+
+.postTitle
+{
+    font-weight:bold;
+}
+
+.postDate
+{
+    font-size:smaller;
+}</pre>
+            </li>
+            <li>
+                Let's go ahead and make sure we have all the WinJS libraries we need for the rest
+                of the lab. In the head section of default.html, make sure you have all the 
+                script references shown below (order is signifigant). 
+                <pre>
+
+&lt;script src=&quot;winjs/js/base.js&quot;&gt;&lt;/script&gt;               
+&lt;script src=&quot;winjs/js/ui.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;winjs/js/binding.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;winjs/js/controls.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;winjs/js/animations.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;winjs/js/uicollections.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;winjs/js/wwaapp.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+                </pre>
+            </li>
+            <li>
+                During window activation, execute a call to WinJS.UI.processAll(). This is the
+                key to transforming DOM elements into controls. 
+            </li>
+            <li>
+                In your onDownloaded handler, change the code and remove the bits
+                that are creating elements. Instead, grab a reference to the template
+                (WinJS.UI.getControl) and programatically render the template (.render). 
+                This will require you to pass in a data object that contains the 
+                title (postTitle) and pubDate (postDate) - the data the template expects. 
+                Note that <a href="http://msdn.microsoft.com/en-us/library/windows/apps/br229724(v=vs.85).aspx" target="_blank">template.render</a> returns a promise. 
+                <pre>
+
+function onDownloaded(xhr) {
+        document.getElementById("status").textContent = "";
+        var items = xhr.responseXML.selectNodes("//item");        
+        var posts = document.getElementById("posts");
+        var template = WinJS.UI.getControl(document.getElementById("postTemplate"));
+
+        for (var i = 0, len = items.length; i < len; i++) {
+            var item = items[i];
+            var post = {
+                postTitle: item.selectSingleNode("title").text,
+                postDate: item.selectSingleNode("pubDate").text
+            };
+            template.render(post)
+                    .then(function (result) {
+                        posts.appendChild(result);
+            });            
+        }
+    }
+                </pre>
+            </li>
+        </ol>
+    </ol>
+    
+    <h3>Using a ListView</h3>
+    <ol>
+        <li>A ListView can add scrolling and touch effects, and also knows
+            how to render a collection of items using a template (just 
+            like a Silverlight ListView). 
+        </li>
+        <li>
+            Change the "posts" div to be a WinJS.UI.ListView. Pass in options 
+            that tell the list view to use the "postTemplate" as the itemRenderer.
+            Make sure "posts" appears after "postTemplate" markup.
+            <pre>
+
+&lt;div id="posts" data-win-control="WinJS.UI.ListView"
+                data-win-options="{itemRenderer: postTemplate}"&gt;
+
+&lt;/div&gt;
+            </pre>
+        </li>
+        <li>
+            Change the onDownloaded handler so it sets the dataSource
+            property of the ListView to an array of data items. 
+            <pre>
+
+function onDownloaded(xhr) {
+        document.getElementById("status").textContent = "";
+        var items = xhr.responseXML.selectNodes("//item");        
+        var posts = document.getElementById("posts");
+        var template = WinJS.UI.getControl(document.getElementById("postTemplate"));
+
+        var data = [];
+        for (var i = 0, len = items.length; i < len; i++) {
+            var item = items[i];
+            var post = {
+                postTitle: item.selectSingleNode("title").text,
+                postDate: item.selectSingleNode("pubDate").text
+            };
+            data.push(post);            
+        }
+        WinJS.UI.getControl(posts).dataSource = data;
+}
+            </pre>
+        </li>
+
+    </ol>
+
+    <h2>Conclusion</h2>
+    <p>Congratulations! You've built an app with WinJS!</p>
+</body>
+</html>
