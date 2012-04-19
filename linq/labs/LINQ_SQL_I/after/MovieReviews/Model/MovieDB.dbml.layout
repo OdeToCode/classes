@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MovieDB">
+  <DataContextMoniker Name="/MovieDB" />
+  <nestedChildShapes>
+    <classShape Id="69bcbb47-ce15-442f-ba07-fbcad1783e03" absoluteBounds="0.75, 1.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/MovieDB/Movie" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8935c5d9-245f-401d-9d52-351e716620c7" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="98d81c56-ec8f-428a-8134-59cb39064def" absoluteBounds="3.5, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/MovieDB/Review" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ef4ff3ab-f90e-498f-af09-30106e724d48" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.94314697265625); (3.5 : 1.94314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MovieDB/Movie/Movie_Review" />
+      <nodes>
+        <classShapeMoniker Id="69bcbb47-ce15-442f-ba07-fbcad1783e03" />
+        <classShapeMoniker Id="98d81c56-ec8f-428a-8134-59cb39064def" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,15 @@
+﻿<asp:TreeView runat="server" ImageSet="XPFileExplorer" NodeIndent="15">
+  <ParentNodeStyle Font-Bold="False" />
+  <HoverNodeStyle Font-Underline="True" ForeColor="#6666AA" />
+  <SelectedNodeStyle BackColor="#B5B5B5" Font-Underline="False" HorizontalPadding="0px" VerticalPadding="0px" />          
+  <NodeStyle Font-Names="Tahoma" Font-Size="8pt" ForeColor="Black" HorizontalPadding="2px" NodeSpacing="0px" VerticalPadding="2px" />
+</asp:TreeView>
+
+<asp:GridView runat="server" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal">
+  <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
+  <RowStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" />
+  <PagerStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" HorizontalAlign="Right" />
+  <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="#F7F7F7" />
+  <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" />
+  <AlternatingRowStyle BackColor="#F7F7F7" />
+</asp:GridView>

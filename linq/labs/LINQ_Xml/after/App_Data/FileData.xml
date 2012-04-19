@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Files>
+  <Directory Name="LINQ_Xml">
+    <Directory Name=".svn">
+      <Directory Name="prop-base">
+        <File Name="LINQ_Xml.doc.svn-base" Size="53" LastAccess="2008-07-13T01:44:40.8005948-04:00" />
+      </Directory>
+      <Directory Name="props" />
+      <Directory Name="text-base">
+        <File Name="LINQ_Xml.doc.svn-base" Size="136785" LastAccess="2008-07-13T01:44:44.1335948-04:00" />
+      </Directory>
+      <Directory Name="tmp">
+        <Directory Name="prop-base" />
+        <Directory Name="props" />
+        <Directory Name="text-base" />
+      </Directory>
+      <File Name="all-wcprops" Size="192" LastAccess="2008-07-13T01:44:47.4015948-04:00" />
+      <File Name="entries" Size="376" LastAccess="2008-07-13T01:44:47.4585948-04:00" />
+      <File Name="format" Size="2" LastAccess="2008-07-13T01:44:24.2525948-04:00" />
+    </Directory>
+    <Directory Name="after">
+      <Directory Name=".svn">
+        <Directory Name="prop-base" />
+        <Directory Name="props" />
+        <Directory Name="text-base">
+          <File Name="Default.aspx.cs.svn-base" Size="300" LastAccess="2008-07-13T01:44:42.1545948-04:00" />
+          <File Name="Default.aspx.svn-base" Size="3297" LastAccess="2008-07-13T01:44:41.9595948-04:00" />
+          <File Name="web.config.svn-base" Size="8162" LastAccess="2008-07-13T01:44:42.6905948-04:00" />
+        </Directory>
+        <Directory Name="tmp">
+          <Directory Name="prop-base" />
+          <Directory Name="props" />
+          <Directory Name="text-base" />
+        </Directory>
+        <File Name="all-wcprops" Size="436" LastAccess="2008-07-13T01:44:47.4565948-04:00" />
+        <File Name="entries" Size="651" LastAccess="2008-07-13T01:44:47.4555948-04:00" />
+        <File Name="format" Size="2" LastAccess="2008-07-13T01:44:24.2925948-04:00" />
+      </Directory>
+      <Directory Name="App_Code">
+        <Directory Name=".svn">
+          <Directory Name="prop-base" />
+          <Directory Name="props" />
+          <Directory Name="text-base">
+            <File Name="FileReportDataSource.cs.svn-base" Size="3450" LastAccess="2008-07-13T01:44:42.3325948-04:00" />
+            <File Name="FileStatistic.cs.svn-base" Size="217" LastAccess="2008-07-13T01:44:43.9615948-04:00" />
+          </Directory>
+          <Directory Name="tmp">
+            <Directory Name="prop-base" />
+            <Directory Name="props" />
+            <Directory Name="text-base" />
+          </Directory>
+          <File Name="all-wcprops" Size="376" LastAccess="2008-07-13T01:44:47.4205948-04:00" />
+          <File Name="entries" Size="499" LastAccess="2008-07-13T01:44:47.4195948-04:00" />
+          <File Name="format" Size="2" LastAccess="2008-07-13T01:44:24.3085948-04:00" />
+        </Directory>
+        <File Name="FileReportDataSource.cs" Size="2802" LastAccess="2008-07-13T01:50:02.4875948-04:00" />
+        <File Name="FileStatistic.cs" Size="217" LastAccess="2008-07-12T20:11:51.6855948-04:00" />
+      </Directory>
+      <Directory Name="App_Data">
+        <Directory Name=".svn">
+          <Directory Name="prop-base" />
+          <Directory Name="props" />
+          <Directory Name="text-base">
+            <File Name="FileData.xml.svn-base" Size="2313" LastAccess="2008-07-13T01:44:42.8315948-04:00" />
+          </Directory>
+          <Directory Name="tmp">
+            <Directory Name="prop-base" />
+            <Directory Name="props" />
+            <Directory Name="text-base" />
+          </Directory>
+          <File Name="all-wcprops" Size="222" LastAccess="2008-07-13T01:44:47.4295948-04:00" />
+          <File Name="entries" Size="356" LastAccess="2008-07-13T01:44:47.4285948-04:00" />
+          <File Name="format" Size="2" LastAccess="2008-07-13T01:44:24.3345948-04:00" />
+        </Directory>
+        <File Name="FileData.xml" Size="2313" LastAccess="2008-07-12T20:11:51.6695948-04:00" />
+      </Directory>
+      <Directory Name="App_Themes">
+        <Directory Name=".svn">
+          <Directory Name="prop-base" />
+          <Directory Name="props" />
+          <Directory Name="text-base" />
+          <Directory Name="tmp">
+            <Directory Name="prop-base" />
+            <Directory Name="props" />
+            <Directory Name="text-base" />
+          </Directory>
+          <File Name="all-wcprops" Size="100" LastAccess="2008-07-13T01:44:47.4345948-04:00" />
+          <File Name="entries" Size="244" LastAccess="2008-07-13T01:44:47.4365948-04:00" />
+          <File Name="format" Size="2" LastAccess="2008-07-13T01:44:24.3545948-04:00" />
+        </Directory>
+        <Directory Name="Default">
+          <Directory Name=".svn">
+            <Directory Name="prop-base" />
+            <Directory Name="props" />
+            <Directory Name="text-base">
+              <File Name="SkinFile.skin.svn-base" Size="1024" LastAccess="2008-07-13T01:44:42.5185948-04:00" />
+            </Directory>
+            <Directory Name="tmp">
+              <Directory Name="prop-base" />
+              <Directory Name="props" />
+              <Directory Name="text-base" />
+            </Directory>
+            <File Name="all-wcprops" Size="244" LastAccess="2008-07-13T01:44:47.4435948-04:00" />
+            <File Name="entries" Size="367" LastAccess="2008-07-13T01:44:47.4425948-04:00" />
+            <File Name="format" Size="2" LastAccess="2008-07-13T01:44:24.3665948-04:00" />
+          </Directory>
+          <File Name="SkinFile.skin" Size="1024" LastAccess="2008-07-12T20:11:51.6755948-04:00" />
+        </Directory>
+      </Directory>
+      <File Name="Default.aspx" Size="2433" LastAccess="2008-07-13T01:50:02.1455948-04:00" />
+      <File Name="Default.aspx.cs" Size="300" LastAccess="2008-07-12T21:21:51.8965948-04:00" />
+      <File Name="web.config" Size="8162" LastAccess="2008-07-12T20:11:51.6805948-04:00" />
+    </Directory>
+    <Directory Name="before">
+      <Directory Name=".svn">
+        <Directory Name="prop-base" />
+        <Directory Name="props" />
+        <Directory Name="text-base">
+          <File Name="Default.aspx.cs.svn-base" Size="153" LastAccess="2008-07-13T01:44:42.2395948-04:00" />
+          <File Name="Default.aspx.svn-base" Size="2433" LastAccess="2008-07-13T01:44:42.0615948-04:00" />
+          <File Name="web.config.svn-base" Size="8162" LastAccess="2008-07-13T01:44:43.7595948-04:00" />
+        </Directory>
+        <Directory Name="tmp">
+          <Directory Name="prop-base" />
+          <Directory Name="props" />
+          <Directory Name="text-base" />
+        </Directory>
+        <File Name="all-wcprops" Size="440" LastAccess="2008-07-13T01:44:47.5115948-04:00" />
+        <File Name="entries" Size="652" LastAccess="2008-07-13T01:44:47.5105948-04:00" />
+        <File Name="format" Size="2" LastAccess="2008-07-13T01:44:24.4065948-04:00" />
+      </Directory>
+      <Directory Name="App_Code">
+        <Directory Name=".svn">
+          <Directory Name="prop-base" />
+          <Directory Name="props" />
+          <Directory Name="text-base">
+            <File Name="FileReportDataSource.cs.svn-base" Size="474" LastAccess="2008-07-13T01:44:42.4205948-04:00" />
+            <File Name="FileStatistic.cs.svn-base" Size="217" LastAccess="2008-07-13T01:44:44.0495948-04:00" />
+          </Directory>
+          <Directory Name="tmp">
+            <Directory Name="prop-base" />
+            <Directory Name="props" />
+            <Directory Name="text-base" />
+          </Directory>
+          <File Name="all-wcprops" Size="379" LastAccess="2008-07-13T01:44:47.4745948-04:00" />
+          <File Name="entries" Size="500" LastAccess="2008-07-13T01:44:47.4735948-04:00" />
+          <File Name="format" Size="2" LastAccess="2008-07-13T01:44:24.4185948-04:00" />
+        </Directory>
+        <File Name="FileReportDataSource.cs" Size="474" LastAccess="2008-07-13T01:22:05.5685948-04:00" />
+        <File Name="FileStatistic.cs" Size="217" LastAccess="2008-07-12T17:52:15.0995948-04:00" />
+      </Directory>
+      <Directory Name="App_Data">
+        <Directory Name=".svn">
+          <Directory Name="prop-base" />
+          <Directory Name="props" />
+          <Directory Name="text-base">
+            <File Name="FileData.xml.svn-base" Size="271" LastAccess="2008-07-13T01:44:43.8725948-04:00" />
+          </Directory>
+          <Directory Name="tmp">
+            <Directory Name="prop-base" />
+            <Directory Name="props" />
+            <Directory Name="text-base" />
+          </Directory>
+          <File Name="all-wcprops" Size="224" LastAccess="2008-07-13T01:44:47.4835948-04:00" />
+          <File Name="entries" Size="357" LastAccess="2008-07-13T01:44:47.4825948-04:00" />
+          <File Name="format" Size="2" LastAccess="2008-07-13T01:44:24.4485948-04:00" />
+        </Directory>
+        <File Name="FileData.xml" Size="271" LastAccess="2008-07-12T17:52:46.6615948-04:00" />
+      </Directory>
+      <Directory Name="App_Themes">
+        <Directory Name=".svn">
+          <Directory Name="prop-base" />
+          <Directory Name="props" />
+          <Directory Name="text-base" />
+          <Directory Name="tmp">
+            <Directory Name="prop-base" />
+            <Directory Name="props" />
+            <Directory Name="text-base" />
+          </Directory>
+          <File Name="all-wcprops" Size="101" LastAccess="2008-07-13T01:44:47.4885948-04:00" />
+          <File Name="entries" Size="245" LastAccess="2008-07-13T01:44:47.4915948-04:00" />
+          <File Name="format" Size="2" LastAccess="2008-07-13T01:44:24.4675948-04:00" />
+        </Directory>
+        <Directory Name="Default">
+          <Directory Name=".svn">
+            <Directory Name="prop-base" />
+            <Directory Name="props" />
+            <Directory Name="text-base">
+              <File Name="SkinFile.skin.svn-base" Size="1024" LastAccess="2008-07-13T01:44:42.6045948-04:00" />
+            </Directory>
+            <Directory Name="tmp">
+              <Directory Name="prop-base" />
+              <Directory Name="props" />
+              <Directory Name="text-base" />
+            </Directory>
+            <File Name="all-wcprops" Size="246" LastAccess="2008-07-13T01:44:47.4985948-04:00" />
+            <File Name="entries" Size="368" LastAccess="2008-07-13T01:44:47.4975948-04:00" />
+            <File Name="format" Size="2" LastAccess="2008-07-13T01:44:24.4795948-04:00" />
+          </Directory>
+          <File Name="SkinFile.skin" Size="1024" LastAccess="2008-07-12T17:51:28.9615948-04:00" />
+        </Directory>
+      </Directory>
+      <File Name="Default.aspx" Size="2433" LastAccess="2008-07-13T01:23:03.3105948-04:00" />
+      <File Name="Default.aspx.cs" Size="153" LastAccess="2008-07-12T17:54:49.0085948-04:00" />
+      <File Name="web.config" Size="8162" LastAccess="2008-07-12T17:51:57.7725948-04:00" />
+    </Directory>
+    <File Name="LINQ_Xml.doc" Size="136785" LastAccess="2008-07-13T01:42:31.1935948-04:00" />
+  </Directory>
+</Files>

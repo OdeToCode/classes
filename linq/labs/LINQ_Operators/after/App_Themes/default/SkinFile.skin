@@ -1,0 +1,17 @@
+﻿<asp:GridView runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2">
+  <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
+  <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
+  <PagerStyle ForeColor="#8C4510" HorizontalAlign="Center" />
+  <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White" />
+  <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />
+</asp:GridView>
+                
+                
+<asp:DetailsView runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2">
+    <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
+    <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
+    <PagerStyle ForeColor="#8C4510" HorizontalAlign="Center" />
+    <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />
+    <EditRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White" />
+</asp:DetailsView>
+                               

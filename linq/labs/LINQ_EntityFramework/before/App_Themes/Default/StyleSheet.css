@@ -1,0 +1,30 @@
+﻿body 
+{
+ background-color: #cccc99;
+}
+    
+html, body 
+{
+	margin: 0;
+	padding: 0;
+}
+
+#content
+{
+    width: 100%;
+    text-align: center;
+}
+
+#header
+{ 
+    width: 100%;
+    background-color:#990000;
+    border-bottom-style: solid; 
+    border-bottom-width: medium; 
+    border-bottom-color: #000000; 
+    font-size: large; 
+    font-weight: bold; 
+    color: #FFFFFF; 
+    padding: 15px;
+}
+

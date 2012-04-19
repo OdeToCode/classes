@@ -1,0 +1,41 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices>
+    <Schema Namespace="MovieReviewModel" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+      <EntityContainer Name="MovieRepository" m:IsDefaultEntityContainer="true">
+        <FunctionImport Name="GetTopTenMovies" EntitySet="Movies" ReturnType="Collection(MovieReviewModel.Movie)" m:HttpMethod="GET">
+          <Parameter Name="year" Type="Edm.Int32" Mode="In" />
+        </FunctionImport>
+        <EntitySet Name="Movies" EntityType="MovieReviewModel.Movie" />
+        <EntitySet Name="Reviews" EntityType="MovieReviewModel.Review" />
+        <AssociationSet Name="fk_reviews_movies" Association="MovieReviewModel.fk_reviews_movies">
+          <End Role="movies" EntitySet="Movies" />
+          <End Role="reviews" EntitySet="Reviews" />
+        </AssociationSet>
+      </EntityContainer>
+      <EntityType Name="Movie">
+        <Key>
+          <PropertyRef Name="MovieID" />
+        </Key>
+        <Property Name="MovieID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Title" Type="Edm.String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+        <Property Name="ReleaseDate" Type="Edm.DateTime" Nullable="false" />
+        <NavigationProperty Name="Reviews" Relationship="MovieReviewModel.fk_reviews_movies" FromRole="movies" ToRole="reviews" />
+      </EntityType>
+      <EntityType Name="Review">
+        <Key>
+          <PropertyRef Name="ReviewID" />
+        </Key>
+        <Property Name="ReviewID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Summary" Type="Edm.String" Nullable="false" MaxLength="64" Unicode="false" FixedLength="false" />
+        <Property Name="Rating" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Body" Type="Edm.String" Nullable="false" MaxLength="512" Unicode="true" FixedLength="false" />
+        <Property Name="Reviewer" Type="Edm.String" Nullable="true" MaxLength="64" Unicode="true" FixedLength="false" />
+        <NavigationProperty Name="Movie" Relationship="MovieReviewModel.fk_reviews_movies" FromRole="reviews" ToRole="movies" />
+      </EntityType>
+      <Association Name="fk_reviews_movies">
+        <End Role="movies" Type="MovieReviewModel.Movie" Multiplicity="1" />
+        <End Role="reviews" Type="MovieReviewModel.Review" Multiplicity="*" />
+      </Association>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

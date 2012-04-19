@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="moviereviews" Class="MovieDB" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=moviereviews;Integrated Security=True" SettingsObjectName="MovieReviews.Properties.Settings" SettingsPropertyName="moviereviewsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.movies" Member="Movies">
+    <Type Name="Movie">
+      <Column Name="movie_id" Member="MovieID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="title" Member="Title" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="release_date" Member="ReleaseDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Movie_Review" Member="Reviews" ThisKey="MovieID" OtherKey="MovieID" Type="Review" />
+    </Type>
+  </Table>
+  <Table Name="dbo.reviews" Member="Reviews">
+    <Type Name="Review">
+      <Column Name="review_id" Member="ReviewID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="movie_id" Member="MovieID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="summary" Member="Summary" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="rating" Member="Rating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="review" Member="Body" Type="System.String" DbType="NVarChar(512) NOT NULL" CanBeNull="false" />
+      <Column Name="reviewer" Member="Reviewer" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Association Name="Movie_Review" Member="Movie" ThisKey="MovieID" OtherKey="MovieID" Type="Movie" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
