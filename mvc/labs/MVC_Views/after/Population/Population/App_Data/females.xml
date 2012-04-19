@@ -1,0 +1,2197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Populations>
+  <Country Name="Afghanistan" Year="2002" Population="9844300" />
+  <Country Name="Afghanistan" Year="2006" Population="11030100" />
+  <Country Name="Albania" Year="1990" Population="1581570" />
+  <Country Name="Albania" Year="1991" Population="1603741" />
+  <Country Name="Albania" Year="2001" Population="1538800" />
+  <Country Name="Albania" Year="2002" Population="1551254" />
+  <Country Name="Albania" Year="2003" Population="1560435" />
+  <Country Name="Albania" Year="2004" Population="1568887" />
+  <Country Name="Albania" Year="2005" Population="1576748.5" />
+  <Country Name="Algeria" Year="1995" Population="13836674" />
+  <Country Name="Algeria" Year="1996" Population="14086188" />
+  <Country Name="Algeria" Year="1997" Population="14322388" />
+  <Country Name="Algeria" Year="1998" Population="14550451" />
+  <Country Name="Algeria" Year="1999" Population="14833000" />
+  <Country Name="Algeria" Year="2000" Population="15059000" />
+  <Country Name="Algeria" Year="2001" Population="15273473" />
+  <Country Name="Algeria" Year="2002" Population="15501690" />
+  <Country Name="Algeria" Year="2003" Population="15757427" />
+  <Country Name="American Samoa" Year="1990" Population="22750" />
+  <Country Name="American Samoa" Year="2000" Population="28027" />
+  <Country Name="Andorra" Year="1997" Population="32705" />
+  <Country Name="Andorra" Year="1998" Population="31461" />
+  <Country Name="Andorra" Year="1999" Population="31557" />
+  <Country Name="Andorra" Year="2000" Population="31745" />
+  <Country Name="Andorra" Year="2001" Population="31731" />
+  <Country Name="Andorra" Year="2002" Population="31863" />
+  <Country Name="Andorra" Year="2003" Population="33582" />
+  <Country Name="Andorra" Year="2004" Population="35895" />
+  <Country Name="Anguilla" Year="1992" Population="4487" />
+  <Country Name="Anguilla" Year="2001" Population="5860" />
+  <Country Name="Antigua and Barbuda" Year="1991" Population="33085" />
+  <Country Name="Antigua and Barbuda" Year="1992" Population="33501" />
+  <Country Name="Antigua and Barbuda" Year="1993" Population="33928" />
+  <Country Name="Antigua and Barbuda" Year="1994" Population="34400" />
+  <Country Name="Antigua and Barbuda" Year="1995" Population="35017" />
+  <Country Name="Antigua and Barbuda" Year="1996" Population="35537" />
+  <Country Name="Antigua and Barbuda" Year="2000" Population="37452" />
+  <Country Name="Antigua and Barbuda" Year="2001" Population="40779" />
+  <Country Name="Antigua and Barbuda" Year="2002" Population="41540" />
+  <Country Name="Antigua and Barbuda" Year="2003" Population="42314" />
+  <Country Name="Antigua and Barbuda" Year="2004" Population="43104" />
+  <Country Name="Antigua and Barbuda" Year="2005" Population="43908" />
+  <Country Name="Argentina" Year="1990" Population="16584189" />
+  <Country Name="Argentina" Year="1991" Population="16815577" />
+  <Country Name="Argentina" Year="1992" Population="17044841" />
+  <Country Name="Argentina" Year="1993" Population="17271462" />
+  <Country Name="Argentina" Year="1994" Population="17494922" />
+  <Country Name="Argentina" Year="1995" Population="17714709" />
+  <Country Name="Argentina" Year="1996" Population="17931337" />
+  <Country Name="Argentina" Year="1997" Population="18145151" />
+  <Country Name="Argentina" Year="1998" Population="18355375" />
+  <Country Name="Argentina" Year="1999" Population="18561235" />
+  <Country Name="Argentina" Year="2000" Population="18761959" />
+  <Country Name="Argentina" Year="2001" Population="18954946" />
+  <Country Name="Argentina" Year="2002" Population="19140712" />
+  <Country Name="Argentina" Year="2003" Population="19323160" />
+  <Country Name="Argentina" Year="2004" Population="19506182" />
+  <Country Name="Argentina" Year="2005" Population="19693678" />
+  <Country Name="Argentina" Year="2006" Population="19886783" />
+  <Country Name="Armenia" Year="1990" Population="1825300" />
+  <Country Name="Armenia" Year="1996" Population="1696100" />
+  <Country Name="Armenia" Year="1997" Population="1687858" />
+  <Country Name="Armenia" Year="1998" Population="1681890.5" />
+  <Country Name="Armenia" Year="1999" Population="1677137.5" />
+  <Country Name="Armenia" Year="2000" Population="1676709" />
+  <Country Name="Armenia" Year="2001" Population="1671367" />
+  <Country Name="Armenia" Year="2002" Population="1668619" />
+  <Country Name="Armenia" Year="2003" Population="1666099" />
+  <Country Name="Armenia" Year="2004" Population="1665317" />
+  <Country Name="Armenia" Year="2005" Population="1665153" />
+  <Country Name="Armenia" Year="2006" Population="1665339" />
+  <Country Name="Aruba" Year="1991" Population="33866" />
+  <Country Name="Aruba" Year="1992" Population="35048" />
+  <Country Name="Aruba" Year="1993" Population="37355" />
+  <Country Name="Aruba" Year="1994" Population="39313" />
+  <Country Name="Aruba" Year="1995" Population="40547" />
+  <Country Name="Aruba" Year="1996" Population="42325" />
+  <Country Name="Aruba" Year="1997" Population="44127" />
+  <Country Name="Aruba" Year="1998" Population="45425" />
+  <Country Name="Aruba" Year="1999" Population="46297" />
+  <Country Name="Aruba" Year="2000" Population="47073" />
+  <Country Name="Aruba" Year="2001" Population="47828" />
+  <Country Name="Aruba" Year="2002" Population="48659" />
+  <Country Name="Aruba" Year="2003" Population="49615" />
+  <Country Name="Aruba" Year="2004" Population="51001.3184132653" />
+  <Country Name="Aruba" Year="2005" Population="52599.0571595429" />
+  <Country Name="Aruba" Year="2006" Population="53766.1196404182" />
+  <Country Name="Australia" Year="1990" Population="8553859" />
+  <Country Name="Australia" Year="1991" Population="8668627" />
+  <Country Name="Australia" Year="1992" Population="8778517" />
+  <Country Name="Australia" Year="1993" Population="8869178" />
+  <Country Name="Australia" Year="1994" Population="8966672" />
+  <Country Name="Australia" Year="1995" Population="9078154" />
+  <Country Name="Australia" Year="1996" Population="9202659" />
+  <Country Name="Australia" Year="1997" Population="9314393" />
+  <Country Name="Australia" Year="1998" Population="9416597" />
+  <Country Name="Australia" Year="1999" Population="9529307" />
+  <Country Name="Australia" Year="2000" Population="9648049" />
+  <Country Name="Australia" Year="2001" Population="9782588" />
+  <Country Name="Australia" Year="2002" Population="9897906" />
+  <Country Name="Australia" Year="2003" Population="10020374" />
+  <Country Name="Australia" Year="2004" Population="10134320" />
+  <Country Name="Australia" Year="2005" Population="10265093" />
+  <Country Name="Australia" Year="2006" Population="10411150" />
+  <Country Name="Austria" Year="1990" Population="4002291" />
+  <Country Name="Austria" Year="1991" Population="4041797" />
+  <Country Name="Austria" Year="1992" Population="4070811" />
+  <Country Name="Austria" Year="1993" Population="4098565" />
+  <Country Name="Austria" Year="1994" Population="4110073" />
+  <Country Name="Austria" Year="1995" Population="4114203" />
+  <Country Name="Austria" Year="1996" Population="4118532" />
+  <Country Name="Austria" Year="1997" Population="4121879" />
+  <Country Name="Austria" Year="1998" Population="4124623" />
+  <Country Name="Austria" Year="1999" Population="4130143" />
+  <Country Name="Austria" Year="2000" Population="4136849" />
+  <Country Name="Austria" Year="2001" Population="4148917" />
+  <Country Name="Austria" Year="2002" Population="4164807" />
+  <Country Name="Austria" Year="2003" Population="4179172" />
+  <Country Name="Austria" Year="2004" Population="4205543" />
+  <Country Name="Austria" Year="2005" Population="4231445" />
+  <Country Name="Azerbaijan" Year="1994" Population="3868000" />
+  <Country Name="Azerbaijan" Year="1995" Population="3906200" />
+  <Country Name="Azerbaijan" Year="1996" Population="3939000" />
+  <Country Name="Azerbaijan" Year="1997" Population="3974000" />
+  <Country Name="Azerbaijan" Year="1998" Population="4030900" />
+  <Country Name="Azerbaijan" Year="1999" Population="4083200" />
+  <Country Name="Azerbaijan" Year="2000" Population="4112200" />
+  <Country Name="Azerbaijan" Year="2001" Population="4139600" />
+  <Country Name="Azerbaijan" Year="2002" Population="4166100" />
+  <Country Name="Azerbaijan" Year="2003" Population="4193300" />
+  <Country Name="Azerbaijan" Year="2004" Population="4225400" />
+  <Country Name="Bahamas" Year="1990" Population="130173" />
+  <Country Name="Bahamas" Year="1991" Population="132634" />
+  <Country Name="Bahamas" Year="1992" Population="135238" />
+  <Country Name="Bahamas" Year="1993" Population="136640" />
+  <Country Name="Bahamas" Year="1994" Population="138910" />
+  <Country Name="Bahamas" Year="1995" Population="141194" />
+  <Country Name="Bahamas" Year="1996" Population="143459" />
+  <Country Name="Bahamas" Year="1997" Population="145714" />
+  <Country Name="Bahamas" Year="2000" Population="155896" />
+  <Country Name="Bahamas" Year="2001" Population="158699" />
+  <Country Name="Bahrain" Year="1990" Population="204147" />
+  <Country Name="Bahrain" Year="1991" Population="213691" />
+  <Country Name="Bahrain" Year="1992" Population="217559" />
+  <Country Name="Bahrain" Year="1993" Population="223637" />
+  <Country Name="Bahrain" Year="1994" Population="229892" />
+  <Country Name="Bahrain" Year="1995" Population="236324" />
+  <Country Name="Bahrain" Year="1996" Population="242937" />
+  <Country Name="Bahrain" Year="1997" Population="249743" />
+  <Country Name="Bahrain" Year="1998" Population="256742" />
+  <Country Name="Bahrain" Year="1999" Population="263933" />
+  <Country Name="Bahrain" Year="2000" Population="271335" />
+  <Country Name="Bahrain" Year="2001" Population="278945" />
+  <Country Name="Bahrain" Year="2002" Population="285903" />
+  <Country Name="Bahrain" Year="2003" Population="293140" />
+  <Country Name="Bahrain" Year="2004" Population="300543" />
+  <Country Name="Bahrain" Year="2005" Population="307890" />
+  <Country Name="Bahrain" Year="2006" Population="315397" />
+  <Country Name="Bangladesh" Year="1991" Population="54141256" />
+  <Country Name="Bangladesh" Year="1994" Population="57200000" />
+  <Country Name="Bangladesh" Year="1995" Population="58300000" />
+  <Country Name="Bangladesh" Year="1996" Population="59400000" />
+  <Country Name="Bangladesh" Year="1997" Population="60400000" />
+  <Country Name="Bangladesh" Year="1998" Population="61400000" />
+  <Country Name="Bangladesh" Year="1999" Population="62200000" />
+  <Country Name="Bangladesh" Year="2000" Population="63000000" />
+  <Country Name="Bangladesh" Year="2001" Population="62791278" />
+  <Country Name="Bangladesh" Year="2002" Population="64700000" />
+  <Country Name="Bangladesh" Year="2003" Population="65700000" />
+  <Country Name="Bangladesh" Year="2004" Population="66600000" />
+  <Country Name="Bangladesh" Year="2005" Population="67600000" />
+  <Country Name="Bangladesh" Year="2006" Population="68770000" />
+  <Country Name="Bangladesh" Year="2007" Population="69810000" />
+  <Country Name="Barbados" Year="2000" Population="130084" />
+  <Country Name="Belarus" Year="1992" Population="5466000" />
+  <Country Name="Belarus" Year="1993" Population="5488900" />
+  <Country Name="Belarus" Year="1994" Population="5480232" />
+  <Country Name="Belarus" Year="1995" Population="5481389" />
+  <Country Name="Belarus" Year="1996" Population="5465634" />
+  <Country Name="Belarus" Year="1997" Population="5450759" />
+  <Country Name="Belarus" Year="1998" Population="5437528" />
+  <Country Name="Belarus" Year="1999" Population="5327616" />
+  <Country Name="Belarus" Year="2002" Population="5272657" />
+  <Country Name="Belarus" Year="2003" Population="5249863" />
+  <Country Name="Belarus" Year="2004" Population="5227935" />
+  <Country Name="Belarus" Year="2005" Population="5206118" />
+  <Country Name="Belgium" Year="1990" Population="5096987" />
+  <Country Name="Belgium" Year="1991" Population="5114528" />
+  <Country Name="Belgium" Year="1992" Population="5133806" />
+  <Country Name="Belgium" Year="1993" Population="5152627" />
+  <Country Name="Belgium" Year="1994" Population="5168155" />
+  <Country Name="Belgium" Year="1995" Population="5180083" />
+  <Country Name="Belgium" Year="1996" Population="5191354" />
+  <Country Name="Belgium" Year="1997" Population="5204019" />
+  <Country Name="Belgium" Year="1998" Population="5214813" />
+  <Country Name="Belgium" Year="1999" Population="5226553" />
+  <Country Name="Belgium" Year="2000" Population="5239233" />
+  <Country Name="Belgium" Year="2001" Population="5260904" />
+  <Country Name="Belgium" Year="2002" Population="5278198" />
+  <Country Name="Belgium" Year="2003" Population="5299102" />
+  <Country Name="Belgium" Year="2004" Population="5321886" />
+  <Country Name="Belgium" Year="2005" Population="5351044" />
+  <Country Name="Belize" Year="1990" Population="93000" />
+  <Country Name="Belize" Year="1991" Population="96000" />
+  <Country Name="Belize" Year="1992" Population="98000" />
+  <Country Name="Belize" Year="1993" Population="101000" />
+  <Country Name="Belize" Year="1994" Population="107000" />
+  <Country Name="Belize" Year="1995" Population="109000" />
+  <Country Name="Belize" Year="1996" Population="111000" />
+  <Country Name="Belize" Year="1997" Population="115500" />
+  <Country Name="Belize" Year="1998" Population="120000" />
+  <Country Name="Belize" Year="1999" Population="120310" />
+  <Country Name="Belize" Year="2000" Population="123720" />
+  <Country Name="Belize" Year="2001" Population="127420" />
+  <Country Name="Belize" Year="2002" Population="131300" />
+  <Country Name="Belize" Year="2003" Population="135400" />
+  <Country Name="Belize" Year="2004" Population="139900" />
+  <Country Name="Belize" Year="2005" Population="144400" />
+  <Country Name="Belize" Year="2006" Population="151710" />
+  <Country Name="Benin" Year="1992" Population="2525219" />
+  <Country Name="Benin" Year="1993" Population="2606957" />
+  <Country Name="Benin" Year="1994" Population="2693533" />
+  <Country Name="Benin" Year="1995" Population="2778681" />
+  <Country Name="Benin" Year="1996" Population="2871645" />
+  <Country Name="Benin" Year="2000" Population="3155379" />
+  <Country Name="Benin" Year="2001" Population="3280176" />
+  <Country Name="Benin" Year="2002" Population="3485795" />
+  <Country Name="Bermuda" Year="1990" Population="30597" />
+  <Country Name="Bermuda" Year="1991" Population="30559" />
+  <Country Name="Bermuda" Year="1992" Population="30818" />
+  <Country Name="Bermuda" Year="1993" Population="30977" />
+  <Country Name="Bermuda" Year="1994" Population="31163" />
+  <Country Name="Bermuda" Year="1995" Population="31371" />
+  <Country Name="Bermuda" Year="1996" Population="31625" />
+  <Country Name="Bermuda" Year="1997" Population="31850" />
+  <Country Name="Bermuda" Year="1998" Population="31019" />
+  <Country Name="Bermuda" Year="1999" Population="32223" />
+  <Country Name="Bermuda" Year="2000" Population="32395" />
+  <Country Name="Bermuda" Year="2001" Population="32486" />
+  <Country Name="Bermuda" Year="2002" Population="32662" />
+  <Country Name="Bermuda" Year="2003" Population="32837" />
+  <Country Name="Bermuda" Year="2004" Population="32997" />
+  <Country Name="Bermuda" Year="2005" Population="33147" />
+  <Country Name="Bermuda" Year="2006" Population="33293" />
+  <Country Name="Bhutan" Year="2000" Population="335610" />
+  <Country Name="Bhutan" Year="2001" Population="346014" />
+  <Country Name="Bhutan" Year="2002" Population="354665" />
+  <Country Name="Bhutan" Year="2003" Population="363535" />
+  <Country Name="Bhutan" Year="2004" Population="372610" />
+  <Country Name="Bhutan" Year="2005" Population="301387" />
+  <Country Name="Bolivia" Year="1990" Population="3365074" />
+  <Country Name="Bolivia" Year="1991" Population="3440688.088" />
+  <Country Name="Bolivia" Year="1992" Population="3518164.384" />
+  <Country Name="Bolivia" Year="1993" Population="3597867.736" />
+  <Country Name="Bolivia" Year="1994" Population="3680162.992" />
+  <Country Name="Bolivia" Year="1995" Population="3765415" />
+  <Country Name="Bolivia" Year="1996" Population="3853805.616" />
+  <Country Name="Bolivia" Year="1997" Population="3945091.608" />
+  <Country Name="Bolivia" Year="1998" Population="4039000.192" />
+  <Country Name="Bolivia" Year="1999" Population="4135258.584" />
+  <Country Name="Bolivia" Year="2000" Population="4233594" />
+  <Country Name="Bolivia" Year="2001" Population="4330924" />
+  <Country Name="Bolivia" Year="2002" Population="4429775.528" />
+  <Country Name="Bolivia" Year="2003" Population="4529495.472" />
+  <Country Name="Bolivia" Year="2004" Population="4629430.144" />
+  <Country Name="Bolivia" Year="2005" Population="4728926" />
+  <Country Name="Bolivia" Year="2006" Population="4828091" />
+  <Country Name="Bosnia and Herzegovina" Year="1990" Population="2223045" />
+  <Country Name="Bosnia and Herzegovina" Year="1991" Population="2197631" />
+  <Country Name="Bosnia and Herzegovina" Year="2003" Population="1954474" />
+  <Country Name="Bosnia and Herzegovina" Year="2004" Population="1959689" />
+  <Country Name="Bosnia and Herzegovina" Year="2005" Population="1959694" />
+  <Country Name="Botswana" Year="1991" Population="692396" />
+  <Country Name="Botswana" Year="1992" Population="708551" />
+  <Country Name="Botswana" Year="1993" Population="724300" />
+  <Country Name="Botswana" Year="1994" Population="739885" />
+  <Country Name="Botswana" Year="1995" Population="757225" />
+  <Country Name="Botswana" Year="1996" Population="775786" />
+  <Country Name="Botswana" Year="1997" Population="794204" />
+  <Country Name="Botswana" Year="1998" Population="814059" />
+  <Country Name="Botswana" Year="1999" Population="832011" />
+  <Country Name="Botswana" Year="2000" Population="853326" />
+  <Country Name="Botswana" Year="2001" Population="867375" />
+  <Country Name="Botswana" Year="2004" Population="883252" />
+  <Country Name="Brazil" Year="1991" Population="74340353" />
+  <Country Name="Brazil" Year="1995" Population="80468681" />
+  <Country Name="Brazil" Year="1996" Population="81744055" />
+  <Country Name="Brazil" Year="1997" Population="83024004" />
+  <Country Name="Brazil" Year="1998" Population="84311847" />
+  <Country Name="Brazil" Year="1999" Population="85614275" />
+  <Country Name="Brazil" Year="2000" Population="86929162" />
+  <Country Name="Brazil" Year="2001" Population="88252046" />
+  <Country Name="Brazil" Year="2002" Population="89588500" />
+  <Country Name="Brazil" Year="2003" Population="90937590" />
+  <Country Name="Brazil" Year="2004" Population="92290016" />
+  <Country Name="Brazil" Year="2005" Population="93641274" />
+  <Country Name="British Virgin Islands" Year="2001" Population="10020" />
+  <Country Name="Brunei Darussalam" Year="1991" Population="122866" />
+  <Country Name="Brunei Darussalam" Year="1992" Population="126500" />
+  <Country Name="Brunei Darussalam" Year="1997" Population="146100" />
+  <Country Name="Brunei Darussalam" Year="1998" Population="150500" />
+  <Country Name="Brunei Darussalam" Year="1999" Population="154700" />
+  <Country Name="Brunei Darussalam" Year="2000" Population="159300" />
+  <Country Name="Brunei Darussalam" Year="2001" Population="163900" />
+  <Country Name="Brunei Darussalam" Year="2002" Population="163600" />
+  <Country Name="Brunei Darussalam" Year="2003" Population="167100" />
+  <Country Name="Brunei Darussalam" Year="2004" Population="170300" />
+  <Country Name="Brunei Darussalam" Year="2005" Population="174800" />
+  <Country Name="Bulgaria" Year="1990" Population="4555467" />
+  <Country Name="Bulgaria" Year="1991" Population="4554724" />
+  <Country Name="Bulgaria" Year="1992" Population="4340929" />
+  <Country Name="Bulgaria" Year="1993" Population="4311927" />
+  <Country Name="Bulgaria" Year="1994" Population="4302789" />
+  <Country Name="Bulgaria" Year="1995" Population="4289400" />
+  <Country Name="Bulgaria" Year="1997" Population="4250835" />
+  <Country Name="Bulgaria" Year="1998" Population="4227268" />
+  <Country Name="Bulgaria" Year="1999" Population="4208008" />
+  <Country Name="Bulgaria" Year="2000" Population="4190880" />
+  <Country Name="Bulgaria" Year="2001" Population="4066436" />
+  <Country Name="Bulgaria" Year="2002" Population="4040018" />
+  <Country Name="Bulgaria" Year="2003" Population="4020056" />
+  <Country Name="Bulgaria" Year="2004" Population="4001937" />
+  <Country Name="Bulgaria" Year="2005" Population="3984431" />
+  <Country Name="Burkina Faso" Year="1991" Population="4698638" />
+  <Country Name="Burkina Faso" Year="1994" Population="5306377" />
+  <Country Name="Burkina Faso" Year="1995" Population="5214811" />
+  <Country Name="Burkina Faso" Year="1996" Population="5506093" />
+  <Country Name="Burkina Faso" Year="2005" Population="6620203" />
+  <Country Name="Burundi" Year="1990" Population="2718667" />
+  <Country Name="Burundi" Year="1993" Population="2963347" />
+  <Country Name="Burundi" Year="1994" Population="3018146" />
+  <Country Name="Burundi" Year="1995" Population="3072945" />
+  <Country Name="Burundi" Year="1996" Population="3127743" />
+  <Country Name="Burundi" Year="1997" Population="3182542" />
+  <Country Name="Burundi" Year="1998" Population="3236278" />
+  <Country Name="Burundi" Year="1999" Population="3329852" />
+  <Country Name="Cambodia" Year="1990" Population="4603085" />
+  <Country Name="Cambodia" Year="1991" Population="4731971" />
+  <Country Name="Cambodia" Year="1992" Population="4864466" />
+  <Country Name="Cambodia" Year="1993" Population="5000671" />
+  <Country Name="Cambodia" Year="1996" Population="5583000" />
+  <Country Name="Cambodia" Year="1998" Population="5926248" />
+  <Country Name="Cambodia" Year="2004" Population="6627042" />
+  <Country Name="Canada" Year="1990" Population="13965764" />
+  <Country Name="Canada" Year="1991" Population="14136746" />
+  <Country Name="Canada" Year="1992" Population="14310955" />
+  <Country Name="Canada" Year="1993" Population="14475048" />
+  <Country Name="Canada" Year="1994" Population="14640467" />
+  <Country Name="Canada" Year="1995" Population="14798777" />
+  <Country Name="Canada" Year="1996" Population="14959993" />
+  <Country Name="Canada" Year="1997" Population="15106740" />
+  <Country Name="Canada" Year="1998" Population="15229856" />
+  <Country Name="Canada" Year="1999" Population="15351427" />
+  <Country Name="Canada" Year="2000" Population="15492326" />
+  <Country Name="Canada" Year="2001" Population="15656847" />
+  <Country Name="Canada" Year="2002" Population="15834015" />
+  <Country Name="Canada" Year="2003" Population="15987100" />
+  <Country Name="Cape Verde" Year="1990" Population="179997" />
+  <Country Name="Cape Verde" Year="1995" Population="202632" />
+  <Country Name="Cape Verde" Year="1996" Population="207669" />
+  <Country Name="Cape Verde" Year="1997" Population="212877" />
+  <Country Name="Cape Verde" Year="1998" Population="218254" />
+  <Country Name="Cape Verde" Year="1999" Population="223797" />
+  <Country Name="Cape Verde" Year="2000" Population="225384" />
+  <Country Name="Cape Verde" Year="2001" Population="229395" />
+  <Country Name="Cape Verde" Year="2002" Population="233503" />
+  <Country Name="Cape Verde" Year="2003" Population="237715" />
+  <Country Name="Cape Verde" Year="2006" Population="236119" />
+  <Country Name="Cayman Islands" Year="1999" Population="1987" />
+  <Country Name="Cayman Islands" Year="2004" Population="23005" />
+  <Country Name="Cayman Islands" Year="2006" Population="25652" />
+  <Country Name="Central African Republic" Year="2003" Population="1581626" />
+  <Country Name="Chad" Year="1990" Population="2952000" />
+  <Country Name="Chad" Year="1991" Population="3020000" />
+  <Country Name="Chad" Year="1992" Population="3091000" />
+  <Country Name="Chad" Year="1993" Population="3165000" />
+  <Country Name="Chad" Year="1994" Population="3213800" />
+  <Country Name="Channel Islands: Guernsey" Year="1990" Population="30696" />
+  <Country Name="Channel Islands: Guernsey" Year="1991" Population="30570" />
+  <Country Name="Channel Islands: Guernsey" Year="1992" Population="30379" />
+  <Country Name="Channel Islands: Guernsey" Year="1993" Population="30100" />
+  <Country Name="Channel Islands: Guernsey" Year="1996" Population="30437" />
+  <Country Name="Channel Islands: Guernsey" Year="1998" Population="30616" />
+  <Country Name="Channel Islands: Guernsey" Year="1999" Population="31226" />
+  <Country Name="Channel Islands: Guernsey" Year="2001" Population="30669" />
+  <Country Name="Channel Islands: Guernsey" Year="2004" Population="30541" />
+  <Country Name="Channel Islands: Guernsey" Year="2006" Population="30995" />
+  <Country Name="Channel Islands: Jersey" Year="1991" Population="43220" />
+  <Country Name="Channel Islands: Jersey" Year="1994" Population="43365" />
+  <Country Name="Channel Islands: Jersey" Year="1995" Population="43390" />
+  <Country Name="Channel Islands: Jersey" Year="1996" Population="43756" />
+  <Country Name="Channel Islands: Jersey" Year="2001" Population="44701" />
+  <Country Name="Chile" Year="1990" Population="6667074" />
+  <Country Name="Chile" Year="1991" Population="6788428" />
+  <Country Name="Chile" Year="1992" Population="6909786" />
+  <Country Name="Chile" Year="1993" Population="7031143" />
+  <Country Name="Chile" Year="1994" Population="7152502" />
+  <Country Name="Chile" Year="1995" Population="7273859" />
+  <Country Name="Chile" Year="1996" Population="7374580" />
+  <Country Name="Chile" Year="1997" Population="7475308" />
+  <Country Name="Chile" Year="1998" Population="7576035" />
+  <Country Name="Chile" Year="1999" Population="7676759" />
+  <Country Name="Chile" Year="2000" Population="7777484" />
+  <Country Name="Chile" Year="2001" Population="7864927" />
+  <Country Name="Chile" Year="2002" Population="7952375" />
+  <Country Name="Chile" Year="2003" Population="8039821" />
+  <Country Name="Chile" Year="2004" Population="8127268" />
+  <Country Name="Chile" Year="2005" Population="8214714" />
+  <Country Name="Chile" Year="2006" Population="8298360" />
+  <Country Name="China" Year="1990" Population="550170000" />
+  <Country Name="China" Year="1991" Population="558930000" />
+  <Country Name="China" Year="1992" Population="568585000" />
+  <Country Name="China" Year="1993" Population="577025000" />
+  <Country Name="China" Year="1994" Population="583245000" />
+  <Country Name="China" Year="1995" Population="589585000" />
+  <Country Name="China" Year="1996" Population="597510000" />
+  <Country Name="China" Year="1997" Population="603420000" />
+  <Country Name="China" Year="1998" Population="606580000" />
+  <Country Name="China" Year="1999" Population="609575000" />
+  <Country Name="China" Year="2000" Population="612000000" />
+  <Country Name="China" Year="2001" Population="616305000" />
+  <Country Name="China" Year="2002" Population="621465000" />
+  <Country Name="China" Year="2003" Population="625045000" />
+  <Country Name="China" Year="2004" Population="628415000" />
+  <Country Name="China" Year="2005" Population="631965000" />
+  <Country Name="China: Hong Kong SAR" Year="1990" Population="2782400" />
+  <Country Name="China: Hong Kong SAR" Year="1991" Population="2813800" />
+  <Country Name="China: Hong Kong SAR" Year="1992" Population="2853500" />
+  <Country Name="China: Hong Kong SAR" Year="1993" Population="2918700" />
+  <Country Name="China: Hong Kong SAR" Year="1994" Population="2995900" />
+  <Country Name="China: Hong Kong SAR" Year="1995" Population="3071800" />
+  <Country Name="China: Hong Kong SAR" Year="1996" Population="3215500" />
+  <Country Name="China: Hong Kong SAR" Year="1997" Population="3253900" />
+  <Country Name="China: Hong Kong SAR" Year="1998" Population="3293800" />
+  <Country Name="China: Hong Kong SAR" Year="1999" Population="3341800" />
+  <Country Name="China: Hong Kong SAR" Year="2000" Population="3388500" />
+  <Country Name="China: Hong Kong SAR" Year="2001" Population="3432300" />
+  <Country Name="China: Hong Kong SAR" Year="2002" Population="3464500" />
+  <Country Name="China: Hong Kong SAR" Year="2003" Population="3471700" />
+  <Country Name="China: Hong Kong SAR" Year="2004" Population="3516700" />
+  <Country Name="China: Hong Kong SAR" Year="2005" Population="3549200" />
+  <Country Name="China: Hong Kong SAR" Year="2006" Population="3591390" />
+  <Country Name="China: Macao SAR" Year="1990" Population="171609" />
+  <Country Name="China: Macao SAR" Year="1991" Population="183201" />
+  <Country Name="China: Macao SAR" Year="1992" Population="191629" />
+  <Country Name="China: Macao SAR" Year="1993" Population="198355" />
+  <Country Name="China: Macao SAR" Year="1994" Population="205044" />
+  <Country Name="China: Macao SAR" Year="1995" Population="212217" />
+  <Country Name="China: Macao SAR" Year="1996" Population="215390" />
+  <Country Name="China: Macao SAR" Year="1997" Population="215975" />
+  <Country Name="China: Macao SAR" Year="1998" Population="218769" />
+  <Country Name="China: Macao SAR" Year="1999" Population="222089" />
+  <Country Name="China: Macao SAR" Year="2000" Population="223883" />
+  <Country Name="China: Macao SAR" Year="2001" Population="226370" />
+  <Country Name="China: Macao SAR" Year="2002" Population="228190" />
+  <Country Name="China: Macao SAR" Year="2003" Population="230734" />
+  <Country Name="China: Macao SAR" Year="2004" Population="236539" />
+  <Country Name="China: Macao SAR" Year="2005" Population="245857" />
+  <Country Name="China: Macao SAR" Year="2006" Population="256946" />
+  <Country Name="Colombia" Year="1993" Population="16813301" />
+  <Country Name="Colombia" Year="2005" Population="21132267" />
+  <Country Name="Comoros" Year="1991" Population="225665" />
+  <Country Name="Congo" Year="1997" Population="1366301" />
+  <Country Name="Congo" Year="1998" Population="1404557" />
+  <Country Name="Congo" Year="1999" Population="1443885" />
+  <Country Name="Congo" Year="2000" Population="1484313" />
+  <Country Name="Congo" Year="2001" Population="1525874" />
+  <Country Name="Congo" Year="2002" Population="1568599" />
+  <Country Name="Congo" Year="2003" Population="1612520" />
+  <Country Name="Congo" Year="2004" Population="1657670" />
+  <Country Name="Cook Islands" Year="1996" Population="9261" />
+  <Country Name="Cook Islands" Year="2001" Population="8724" />
+  <Country Name="Costa Rica" Year="1990" Population="1408772" />
+  <Country Name="Costa Rica" Year="1991" Population="1453171" />
+  <Country Name="Costa Rica" Year="1992" Population="1483361" />
+  <Country Name="Costa Rica" Year="1993" Population="1506778" />
+  <Country Name="Costa Rica" Year="1994" Population="1530863" />
+  <Country Name="Costa Rica" Year="1995" Population="1562523" />
+  <Country Name="Costa Rica" Year="1996" Population="1598135" />
+  <Country Name="Costa Rica" Year="1997" Population="1639885" />
+  <Country Name="Costa Rica" Year="1998" Population="1678174" />
+  <Country Name="Costa Rica" Year="1999" Population="1723667" />
+  <Country Name="Costa Rica" Year="2000" Population="1919379" />
+  <Country Name="Costa Rica" Year="2001" Population="1971574" />
+  <Country Name="Costa Rica" Year="2002" Population="2014168" />
+  <Country Name="Costa Rica" Year="2003" Population="2071306" />
+  <Country Name="Costa Rica" Year="2004" Population="2116287" />
+  <Country Name="Costa Rica" Year="2005" Population="2149537" />
+  <Country Name="Costa Rica" Year="2006" Population="2207233" />
+  <Country Name="Côte d'Ivoire" Year="1990" Population="5733000" />
+  <Country Name="Côte d'Ivoire" Year="1991" Population="5965000" />
+  <Country Name="Côte d'Ivoire" Year="1992" Population="6207000" />
+  <Country Name="Côte d'Ivoire" Year="1993" Population="6457000" />
+  <Country Name="Côte d'Ivoire" Year="1994" Population="6716000" />
+  <Country Name="Côte d'Ivoire" Year="1995" Population="6983000" />
+  <Country Name="Côte d'Ivoire" Year="1996" Population="7258000" />
+  <Country Name="Côte d'Ivoire" Year="1998" Population="7522050" />
+  <Country Name="Côte d'Ivoire" Year="1999" Population="7773828" />
+  <Country Name="Côte d'Ivoire" Year="2000" Population="8028996" />
+  <Country Name="Côte d'Ivoire" Year="2001" Population="8287679" />
+  <Country Name="Côte d'Ivoire" Year="2002" Population="8549848" />
+  <Country Name="Côte d'Ivoire" Year="2003" Population="8815505" />
+  <Country Name="Côte d'Ivoire" Year="2004" Population="9084374" />
+  <Country Name="Côte d'Ivoire" Year="2005" Population="9356561" />
+  <Country Name="Côte d'Ivoire" Year="2006" Population="9633774" />
+  <Country Name="Croatia" Year="1990" Population="2462515" />
+  <Country Name="Croatia" Year="1991" Population="2465642" />
+  <Country Name="Croatia" Year="1992" Population="2321946" />
+  <Country Name="Croatia" Year="1993" Population="2410771" />
+  <Country Name="Croatia" Year="1994" Population="2414801" />
+  <Country Name="Croatia" Year="1995" Population="2425043" />
+  <Country Name="Croatia" Year="1996" Population="2334054" />
+  <Country Name="Croatia" Year="1997" Population="2375032" />
+  <Country Name="Croatia" Year="1998" Population="2337985" />
+  <Country Name="Croatia" Year="1999" Population="2365314" />
+  <Country Name="Croatia" Year="2000" Population="2276000" />
+  <Country Name="Croatia" Year="2001" Population="2301560" />
+  <Country Name="Croatia" Year="2002" Population="2304500" />
+  <Country Name="Croatia" Year="2003" Population="2304100" />
+  <Country Name="Croatia" Year="2004" Population="2302500" />
+  <Country Name="Croatia" Year="2005" Population="2303300" />
+  <Country Name="Cuba" Year="1999" Population="5585149" />
+  <Country Name="Cuba" Year="2000" Population="5580994" />
+  <Country Name="Cuba" Year="2001" Population="5570529" />
+  <Country Name="Cuba" Year="2002" Population="5583405" />
+  <Country Name="Cuba" Year="2003" Population="5598954" />
+  <Country Name="Cuba" Year="2004" Population="5608997" />
+  <Country Name="Cuba" Year="2005" Population="5612676" />
+  <Country Name="Cuba" Year="2006" Population="5612272" />
+  <Country Name="Cyprus" Year="1990" Population="341400" />
+  <Country Name="Cyprus" Year="1991" Population="348100" />
+  <Country Name="Cyprus" Year="1992" Population="354500" />
+  <Country Name="Cyprus" Year="1993" Population="361400" />
+  <Country Name="Cyprus" Year="1994" Population="368300" />
+  <Country Name="Cyprus" Year="1995" Population="374300" />
+  <Country Name="Cyprus" Year="1996" Population="379500" />
+  <Country Name="Cyprus" Year="1997" Population="384400" />
+  <Country Name="Cyprus" Year="1998" Population="389000" />
+  <Country Name="Cyprus" Year="1999" Population="393300" />
+  <Country Name="Cyprus" Year="2000" Population="397300" />
+  <Country Name="Cyprus" Year="2001" Population="401600" />
+  <Country Name="Cyprus" Year="2002" Population="406300" />
+  <Country Name="Cyprus" Year="2003" Population="411500" />
+  <Country Name="Cyprus" Year="2004" Population="374100" />
+  <Country Name="Cyprus" Year="2005" Population="384400" />
+  <Country Name="Czech Republic" Year="1990" Population="5326254" />
+  <Country Name="Czech Republic" Year="1991" Population="5305080" />
+  <Country Name="Czech Republic" Year="1992" Population="5308578" />
+  <Country Name="Czech Republic" Year="1993" Population="5313657" />
+  <Country Name="Czech Republic" Year="1994" Population="5314754" />
+  <Country Name="Czech Republic" Year="1995" Population="5310596" />
+  <Country Name="Czech Republic" Year="1996" Population="5300686" />
+  <Country Name="Czech Republic" Year="1997" Population="5293111" />
+  <Country Name="Czech Republic" Year="1998" Population="5287463" />
+  <Country Name="Czech Republic" Year="1999" Population="5279961" />
+  <Country Name="Czech Republic" Year="2000" Population="5273177" />
+  <Country Name="Czech Republic" Year="2001" Population="5247989" />
+  <Country Name="Czech Republic" Year="2002" Population="5236176" />
+  <Country Name="Czech Republic" Year="2003" Population="5233462" />
+  <Country Name="Czech Republic" Year="2004" Population="5235193" />
+  <Country Name="Czech Republic" Year="2005" Population="5242653" />
+  <Country Name="Denmark" Year="1990" Population="2607253" />
+  <Country Name="Denmark" Year="1991" Population="2614065" />
+  <Country Name="Denmark" Year="1992" Population="2621126" />
+  <Country Name="Denmark" Year="1993" Population="2630045" />
+  <Country Name="Denmark" Year="1994" Population="2637286" />
+  <Country Name="Denmark" Year="1995" Population="2648033" />
+  <Country Name="Denmark" Year="1996" Population="2663514" />
+  <Country Name="Denmark" Year="1997" Population="2674150" />
+  <Country Name="Denmark" Year="1998" Population="2682450" />
+  <Country Name="Denmark" Year="1999" Population="2694717" />
+  <Country Name="Denmark" Year="2000" Population="2699466" />
+  <Country Name="Denmark" Year="2001" Population="2709551" />
+  <Country Name="Denmark" Year="2002" Population="2716914" />
+  <Country Name="Denmark" Year="2003" Population="2722648" />
+  <Country Name="Denmark" Year="2004" Population="2729270" />
+  <Country Name="Denmark" Year="2005" Population="2736121" />
+  <Country Name="Dominica" Year="1990" Population="35900" />
+  <Country Name="Dominica" Year="1991" Population="35878" />
+  <Country Name="Dominica" Year="1992" Population="35662" />
+  <Country Name="Dominica" Year="1993" Population="35617" />
+  <Country Name="Dominica" Year="1994" Population="35398" />
+  <Country Name="Dominica" Year="1995" Population="35203" />
+  <Country Name="Dominica" Year="1996" Population="35252" />
+  <Country Name="Dominica" Year="1997" Population="35277" />
+  <Country Name="Dominica" Year="1998" Population="35364" />
+  <Country Name="Dominica" Year="1999" Population="35253" />
+  <Country Name="Dominica" Year="2000" Population="35800" />
+  <Country Name="Dominica" Year="2001" Population="35681" />
+  <Country Name="Dominica" Year="2002" Population="34910" />
+  <Country Name="Dominican Republic" Year="1993" Population="3742593" />
+  <Country Name="Dominican Republic" Year="2002" Population="4297326" />
+  <Country Name="Ecuador" Year="1990" Population="5104237" />
+  <Country Name="Ecuador" Year="1992" Population="5342337" />
+  <Country Name="Ecuador" Year="1994" Population="5582423" />
+  <Country Name="Ecuador" Year="1995" Population="5701976" />
+  <Country Name="Ecuador" Year="1996" Population="5821222" />
+  <Country Name="Ecuador" Year="1997" Population="5858242" />
+  <Country Name="Ecuador" Year="1998" Population="5946036" />
+  <Country Name="Ecuador" Year="1999" Population="6033294" />
+  <Country Name="Ecuador" Year="2000" Population="6122886" />
+  <Country Name="Ecuador" Year="2001" Population="6214366" />
+  <Country Name="Ecuador" Year="2002" Population="6305821" />
+  <Country Name="Ecuador" Year="2003" Population="6397920" />
+  <Country Name="Ecuador" Year="2004" Population="6491327" />
+  <Country Name="Ecuador" Year="2005" Population="6586721" />
+  <Country Name="Ecuador" Year="2006" Population="6684641" />
+  <Country Name="Egypt" Year="1991" Population="25889000" />
+  <Country Name="Egypt" Year="1992" Population="26388000" />
+  <Country Name="Egypt" Year="1993" Population="26915556" />
+  <Country Name="Egypt" Year="1994" Population="27468869" />
+  <Country Name="Egypt" Year="1995" Population="28081042" />
+  <Country Name="Egypt" Year="1996" Population="28961524" />
+  <Country Name="Egypt" Year="1997" Population="29343809" />
+  <Country Name="Egypt" Year="1998" Population="29961859" />
+  <Country Name="Egypt" Year="1999" Population="30593000" />
+  <Country Name="Egypt" Year="2000" Population="31281000" />
+  <Country Name="Egypt" Year="2005" Population="36032000" />
+  <Country Name="Egypt" Year="2006" Population="35478177" />
+  <Country Name="El Salvador" Year="1991" Population="2726533" />
+  <Country Name="El Salvador" Year="1992" Population="2790968" />
+  <Country Name="El Salvador" Year="1995" Population="2892336" />
+  <Country Name="El Salvador" Year="1996" Population="2951780" />
+  <Country Name="El Salvador" Year="1997" Population="3012346" />
+  <Country Name="El Salvador" Year="1998" Population="3073491" />
+  <Country Name="El Salvador" Year="1999" Population="3134666" />
+  <Country Name="El Salvador" Year="2000" Population="3195333" />
+  <Country Name="El Salvador" Year="2001" Population="3255682" />
+  <Country Name="El Salvador" Year="2002" Population="3316078" />
+  <Country Name="El Salvador" Year="2003" Population="3376230" />
+  <Country Name="El Salvador" Year="2004" Population="3435844" />
+  <Country Name="El Salvador" Year="2005" Population="3494626" />
+  <Country Name="El Salvador" Year="2006" Population="3552551" />
+  <Country Name="Equatorial Guinea" Year="1991" Population="183240" />
+  <Country Name="Equatorial Guinea" Year="2002" Population="513612" />
+  <Country Name="Estonia" Year="1990" Population="835130" />
+  <Country Name="Estonia" Year="1991" Population="831162" />
+  <Country Name="Estonia" Year="1992" Population="818061" />
+  <Country Name="Estonia" Year="1993" Population="799475" />
+  <Country Name="Estonia" Year="1994" Population="783882" />
+  <Country Name="Estonia" Year="1995" Population="771324" />
+  <Country Name="Estonia" Year="1996" Population="761171" />
+  <Country Name="Estonia" Year="1997" Population="753290" />
+  <Country Name="Estonia" Year="1998" Population="746527" />
+  <Country Name="Estonia" Year="1999" Population="741170" />
+  <Country Name="Estonia" Year="2000" Population="738201" />
+  <Country Name="Estonia" Year="2001" Population="735081" />
+  <Country Name="Estonia" Year="2002" Population="732368" />
+  <Country Name="Estonia" Year="2003" Population="729852" />
+  <Country Name="Estonia" Year="2004" Population="727765" />
+  <Country Name="Estonia" Year="2005" Population="726148" />
+  <Country Name="Ethiopia" Year="1994" Population="26566567" />
+  <Country Name="Ethiopia" Year="1995" Population="27150534" />
+  <Country Name="Ethiopia" Year="1996" Population="28028000" />
+  <Country Name="Ethiopia" Year="1997" Population="28915000" />
+  <Country Name="Ethiopia" Year="1998" Population="29811000" />
+  <Country Name="Ethiopia" Year="1999" Population="30716000" />
+  <Country Name="Ethiopia" Year="2001" Population="32559238" />
+  <Country Name="Ethiopia" Year="2002" Population="33513000" />
+  <Country Name="Ethiopia" Year="2003" Population="34474000" />
+  <Country Name="Ethiopia" Year="2004" Population="35448000" />
+  <Country Name="Faeroe Islands" Year="1990" Population="22709" />
+  <Country Name="Faeroe Islands" Year="1991" Population="22713" />
+  <Country Name="Faeroe Islands" Year="1992" Population="22565" />
+  <Country Name="Faeroe Islands" Year="1993" Population="22138" />
+  <Country Name="Faeroe Islands" Year="1994" Population="21437" />
+  <Country Name="Faeroe Islands" Year="1995" Population="21008" />
+  <Country Name="Faeroe Islands" Year="1996" Population="21072" />
+  <Country Name="Faeroe Islands" Year="1997" Population="21305" />
+  <Country Name="Faeroe Islands" Year="1998" Population="21521" />
+  <Country Name="Faeroe Islands" Year="1999" Population="21758" />
+  <Country Name="Faeroe Islands" Year="2000" Population="22073" />
+  <Country Name="Faeroe Islands" Year="2001" Population="22437" />
+  <Country Name="Faeroe Islands" Year="2002" Population="22781" />
+  <Country Name="Faeroe Islands" Year="2003" Population="23051" />
+  <Country Name="Faeroe Islands" Year="2004" Population="23188" />
+  <Country Name="Faeroe Islands" Year="2005" Population="23187" />
+  <Country Name="Faeroe Islands" Year="2006" Population="23184" />
+  <Country Name="Falkland Islands (Malvinas)" Year="1991" Population="955" />
+  <Country Name="Falkland Islands (Malvinas)" Year="1996" Population="1117" />
+  <Country Name="Falkland Islands (Malvinas)" Year="2001" Population="1315" />
+  <Country Name="Fiji" Year="1996" Population="381146" />
+  <Country Name="Finland" Year="1990" Population="2572274" />
+  <Country Name="Finland" Year="1991" Population="2579117" />
+  <Country Name="Finland" Year="1992" Population="2591830" />
+  <Country Name="Finland" Year="1993" Population="2602708" />
+  <Country Name="Finland" Year="1994" Population="2612411" />
+  <Country Name="Finland" Year="1995" Population="2621115" />
+  <Country Name="Finland" Year="1996" Population="2628425" />
+  <Country Name="Finland" Year="1997" Population="2634988" />
+  <Country Name="Finland" Year="1998" Population="2640911" />
+  <Country Name="Finland" Year="1999" Population="2645924" />
+  <Country Name="Finland" Year="2000" Population="2651774" />
+  <Country Name="Finland" Year="2001" Population="2654539" />
+  <Country Name="Finland" Year="2002" Population="2659342" />
+  <Country Name="Finland" Year="2003" Population="2664109" />
+  <Country Name="Finland" Year="2004" Population="2670686.5" />
+  <Country Name="Finland" Year="2005" Population="2678882" />
+  <Country Name="France" Year="1990" Population="29111779" />
+  <Country Name="France" Year="1991" Population="29271904" />
+  <Country Name="France" Year="1997" Population="29931526" />
+  <Country Name="France" Year="1998" Population="30036625" />
+  <Country Name="France" Year="1999" Population="30180258" />
+  <Country Name="France" Year="2000" Population="30371465" />
+  <Country Name="France" Year="2001" Population="30577085" />
+  <Country Name="France" Year="2002" Population="30783796" />
+  <Country Name="France" Year="2003" Population="30984690" />
+  <Country Name="France" Year="2004" Population="31176524" />
+  <Country Name="France" Year="2005" Population="31357203" />
+  <Country Name="French Guiana" Year="1990" Population="55010" />
+  <Country Name="French Guiana" Year="1997" Population="72892" />
+  <Country Name="French Guiana" Year="1998" Population="75825" />
+  <Country Name="French Guiana" Year="1999" Population="78774" />
+  <Country Name="French Guiana" Year="2000" Population="81779" />
+  <Country Name="French Guiana" Year="2001" Population="84885" />
+  <Country Name="French Guiana" Year="2002" Population="88039" />
+  <Country Name="French Guiana" Year="2004" Population="92929" />
+  <Country Name="French Polynesia" Year="1996" Population="105691" />
+  <Country Name="French Polynesia" Year="1999" Population="109787" />
+  <Country Name="Gabon" Year="1993" Population="513192" />
+  <Country Name="Gambia" Year="1993" Population="518195" />
+  <Country Name="Gambia" Year="2003" Population="687781" />
+  <Country Name="Georgia" Year="2001" Population="2085800" />
+  <Country Name="Georgia" Year="2002" Population="2309782" />
+  <Country Name="Georgia" Year="2003" Population="2283400" />
+  <Country Name="Germany" Year="1991" Population="41326533" />
+  <Country Name="Germany" Year="1992" Population="41522130" />
+  <Country Name="Germany" Year="1993" Population="41740233" />
+  <Country Name="Germany" Year="1994" Population="41846374" />
+  <Country Name="Germany" Year="1995" Population="41930010" />
+  <Country Name="Germany" Year="1996" Population="42007954" />
+  <Country Name="Germany" Year="1997" Population="42063284" />
+  <Country Name="Germany" Year="1998" Population="42036675" />
+  <Country Name="Germany" Year="1999" Population="42052784" />
+  <Country Name="Germany" Year="2001" Population="42134319" />
+  <Country Name="Germany" Year="2002" Population="42171879" />
+  <Country Name="Germany" Year="2003" Population="42170976" />
+  <Country Name="Germany" Year="2004" Population="42161000" />
+  <Country Name="Germany" Year="2005" Population="42115358" />
+  <Country Name="Ghana" Year="2000" Population="9554697" />
+  <Country Name="Gibraltar" Year="1990" Population="14860" />
+  <Country Name="Gibraltar" Year="1991" Population="13075" />
+  <Country Name="Gibraltar" Year="1992" Population="13996" />
+  <Country Name="Gibraltar" Year="1993" Population="13807" />
+  <Country Name="Gibraltar" Year="1994" Population="13561" />
+  <Country Name="Gibraltar" Year="1995" Population="13528" />
+  <Country Name="Gibraltar" Year="1996" Population="13510" />
+  <Country Name="Gibraltar" Year="1997" Population="13685" />
+  <Country Name="Gibraltar" Year="1998" Population="13606" />
+  <Country Name="Gibraltar" Year="1999" Population="13703" />
+  <Country Name="Gibraltar" Year="2000" Population="13665" />
+  <Country Name="Gibraltar" Year="2001" Population="13851" />
+  <Country Name="Gibraltar" Year="2002" Population="14220" />
+  <Country Name="Gibraltar" Year="2003" Population="14221" />
+  <Country Name="Gibraltar" Year="2004" Population="14333" />
+  <Country Name="Gibraltar" Year="2005" Population="14371" />
+  <Country Name="Gibraltar" Year="2006" Population="14440" />
+  <Country Name="Greece" Year="1991" Population="5204492" />
+  <Country Name="Greece" Year="1992" Population="5251939" />
+  <Country Name="Greece" Year="1993" Population="5293578" />
+  <Country Name="Greece" Year="1994" Population="5332761" />
+  <Country Name="Greece" Year="1995" Population="5370328" />
+  <Country Name="Greece" Year="1996" Population="5405820" />
+  <Country Name="Greece" Year="1997" Population="5438750" />
+  <Country Name="Greece" Year="1998" Population="5468090" />
+  <Country Name="Greece" Year="1999" Population="5492726" />
+  <Country Name="Greece" Year="2000" Population="5511414" />
+  <Country Name="Greece" Year="2001" Population="5532204" />
+  <Country Name="Greece" Year="2002" Population="5548227" />
+  <Country Name="Greece" Year="2003" Population="5567036" />
+  <Country Name="Greece" Year="2004" Population="5586206" />
+  <Country Name="Greece" Year="2005" Population="5606557" />
+  <Country Name="Greenland" Year="1994" Population="25911" />
+  <Country Name="Greenland" Year="1995" Population="26036" />
+  <Country Name="Greenland" Year="1996" Population="26089" />
+  <Country Name="Greenland" Year="1997" Population="26152" />
+  <Country Name="Greenland" Year="1998" Population="26172" />
+  <Country Name="Greenland" Year="1999" Population="26146" />
+  <Country Name="Greenland" Year="2000" Population="26135" />
+  <Country Name="Greenland" Year="2001" Population="26292" />
+  <Country Name="Greenland" Year="2002" Population="26394" />
+  <Country Name="Greenland" Year="2003" Population="26474" />
+  <Country Name="Grenada" Year="1990" Population="48100" />
+  <Country Name="Grenada" Year="1991" Population="48600" />
+  <Country Name="Grenada" Year="1992" Population="49000" />
+  <Country Name="Grenada" Year="1993" Population="49200" />
+  <Country Name="Grenada" Year="1994" Population="49600" />
+  <Country Name="Grenada" Year="1995" Population="49900" />
+  <Country Name="Grenada" Year="1996" Population="50000" />
+  <Country Name="Grenada" Year="1997" Population="50200" />
+  <Country Name="Grenada" Year="1998" Population="50500" />
+  <Country Name="Grenada" Year="1999" Population="50900" />
+  <Country Name="Grenada" Year="2000" Population="51300" />
+  <Country Name="Grenada" Year="2001" Population="52151" />
+  <Country Name="Guadeloupe" Year="1990" Population="197847" />
+  <Country Name="Guadeloupe" Year="1997" Population="214190" />
+  <Country Name="Guadeloupe" Year="1998" Population="217163" />
+  <Country Name="Guadeloupe" Year="1999" Population="219963" />
+  <Country Name="Guadeloupe" Year="2000" Population="222495" />
+  <Country Name="Guadeloupe" Year="2001" Population="225000" />
+  <Country Name="Guadeloupe" Year="2003" Population="228690" />
+  <Country Name="Guam" Year="1990" Population="62207" />
+  <Country Name="Guam" Year="1991" Population="63643" />
+  <Country Name="Guam" Year="1992" Population="65113" />
+  <Country Name="Guam" Year="2000" Population="75624" />
+  <Country Name="Guatemala" Year="1990" Population="4327124" />
+  <Country Name="Guatemala" Year="1991" Population="4443267" />
+  <Country Name="Guatemala" Year="1992" Population="4562527" />
+  <Country Name="Guatemala" Year="1993" Population="4684988" />
+  <Country Name="Guatemala" Year="1994" Population="4810734" />
+  <Country Name="Guatemala" Year="1995" Population="4939856" />
+  <Country Name="Guatemala" Year="1996" Population="5073392" />
+  <Country Name="Guatemala" Year="1997" Population="5210538" />
+  <Country Name="Guatemala" Year="1998" Population="5351390" />
+  <Country Name="Guatemala" Year="1999" Population="5496049" />
+  <Country Name="Guatemala" Year="2000" Population="5644618" />
+  <Country Name="Guatemala" Year="2001" Population="5789985" />
+  <Country Name="Guinea" Year="1996" Population="3658427" />
+  <Country Name="Guinea-Bissau" Year="1991" Population="507157" />
+  <Country Name="Guyana" Year="1990" Population="380429" />
+  <Country Name="Guyana" Year="1991" Population="367133" />
+  <Country Name="Guyana" Year="1992" Population="361408" />
+  <Country Name="Guyana" Year="1993" Population="372791" />
+  <Country Name="Guyana" Year="1994" Population="378443" />
+  <Country Name="Guyana" Year="1995" Population="385740" />
+  <Country Name="Guyana" Year="1996" Population="390692" />
+  <Country Name="Guyana" Year="1997" Population="393227" />
+  <Country Name="Guyana" Year="1998" Population="392362" />
+  <Country Name="Guyana" Year="1999" Population="390917" />
+  <Country Name="Guyana" Year="2000" Population="376417" />
+  <Country Name="Guyana" Year="2001" Population="377228" />
+  <Country Name="Guyana" Year="2002" Population="376361" />
+  <Country Name="Guyana" Year="2003" Population="375823" />
+  <Country Name="Guyana" Year="2004" Population="377103" />
+  <Country Name="Guyana" Year="2005" Population="378393" />
+  <Country Name="Guyana" Year="2006" Population="379682" />
+  <Country Name="Guyana" Year="2007" Population="375027" />
+  <Country Name="Holy See" Year="1998" Population="182" />
+  <Country Name="Holy See" Year="2000" Population="269" />
+  <Country Name="Honduras" Year="2001" Population="3070670" />
+  <Country Name="Honduras" Year="2003" Population="3471968" />
+  <Country Name="Hungary" Year="1990" Population="5389919" />
+  <Country Name="Hungary" Year="1991" Population="5379682.5" />
+  <Country Name="Hungary" Year="1992" Population="5371738" />
+  <Country Name="Hungary" Year="1993" Population="5360394" />
+  <Country Name="Hungary" Year="1994" Population="5347996" />
+  <Country Name="Hungary" Year="1995" Population="5335178.5" />
+  <Country Name="Hungary" Year="1996" Population="5319774.5" />
+  <Country Name="Hungary" Year="1997" Population="5302308.5" />
+  <Country Name="Hungary" Year="1998" Population="5283839.5" />
+  <Country Name="Hungary" Year="1999" Population="5262817" />
+  <Country Name="Hungary" Year="2000" Population="5242521.5" />
+  <Country Name="Hungary" Year="2001" Population="5347665" />
+  <Country Name="Hungary" Year="2002" Population="5330889.5" />
+  <Country Name="Hungary" Year="2003" Population="5318267.5" />
+  <Country Name="Hungary" Year="2004" Population="5308531.5" />
+  <Country Name="Hungary" Year="2005" Population="5298218" />
+  <Country Name="Iceland" Year="1990" Population="126893" />
+  <Country Name="Iceland" Year="1991" Population="128571" />
+  <Country Name="Iceland" Year="1992" Population="130158" />
+  <Country Name="Iceland" Year="1993" Population="131475" />
+  <Country Name="Iceland" Year="1994" Population="132519" />
+  <Country Name="Iceland" Year="1995" Population="133342" />
+  <Country Name="Iceland" Year="1996" Population="134148" />
+  <Country Name="Iceland" Year="1997" Population="135136" />
+  <Country Name="Iceland" Year="1998" Population="136702" />
+  <Country Name="Iceland" Year="1999" Population="138401" />
+  <Country Name="Iceland" Year="2000" Population="140436" />
+  <Country Name="Iceland" Year="2001" Population="142308" />
+  <Country Name="Iceland" Year="2002" Population="143699" />
+  <Country Name="Iceland" Year="2003" Population="144559" />
+  <Country Name="Iceland" Year="2004" Population="145890" />
+  <Country Name="Iceland" Year="2005" Population="147415" />
+  <Country Name="India" Year="1991" Population="407072230" />
+  <Country Name="India" Year="1996" Population="452065000" />
+  <Country Name="India" Year="1997" Population="461832000" />
+  <Country Name="India" Year="1998" Population="470914000" />
+  <Country Name="India" Year="1999" Population="480121000" />
+  <Country Name="India" Year="2000" Population="489459000" />
+  <Country Name="India" Year="2001" Population="498931000" />
+  <Country Name="India" Year="2002" Population="507452000" />
+  <Country Name="India" Year="2003" Population="516129000" />
+  <Country Name="India" Year="2004" Population="524705000" />
+  <Country Name="Indonesia" Year="1990" Population="89915401" />
+  <Country Name="Indonesia" Year="1995" Population="97824877" />
+  <Country Name="Indonesia" Year="1997" Population="101146300" />
+  <Country Name="Indonesia" Year="1998" Population="102673300" />
+  <Country Name="Indonesia" Year="1999" Population="104202700" />
+  <Country Name="Indonesia" Year="2000" Population="102847415" />
+  <Country Name="Indonesia" Year="2003" Population="106915700" />
+  <Country Name="Iran (Islamic Republic of)" Year="1991" Population="27068713" />
+  <Country Name="Iran (Islamic Republic of)" Year="1993" Population="28073077" />
+  <Country Name="Iran (Islamic Republic of)" Year="1994" Population="28484978" />
+  <Country Name="Iran (Islamic Republic of)" Year="1995" Population="28902923" />
+  <Country Name="Iran (Islamic Republic of)" Year="1996" Population="29540329" />
+  <Country Name="Iran (Islamic Republic of)" Year="1997" Population="29927067" />
+  <Country Name="Iran (Islamic Republic of)" Year="2004" Population="33126843" />
+  <Country Name="Iran (Islamic Republic of)" Year="2005" Population="33665787" />
+  <Country Name="Iraq" Year="1990" Population="8700000" />
+  <Country Name="Iraq" Year="1991" Population="8959000" />
+  <Country Name="Iraq" Year="1992" Population="9218000" />
+  <Country Name="Iraq" Year="1993" Population="9477000" />
+  <Country Name="Iraq" Year="1994" Population="9736000" />
+  <Country Name="Iraq" Year="1995" Population="9995000" />
+  <Country Name="Iraq" Year="1996" Population="10281000" />
+  <Country Name="Iraq" Year="1997" Population="11059000" />
+  <Country Name="Iraq" Year="1998" Population="11374000" />
+  <Country Name="Iraq" Year="1999" Population="11700000" />
+  <Country Name="Iraq" Year="2000" Population="12039000" />
+  <Country Name="Iraq" Year="2001" Population="12389000" />
+  <Country Name="Iraq" Year="2002" Population="12751000" />
+  <Country Name="Iraq" Year="2003" Population="13124000" />
+  <Country Name="Iraq" Year="2004" Population="13510000" />
+  <Country Name="Iraq" Year="2005" Population="13908000" />
+  <Country Name="Iraq" Year="2006" Population="14317000" />
+  <Country Name="Ireland" Year="1990" Population="1763100" />
+  <Country Name="Ireland" Year="1991" Population="1760721" />
+  <Country Name="Ireland" Year="1992" Population="1786100" />
+  <Country Name="Ireland" Year="1993" Population="1796100" />
+  <Country Name="Ireland" Year="1994" Population="1802600" />
+  <Country Name="Ireland" Year="1995" Population="1812900" />
+  <Country Name="Ireland" Year="1996" Population="1825855" />
+  <Country Name="Ireland" Year="1997" Population="1844919" />
+  <Country Name="Ireland" Year="1998" Population="1864223" />
+  <Country Name="Ireland" Year="1999" Population="1883034" />
+  <Country Name="Ireland" Year="2000" Population="1906590" />
+  <Country Name="Ireland" Year="2001" Population="1934070" />
+  <Country Name="Ireland" Year="2002" Population="1971039" />
+  <Country Name="Ireland" Year="2003" Population="2001654" />
+  <Country Name="Ireland" Year="2004" Population="2032604" />
+  <Country Name="Ireland" Year="2005" Population="2071770" />
+  <Country Name="Ireland" Year="2006" Population="2118810" />
+  <Country Name="Isle of Man" Year="1991" Population="36095" />
+  <Country Name="Isle of Man" Year="1993" Population="36505" />
+  <Country Name="Isle of Man" Year="1994" Population="36781" />
+  <Country Name="Isle of Man" Year="1995" Population="37098" />
+  <Country Name="Isle of Man" Year="1996" Population="36917" />
+  <Country Name="Isle of Man" Year="1997" Population="37286" />
+  <Country Name="Isle of Man" Year="2000" Population="38327" />
+  <Country Name="Isle of Man" Year="2001" Population="38943" />
+  <Country Name="Isle of Man" Year="2002" Population="39330" />
+  <Country Name="Isle of Man" Year="2003" Population="39444" />
+  <Country Name="Isle of Man" Year="2004" Population="39470" />
+  <Country Name="Isle of Man" Year="2005" Population="40025" />
+  <Country Name="Isle of Man" Year="2006" Population="40535" />
+  <Country Name="Israel" Year="1990" Population="2339100" />
+  <Country Name="Israel" Year="1992" Population="2580400" />
+  <Country Name="Israel" Year="1993" Population="2652000" />
+  <Country Name="Israel" Year="1994" Population="2723500" />
+  <Country Name="Israel" Year="1995" Population="2810348" />
+  <Country Name="Israel" Year="1997" Population="2953500" />
+  <Country Name="Israel" Year="1999" Population="3103533" />
+  <Country Name="Israel" Year="2000" Population="3186800" />
+  <Country Name="Israel" Year="2001" Population="3262500" />
+  <Country Name="Israel" Year="2002" Population="3328200" />
+  <Country Name="Israel" Year="2003" Population="3387900" />
+  <Country Name="Israel" Year="2004" Population="3447000" />
+  <Country Name="Israel" Year="2005" Population="3506996" />
+  <Country Name="Italy" Year="1990" Population="29181640" />
+  <Country Name="Italy" Year="1991" Population="29207854" />
+  <Country Name="Italy" Year="1992" Population="29234077" />
+  <Country Name="Italy" Year="1993" Population="29257598" />
+  <Country Name="Italy" Year="1994" Population="29270723" />
+  <Country Name="Italy" Year="1995" Population="29279674" />
+  <Country Name="Italy" Year="1996" Population="29296747" />
+  <Country Name="Italy" Year="1997" Population="29321195.5" />
+  <Country Name="Italy" Year="1998" Population="29339081" />
+  <Country Name="Italy" Year="1999" Population="29352949" />
+  <Country Name="Italy" Year="2000" Population="29372451" />
+  <Country Name="Italy" Year="2001" Population="29492809" />
+  <Country Name="Italy" Year="2002" Population="29481805" />
+  <Country Name="Italy" Year="2003" Population="29687242" />
+  <Country Name="Italy" Year="2004" Population="29952604" />
+  <Country Name="Italy" Year="2005" Population="30155197" />
+  <Country Name="Jamaica" Year="1991" Population="1180093" />
+  <Country Name="Jamaica" Year="1999" Population="1236292" />
+  <Country Name="Jamaica" Year="2000" Population="1315319" />
+  <Country Name="Jamaica" Year="2001" Population="1324085" />
+  <Country Name="Jamaica" Year="2002" Population="1328396" />
+  <Country Name="Jamaica" Year="2003" Population="1333995" />
+  <Country Name="Jamaica" Year="2004" Population="1340561" />
+  <Country Name="Japan" Year="1990" Population="62914443" />
+  <Country Name="Japan" Year="1991" Population="63095000" />
+  <Country Name="Japan" Year="1992" Population="63335000" />
+  <Country Name="Japan" Year="1993" Population="63562000" />
+  <Country Name="Japan" Year="1994" Population="63773000" />
+  <Country Name="Japan" Year="1995" Population="63995848" />
+  <Country Name="Japan" Year="1996" Population="64112000" />
+  <Country Name="Japan" Year="1997" Population="64275000" />
+  <Country Name="Japan" Year="1998" Population="64490000" />
+  <Country Name="Japan" Year="1999" Population="64635000" />
+  <Country Name="Japan" Year="2000" Population="64815079" />
+  <Country Name="Japan" Year="2001" Population="64971000" />
+  <Country Name="Japan" Year="2002" Population="65167000" />
+  <Country Name="Japan" Year="2003" Population="65348000" />
+  <Country Name="Japan" Year="2004" Population="65406000" />
+  <Country Name="Japan" Year="2005" Population="65441000" />
+  <Country Name="Japan" Year="2006" Population="65442000" />
+  <Country Name="Jordan" Year="1994" Population="1978733" />
+  <Country Name="Jordan" Year="1998" Population="2232275" />
+  <Country Name="Jordan" Year="1999" Population="2303850" />
+  <Country Name="Jordan" Year="2000" Population="2370700" />
+  <Country Name="Jordan" Year="2001" Population="2437682" />
+  <Country Name="Jordan" Year="2002" Population="2506825" />
+  <Country Name="Jordan" Year="2003" Population="2577843" />
+  <Country Name="Jordan" Year="2004" Population="2477352" />
+  <Country Name="Jordan" Year="2005" Population="2651900" />
+  <Country Name="Kazakhstan" Year="1990" Population="8583073" />
+  <Country Name="Kazakhstan" Year="1991" Population="8646500" />
+  <Country Name="Kazakhstan" Year="1992" Population="8691660" />
+  <Country Name="Kazakhstan" Year="1993" Population="8681585" />
+  <Country Name="Kazakhstan" Year="1995" Population="8503251" />
+  <Country Name="Kazakhstan" Year="1996" Population="8182844" />
+  <Country Name="Kazakhstan" Year="1997" Population="7940619" />
+  <Country Name="Kazakhstan" Year="1998" Population="7809906" />
+  <Country Name="Kazakhstan" Year="1999" Population="7751341" />
+  <Country Name="Kazakhstan" Year="2000" Population="7715013" />
+  <Country Name="Kazakhstan" Year="2001" Population="7701753" />
+  <Country Name="Kazakhstan" Year="2002" Population="7702132" />
+  <Country Name="Kazakhstan" Year="2003" Population="7729435" />
+  <Country Name="Kazakhstan" Year="2004" Population="7785025" />
+  <Country Name="Kazakhstan" Year="2005" Population="7856177" />
+  <Country Name="Kenya" Year="1993" Population="13100000" />
+  <Country Name="Kenya" Year="1997" Population="14520000" />
+  <Country Name="Kenya" Year="1998" Population="14858000" />
+  <Country Name="Kenya" Year="1999" Population="15110815" />
+  <Country Name="Kenya" Year="2000" Population="15303306" />
+  <Country Name="Kenya" Year="2001" Population="15779077" />
+  <Country Name="Kenya" Year="2002" Population="16267576" />
+  <Country Name="Kenya" Year="2003" Population="16768819" />
+  <Country Name="Kenya" Year="2004" Population="17282734" />
+  <Country Name="Kenya" Year="2005" Population="17809316" />
+  <Country Name="Kenya" Year="2006" Population="18379922" />
+  <Country Name="Kiribati" Year="1990" Population="36565" />
+  <Country Name="Kiribati" Year="1995" Population="39180" />
+  <Country Name="Kiribati" Year="2000" Population="42848" />
+  <Country Name="Kiribati" Year="2005" Population="46921" />
+  <Country Name="Korea (Dem.  People's  Republic of)" Year="1993" Population="10883679" />
+  <Country Name="Korea (Republic of)" Year="1990" Population="21628745" />
+  <Country Name="Korea (Republic of)" Year="1991" Population="21511790" />
+  <Country Name="Korea (Republic of)" Year="1992" Population="21734307" />
+  <Country Name="Korea (Republic of)" Year="1993" Population="21952074" />
+  <Country Name="Korea (Republic of)" Year="1994" Population="22169044" />
+  <Country Name="Korea (Republic of)" Year="1995" Population="22387662" />
+  <Country Name="Korea (Republic of)" Year="1996" Population="22600169" />
+  <Country Name="Korea (Republic of)" Year="1997" Population="22805488" />
+  <Country Name="Korea (Republic of)" Year="1998" Population="22990776" />
+  <Country Name="Korea (Republic of)" Year="1999" Population="23158840" />
+  <Country Name="Korea (Republic of)" Year="2000" Population="23341342" />
+  <Country Name="Korea (Republic of)" Year="2001" Population="23505069" />
+  <Country Name="Korea (Republic of)" Year="2002" Population="23634368" />
+  <Country Name="Korea (Republic of)" Year="2003" Population="23743560" />
+  <Country Name="Korea (Republic of)" Year="2004" Population="23853954" />
+  <Country Name="Korea (Republic of)" Year="2005" Population="23961013" />
+  <Country Name="Kuwait" Year="1990" Population="896541" />
+  <Country Name="Kuwait" Year="1992" Population="620397" />
+  <Country Name="Kuwait" Year="1993" Population="637843" />
+  <Country Name="Kuwait" Year="1994" Population="626031" />
+  <Country Name="Kuwait" Year="1995" Population="705024" />
+  <Country Name="Kuwait" Year="1996" Population="751679" />
+  <Country Name="Kuwait" Year="1997" Population="784518" />
+  <Country Name="Kuwait" Year="1998" Population="800329" />
+  <Country Name="Kuwait" Year="1999" Population="828373" />
+  <Country Name="Kuwait" Year="2000" Population="850746" />
+  <Country Name="Kuwait" Year="2001" Population="877218" />
+  <Country Name="Kuwait" Year="2002" Population="906656" />
+  <Country Name="Kuwait" Year="2003" Population="932620" />
+  <Country Name="Kuwait" Year="2004" Population="958540" />
+  <Country Name="Kuwait" Year="2005" Population="984945" />
+  <Country Name="Kyrgyzstan" Year="1990" Population="2258700" />
+  <Country Name="Kyrgyzstan" Year="1991" Population="2292400" />
+  <Country Name="Kyrgyzstan" Year="1992" Population="2316500" />
+  <Country Name="Kyrgyzstan" Year="1993" Population="2313300" />
+  <Country Name="Kyrgyzstan" Year="1994" Population="2309800" />
+  <Country Name="Kyrgyzstan" Year="1995" Population="2332200" />
+  <Country Name="Kyrgyzstan" Year="1996" Population="2364300" />
+  <Country Name="Kyrgyzstan" Year="1997" Population="2396800" />
+  <Country Name="Kyrgyzstan" Year="1998" Population="2431800" />
+  <Country Name="Kyrgyzstan" Year="1999" Population="2464700" />
+  <Country Name="Kyrgyzstan" Year="2000" Population="2489500" />
+  <Country Name="Kyrgyzstan" Year="2001" Population="2508900" />
+  <Country Name="Kyrgyzstan" Year="2002" Population="2527700" />
+  <Country Name="Kyrgyzstan" Year="2003" Population="2549700" />
+  <Country Name="Kyrgyzstan" Year="2004" Population="2576400" />
+  <Country Name="Kyrgyzstan" Year="2005" Population="2601200" />
+  <Country Name="Kyrgyzstan" Year="2006" Population="2625400" />
+  <Country Name="Lao People's Democratic Republic" Year="1990" Population="2047000" />
+  <Country Name="Lao People's Democratic Republic" Year="1995" Population="2313862" />
+  <Country Name="Lao People's Democratic Republic" Year="1997" Population="2566313" />
+  <Country Name="Lao People's Democratic Republic" Year="1999" Population="2575000" />
+  <Country Name="Lao People's Democratic Republic" Year="2000" Population="2639300" />
+  <Country Name="Lao People's Democratic Republic" Year="2001" Population="2720000" />
+  <Country Name="Lao People's Democratic Republic" Year="2002" Population="2795000" />
+  <Country Name="Lao People's Democratic Republic" Year="2003" Population="2872000" />
+  <Country Name="Lao People's Democratic Republic" Year="2004" Population="2952000" />
+  <Country Name="Lao People's Democratic Republic" Year="2005" Population="2872600" />
+  <Country Name="Latvia" Year="1990" Population="1424657" />
+  <Country Name="Latvia" Year="1991" Population="1418048" />
+  <Country Name="Latvia" Year="1992" Population="1400666" />
+  <Country Name="Latvia" Year="1993" Population="1376172" />
+  <Country Name="Latvia" Year="1994" Population="1355831" />
+  <Country Name="Latvia" Year="1995" Population="1338497" />
+  <Country Name="Latvia" Year="1996" Population="1324423" />
+  <Country Name="Latvia" Year="1997" Population="1311709" />
+  <Country Name="Latvia" Year="1998" Population="1299558" />
+  <Country Name="Latvia" Year="1999" Population="1289319" />
+  <Country Name="Latvia" Year="2000" Population="1282419" />
+  <Country Name="Latvia" Year="2001" Population="1270527" />
+  <Country Name="Latvia" Year="2002" Population="1262037" />
+  <Country Name="Latvia" Year="2003" Population="1254645" />
+  <Country Name="Latvia" Year="2004" Population="1247192" />
+  <Country Name="Latvia" Year="2005" Population="1240411" />
+  <Country Name="Lesotho" Year="1996" Population="995723" />
+  <Country Name="Lesotho" Year="1997" Population="1020399" />
+  <Country Name="Lesotho" Year="1998" Population="1041504" />
+  <Country Name="Lesotho" Year="1999" Population="1063142" />
+  <Country Name="Lesotho" Year="2000" Population="1085132" />
+  <Country Name="Lesotho" Year="2001" Population="1092053" />
+  <Country Name="Lesotho" Year="2006" Population="960874" />
+  <Country Name="Libyan Arab Jamahiriya" Year="1995" Population="2231846" />
+  <Country Name="Libyan Arab Jamahiriya" Year="1996" Population="2293783" />
+  <Country Name="Libyan Arab Jamahiriya" Year="1997" Population="2359100" />
+  <Country Name="Libyan Arab Jamahiriya" Year="1998" Population="2421802" />
+  <Country Name="Libyan Arab Jamahiriya" Year="1999" Population="2512957" />
+  <Country Name="Libyan Arab Jamahiriya" Year="2000" Population="2595539" />
+  <Country Name="Libyan Arab Jamahiriya" Year="2001" Population="2617689" />
+  <Country Name="Libyan Arab Jamahiriya" Year="2002" Population="2711093" />
+  <Country Name="Liechtenstein" Year="1994" Population="15638" />
+  <Country Name="Liechtenstein" Year="1995" Population="15781" />
+  <Country Name="Liechtenstein" Year="1996" Population="15900" />
+  <Country Name="Liechtenstein" Year="1997" Population="16040" />
+  <Country Name="Liechtenstein" Year="1998" Population="16250" />
+  <Country Name="Liechtenstein" Year="1999" Population="16519" />
+  <Country Name="Liechtenstein" Year="2000" Population="16887" />
+  <Country Name="Liechtenstein" Year="2001" Population="16909" />
+  <Country Name="Liechtenstein" Year="2002" Population="17164" />
+  <Country Name="Liechtenstein" Year="2003" Population="17297" />
+  <Country Name="Liechtenstein" Year="2004" Population="17503" />
+  <Country Name="Liechtenstein" Year="2005" Population="17634" />
+  <Country Name="Lithuania" Year="1990" Population="1948613.5" />
+  <Country Name="Lithuania" Year="1991" Population="1952264.5" />
+  <Country Name="Lithuania" Year="1992" Population="1950730.5" />
+  <Country Name="Lithuania" Year="1993" Population="1942924" />
+  <Country Name="Lithuania" Year="1994" Population="1931854" />
+  <Country Name="Lithuania" Year="1995" Population="1919715" />
+  <Country Name="Lithuania" Year="1996" Population="1907910" />
+  <Country Name="Lithuania" Year="1997" Population="1896390" />
+  <Country Name="Lithuania" Year="1998" Population="1884723.5" />
+  <Country Name="Lithuania" Year="1999" Population="1873306.5" />
+  <Country Name="Lithuania" Year="2000" Population="1861920.5" />
+  <Country Name="Lithuania" Year="2001" Population="1854824" />
+  <Country Name="Lithuania" Year="2002" Population="1848179" />
+  <Country Name="Lithuania" Year="2003" Population="1841209" />
+  <Country Name="Lithuania" Year="2004" Population="1832170" />
+  <Country Name="Lithuania" Year="2005" Population="1821902" />
+  <Country Name="Luxembourg" Year="1991" Population="196064" />
+  <Country Name="Luxembourg" Year="1993" Population="202555" />
+  <Country Name="Luxembourg" Year="1994" Population="205483" />
+  <Country Name="Luxembourg" Year="1995" Population="208585" />
+  <Country Name="Luxembourg" Year="1996" Population="211550" />
+  <Country Name="Luxembourg" Year="1998" Population="216734" />
+  <Country Name="Luxembourg" Year="1999" Population="218497" />
+  <Country Name="Luxembourg" Year="2000" Population="221343" />
+  <Country Name="Luxembourg" Year="2001" Population="223963" />
+  <Country Name="Luxembourg" Year="2002" Population="226259" />
+  <Country Name="Luxembourg" Year="2003" Population="227935" />
+  <Country Name="Luxembourg" Year="2004" Population="229420" />
+  <Country Name="Luxembourg" Year="2005" Population="231475" />
+  <Country Name="Madagascar" Year="1993" Population="6150798" />
+  <Country Name="Madagascar" Year="1998" Population="7132000" />
+  <Country Name="Madagascar" Year="1999" Population="7343000" />
+  <Country Name="Madagascar" Year="2000" Population="7559000" />
+  <Country Name="Malawi" Year="1998" Population="5066305" />
+  <Country Name="Malawi" Year="2004" Population="6071472" />
+  <Country Name="Malawi" Year="2005" Population="6273607" />
+  <Country Name="Malaysia" Year="1991" Population="9016740" />
+  <Country Name="Malaysia" Year="1992" Population="9364587" />
+  <Country Name="Malaysia" Year="1993" Population="9607545" />
+  <Country Name="Malaysia" Year="1994" Population="9860535" />
+  <Country Name="Malaysia" Year="1995" Population="10125449" />
+  <Country Name="Malaysia" Year="1996" Population="10345564" />
+  <Country Name="Malaysia" Year="1997" Population="10345746" />
+  <Country Name="Malaysia" Year="1998" Population="10583530" />
+  <Country Name="Malaysia" Year="1999" Population="10771228" />
+  <Country Name="Malaysia" Year="2000" Population="11529271" />
+  <Country Name="Malaysia" Year="2001" Population="11785500" />
+  <Country Name="Malaysia" Year="2002" Population="12039500" />
+  <Country Name="Malaysia" Year="2003" Population="12296400" />
+  <Country Name="Malaysia" Year="2004" Population="12557700" />
+  <Country Name="Malaysia" Year="2005" Population="12824900" />
+  <Country Name="Maldives" Year="1990" Population="105123" />
+  <Country Name="Maldives" Year="1991" Population="108856" />
+  <Country Name="Maldives" Year="1992" Population="112587" />
+  <Country Name="Maldives" Year="1993" Population="116318" />
+  <Country Name="Maldives" Year="1995" Population="120192" />
+  <Country Name="Maldives" Year="1996" Population="123425" />
+  <Country Name="Maldives" Year="1997" Population="127133" />
+  <Country Name="Maldives" Year="1998" Population="131478" />
+  <Country Name="Maldives" Year="1999" Population="136506" />
+  <Country Name="Maldives" Year="2000" Population="133713" />
+  <Country Name="Maldives" Year="2001" Population="135791" />
+  <Country Name="Maldives" Year="2002" Population="138042" />
+  <Country Name="Maldives" Year="2003" Population="140264" />
+  <Country Name="Maldives" Year="2004" Population="142436" />
+  <Country Name="Maldives" Year="2005" Population="144817" />
+  <Country Name="Maldives" Year="2006" Population="147509" />
+  <Country Name="Mali" Year="1996" Population="4604500" />
+  <Country Name="Mali" Year="1998" Population="4943056" />
+  <Country Name="Malta" Year="1990" Population="183969" />
+  <Country Name="Malta" Year="1991" Population="185938" />
+  <Country Name="Malta" Year="1992" Population="187806" />
+  <Country Name="Malta" Year="1993" Population="189690" />
+  <Country Name="Malta" Year="1994" Population="191354" />
+  <Country Name="Malta" Year="1995" Population="191434" />
+  <Country Name="Malta" Year="1996" Population="192953" />
+  <Country Name="Malta" Year="1997" Population="194208" />
+  <Country Name="Malta" Year="1998" Population="195277" />
+  <Country Name="Malta" Year="1999" Population="196331" />
+  <Country Name="Malta" Year="2000" Population="197726" />
+  <Country Name="Malta" Year="2001" Population="199278" />
+  <Country Name="Malta" Year="2002" Population="200460" />
+  <Country Name="Malta" Year="2003" Population="201768" />
+  <Country Name="Malta" Year="2004" Population="203088" />
+  <Country Name="Malta" Year="2005" Population="203720" />
+  <Country Name="Marshall Islands" Year="1990" Population="22590" />
+  <Country Name="Marshall Islands" Year="1991" Population="23509" />
+  <Country Name="Marshall Islands" Year="1992" Population="24461" />
+  <Country Name="Marshall Islands" Year="1993" Population="25456" />
+  <Country Name="Marshall Islands" Year="1994" Population="26490" />
+  <Country Name="Marshall Islands" Year="1995" Population="27162" />
+  <Country Name="Marshall Islands" Year="1996" Population="28039" />
+  <Country Name="Marshall Islands" Year="1997" Population="29852" />
+  <Country Name="Marshall Islands" Year="1998" Population="31066" />
+  <Country Name="Marshall Islands" Year="1999" Population="24850" />
+  <Country Name="Marshall Islands" Year="2000" Population="25695" />
+  <Country Name="Marshall Islands" Year="2001" Population="26624" />
+  <Country Name="Marshall Islands" Year="2002" Population="27636" />
+  <Country Name="Martinique" Year="1990" Population="185701" />
+  <Country Name="Martinique" Year="1997" Population="196845" />
+  <Country Name="Martinique" Year="1998" Population="199038" />
+  <Country Name="Martinique" Year="1999" Population="200951" />
+  <Country Name="Martinique" Year="2000" Population="202571" />
+  <Country Name="Martinique" Year="2001" Population="204200" />
+  <Country Name="Martinique" Year="2002" Population="205729" />
+  <Country Name="Martinique" Year="2003" Population="206468" />
+  <Country Name="Mauritania" Year="1993" Population="1081480" />
+  <Country Name="Mauritania" Year="1994" Population="1113043" />
+  <Country Name="Mauritania" Year="2000" Population="1307743" />
+  <Country Name="Mauritania" Year="2005" Population="1455309" />
+  <Country Name="Mauritius" Year="1990" Population="528900" />
+  <Country Name="Mauritius" Year="1997" Population="577115" />
+  <Country Name="Mauritius" Year="1998" Population="583801" />
+  <Country Name="Mauritius" Year="1999" Population="592098" />
+  <Country Name="Mauritius" Year="2000" Population="598661" />
+  <Country Name="Mauritius" Year="2001" Population="605391" />
+  <Country Name="Mauritius" Year="2002" Population="611038" />
+  <Country Name="Mauritius" Year="2003" Population="617727" />
+  <Country Name="Mauritius" Year="2004" Population="623278" />
+  <Country Name="Mauritius" Year="2005" Population="628467" />
+  <Country Name="Mexico" Year="1990" Population="42131072" />
+  <Country Name="Mexico" Year="1991" Population="42952021" />
+  <Country Name="Mexico" Year="1992" Population="43763431" />
+  <Country Name="Mexico" Year="1993" Population="44560341" />
+  <Country Name="Mexico" Year="1994" Population="45340038" />
+  <Country Name="Mexico" Year="1995" Population="46102285" />
+  <Country Name="Mexico" Year="1996" Population="46848058" />
+  <Country Name="Mexico" Year="1997" Population="47574951" />
+  <Country Name="Mexico" Year="1998" Population="48287542" />
+  <Country Name="Mexico" Year="1999" Population="49003488" />
+  <Country Name="Mexico" Year="2000" Population="49891159" />
+  <Country Name="Mexico" Year="2001" Population="50403134" />
+  <Country Name="Mexico" Year="2002" Population="51046740" />
+  <Country Name="Mexico" Year="2003" Population="51638380" />
+  <Country Name="Mexico" Year="2004" Population="52187289" />
+  <Country Name="Mexico" Year="2005" Population="52708439" />
+  <Country Name="Mexico" Year="2006" Population="53219640" />
+  <Country Name="Micronesia, Federated States of" Year="1994" Population="51583" />
+  <Country Name="Micronesia, Federated States of" Year="1995" Population="37415" />
+  <Country Name="Micronesia, Federated States of" Year="1996" Population="38167" />
+  <Country Name="Micronesia, Federated States of" Year="1997" Population="38928" />
+  <Country Name="Micronesia, Federated States of" Year="2000" Population="52817" />
+  <Country Name="Monaco" Year="1990" Population="15735" />
+  <Country Name="Monaco" Year="2000" Population="16476" />
+  <Country Name="Mongolia" Year="1990" Population="1037198.5" />
+  <Country Name="Mongolia" Year="1991" Population="1079192.96091342" />
+  <Country Name="Mongolia" Year="1992" Population="1126993.96091342" />
+  <Country Name="Mongolia" Year="1993" Population="1126453.54539098" />
+  <Country Name="Mongolia" Year="1994" Population="1117516.54539098" />
+  <Country Name="Mongolia" Year="1995" Population="1131020.5" />
+  <Country Name="Mongolia" Year="1996" Population="1143485.88876388" />
+  <Country Name="Mongolia" Year="1997" Population="1153457.38876388" />
+  <Country Name="Mongolia" Year="1998" Population="1159682" />
+  <Country Name="Mongolia" Year="1999" Population="1180858.5" />
+  <Country Name="Mongolia" Year="2000" Population="1205451.79921124" />
+  <Country Name="Mongolia" Year="2001" Population="1229783.87336817" />
+  <Country Name="Mongolia" Year="2002" Population="1253245.47068924" />
+  <Country Name="Mongolia" Year="2003" Population="1269831.95661188" />
+  <Country Name="Mongolia" Year="2004" Population="1286575.16523005" />
+  <Country Name="Mongolia" Year="2005" Population="1280883.43806382" />
+  <Country Name="Mongolia" Year="2006" Population="1297738.83291334" />
+  <Country Name="Montserrat" Year="1991" Population="5349" />
+  <Country Name="Montserrat" Year="1994" Population="5208" />
+  <Country Name="Montserrat" Year="1995" Population="5166" />
+  <Country Name="Montserrat" Year="1996" Population="4086" />
+  <Country Name="Montserrat" Year="1997" Population="3075" />
+  <Country Name="Montserrat" Year="1998" Population="1651" />
+  <Country Name="Montserrat" Year="1999" Population="2235" />
+  <Country Name="Montserrat" Year="2000" Population="2481" />
+  <Country Name="Montserrat" Year="2001" Population="2073" />
+  <Country Name="Morocco" Year="1990" Population="12492000" />
+  <Country Name="Morocco" Year="1991" Population="12756000" />
+  <Country Name="Morocco" Year="1992" Population="13018000" />
+  <Country Name="Morocco" Year="1993" Population="13277000" />
+  <Country Name="Morocco" Year="1994" Population="13074763" />
+  <Country Name="Morocco" Year="1996" Population="13491000" />
+  <Country Name="Morocco" Year="1997" Population="13722000" />
+  <Country Name="Morocco" Year="1998" Population="13956000" />
+  <Country Name="Morocco" Year="1999" Population="14189000" />
+  <Country Name="Morocco" Year="2000" Population="14424000" />
+  <Country Name="Morocco" Year="2001" Population="14658000" />
+  <Country Name="Morocco" Year="2002" Population="14889000" />
+  <Country Name="Morocco" Year="2003" Population="15116000" />
+  <Country Name="Morocco" Year="2004" Population="15039407" />
+  <Country Name="Mozambique" Year="1990" Population="7284958" />
+  <Country Name="Mozambique" Year="1991" Population="7442992" />
+  <Country Name="Mozambique" Year="1992" Population="7639828" />
+  <Country Name="Mozambique" Year="1993" Population="8039365" />
+  <Country Name="Mozambique" Year="1994" Population="8560258" />
+  <Country Name="Mozambique" Year="1995" Population="8277729" />
+  <Country Name="Mozambique" Year="1996" Population="8491962" />
+  <Country Name="Mozambique" Year="1997" Population="8711739" />
+  <Country Name="Mozambique" Year="1998" Population="8937204" />
+  <Country Name="Mozambique" Year="1999" Population="9168504" />
+  <Country Name="Mozambique" Year="2000" Population="9405791" />
+  <Country Name="Mozambique" Year="2005" Population="10051611" />
+  <Country Name="Myanmar" Year="1991" Population="20959000" />
+  <Country Name="Myanmar" Year="1992" Population="21354000" />
+  <Country Name="Myanmar" Year="1993" Population="21678000" />
+  <Country Name="Myanmar" Year="1994" Population="22090000" />
+  <Country Name="Myanmar" Year="1997" Population="23363000" />
+  <Country Name="Namibia" Year="1991" Population="723593" />
+  <Country Name="Namibia" Year="2000" Population="929600" />
+  <Country Name="Namibia" Year="2001" Population="942572" />
+  <Country Name="Nauru" Year="1992" Population="4840" />
+  <Country Name="Nepal" Year="1991" Population="9270123" />
+  <Country Name="Nepal" Year="1996" Population="10437731" />
+  <Country Name="Nepal" Year="1999" Population="11199545" />
+  <Country Name="Nepal" Year="2001" Population="11587502" />
+  <Country Name="Nepal" Year="2002" Population="11855956" />
+  <Country Name="Nepal" Year="2003" Population="12123734" />
+  <Country Name="Nepal" Year="2004" Population="12390837" />
+  <Country Name="Nepal" Year="2005" Population="12657263" />
+  <Country Name="Nepal" Year="2006" Population="12923014" />
+  <Country Name="Netherlands" Year="1990" Population="7562518" />
+  <Country Name="Netherlands" Year="1991" Population="7619752" />
+  <Country Name="Netherlands" Year="1992" Population="7676311" />
+  <Country Name="Netherlands" Year="1994" Population="7776153" />
+  <Country Name="Netherlands" Year="1995" Population="7814120" />
+  <Country Name="Netherlands" Year="1996" Population="7850952" />
+  <Country Name="Netherlands" Year="1997" Population="7892211" />
+  <Country Name="Netherlands" Year="1998" Population="7940536" />
+  <Country Name="Netherlands" Year="1999" Population="7992294" />
+  <Country Name="Netherlands" Year="2000" Population="8047426.5" />
+  <Country Name="Netherlands" Year="2001" Population="8105269" />
+  <Country Name="Netherlands" Year="2002" Population="8155209" />
+  <Country Name="Netherlands" Year="2003" Population="8194610" />
+  <Country Name="Netherlands" Year="2004" Population="8225833" />
+  <Country Name="Netherlands" Year="2005" Population="8248175" />
+  <Country Name="Netherlands Antilles" Year="1990" Population="97798" />
+  <Country Name="Netherlands Antilles" Year="1991" Population="98442" />
+  <Country Name="Netherlands Antilles" Year="1992" Population="98767" />
+  <Country Name="Netherlands Antilles" Year="1995" Population="99577" />
+  <Country Name="Netherlands Antilles" Year="1996" Population="100275" />
+  <Country Name="Netherlands Antilles" Year="1997" Population="101363" />
+  <Country Name="Netherlands Antilles" Year="1998" Population="100800" />
+  <Country Name="Netherlands Antilles" Year="1999" Population="98014" />
+  <Country Name="Netherlands Antilles" Year="2000" Population="94766" />
+  <Country Name="Netherlands Antilles" Year="2001" Population="93132" />
+  <Country Name="Netherlands Antilles" Year="2002" Population="92793" />
+  <Country Name="Netherlands Antilles" Year="2003" Population="95125" />
+  <Country Name="Netherlands Antilles" Year="2004" Population="97659" />
+  <Country Name="New Caledonia" Year="1995" Population="94621" />
+  <Country Name="New Caledonia" Year="1996" Population="96394" />
+  <Country Name="New Caledonia" Year="1997" Population="98158" />
+  <Country Name="New Caledonia" Year="1998" Population="99939" />
+  <Country Name="New Caledonia" Year="1999" Population="101662" />
+  <Country Name="New Caledonia" Year="2003" Population="107663" />
+  <Country Name="New Caledonia" Year="2004" Population="114304" />
+  <Country Name="New Zealand" Year="1990" Population="1706400" />
+  <Country Name="New Zealand" Year="1991" Population="1768700" />
+  <Country Name="New Zealand" Year="1992" Population="1785600" />
+  <Country Name="New Zealand" Year="1993" Population="1805700" />
+  <Country Name="New Zealand" Year="1994" Population="1829100" />
+  <Country Name="New Zealand" Year="1995" Population="1855400" />
+  <Country Name="New Zealand" Year="1996" Population="1883800" />
+  <Country Name="New Zealand" Year="1997" Population="1917700" />
+  <Country Name="New Zealand" Year="1998" Population="1937200" />
+  <Country Name="New Zealand" Year="1999" Population="1950200" />
+  <Country Name="New Zealand" Year="2000" Population="1964000" />
+  <Country Name="New Zealand" Year="2001" Population="1977300" />
+  <Country Name="New Zealand" Year="2002" Population="2005100" />
+  <Country Name="New Zealand" Year="2003" Population="2037900" />
+  <Country Name="New Zealand" Year="2004" Population="2063700" />
+  <Country Name="New Zealand" Year="2005" Population="2081800" />
+  <Country Name="New Zealand" Year="2006" Population="2136200" />
+  <Country Name="Nicaragua" Year="1995" Population="2330287" />
+  <Country Name="Nicaragua" Year="1996" Population="2287614" />
+  <Country Name="Nicaragua" Year="1997" Population="2350133" />
+  <Country Name="Nicaragua" Year="1998" Population="2414360" />
+  <Country Name="Nicaragua" Year="1999" Population="2480342" />
+  <Country Name="Nicaragua" Year="2000" Population="2554536" />
+  <Country Name="Nicaragua" Year="2001" Population="2589740" />
+  <Country Name="Nicaragua" Year="2002" Population="2625791" />
+  <Country Name="Nicaragua" Year="2003" Population="2662472" />
+  <Country Name="Nicaragua" Year="2004" Population="2699573" />
+  <Country Name="Nicaragua" Year="2005" Population="2736872" />
+  <Country Name="Nicaragua" Year="2006" Population="2774519" />
+  <Country Name="Niger" Year="1996" Population="4661305" />
+  <Country Name="Niger" Year="1997" Population="4804711" />
+  <Country Name="Niger" Year="1998" Population="4952529" />
+  <Country Name="Niger" Year="1999" Population="5104896" />
+  <Country Name="Niger" Year="2000" Population="5261949" />
+  <Country Name="Niger" Year="2001" Population="5558722" />
+  <Country Name="Niger" Year="2002" Population="5742160" />
+  <Country Name="Niger" Year="2003" Population="5931651" />
+  <Country Name="Niger" Year="2004" Population="6127396" />
+  <Country Name="Niger" Year="2005" Population="6329600" />
+  <Country Name="Nigeria" Year="1991" Population="44462612" />
+  <Country Name="Nigeria" Year="1995" Population="49533048" />
+  <Country Name="Nigeria" Year="2000" Population="57473558" />
+  <Country Name="Nigeria" Year="2001" Population="59262056" />
+  <Country Name="Nigeria" Year="2002" Population="61074536" />
+  <Country Name="Nigeria" Year="2003" Population="62911036" />
+  <Country Name="Nigeria" Year="2004" Population="64716000" />
+  <Country Name="Nigeria" Year="2005" Population="48531000" />
+  <Country Name="Nigeria" Year="2006" Population="68293683" />
+  <Country Name="Niue" Year="1991" Population="1105" />
+  <Country Name="Niue" Year="1997" Population="1035" />
+  <Country Name="Niue" Year="2001" Population="891" />
+  <Country Name="Niue" Year="2006" Population="722" />
+  <Country Name="Norfolk Island" Year="1991" Population="1174" />
+  <Country Name="Norfolk Island" Year="1996" Population="1142" />
+  <Country Name="Norfolk Island" Year="2001" Population="1020" />
+  <Country Name="Norfolk Island" Year="2006" Population="1305" />
+  <Country Name="Northern Mariana Islands" Year="1996" Population="30813" />
+  <Country Name="Northern Mariana Islands" Year="1997" Population="32452" />
+  <Country Name="Northern Mariana Islands" Year="1998" Population="34084" />
+  <Country Name="Northern Mariana Islands" Year="1999" Population="35705" />
+  <Country Name="Northern Mariana Islands" Year="2000" Population="37311" />
+  <Country Name="Northern Mariana Islands" Year="2001" Population="38906" />
+  <Country Name="Norway" Year="1990" Population="2147665" />
+  <Country Name="Norway" Year="1991" Population="2154556" />
+  <Country Name="Norway" Year="1992" Population="2166511" />
+  <Country Name="Norway" Year="1993" Population="2179467" />
+  <Country Name="Norway" Year="1994" Population="2192170" />
+  <Country Name="Norway" Year="1995" Population="2203683" />
+  <Country Name="Norway" Year="1996" Population="2214891" />
+  <Country Name="Norway" Year="1997" Population="2226532" />
+  <Country Name="Norway" Year="1998" Population="2239132" />
+  <Country Name="Norway" Year="1999" Population="2253564" />
+  <Country Name="Norway" Year="2000" Population="2266746" />
+  <Country Name="Norway" Year="2001" Population="2280666" />
+  <Country Name="Norway" Year="2002" Population="2289139" />
+  <Country Name="Norway" Year="2003" Population="2302277" />
+  <Country Name="Norway" Year="2004" Population="2315351" />
+  <Country Name="Norway" Year="2005" Population="2330266" />
+  <Country Name="Occupied Palestinian Territory" Year="1997" Population="1378603" />
+  <Country Name="Occupied Palestinian Territory" Year="1998" Population="1434292" />
+  <Country Name="Occupied Palestinian Territory" Year="1999" Population="1493861" />
+  <Country Name="Occupied Palestinian Territory" Year="2000" Population="1557419" />
+  <Country Name="Occupied Palestinian Territory" Year="2001" Population="1618876" />
+  <Country Name="Occupied Palestinian Territory" Year="2002" Population="1676807" />
+  <Country Name="Occupied Palestinian Territory" Year="2003" Population="1735780" />
+  <Country Name="Occupied Palestinian Territory" Year="2004" Population="1795635" />
+  <Country Name="Occupied Palestinian Territory" Year="2005" Population="1856363" />
+  <Country Name="Occupied Palestinian Territory" Year="2006" Population="1917965" />
+  <Country Name="Oman" Year="1993" Population="840069" />
+  <Country Name="Oman" Year="1997" Population="935525" />
+  <Country Name="Oman" Year="1998" Population="954085" />
+  <Country Name="Oman" Year="1999" Population="959663" />
+  <Country Name="Oman" Year="2000" Population="999667" />
+  <Country Name="Oman" Year="2001" Population="1026646" />
+  <Country Name="Oman" Year="2003" Population="1027576" />
+  <Country Name="Oman" Year="2004" Population="1054685" />
+  <Country Name="Oman" Year="2005" Population="1049992" />
+  <Country Name="Pakistan" Year="1998" Population="63220000" />
+  <Country Name="Pakistan" Year="2000" Population="66645000" />
+  <Country Name="Pakistan" Year="2001" Population="67995000" />
+  <Country Name="Pakistan" Year="2002" Population="69335000" />
+  <Country Name="Pakistan" Year="2003" Population="70665000" />
+  <Country Name="Pakistan" Year="2004" Population="72010000" />
+  <Country Name="Pakistan" Year="2005" Population="73710000" />
+  <Country Name="Pakistan" Year="2006" Population="74730000" />
+  <Country Name="Palau" Year="1990" Population="7023" />
+  <Country Name="Palau" Year="1991" Population="7208" />
+  <Country Name="Palau" Year="1992" Population="7406" />
+  <Country Name="Palau" Year="1993" Population="7601" />
+  <Country Name="Palau" Year="1994" Population="7795" />
+  <Country Name="Palau" Year="1995" Population="8012" />
+  <Country Name="Palau" Year="1996" Population="8220" />
+  <Country Name="Palau" Year="1997" Population="8443" />
+  <Country Name="Palau" Year="1998" Population="8652" />
+  <Country Name="Palau" Year="1999" Population="8843" />
+  <Country Name="Palau" Year="2000" Population="9028" />
+  <Country Name="Palau" Year="2001" Population="9211" />
+  <Country Name="Palau" Year="2002" Population="9386" />
+  <Country Name="Palau" Year="2005" Population="9208" />
+  <Country Name="Panama" Year="1990" Population="1183010" />
+  <Country Name="Panama" Year="1991" Population="1205696" />
+  <Country Name="Panama" Year="1992" Population="1228816" />
+  <Country Name="Panama" Year="1993" Population="1252379" />
+  <Country Name="Panama" Year="1994" Population="1276393" />
+  <Country Name="Panama" Year="1995" Population="1300868" />
+  <Country Name="Panama" Year="1996" Population="1322916" />
+  <Country Name="Panama" Year="1997" Population="1345337" />
+  <Country Name="Panama" Year="1998" Population="1368137" />
+  <Country Name="Panama" Year="1999" Population="1391323" />
+  <Country Name="Panama" Year="2000" Population="1414902" />
+  <Country Name="Panama" Year="2004" Population="1571481" />
+  <Country Name="Panama" Year="2005" Population="1599466" />
+  <Country Name="Panama" Year="2006" Population="1627490" />
+  <Country Name="Papua New Guinea" Year="1997" Population="1991042" />
+  <Country Name="Papua New Guinea" Year="2000" Population="2499042" />
+  <Country Name="Papua New Guinea" Year="2002" Population="2635722" />
+  <Country Name="Paraguay" Year="1990" Population="2093162" />
+  <Country Name="Paraguay" Year="1991" Population="2150424" />
+  <Country Name="Paraguay" Year="1992" Population="2209253" />
+  <Country Name="Paraguay" Year="1993" Population="2269691" />
+  <Country Name="Paraguay" Year="1994" Population="2331783" />
+  <Country Name="Paraguay" Year="1995" Population="2395573" />
+  <Country Name="Paraguay" Year="1996" Population="2458041" />
+  <Country Name="Paraguay" Year="2000" Population="2640743" />
+  <Country Name="Paraguay" Year="2001" Population="2695278" />
+  <Country Name="Paraguay" Year="2002" Population="2750164" />
+  <Country Name="Paraguay" Year="2003" Population="2805262" />
+  <Country Name="Paraguay" Year="2004" Population="2860430" />
+  <Country Name="Paraguay" Year="2005" Population="2915528" />
+  <Country Name="Peru" Year="1990" Population="10703744" />
+  <Country Name="Peru" Year="1991" Population="10927095" />
+  <Country Name="Peru" Year="1992" Population="11154131" />
+  <Country Name="Peru" Year="1993" Population="11431302" />
+  <Country Name="Peru" Year="1994" Population="11635346" />
+  <Country Name="Peru" Year="1995" Population="11841554" />
+  <Country Name="Peru" Year="1996" Population="12050839" />
+  <Country Name="Peru" Year="1997" Population="12261648" />
+  <Country Name="Peru" Year="1998" Population="12472609" />
+  <Country Name="Peru" Year="1999" Population="12682346" />
+  <Country Name="Peru" Year="2000" Population="12889482" />
+  <Country Name="Peru" Year="2001" Population="13093221" />
+  <Country Name="Peru" Year="2002" Population="13294486" />
+  <Country Name="Peru" Year="2003" Population="13494465" />
+  <Country Name="Peru" Year="2004" Population="13694346" />
+  <Country Name="Peru" Year="2005" Population="13091239" />
+  <Country Name="Philippines" Year="1990" Population="30597534" />
+  <Country Name="Philippines" Year="1992" Population="33899896" />
+  <Country Name="Philippines" Year="1995" Population="34968000" />
+  <Country Name="Philippines" Year="1996" Population="34700266" />
+  <Country Name="Philippines" Year="1997" Population="35498448" />
+  <Country Name="Philippines" Year="1998" Population="36296635" />
+  <Country Name="Philippines" Year="1999" Population="37094817" />
+  <Country Name="Philippines" Year="2000" Population="37979810" />
+  <Country Name="Philippines" Year="2001" Population="38683709" />
+  <Country Name="Philippines" Year="2002" Population="39472226" />
+  <Country Name="Philippines" Year="2003" Population="40260751" />
+  <Country Name="Pitcairn" Year="1990" Population="28" />
+  <Country Name="Pitcairn" Year="1991" Population="38" />
+  <Country Name="Pitcairn" Year="1992" Population="30" />
+  <Country Name="Poland" Year="1990" Population="19497000" />
+  <Country Name="Poland" Year="1991" Population="19542000" />
+  <Country Name="Poland" Year="1992" Population="19581000" />
+  <Country Name="Poland" Year="1993" Population="19611000" />
+  <Country Name="Poland" Year="1994" Population="19631000" />
+  <Country Name="Poland" Year="1995" Population="19649000" />
+  <Country Name="Poland" Year="1996" Population="19666000" />
+  <Country Name="Poland" Year="1997" Population="19682000" />
+  <Country Name="Poland" Year="1998" Population="19693000" />
+  <Country Name="Poland" Year="1999" Population="19704000" />
+  <Country Name="Poland" Year="2000" Population="19714101" />
+  <Country Name="Poland" Year="2001" Population="19717845" />
+  <Country Name="Poland" Year="2002" Population="19715122" />
+  <Country Name="Poland" Year="2003" Population="19702227" />
+  <Country Name="Poland" Year="2004" Population="19701881" />
+  <Country Name="Poland" Year="2005" Population="19700583" />
+  <Country Name="Portugal" Year="1990" Population="5170283" />
+  <Country Name="Portugal" Year="1991" Population="5163075" />
+  <Country Name="Portugal" Year="1992" Population="5165293" />
+  <Country Name="Portugal" Year="1993" Population="5172764" />
+  <Country Name="Portugal" Year="1994" Population="5183961" />
+  <Country Name="Portugal" Year="1995" Population="5196822" />
+  <Country Name="Portugal" Year="1996" Population="5210049" />
+  <Country Name="Portugal" Year="1997" Population="5226360" />
+  <Country Name="Portugal" Year="1998" Population="5245102" />
+  <Country Name="Portugal" Year="1999" Population="5265715" />
+  <Country Name="Portugal" Year="2000" Population="5291368" />
+  <Country Name="Portugal" Year="2001" Population="5323183" />
+  <Country Name="Portugal" Year="2002" Population="5358811" />
+  <Country Name="Portugal" Year="2003" Population="5392798" />
+  <Country Name="Portugal" Year="2004" Population="5421647" />
+  <Country Name="Portugal" Year="2005" Population="5444383" />
+  <Country Name="Puerto Rico" Year="1990" Population="1819482" />
+  <Country Name="Puerto Rico" Year="1991" Population="1832190" />
+  <Country Name="Puerto Rico" Year="1992" Population="1845576" />
+  <Country Name="Puerto Rico" Year="1993" Population="1859673" />
+  <Country Name="Puerto Rico" Year="1994" Population="1874495" />
+  <Country Name="Puerto Rico" Year="1995" Population="1890070" />
+  <Country Name="Puerto Rico" Year="1996" Population="1906419" />
+  <Country Name="Puerto Rico" Year="1997" Population="1923587" />
+  <Country Name="Puerto Rico" Year="1998" Population="1941546" />
+  <Country Name="Puerto Rico" Year="1999" Population="1960371" />
+  <Country Name="Puerto Rico" Year="2000" Population="1979094" />
+  <Country Name="Puerto Rico" Year="2001" Population="1992251" />
+  <Country Name="Puerto Rico" Year="2002" Population="2003025" />
+  <Country Name="Puerto Rico" Year="2003" Population="2013362" />
+  <Country Name="Puerto Rico" Year="2004" Population="2023198" />
+  <Country Name="Puerto Rico" Year="2005" Population="2032818" />
+  <Country Name="Qatar" Year="1990" Population="140588" />
+  <Country Name="Qatar" Year="1991" Population="145088" />
+  <Country Name="Qatar" Year="1992" Population="149735" />
+  <Country Name="Qatar" Year="1993" Population="154519" />
+  <Country Name="Qatar" Year="1994" Population="159472" />
+  <Country Name="Qatar" Year="1995" Population="164602" />
+  <Country Name="Qatar" Year="1996" Population="169884" />
+  <Country Name="Qatar" Year="1997" Population="179564" />
+  <Country Name="Qatar" Year="1998" Population="185506" />
+  <Country Name="Qatar" Year="1999" Population="195139" />
+  <Country Name="Qatar" Year="2000" Population="205272" />
+  <Country Name="Qatar" Year="2001" Population="215932" />
+  <Country Name="Qatar" Year="2002" Population="227145" />
+  <Country Name="Qatar" Year="2003" Population="238906" />
+  <Country Name="Qatar" Year="2004" Population="251793" />
+  <Country Name="Qatar" Year="2005" Population="265130" />
+  <Country Name="Republic of Moldova" Year="1990" Population="2284100" />
+  <Country Name="Republic of Moldova" Year="1991" Population="2281600" />
+  <Country Name="Republic of Moldova" Year="1993" Population="2272476" />
+  <Country Name="Republic of Moldova" Year="1994" Population="2271612" />
+  <Country Name="Republic of Moldova" Year="1995" Population="2271600" />
+  <Country Name="Republic of Moldova" Year="1996" Population="2259500" />
+  <Country Name="Republic of Moldova" Year="1997" Population="1904834" />
+  <Country Name="Republic of Moldova" Year="1998" Population="1903800" />
+  <Country Name="Republic of Moldova" Year="1999" Population="1900850" />
+  <Country Name="Republic of Moldova" Year="2000" Population="1896700" />
+  <Country Name="Republic of Moldova" Year="2001" Population="1892381" />
+  <Country Name="Republic of Moldova" Year="2002" Population="1887632" />
+  <Country Name="Republic of Moldova" Year="2003" Population="1882013" />
+  <Country Name="Republic of Moldova" Year="2004" Population="1877310" />
+  <Country Name="Republic of Moldova" Year="2005" Population="1873082" />
+  <Country Name="Réunion" Year="1990" Population="303572" />
+  <Country Name="Réunion" Year="1999" Population="360800" />
+  <Country Name="Réunion" Year="2000" Population="367100" />
+  <Country Name="Réunion" Year="2001" Population="373500" />
+  <Country Name="Réunion" Year="2002" Population="373693" />
+  <Country Name="Réunion" Year="2003" Population="388600" />
+  <Country Name="Réunion" Year="2004" Population="391201" />
+  <Country Name="Romania" Year="1990" Population="11757573" />
+  <Country Name="Romania" Year="1991" Population="11749798" />
+  <Country Name="Romania" Year="1992" Population="11596272" />
+  <Country Name="Romania" Year="1993" Population="11578870" />
+  <Country Name="Romania" Year="1994" Population="11573815" />
+  <Country Name="Romania" Year="1995" Population="11556974" />
+  <Country Name="Romania" Year="1996" Population="11526687" />
+  <Country Name="Romania" Year="1997" Population="11504511" />
+  <Country Name="Romania" Year="1998" Population="11490693" />
+  <Country Name="Romania" Year="1999" Population="11473493" />
+  <Country Name="Romania" Year="2000" Population="11466351" />
+  <Country Name="Romania" Year="2001" Population="11458903" />
+  <Country Name="Romania" Year="2002" Population="11152255" />
+  <Country Name="Romania" Year="2003" Population="11127311" />
+  <Country Name="Romania" Year="2004" Population="11101722" />
+  <Country Name="Romania" Year="2005" Population="11080331" />
+  <Country Name="Russian Federation" Year="2001" Population="77846008" />
+  <Country Name="Russian Federation" Year="2002" Population="77600181" />
+  <Country Name="Russian Federation" Year="2003" Population="77308658" />
+  <Country Name="Russian Federation" Year="2004" Population="77007893" />
+  <Country Name="Rwanda" Year="2002" Population="4249105" />
+  <Country Name="Saint Helena ex. dep." Year="1998" Population="2545" />
+  <Country Name="Saint Helena: Ascension" Year="1998" Population="254" />
+  <Country Name="Saint Helena: Tristan da Cunha" Year="1990" Population="150" />
+  <Country Name="Saint Helena: Tristan da Cunha" Year="1991" Population="156" />
+  <Country Name="Saint Helena: Tristan da Cunha" Year="1992" Population="154" />
+  <Country Name="Saint Helena: Tristan da Cunha" Year="1993" Population="155" />
+  <Country Name="Saint Helena: Tristan da Cunha" Year="1994" Population="155" />
+  <Country Name="Saint Helena: Tristan da Cunha" Year="1995" Population="154" />
+  <Country Name="Saint Helena: Tristan da Cunha" Year="1996" Population="149" />
+  <Country Name="Saint Kitts and Nevis" Year="1990" Population="20280" />
+  <Country Name="Saint Kitts and Nevis" Year="1991" Population="20950" />
+  <Country Name="Saint Kitts and Nevis" Year="1992" Population="21430" />
+  <Country Name="Saint Kitts and Nevis" Year="1993" Population="21720" />
+  <Country Name="Saint Kitts and Nevis" Year="1995" Population="21660" />
+  <Country Name="Saint Kitts and Nevis" Year="1996" Population="20990" />
+  <Country Name="Saint Kitts and Nevis" Year="1997" Population="20190" />
+  <Country Name="Saint Kitts and Nevis" Year="1998" Population="19900" />
+  <Country Name="Saint Kitts and Nevis" Year="1999" Population="21100" />
+  <Country Name="Saint Kitts and Nevis" Year="2000" Population="20010" />
+  <Country Name="Saint Kitts and Nevis" Year="2001" Population="23192" />
+  <Country Name="Saint Lucia" Year="1991" Population="68663" />
+  <Country Name="Saint Lucia" Year="1994" Population="73362" />
+  <Country Name="Saint Lucia" Year="1995" Population="74715" />
+  <Country Name="Saint Lucia" Year="1996" Population="75302" />
+  <Country Name="Saint Lucia" Year="1997" Population="76552" />
+  <Country Name="Saint Lucia" Year="1998" Population="77632" />
+  <Country Name="Saint Lucia" Year="1999" Population="78437" />
+  <Country Name="Saint Lucia" Year="2000" Population="79502" />
+  <Country Name="Saint Lucia" Year="2001" Population="80423" />
+  <Country Name="Saint Lucia" Year="2002" Population="81265" />
+  <Country Name="Saint Lucia" Year="2003" Population="82055" />
+  <Country Name="Saint Lucia" Year="2004" Population="83027" />
+  <Country Name="Saint Lucia" Year="2005" Population="84196" />
+  <Country Name="Saint Pierre and Miquelon" Year="1999" Population="3169" />
+  <Country Name="Saint Vincent and the Grenadines" Year="1991" Population="53334" />
+  <Country Name="Saint Vincent and the Grenadines" Year="1992" Population="54594" />
+  <Country Name="Saint Vincent and the Grenadines" Year="1997" Population="55942" />
+  <Country Name="Saint Vincent and the Grenadines" Year="1998" Population="56432" />
+  <Country Name="Saint Vincent and the Grenadines" Year="1999" Population="56105" />
+  <Country Name="Saint Vincent and the Grenadines" Year="2000" Population="55016" />
+  <Country Name="Saint Vincent and the Grenadines" Year="2001" Population="53566" />
+  <Country Name="Saint Vincent and the Grenadines" Year="2002" Population="53420" />
+  <Country Name="Saint Vincent and the Grenadines" Year="2003" Population="51664" />
+  <Country Name="Saint Vincent and the Grenadines" Year="2004" Population="51368" />
+  <Country Name="Saint Vincent and the Grenadines" Year="2005" Population="50973" />
+  <Country Name="Samoa" Year="1991" Population="76697" />
+  <Country Name="Samoa" Year="2001" Population="84660" />
+  <Country Name="Samoa" Year="2002" Population="85436" />
+  <Country Name="Samoa" Year="2003" Population="86218" />
+  <Country Name="Samoa" Year="2004" Population="87008" />
+  <Country Name="Samoa" Year="2005" Population="87805" />
+  <Country Name="Samoa" Year="2006" Population="88610" />
+  <Country Name="San Marino" Year="1992" Population="11961" />
+  <Country Name="San Marino" Year="1993" Population="12242" />
+  <Country Name="San Marino" Year="1994" Population="12507" />
+  <Country Name="San Marino" Year="1995" Population="12613" />
+  <Country Name="San Marino" Year="1997" Population="13066" />
+  <Country Name="San Marino" Year="2000" Population="13756" />
+  <Country Name="San Marino" Year="2001" Population="14086" />
+  <Country Name="San Marino" Year="2002" Population="14540" />
+  <Country Name="San Marino" Year="2003" Population="14785" />
+  <Country Name="San Marino" Year="2004" Population="14999" />
+  <Country Name="Sao Tome and Principe" Year="1990" Population="58274" />
+  <Country Name="Sao Tome and Principe" Year="1991" Population="59464" />
+  <Country Name="Sao Tome and Principe" Year="1992" Population="60387" />
+  <Country Name="Sao Tome and Principe" Year="1993" Population="61324" />
+  <Country Name="Sao Tome and Principe" Year="1994" Population="62276" />
+  <Country Name="Sao Tome and Principe" Year="1995" Population="63242" />
+  <Country Name="Sao Tome and Principe" Year="1996" Population="64223" />
+  <Country Name="Sao Tome and Principe" Year="1997" Population="65220" />
+  <Country Name="Sao Tome and Principe" Year="1998" Population="66232" />
+  <Country Name="Sao Tome and Principe" Year="1999" Population="67260" />
+  <Country Name="Sao Tome and Principe" Year="2001" Population="69363" />
+  <Country Name="Sao Tome and Principe" Year="2005" Population="75462" />
+  <Country Name="Saudi Arabia" Year="1990" Population="6783357.25858916" />
+  <Country Name="Saudi Arabia" Year="1991" Population="7086713.57009686" />
+  <Country Name="Saudi Arabia" Year="1992" Population="7468415" />
+  <Country Name="Saudi Arabia" Year="1993" Population="7619713.92474516" />
+  <Country Name="Saudi Arabia" Year="1994" Population="7815209.37842169" />
+  <Country Name="Saudi Arabia" Year="1995" Population="8015711.57307722" />
+  <Country Name="Saudi Arabia" Year="1996" Population="8221348.5077023" />
+  <Country Name="Saudi Arabia" Year="1997" Population="8432251.44795636" />
+  <Country Name="Saudi Arabia" Year="1998" Population="8648555.00939516" />
+  <Country Name="Saudi Arabia" Year="1999" Population="8870397.24281516" />
+  <Country Name="Saudi Arabia" Year="2000" Population="9097919.72176862" />
+  <Country Name="Saudi Arabia" Year="2001" Population="9331267.6323045" />
+  <Country Name="Saudi Arabia" Year="2002" Population="9570589.86499168" />
+  <Country Name="Saudi Arabia" Year="2003" Population="9816039.10928253" />
+  <Country Name="Saudi Arabia" Year="2004" Population="10121022" />
+  <Country Name="Saudi Arabia" Year="2005" Population="10327664" />
+  <Country Name="Saudi Arabia" Year="2006" Population="10588009" />
+  <Country Name="Senegal" Year="1990" Population="3748729" />
+  <Country Name="Senegal" Year="1991" Population="3781917" />
+  <Country Name="Senegal" Year="1992" Population="3879236" />
+  <Country Name="Senegal" Year="1993" Population="4094881" />
+  <Country Name="Senegal" Year="1994" Population="4199202" />
+  <Country Name="Senegal" Year="1995" Population="4306135" />
+  <Country Name="Senegal" Year="1996" Population="4417571" />
+  <Country Name="Senegal" Year="1997" Population="4532942" />
+  <Country Name="Senegal" Year="1998" Population="4658524" />
+  <Country Name="Senegal" Year="1999" Population="4777398" />
+  <Country Name="Senegal" Year="2000" Population="4807598" />
+  <Country Name="Senegal" Year="2001" Population="4926158" />
+  <Country Name="Senegal" Year="2002" Population="5069717" />
+  <Country Name="Senegal" Year="2003" Population="5165260" />
+  <Country Name="Senegal" Year="2004" Population="5494434" />
+  <Country Name="Senegal" Year="2005" Population="5532506" />
+  <Country Name="Serbia and Montenegro" Year="1990" Population="5294964" />
+  <Country Name="Serbia and Montenegro" Year="1991" Population="5244378" />
+  <Country Name="Serbia and Montenegro" Year="1992" Population="5266087" />
+  <Country Name="Serbia and Montenegro" Year="1993" Population="5284499" />
+  <Country Name="Serbia and Montenegro" Year="1994" Population="5301539" />
+  <Country Name="Serbia and Montenegro" Year="1995" Population="5317166" />
+  <Country Name="Serbia and Montenegro" Year="1996" Population="5332099" />
+  <Country Name="Serbia and Montenegro" Year="1997" Population="5343713" />
+  <Country Name="Serbia and Montenegro" Year="1998" Population="5352885" />
+  <Country Name="Serbia and Montenegro" Year="1999" Population="5359384" />
+  <Country Name="Serbia and Montenegro" Year="2001" Population="5370754" />
+  <Country Name="Serbia and Montenegro" Year="2002" Population="4165070" />
+  <Country Name="Serbia and Montenegro" Year="2003" Population="4185198" />
+  <Country Name="Serbia and Montenegro" Year="2004" Population="4182376" />
+  <Country Name="Seychelles" Year="1993" Population="36352" />
+  <Country Name="Seychelles" Year="1994" Population="37203" />
+  <Country Name="Seychelles" Year="1995" Population="38152" />
+  <Country Name="Seychelles" Year="1996" Population="38494" />
+  <Country Name="Seychelles" Year="1997" Population="38287" />
+  <Country Name="Seychelles" Year="2001" Population="41229" />
+  <Country Name="Seychelles" Year="2002" Population="41733" />
+  <Country Name="Seychelles" Year="2003" Population="41922" />
+  <Country Name="Seychelles" Year="2004" Population="41823" />
+  <Country Name="Seychelles" Year="2005" Population="41619" />
+  <Country Name="Sierra Leone" Year="2004" Population="2550438" />
+  <Country Name="Singapore" Year="1990" Population="1335056" />
+  <Country Name="Singapore" Year="1995" Population="1499500" />
+  <Country Name="Singapore" Year="1996" Population="1528100" />
+  <Country Name="Singapore" Year="1997" Population="1557700" />
+  <Country Name="Singapore" Year="1998" Population="1588200" />
+  <Country Name="Singapore" Year="1999" Population="1614900" />
+  <Country Name="Singapore" Year="2000" Population="1955900" />
+  <Country Name="Singapore" Year="2001" Population="1667300" />
+  <Country Name="Singapore" Year="2002" Population="1698600" />
+  <Country Name="Singapore" Year="2004" Population="1754100" />
+  <Country Name="Singapore" Year="2006" Population="1820800" />
+  <Country Name="Slovakia" Year="1990" Population="2707203" />
+  <Country Name="Slovakia" Year="1991" Population="2705433" />
+  <Country Name="Slovakia" Year="1992" Population="2718933" />
+  <Country Name="Slovakia" Year="1993" Population="2729960" />
+  <Country Name="Slovakia" Year="1994" Population="2742476" />
+  <Country Name="Slovakia" Year="2001" Population="2766940" />
+  <Country Name="Slovakia" Year="2002" Population="2767357" />
+  <Country Name="Slovakia" Year="2003" Population="2768078" />
+  <Country Name="Slovakia" Year="2004" Population="2770261" />
+  <Country Name="Slovakia" Year="2005" Population="2772373" />
+  <Country Name="Slovenia" Year="1990" Population="1028941" />
+  <Country Name="Slovenia" Year="1991" Population="1030370" />
+  <Country Name="Slovenia" Year="1992" Population="1027575" />
+  <Country Name="Slovenia" Year="1993" Population="1025448" />
+  <Country Name="Slovenia" Year="1994" Population="1024737" />
+  <Country Name="Slovenia" Year="1995" Population="1021855" />
+  <Country Name="Slovenia" Year="1996" Population="1022055" />
+  <Country Name="Slovenia" Year="1997" Population="1017693" />
+  <Country Name="Slovenia" Year="1998" Population="1016090" />
+  <Country Name="Slovenia" Year="1999" Population="1017094" />
+  <Country Name="Slovenia" Year="2000" Population="1017691" />
+  <Country Name="Slovenia" Year="2001" Population="1018324" />
+  <Country Name="Slovenia" Year="2002" Population="1019607" />
+  <Country Name="Slovenia" Year="2003" Population="1019337" />
+  <Country Name="Slovenia" Year="2004" Population="1019912" />
+  <Country Name="Slovenia" Year="2005" Population="1021044" />
+  <Country Name="Solomon Islands" Year="1999" Population="197661" />
+  <Country Name="Solomon Islands" Year="2003" Population="217019" />
+  <Country Name="Solomon Islands" Year="2004" Population="222484" />
+  <Country Name="Solomon Islands" Year="2005" Population="228339" />
+  <Country Name="Solomon Islands" Year="2006" Population="234139" />
+  <Country Name="Somalia" Year="2002" Population="3299556" />
+  <Country Name="South Africa" Year="1991" Population="15507392" />
+  <Country Name="South Africa" Year="1996" Population="21062686" />
+  <Country Name="South Africa" Year="1997" Population="21369700" />
+  <Country Name="South Africa" Year="1998" Population="21800400" />
+  <Country Name="South Africa" Year="1999" Population="22239881" />
+  <Country Name="South Africa" Year="2000" Population="22669169" />
+  <Country Name="South Africa" Year="2001" Population="23385737" />
+  <Country Name="South Africa" Year="2002" Population="23583481" />
+  <Country Name="South Africa" Year="2003" Population="24279515" />
+  <Country Name="South Africa" Year="2004" Population="23599197" />
+  <Country Name="South Africa" Year="2005" Population="23817900" />
+  <Country Name="South Africa" Year="2006" Population="24063300" />
+  <Country Name="Spain" Year="1990" Population="19819579" />
+  <Country Name="Spain" Year="1991" Population="20095859" />
+  <Country Name="Spain" Year="1992" Population="19933834" />
+  <Country Name="Spain" Year="1993" Population="19995927" />
+  <Country Name="Spain" Year="1994" Population="20050152" />
+  <Country Name="Spain" Year="1995" Population="20098150" />
+  <Country Name="Spain" Year="1996" Population="20146277" />
+  <Country Name="Spain" Year="1997" Population="20201274" />
+  <Country Name="Spain" Year="1998" Population="20273781" />
+  <Country Name="Spain" Year="1999" Population="20379831" />
+  <Country Name="Spain" Year="2000" Population="20544828" />
+  <Country Name="Spain" Year="2001" Population="20834489" />
+  <Country Name="Spain" Year="2002" Population="21048014" />
+  <Country Name="Spain" Year="2003" Population="21378383" />
+  <Country Name="Spain" Year="2004" Population="21704081" />
+  <Country Name="Spain" Year="2005" Population="22030893" />
+  <Country Name="Sri Lanka" Year="1994" Population="8770000" />
+  <Country Name="Sri Lanka" Year="1995" Population="8890000" />
+  <Country Name="Sri Lanka" Year="1996" Population="8979000" />
+  <Country Name="Sri Lanka" Year="1997" Population="9095000" />
+  <Country Name="Sri Lanka" Year="1998" Population="9204000" />
+  <Country Name="Sri Lanka" Year="1999" Population="9336000" />
+  <Country Name="Sri Lanka" Year="2001" Population="9465100" />
+  <Country Name="Sri Lanka" Year="2002" Population="9604444" />
+  <Country Name="Sri Lanka" Year="2005" Population="9950000" />
+  <Country Name="Sudan" Year="1993" Population="12748137" />
+  <Country Name="Sudan" Year="1994" Population="12957736" />
+  <Country Name="Sudan" Year="1995" Population="13316035" />
+  <Country Name="Sudan" Year="1996" Population="13684222" />
+  <Country Name="Sudan" Year="1997" Population="14061963" />
+  <Country Name="Sudan" Year="1998" Population="14527956" />
+  <Country Name="Sudan" Year="1999" Population="15050000" />
+  <Country Name="Sudan" Year="2000" Population="15478773" />
+  <Country Name="Sudan" Year="2001" Population="15611951" />
+  <Country Name="Sudan" Year="2002" Population="16027564" />
+  <Country Name="Sudan" Year="2003" Population="16540342" />
+  <Country Name="Sudan" Year="2004" Population="17122000" />
+  <Country Name="Suriname" Year="1990" Population="200855" />
+  <Country Name="Suriname" Year="1991" Population="200918" />
+  <Country Name="Suriname" Year="1992" Population="201279" />
+  <Country Name="Suriname" Year="2003" Population="239292" />
+  <Country Name="Suriname" Year="2004" Population="244618" />
+  <Country Name="Suriname" Year="2005" Population="247854" />
+  <Country Name="Swaziland" Year="1994" Population="468157" />
+  <Country Name="Swaziland" Year="1996" Population="499413" />
+  <Country Name="Swaziland" Year="1997" Population="489564" />
+  <Country Name="Sweden" Year="1990" Population="4345002" />
+  <Country Name="Sweden" Year="1991" Population="4360050" />
+  <Country Name="Sweden" Year="1992" Population="4385462" />
+  <Country Name="Sweden" Year="1993" Population="4410792" />
+  <Country Name="Sweden" Year="1994" Population="4442142" />
+  <Country Name="Sweden" Year="1995" Population="4465777" />
+  <Country Name="Sweden" Year="1996" Population="4473104" />
+  <Country Name="Sweden" Year="1997" Population="4475247" />
+  <Country Name="Sweden" Year="1998" Population="4477208" />
+  <Country Name="Sweden" Year="1999" Population="4480006" />
+  <Country Name="Sweden" Year="2000" Population="4485674" />
+  <Country Name="Sweden" Year="2001" Population="4495363" />
+  <Country Name="Sweden" Year="2002" Population="4507182" />
+  <Country Name="Sweden" Year="2003" Population="4521347.5" />
+  <Country Name="Sweden" Year="2004" Population="4537047.5" />
+  <Country Name="Sweden" Year="2005" Population="4553141.5" />
+  <Country Name="Switzerland" Year="1990" Population="3483475" />
+  <Country Name="Switzerland" Year="1991" Population="3501103" />
+  <Country Name="Switzerland" Year="1992" Population="3534043" />
+  <Country Name="Switzerland" Year="1993" Population="3564707" />
+  <Country Name="Switzerland" Year="1994" Population="3590651" />
+  <Country Name="Switzerland" Year="1995" Population="3613512" />
+  <Country Name="Switzerland" Year="1996" Population="3623725" />
+  <Country Name="Switzerland" Year="1997" Population="3631222" />
+  <Country Name="Switzerland" Year="1998" Population="3644848" />
+  <Country Name="Switzerland" Year="1999" Population="3663736" />
+  <Country Name="Switzerland" Year="2000" Population="3684357" />
+  <Country Name="Switzerland" Year="2001" Population="3711304" />
+  <Country Name="Switzerland" Year="2002" Population="3738824" />
+  <Country Name="Switzerland" Year="2003" Population="3762609" />
+  <Country Name="Switzerland" Year="2004" Population="3786406" />
+  <Country Name="Switzerland" Year="2005" Population="3806626" />
+  <Country Name="Syrian Arab Republic" Year="1990" Population="5927000" />
+  <Country Name="Syrian Arab Republic" Year="1991" Population="6129000" />
+  <Country Name="Syrian Arab Republic" Year="1992" Population="6338000" />
+  <Country Name="Syrian Arab Republic" Year="1993" Population="6551000" />
+  <Country Name="Syrian Arab Republic" Year="1994" Population="6773000" />
+  <Country Name="Syrian Arab Republic" Year="1996" Population="7142000" />
+  <Country Name="Syrian Arab Republic" Year="1997" Population="7377000" />
+  <Country Name="Syrian Arab Republic" Year="1998" Population="7632000" />
+  <Country Name="Syrian Arab Republic" Year="1999" Population="7870000" />
+  <Country Name="Syrian Arab Republic" Year="2000" Population="7977000" />
+  <Country Name="Syrian Arab Republic" Year="2001" Population="8168000" />
+  <Country Name="Syrian Arab Republic" Year="2002" Population="8367000" />
+  <Country Name="Syrian Arab Republic" Year="2003" Population="8571000" />
+  <Country Name="Syrian Arab Republic" Year="2004" Population="8781000" />
+  <Country Name="Syrian Arab Republic" Year="2005" Population="8870000" />
+  <Country Name="Tajikistan" Year="1990" Population="2670700" />
+  <Country Name="Tajikistan" Year="1991" Population="2754100" />
+  <Country Name="Tajikistan" Year="1992" Population="2807000" />
+  <Country Name="Tajikistan" Year="1993" Population="2838500" />
+  <Country Name="Tajikistan" Year="1999" Population="3027349" />
+  <Country Name="Tajikistan" Year="2000" Population="3088511.5" />
+  <Country Name="Tajikistan" Year="2001" Population="3149645.5" />
+  <Country Name="Tajikistan" Year="2002" Population="3212351.5" />
+  <Country Name="Tajikistan" Year="2003" Population="3277013" />
+  <Country Name="Thailand" Year="1990" Population="27898000" />
+  <Country Name="Thailand" Year="1991" Population="28275000" />
+  <Country Name="Thailand" Year="1992" Population="28644000" />
+  <Country Name="Thailand" Year="1993" Population="29011000" />
+  <Country Name="Thailand" Year="1994" Population="29372000" />
+  <Country Name="Thailand" Year="1995" Population="29726000" />
+  <Country Name="Thailand" Year="1996" Population="30040000" />
+  <Country Name="Thailand" Year="1997" Population="30357000" />
+  <Country Name="Thailand" Year="1998" Population="30712172" />
+  <Country Name="Thailand" Year="1999" Population="30987000" />
+  <Country Name="Thailand" Year="2000" Population="31301000" />
+  <Country Name="Thailand" Year="2001" Population="31566000" />
+  <Country Name="Thailand" Year="2002" Population="31858778" />
+  <Country Name="Thailand" Year="2003" Population="32135703" />
+  <Country Name="Thailand" Year="2004" Population="32602719" />
+  <Country Name="Thailand" Year="2005" Population="32989723" />
+  <Country Name="Thailand" Year="2006" Population="33245702" />
+  <Country Name="The Former Yugoslav Rep. of Macedonia" Year="1991" Population="1009012" />
+  <Country Name="The Former Yugoslav Rep. of Macedonia" Year="1992" Population="1017666" />
+  <Country Name="The Former Yugoslav Rep. of Macedonia" Year="1994" Population="971677" />
+  <Country Name="The Former Yugoslav Rep. of Macedonia" Year="1997" Population="997274" />
+  <Country Name="The Former Yugoslav Rep. of Macedonia" Year="1998" Population="1002752" />
+  <Country Name="The Former Yugoslav Rep. of Macedonia" Year="1999" Population="1007773" />
+  <Country Name="The Former Yugoslav Rep. of Macedonia" Year="2002" Population="1019035" />
+  <Country Name="The Former Yugoslav Rep. of Macedonia" Year="2003" Population="1009499" />
+  <Country Name="The Former Yugoslav Rep. of Macedonia" Year="2004" Population="1012641" />
+  <Country Name="The Former Yugoslav Rep. of Macedonia" Year="2005" Population="1015083" />
+  <Country Name="Timor-Leste" Year="1990" Population="360811" />
+  <Country Name="Timor-Leste" Year="2004" Population="456885" />
+  <Country Name="Togo" Year="1994" Population="2013000" />
+  <Country Name="Tokelau" Year="1991" Population="803" />
+  <Country Name="Tokelau" Year="1996" Population="751" />
+  <Country Name="Tokelau" Year="2001" Population="776" />
+  <Country Name="Tonga" Year="1990" Population="48022" />
+  <Country Name="Tonga" Year="1991" Population="47641" />
+  <Country Name="Tonga" Year="1992" Population="47663" />
+  <Country Name="Tonga" Year="1993" Population="47705" />
+  <Country Name="Tonga" Year="1994" Population="47865" />
+  <Country Name="Tonga" Year="1996" Population="48169" />
+  <Country Name="Tonga" Year="1997" Population="48553" />
+  <Country Name="Tonga" Year="1998" Population="48856" />
+  <Country Name="Tonga" Year="1999" Population="49088" />
+  <Country Name="Tonga" Year="2000" Population="49264" />
+  <Country Name="Tonga" Year="2001" Population="49400" />
+  <Country Name="Tonga" Year="2002" Population="49528" />
+  <Country Name="Tonga" Year="2003" Population="49694" />
+  <Country Name="Tonga" Year="2006" Population="49937" />
+  <Country Name="Trinidad and Tobago" Year="1990" Population="607189" />
+  <Country Name="Trinidad and Tobago" Year="1991" Population="610600" />
+  <Country Name="Trinidad and Tobago" Year="1992" Population="613531" />
+  <Country Name="Trinidad and Tobago" Year="1993" Population="617660" />
+  <Country Name="Trinidad and Tobago" Year="1994" Population="619971" />
+  <Country Name="Trinidad and Tobago" Year="1995" Population="625910" />
+  <Country Name="Trinidad and Tobago" Year="1996" Population="628298" />
+  <Country Name="Trinidad and Tobago" Year="1997" Population="638459" />
+  <Country Name="Trinidad and Tobago" Year="1998" Population="639579" />
+  <Country Name="Trinidad and Tobago" Year="1999" Population="642949" />
+  <Country Name="Trinidad and Tobago" Year="2000" Population="642900" />
+  <Country Name="Trinidad and Tobago" Year="2001" Population="631600" />
+  <Country Name="Trinidad and Tobago" Year="2002" Population="636000" />
+  <Country Name="Trinidad and Tobago" Year="2003" Population="640400" />
+  <Country Name="Tunisia" Year="1993" Population="4280300" />
+  <Country Name="Tunisia" Year="1994" Population="4346422" />
+  <Country Name="Tunisia" Year="1995" Population="4431200" />
+  <Country Name="Tunisia" Year="1996" Population="4499000" />
+  <Country Name="Tunisia" Year="1997" Population="4567900" />
+  <Country Name="Tunisia" Year="1998" Population="4624300" />
+  <Country Name="Turkey" Year="1990" Population="27865988" />
+  <Country Name="Turkey" Year="1991" Population="28268000" />
+  <Country Name="Turkey" Year="1992" Population="28829000" />
+  <Country Name="Turkey" Year="1993" Population="29392000" />
+  <Country Name="Turkey" Year="1994" Population="29958000" />
+  <Country Name="Turkey" Year="1995" Population="30525000" />
+  <Country Name="Turkey" Year="1996" Population="31101000" />
+  <Country Name="Turkey" Year="1997" Population="31682000" />
+  <Country Name="Turkey" Year="1998" Population="32259000" />
+  <Country Name="Turkey" Year="1999" Population="32829000" />
+  <Country Name="Turkey" Year="2000" Population="33457192" />
+  <Country Name="Turkey" Year="2001" Population="33846000" />
+  <Country Name="Turkey" Year="2002" Population="34320000" />
+  <Country Name="Turkey" Year="2003" Population="34790000" />
+  <Country Name="Turkey" Year="2004" Population="35255000" />
+  <Country Name="Turkey" Year="2005" Population="35716000" />
+  <Country Name="Turkey" Year="2006" Population="36177000" />
+  <Country Name="Turkey" Year="2007" Population="36635000" />
+  <Country Name="Turkmenistan" Year="1995" Population="2257920" />
+  <Country Name="Turks Caicos Islands" Year="1990" Population="6061" />
+  <Country Name="Turks Caicos Islands" Year="2001" Population="9990" />
+  <Country Name="Turks Caicos Islands" Year="2002" Population="10498" />
+  <Country Name="Turks Caicos Islands" Year="2003" Population="12630" />
+  <Country Name="Turks Caicos Islands" Year="2004" Population="13812" />
+  <Country Name="Turks Caicos Islands" Year="2005" Population="15372" />
+  <Country Name="Tuvalu" Year="1991" Population="4667" />
+  <Country Name="Tuvalu" Year="2002" Population="4832" />
+  <Country Name="Uganda" Year="1991" Population="8485958" />
+  <Country Name="Uganda" Year="1995" Population="9758406" />
+  <Country Name="Uganda" Year="1996" Population="10045131" />
+  <Country Name="Uganda" Year="2002" Population="12512281" />
+  <Country Name="Ukraine" Year="2000" Population="26246748" />
+  <Country Name="Ukraine" Year="2001" Population="26028896" />
+  <Country Name="Ukraine" Year="2002" Population="25817580" />
+  <Country Name="Ukraine" Year="2003" Population="25612922" />
+  <Country Name="Ukraine" Year="2004" Population="25430870" />
+  <Country Name="United Arab Emirates" Year="1995" Population="804237" />
+  <Country Name="United Arab Emirates" Year="1996" Population="818000" />
+  <Country Name="United Arab Emirates" Year="1997" Population="869000" />
+  <Country Name="United Arab Emirates" Year="1998" Population="915000" />
+  <Country Name="United Arab Emirates" Year="1999" Population="963000" />
+  <Country Name="United Kingdom" Year="1990" Population="29418954" />
+  <Country Name="United Kingdom" Year="1991" Population="30209320" />
+  <Country Name="United Kingdom" Year="1992" Population="29607681" />
+  <Country Name="United Kingdom" Year="1993" Population="29674616" />
+  <Country Name="United Kingdom" Year="1994" Population="29753814" />
+  <Country Name="United Kingdom" Year="1995" Population="29821098" />
+  <Country Name="United Kingdom" Year="1996" Population="29877230" />
+  <Country Name="United Kingdom" Year="1997" Population="29943214" />
+  <Country Name="United Kingdom" Year="1998" Population="30016583" />
+  <Country Name="United Kingdom" Year="1999" Population="30105953" />
+  <Country Name="United Kingdom" Year="2000" Population="30195615" />
+  <Country Name="United Kingdom" Year="2001" Population="30281077" />
+  <Country Name="United Kingdom" Year="2002" Population="30358588" />
+  <Country Name="United Kingdom" Year="2003" Population="30445736" />
+  <Country Name="United Kingdom" Year="2004" Population="30563339" />
+  <Country Name="United Kingdom" Year="2005" Population="30730302" />
+  <Country Name="United Republic of Tanzania" Year="2002" Population="17613742" />
+  <Country Name="United States" Year="1990" Population="127909050" />
+  <Country Name="United States" Year="1991" Population="129564706" />
+  <Country Name="United States" Year="1992" Population="131267078" />
+  <Country Name="United States" Year="1993" Population="132947988" />
+  <Country Name="United States" Year="1994" Population="134528342" />
+  <Country Name="United States" Year="1995" Population="136063022" />
+  <Country Name="United States" Year="1996" Population="137586800" />
+  <Country Name="United States" Year="1997" Population="139173399" />
+  <Country Name="United States" Year="1998" Population="140724200" />
+  <Country Name="United States" Year="1999" Population="142237295" />
+  <Country Name="United States" Year="2000" Population="143723753" />
+  <Country Name="United States" Year="2001" Population="145092038" />
+  <Country Name="United States" Year="2002" Population="146442351" />
+  <Country Name="United States" Year="2003" Population="147792187" />
+  <Country Name="United States" Year="2004" Population="149094034" />
+  <Country Name="United States" Year="2005" Population="150410658" />
+  <Country Name="United States Virgin Islands" Year="1990" Population="52599" />
+  <Country Name="United States Virgin Islands" Year="1995" Population="58307" />
+  <Country Name="United States Virgin Islands" Year="2000" Population="56761" />
+  <Country Name="United States Virgin Islands" Year="2001" Population="56829" />
+  <Country Name="United States Virgin Islands" Year="2002" Population="56858" />
+  <Country Name="Uruguay" Year="1990" Population="1598153" />
+  <Country Name="Uruguay" Year="1991" Population="1609895" />
+  <Country Name="Uruguay" Year="1992" Population="1621727" />
+  <Country Name="Uruguay" Year="1993" Population="1633630" />
+  <Country Name="Uruguay" Year="1994" Population="1645586" />
+  <Country Name="Uruguay" Year="1995" Population="1657577" />
+  <Country Name="Uruguay" Year="1996" Population="1665965" />
+  <Country Name="Uruguay" Year="1997" Population="1677307.64138749" />
+  <Country Name="Uruguay" Year="1998" Population="1687002.22994641" />
+  <Country Name="Uruguay" Year="1999" Population="1695367.54761307" />
+  <Country Name="Uruguay" Year="2000" Population="1702162.20275868" />
+  <Country Name="Uruguay" Year="2001" Population="1706762.933583" />
+  <Country Name="Uruguay" Year="2002" Population="1707713.05275875" />
+  <Country Name="Uruguay" Year="2003" Population="1706177.25863536" />
+  <Country Name="Uruguay" Year="2004" Population="1706097" />
+  <Country Name="Uruguay" Year="2005" Population="1708683" />
+  <Country Name="Uruguay" Year="2006" Population="1713442" />
+  <Country Name="Uzbekistan" Year="1990" Population="10326400" />
+  <Country Name="Uzbekistan" Year="1991" Population="10543700" />
+  <Country Name="Uzbekistan" Year="1992" Population="10787400" />
+  <Country Name="Uzbekistan" Year="1993" Population="11028100" />
+  <Country Name="Uzbekistan" Year="1994" Population="11237800" />
+  <Country Name="Uzbekistan" Year="1995" Population="11433800" />
+  <Country Name="Uzbekistan" Year="1996" Population="11643100" />
+  <Country Name="Uzbekistan" Year="1997" Population="11850000" />
+  <Country Name="Uzbekistan" Year="1999" Population="12039928" />
+  <Country Name="Uzbekistan" Year="2000" Population="12371789" />
+  <Country Name="Uzbekistan" Year="2001" Population="12521923" />
+  <Country Name="Vanuatu" Year="1999" Population="90996" />
+  <Country Name="Vanuatu" Year="2004" Population="105399" />
+  <Country Name="Venezuela (Bolivarian Republic of)" Year="1990" Population="9668441" />
+  <Country Name="Venezuela (Bolivarian Republic of)" Year="1991" Population="9903634" />
+  <Country Name="Venezuela (Bolivarian Republic of)" Year="1992" Population="10138607" />
+  <Country Name="Venezuela (Bolivarian Republic of)" Year="1993" Population="10373338" />
+  <Country Name="Venezuela (Bolivarian Republic of)" Year="1994" Population="10607806" />
+  <Country Name="Venezuela (Bolivarian Republic of)" Year="1995" Population="10841989" />
+  <Country Name="Venezuela (Bolivarian Republic of)" Year="1996" Population="11168381" />
+  <Country Name="Venezuela (Bolivarian Republic of)" Year="1997" Population="11398731" />
+  <Country Name="Venezuela (Bolivarian Republic of)" Year="1998" Population="11627775" />
+  <Country Name="Venezuela (Bolivarian Republic of)" Year="1999" Population="11857113" />
+  <Country Name="Venezuela (Bolivarian Republic of)" Year="2000" Population="12080943" />
+  <Country Name="Venezuela (Bolivarian Republic of)" Year="2001" Population="12311377" />
+  <Country Name="Venezuela (Bolivarian Republic of)" Year="2002" Population="12541635" />
+  <Country Name="Venezuela (Bolivarian Republic of)" Year="2003" Population="12771551" />
+  <Country Name="Venezuela (Bolivarian Republic of)" Year="2004" Population="13001547" />
+  <Country Name="Venezuela (Bolivarian Republic of)" Year="2005" Population="13229691" />
+  <Country Name="Viet Nam" Year="1990" Population="33813900" />
+  <Country Name="Viet Nam" Year="1991" Population="34428100" />
+  <Country Name="Viet Nam" Year="1992" Population="35025900" />
+  <Country Name="Viet Nam" Year="1993" Population="35616200" />
+  <Country Name="Viet Nam" Year="1994" Population="36191300" />
+  <Country Name="Viet Nam" Year="1995" Population="36758100" />
+  <Country Name="Viet Nam" Year="1996" Population="37299400" />
+  <Country Name="Viet Nam" Year="1997" Population="37833800" />
+  <Country Name="Viet Nam" Year="1998" Population="38366600" />
+  <Country Name="Viet Nam" Year="1999" Population="38934600" />
+  <Country Name="Viet Nam" Year="2000" Population="39469000" />
+  <Country Name="Viet Nam" Year="2001" Population="40001600" />
+  <Country Name="Viet Nam" Year="2002" Population="40530001" />
+  <Country Name="Viet Nam" Year="2003" Population="41147000" />
+  <Country Name="Viet Nam" Year="2004" Population="41721200" />
+  <Country Name="Viet Nam" Year="2005" Population="42260100" />
+  <Country Name="Viet Nam" Year="2006" Population="42801100" />
+  <Country Name="Wallis and Futuna Islands" Year="1996" Population="7182" />
+  <Country Name="Wallis and Futuna Islands" Year="2003" Population="7450" />
+  <Country Name="Yemen" Year="1994" Population="7448000" />
+  <Country Name="Yemen" Year="1995" Population="7701000" />
+  <Country Name="Yemen" Year="1996" Population="7972000" />
+  <Country Name="Yemen" Year="1997" Population="8255000" />
+  <Country Name="Yemen" Year="1998" Population="8540000" />
+  <Country Name="Yemen" Year="1999" Population="8834000" />
+  <Country Name="Yemen" Year="2000" Population="9118000" />
+  <Country Name="Yemen" Year="2001" Population="9415000" />
+  <Country Name="Yemen" Year="2002" Population="9723000" />
+  <Country Name="Yemen" Year="2004" Population="9648208" />
+  <Country Name="Zambia" Year="1990" Population="3765520" />
+  <Country Name="Zambia" Year="1999" Population="5208241" />
+  <Country Name="Zambia" Year="2000" Population="4939293" />
+  <Country Name="Zimbabwe" Year="1992" Population="5329011" />
+  <Country Name="Zimbabwe" Year="1993" Population="5516778" />
+  <Country Name="Zimbabwe" Year="1994" Population="5707048" />
+  <Country Name="Zimbabwe" Year="1995" Population="5900037" />
+  <Country Name="Zimbabwe" Year="1997" Population="6293944" />
+  <Country Name="Zimbabwe" Year="1999" Population="6697035" />
+  <Country Name="Zimbabwe" Year="2002" Population="5997477" />
+</Populations>

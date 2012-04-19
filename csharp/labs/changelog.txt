@@ -1,0 +1,15 @@
+RELEASE NOTES
+
+July 12, 2010
+----------
+* Complete set of labs for C# Fundamentals 
+  in VS2010 - Intro, Classes, Types, Events, Flow, and CLR
+
+April 23, 2010
+----------
+* Labs use Visual Studo 2010
+
+April 7, 2010
+----------
+* C# Generics Lab added
+

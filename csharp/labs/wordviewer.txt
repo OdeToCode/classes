@@ -1,0 +1,11 @@
+In order to read the other lab documents in .docx format, you 
+need to install either 1) Microsoft Word 2007 or 2) the free 
+Microsoft Word Viewer along with the free Microsft Office 
+Compatibility Pack for the 2007 file formats.
+
+You can download the Microsoft Word Viewer from: 
+http://link.pluralsight.com/wordviewer
+
+You can download the Office Compatibility Pack for 2007 from:
+http://link.pluralsight.com/2007pack
+

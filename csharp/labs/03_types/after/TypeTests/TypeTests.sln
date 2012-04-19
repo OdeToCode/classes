@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeTests", "TypeTests\TypeTests.csproj", "{120D215B-3B83-4442-AEA6-DEA5843DAC28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8AD5103D-0691-4CF8-BC4A-0B607DD9F184}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		TypeTests.vsmdi = TypeTests.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeLogic", "TypeLogic\TypeLogic.csproj", "{AD5E1A2D-E366-4EBD-9DC7-EE76CB8B06EC}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = TypeTests.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{120D215B-3B83-4442-AEA6-DEA5843DAC28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{120D215B-3B83-4442-AEA6-DEA5843DAC28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{120D215B-3B83-4442-AEA6-DEA5843DAC28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{120D215B-3B83-4442-AEA6-DEA5843DAC28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD5E1A2D-E366-4EBD-9DC7-EE76CB8B06EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD5E1A2D-E366-4EBD-9DC7-EE76CB8B06EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD5E1A2D-E366-4EBD-9DC7-EE76CB8B06EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD5E1A2D-E366-4EBD-9DC7-EE76CB8B06EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

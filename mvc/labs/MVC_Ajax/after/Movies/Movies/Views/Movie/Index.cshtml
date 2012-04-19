@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Movies.Models.Movie>
+
+@{
+    ViewBag.Title = "Index";
+}
+@Html.Script("jQuery.tmpl.js")
+@Html.Script("MovieDetail.js")
+
+<h2>Index</h2>
+
+<table>
+    <tr>
+        <th></th>
+        <th>
+            Title
+        </th>
+        <th>
+            ReleaseDate
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+        </td>
+        <td class="movieTitle" id="@item.ID">
+            @item.Title
+        </td>
+        <td>
+            @String.Format("{0:d}", item.ReleaseDate)
+        </td>
+    </tr>
+}
+
+</table>
+
+<script id="detailTemplate" type="text/x-jquery-tmpl"> 
+    <span class="detail">
+        Rating: ${AverageReview}
+        Total Reviews: ${TotalReviews}
+    </span>
+</script> 

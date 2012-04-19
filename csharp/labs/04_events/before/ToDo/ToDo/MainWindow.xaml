@@ -1,0 +1,11 @@
+﻿<Window x:Class="ToDo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="My To Do List" Height="350" Width="267" Background="#cccc99">
+    <Grid>
+        <ListBox ItemsSource="{Binding ToDoItems}" Height="203" HorizontalAlignment="Left" Margin="12,96,0,0" Name="ToDoList" VerticalAlignment="Top" Width="216" >
+        </ListBox>
+        <TextBox Text="{Binding ToDoText}" Height="28" HorizontalAlignment="Left" Margin="12,20,0,0" Name="AddTextBox" VerticalAlignment="Top" Width="130" />
+        <Button Content="Add" Height="31" HorizontalAlignment="Left" Margin="156,18,0,0" Name="AddButton" VerticalAlignment="Top" Width="77" />
+    </Grid>
+</Window>

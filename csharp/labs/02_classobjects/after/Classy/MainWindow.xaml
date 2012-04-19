@@ -1,0 +1,8 @@
+﻿<Window x:Class="Classy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:Classy="clr-namespace:Classy" Title="MainWindow" Height="450" Width="525" Background="Honeydew">
+    <Classy:Playground x:Name="PlayGround" Focusable="true">
+        
+    </Classy:Playground>
+</Window>
