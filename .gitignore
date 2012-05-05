@@ -36,3 +36,4 @@ log.txt
 .idea
 .DS_Store
 .sdf
+packages/
