@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ec5b0ad7-20d2-45e6-a96d-df6d94fbbc4f" name="bitmask@X220V2 2012-05-05 14:01:46" runUser="X220V2\bitmask" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="376875eb-3a57-4823-843f-c1397ad28b21">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="bitmask_X220V2 2012-05-05 14_01_46">
+      <DeploymentItem filename="C:\dev\github\classes\linq\labs\LINQ_Layered\after\EmployeeTimeCards\EmployeeTimeCards.Core\bin\Debug\EmployeeTimeCards.Core.dll" />
+      <DeploymentItem filename="C:\dev\github\classes\linq\labs\LINQ_Layered\after\EmployeeTimeCards\EmployeeTimeCards.Web\bin\EmployeeTimeCards.Web.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-05T14:01:46.7888530-04:00" queuing="2012-05-05T14:01:48.6029568-04:00" start="2012-05-05T14:01:48.7489652-04:00" finish="2012-05-05T14:01:50.1930478-04:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Commits_When_Edit_Succesfull" storage="c:\dev\github\classes\linq\labs\linq_layered\after\employeetimecards\employeetimecards.tests\bin\debug\employeetimecards.tests.dll" id="918eb8ca-fa38-3e71-72ee-971248c932db">
+      <Execution id="c707945a-39af-4271-94c9-f6560f49e63c" />
+      <TestMethod codeBase="C:/dev/github/classes/linq/labs/LINQ_Layered/after/EmployeeTimeCards/EmployeeTimeCards.Tests/bin/Debug/EmployeeTimeCards.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EmployeeTimeCards.Tests.HomeController_Edit, EmployeeTimeCards.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Commits_When_Edit_Succesfull" />
+    </UnitTest>
+    <UnitTest name="Returns_Correct_Model_On_Edit_Get" storage="c:\dev\github\classes\linq\labs\linq_layered\after\employeetimecards\employeetimecards.tests\bin\debug\employeetimecards.tests.dll" id="8db44f18-bf66-0907-e2ee-479518dabd8a">
+      <Execution id="8c80a05d-ef40-4622-8a7a-a2ecea3ca35f" />
+      <TestMethod codeBase="C:/dev/github/classes/linq/labs/LINQ_Layered/after/EmployeeTimeCards/EmployeeTimeCards.Tests/bin/Debug/EmployeeTimeCards.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EmployeeTimeCards.Tests.HomeController_Edit, EmployeeTimeCards.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Returns_Correct_Model_On_Edit_Get" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="8db44f18-bf66-0907-e2ee-479518dabd8a" executionId="8c80a05d-ef40-4622-8a7a-a2ecea3ca35f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="918eb8ca-fa38-3e71-72ee-971248c932db" executionId="c707945a-39af-4271-94c9-f6560f49e63c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="8c80a05d-ef40-4622-8a7a-a2ecea3ca35f" testId="8db44f18-bf66-0907-e2ee-479518dabd8a" testName="Returns_Correct_Model_On_Edit_Get" computerName="X220V2" duration="00:00:00.0782630" startTime="2012-05-05T14:01:48.7759667-04:00" endTime="2012-05-05T14:01:49.7220208-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c80a05d-ef40-4622-8a7a-a2ecea3ca35f">
+      <Output>
+        <ErrorInfo>
+          <Message>Initialization method EmployeeTimeCards.Tests.HomeController_Edit.Initialize threw exception. System.NullReferenceException: System.NullReferenceException: Object reference not set to an instance of an object..</Message>
+          <StackTrace>    at EmployeeTimeCards.Tests.FakeEmployeeRepository.Add(Employee newEmployee) in C:\dev\github\classes\linq\labs\LINQ_Layered\after\EmployeeTimeCards\EmployeeTimeCards.Tests\FakeEmployeeRepository.cs:line 23
+   at EmployeeTimeCards.Tests.HomeController_Edit.Initialize() in C:\dev\github\classes\linq\labs\LINQ_Layered\after\EmployeeTimeCards\EmployeeTimeCards.Tests\HomeController_Edit.cs:line 19
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c707945a-39af-4271-94c9-f6560f49e63c" testId="918eb8ca-fa38-3e71-72ee-971248c932db" testName="Commits_When_Edit_Succesfull" computerName="X220V2" duration="00:00:00.0036564" startTime="2012-05-05T14:01:49.7250210-04:00" endTime="2012-05-05T14:01:49.7360216-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c707945a-39af-4271-94c9-f6560f49e63c">
+      <Output>
+        <ErrorInfo>
+          <Message>Initialization method EmployeeTimeCards.Tests.HomeController_Edit.Initialize threw exception. System.NullReferenceException: System.NullReferenceException: Object reference not set to an instance of an object..</Message>
+          <StackTrace>    at EmployeeTimeCards.Tests.FakeEmployeeRepository.Add(Employee newEmployee) in C:\dev\github\classes\linq\labs\LINQ_Layered\after\EmployeeTimeCards\EmployeeTimeCards.Tests\FakeEmployeeRepository.cs:line 23
+   at EmployeeTimeCards.Tests.HomeController_Edit.Initialize() in C:\dev\github\classes\linq\labs\LINQ_Layered\after\EmployeeTimeCards\EmployeeTimeCards.Tests\HomeController_Edit.cs:line 19
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

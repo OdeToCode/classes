@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeTimeCards.Core", "EmployeeTimeCards.Core\EmployeeTimeCards.Core.csproj", "{4A1C4C8A-227A-4856-9CBD-A2BAB63268CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeTimeCards.Web", "EmployeeTimeCards.Web\EmployeeTimeCards.Web.csproj", "{4DF0A136-7B90-4D13-B959-1DA75BAABF7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{FC479CA0-8675-435B-BAF1-0366D858F272}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeTimeCards.Tests", "EmployeeTimeCards.Tests\EmployeeTimeCards.Tests.csproj", "{E596974C-6F64-4CDF-B585-C8AF209DDBFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AA8568A3-21F1-4743-8FA6-E2D3A3E70182}"
+	ProjectSection(SolutionItems) = preProject
+		EmployeeTimeCards.vsmdi = EmployeeTimeCards.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = EmployeeTimeCards.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A1C4C8A-227A-4856-9CBD-A2BAB63268CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A1C4C8A-227A-4856-9CBD-A2BAB63268CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A1C4C8A-227A-4856-9CBD-A2BAB63268CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A1C4C8A-227A-4856-9CBD-A2BAB63268CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DF0A136-7B90-4D13-B959-1DA75BAABF7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF0A136-7B90-4D13-B959-1DA75BAABF7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF0A136-7B90-4D13-B959-1DA75BAABF7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF0A136-7B90-4D13-B959-1DA75BAABF7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E596974C-6F64-4CDF-B585-C8AF209DDBFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E596974C-6F64-4CDF-B585-C8AF209DDBFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E596974C-6F64-4CDF-B585-C8AF209DDBFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E596974C-6F64-4CDF-B585-C8AF209DDBFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
