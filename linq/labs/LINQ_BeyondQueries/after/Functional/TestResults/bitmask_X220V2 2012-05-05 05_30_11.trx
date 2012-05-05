@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ea2869b4-2948-4d48-8d99-7a5578151df4" name="bitmask@X220V2 2012-05-05 05:30:11" runUser="X220V2\bitmask" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="c15e138b-f10e-4eef-8c8f-eebfb7a96e5f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="bitmask_X220V2 2012-05-05 05_30_11">
+      <DeploymentItem filename="C:\dev\github\classes\linq\labs\LINQ_BeyondQueries\after\Functional\Functional\bin\Debug\Functional.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-05T05:30:11.5055622-04:00" queuing="2012-05-05T05:30:11.6085681-04:00" start="2012-05-05T05:30:11.6315695-04:00" finish="2012-05-05T05:30:12.3746120-04:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="5" executed="5" passed="4" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Default_release_date_is_current_date" storage="c:\dev\github\classes\linq\labs\linq_beyondqueries\after\functional\functional.tests\bin\debug\functional.tests.dll" id="428905dd-2bfb-bd7d-9ba0-50a015c6206b">
+      <Execution id="6a6c8284-09bd-481b-acc0-7c04858a2094" />
+      <TestMethod codeBase="C:/dev/github/classes/linq/labs/LINQ_BeyondQueries/after/Functional/Functional.Tests/bin/Debug/Functional.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Functional.Tests.MovieConstructionTests, Functional.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Default_release_date_is_current_date" />
+    </UnitTest>
+    <UnitTest name="MovieWithTooShortDurationIsAnError" storage="c:\dev\github\classes\linq\labs\linq_beyondqueries\after\functional\functional.tests\bin\debug\functional.tests.dll" id="afb65ac4-58eb-7491-b087-dca01782f159">
+      <Execution id="030ce89b-5b48-45d8-99ae-faa60ece003d" />
+      <TestMethod codeBase="C:/dev/github/classes/linq/labs/LINQ_BeyondQueries/after/Functional/Functional.Tests/bin/Debug/Functional.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Functional.Tests.MovieValidationTests, Functional.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MovieWithTooShortDurationIsAnError" />
+    </UnitTest>
+    <UnitTest name="MovieWithBadReleaseDateIsError" storage="c:\dev\github\classes\linq\labs\linq_beyondqueries\after\functional\functional.tests\bin\debug\functional.tests.dll" id="9877f76a-be6b-91b1-4ebb-211e472afa4e">
+      <Execution id="f2f6f836-7578-472e-af37-6f36779fd20a" />
+      <TestMethod codeBase="C:/dev/github/classes/linq/labs/LINQ_BeyondQueries/after/Functional/Functional.Tests/bin/Debug/Functional.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Functional.Tests.MovieValidationTests, Functional.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MovieWithBadReleaseDateIsError" />
+    </UnitTest>
+    <UnitTest name="MovieWithNoTitleIsAnError" storage="c:\dev\github\classes\linq\labs\linq_beyondqueries\after\functional\functional.tests\bin\debug\functional.tests.dll" id="c859baf6-7afc-4dc3-789b-e0f422fe51c3">
+      <Execution id="25f6b2aa-ecd3-47a7-8a21-b4a2e1437525" />
+      <TestMethod codeBase="C:/dev/github/classes/linq/labs/LINQ_BeyondQueries/after/Functional/Functional.Tests/bin/Debug/Functional.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Functional.Tests.MovieValidationTests, Functional.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MovieWithNoTitleIsAnError" />
+    </UnitTest>
+    <UnitTest name="Stepping_Returns_True" storage="c:\dev\github\classes\linq\labs\linq_beyondqueries\after\functional\functional.tests\bin\debug\functional.tests.dll" id="9ce8ba6b-5995-a2f1-4722-6a3746174b02">
+      <Execution id="d113055e-0998-40d2-b226-fed8685a3316" />
+      <TestMethod codeBase="C:/dev/github/classes/linq/labs/LINQ_BeyondQueries/after/Functional/Functional.Tests/bin/Debug/Functional.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Functional.Tests.StepperTests, Functional.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Stepping_Returns_True" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="428905dd-2bfb-bd7d-9ba0-50a015c6206b" executionId="6a6c8284-09bd-481b-acc0-7c04858a2094" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9877f76a-be6b-91b1-4ebb-211e472afa4e" executionId="f2f6f836-7578-472e-af37-6f36779fd20a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9ce8ba6b-5995-a2f1-4722-6a3746174b02" executionId="d113055e-0998-40d2-b226-fed8685a3316" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="afb65ac4-58eb-7491-b087-dca01782f159" executionId="030ce89b-5b48-45d8-99ae-faa60ece003d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c859baf6-7afc-4dc3-789b-e0f422fe51c3" executionId="25f6b2aa-ecd3-47a7-8a21-b4a2e1437525" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="6a6c8284-09bd-481b-acc0-7c04858a2094" testId="428905dd-2bfb-bd7d-9ba0-50a015c6206b" testName="Default_release_date_is_current_date" computerName="X220V2" duration="00:00:00.0491969" startTime="2012-05-05T05:30:11.6365697-04:00" endTime="2012-05-05T05:30:12.2306037-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a6c8284-09bd-481b-acc0-7c04858a2094">
+    </UnitTestResult>
+    <UnitTestResult executionId="f2f6f836-7578-472e-af37-6f36779fd20a" testId="9877f76a-be6b-91b1-4ebb-211e472afa4e" testName="MovieWithBadReleaseDateIsError" computerName="X220V2" duration="00:00:00.0104749" startTime="2012-05-05T05:30:12.2376041-04:00" endTime="2012-05-05T05:30:12.2556051-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2f6f836-7578-472e-af37-6f36779fd20a">
+    </UnitTestResult>
+    <UnitTestResult executionId="d113055e-0998-40d2-b226-fed8685a3316" testId="9ce8ba6b-5995-a2f1-4722-6a3746174b02" testName="Stepping_Returns_True" computerName="X220V2" duration="00:00:00.0376059" startTime="2012-05-05T05:30:12.2586053-04:00" endTime="2012-05-05T05:30:12.3066081-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d113055e-0998-40d2-b226-fed8685a3316">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsTrue failed. </Message>
+          <StackTrace>   at Functional.Tests.StepperTests.Stepping_Returns_True() in C:\dev\github\classes\linq\labs\LINQ_BeyondQueries\after\Functional\Functional.Tests\StepperTests.cs:line 12
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="030ce89b-5b48-45d8-99ae-faa60ece003d" testId="afb65ac4-58eb-7491-b087-dca01782f159" testName="MovieWithTooShortDurationIsAnError" computerName="X220V2" duration="00:00:00.0010273" startTime="2012-05-05T05:30:12.3116084-04:00" endTime="2012-05-05T05:30:12.3226090-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="030ce89b-5b48-45d8-99ae-faa60ece003d">
+    </UnitTestResult>
+    <UnitTestResult executionId="25f6b2aa-ecd3-47a7-8a21-b4a2e1437525" testId="c859baf6-7afc-4dc3-789b-e0f422fe51c3" testName="MovieWithNoTitleIsAnError" computerName="X220V2" duration="00:00:00.0008411" startTime="2012-05-05T05:30:12.3286093-04:00" endTime="2012-05-05T05:30:12.3376098-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="25f6b2aa-ecd3-47a7-8a21-b4a2e1437525">
+    </UnitTestResult>
+  </Results>
+</TestRun>
