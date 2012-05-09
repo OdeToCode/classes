@@ -37,3 +37,4 @@ log.txt
 .DS_Store
 .sdf
 packages/
+TestResults/
