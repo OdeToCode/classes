@@ -14,15 +14,9 @@ namespace Controllers.Models
 
         public void Add(GuestEntry entry)
         {
-            if (entry.Name == "Fido")
-            {
-                throw new InvalidOperationException("No dogs allowed");
-            }
-
             _entries.Add(entry);
         }
 
         static List<GuestEntry> _entries = new List<GuestEntry>();
     }
-
 }

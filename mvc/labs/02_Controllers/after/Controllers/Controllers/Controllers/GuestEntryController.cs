@@ -11,11 +11,11 @@ namespace Controllers.Controllers
     {
         //
         // GET: /GuestEntry/
-        [ActionName("List")]    
+        [ActionName("List")]
         public ViewResult Index()
         {
-            var book = new GuestBook();
-            return View("Index", book.Entries);
+            var model = new GuestBook().Entries;
+            return View("Index", model);
         }
 
         public ViewResult Create()
@@ -23,10 +23,15 @@ namespace Controllers.Controllers
             return View();
         }
 
-        [HttpPost]
         [HandleError]
+        [HttpPost]      
         public ActionResult Create(GuestEntry entry)
         {
+            if (entry.Name == "Fido")
+            {
+                throw new InvalidOperationException("No dogs allowed");
+            }
+
             var book = new GuestBook();
             book.Add(entry);
 
