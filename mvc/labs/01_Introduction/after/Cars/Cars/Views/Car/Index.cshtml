@@ -1,0 +1,18 @@
+﻿@model IEnumerable<string>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<ul>
+    @foreach (var manufacturer in Model)
+    { 
+        <li>
+            @Html.ActionLink(manufacturer, "Show", 
+                new { manufacturer=manufacturer})
+        </li>    
+  
+    }
+</ul>
