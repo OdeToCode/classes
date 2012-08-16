@@ -18,8 +18,8 @@ namespace Population.Controllers
             var countries = statistics.GetCountries();
 
             return View(countries);
-
         }
+
 
         public ActionResult Details(string id, int? year)
         {
@@ -27,16 +27,16 @@ namespace Population.Controllers
             var details = new CountryDetails();
 
             var availableYears =
-                 statistics.GetAvailableYearsForCountry(id);            
+                           statistics.GetAvailableYearsForCountry(id);
 
             details.Name = id;
             details.AvailableYears =
-                availableYears.Select(availableYear =>
-                                  new SelectListItem
-                                  {
-                                      Text = availableYear.ToString(),
-                                      Value = availableYear.ToString()
-                                  });
+                      availableYears.Select(availableYear =>
+                                            new SelectListItem
+                                            {
+                                                Text = availableYear.ToString(),
+                                                Value = availableYear.ToString()
+                                            });
 
             var selectedYear = year ?? availableYears.First();
             details.MalePopulation = statistics.GetMalePopulation(id, selectedYear);

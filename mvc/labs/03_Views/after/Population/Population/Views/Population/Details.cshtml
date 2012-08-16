@@ -1,11 +1,11 @@
 ﻿@model Population.Models.CountryDetails
 
 @{
-    ViewBag.Title = @Model.Name;
+    ViewBag.Title = Model.Name;
 }
 
 <h2>@Model.Name</h2>
-         
+
 @using (Html.BeginForm("Details", "Population", FormMethod.Get)) {
         @Html.DropDownList("year", Model.AvailableYears)
         <input type="submit" value="Submit" />
@@ -16,3 +16,6 @@
     <p>Female Population: @Html.Number(Model.FemalePopulation)</p>
     <p>Total Population: @Html.Number(Model.TotalPopulation)</p>
 </div>
+
+
+
