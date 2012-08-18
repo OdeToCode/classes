@@ -1,0 +1,66 @@
+﻿@model Movies.Domain.Movie
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+
+<fieldset>
+    <legend>Movie</legend>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Title)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Title)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Year)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Year)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Length)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Length)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Director)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Director)
+    </div>
+</fieldset>
+
+<h2>Reviews</h2>
+<table>
+    <tr>
+        <th>Reviewer</th>
+        <th>Rating</th>
+        <th></th>
+    </tr>
+    @foreach (var review in Model.Reviews)
+    { 
+        <tr>
+            <td>@Html.DisplayFor(r => review.Reviewer)</td>
+            <td>@Html.DisplayFor(r => review.Rating)</td>
+            <td>@Html.ActionLink("Edit", "Edit", "Reviews", new { id = review.Id, movieId = Model.Id }, null)
+            </td>
+
+        </tr>    
+    }
+</table>
+<p>
+    @Html.ActionLink("Create a review", "Create", "Reviews", new { movieId = Model.Id }, null)
+</p>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
