@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Movies.Domain.Movie>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h5>@DateTime.Now.ToLongTimeString()</h5>
+
+<h2 id="viewHeader">Index</h2>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Length)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Director)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Length)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Director)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+@section scripts
+{
+    <script>
+        $(function() {
+
+            $("tr:odd").css("background-color", "#ddddFF");
+
+            $("#viewHeader").text("Movie List");
+
+
+            $("table").on("click", "td", function() {
+                $(this).fadeOut().fadeIn();
+            });
+
+        });
+              
+    </script>
+}
