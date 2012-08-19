@@ -308,6 +308,7 @@
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Reviews\Create.cshtml" />
     <Content Include="Views\Reviews\Edit.cshtml" />
+    <Content Include="Views\Movies\_MovieTable.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

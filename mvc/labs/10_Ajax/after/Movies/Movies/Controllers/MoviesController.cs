@@ -13,15 +13,33 @@ namespace Movies.Controllers
         //
         // GET: /Movie/
         [OutputCache(CacheProfile = "Regular")]        
-        public ActionResult Index()
+        public ActionResult Index(string searchTerm)
         {
             var db = new MovieData();
             var movies =
                 from m in db.Movies
+                where searchTerm == null || m.Title.Contains(searchTerm)
                 orderby m.Year descending
                 select m;
+            
+            if(Request.IsAjaxRequest())
+            {
+                return PartialView("_MovieTable", movies.Take(25));
+            }
 
             return View(movies.Take(25));
+        }
+
+
+        public ActionResult SearchAutoComplete(string term)
+        {
+            var db = new MovieData();
+            var movies =
+                db.Movies.Where(m => term == null || m.Title.Contains(term))
+                    .Take(10)
+                    .Select(m => new {label = m.Title});
+
+            return Json(movies, JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult Details(int id)

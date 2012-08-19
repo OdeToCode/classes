@@ -8,50 +8,35 @@
 
 <h2 id="viewHeader">Index</h2>
 
-<table>
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Year)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Length)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Director)
-        </th>
-        <th></th>
-    </tr>
+@using(Ajax.BeginForm(
+    new AjaxOptions
+        {
+            HttpMethod="GET", 
+            InsertionMode=InsertionMode.Replace, 
+            UpdateTargetId="movieTable"
+        }))
+{
+    <input type="search" name="searchTerm" 
+           data-autocomplete="@Url.Action("SearchAutoComplete")" />
+    <input type="submit" name="Search"/>
+}
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Year)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Length)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Director)
-            </td>
-            <td>
-                @Html.ActionLink("Details", "Details", new { id = item.Id })
-            </td>
-        </tr>
-    }
-
-</table>
-
+@Html.Partial("_MovieTable", Model)
 
 @section scripts
 {
     <script>
+
+        $(function() {
+
+            var input = $("input[name='searchTerm']");
+            var url = input.attr("data-autocomplete");
+            input.autocomplete({
+                source: url
+            });
+        });
+
+
         $(function() {
 
             $("tr:odd").css("background-color", "#ddddFF");
@@ -64,6 +49,6 @@
             });
 
         });
-              
+
     </script>
 }
