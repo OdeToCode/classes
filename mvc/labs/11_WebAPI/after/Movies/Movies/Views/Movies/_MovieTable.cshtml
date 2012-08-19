@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Movies.Domain.Movie>
+
+<table id="movieTable">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <a href="@Url.RouteUrl("DefaultApi", 
+                            new { 
+                                httproute="", 
+                                id=item.Id,                                 
+                                controller="MovieDetail"})" 
+                    class="movieLink">
+                    @Html.DisplayFor(modelItem => item.Title)
+                 </a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,93 @@
+﻿@model IEnumerable<Movies.Domain.Movie>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h5>@DateTime.Now.ToLongTimeString()</h5>
+
+<h2 id="viewHeader">Index</h2>
+
+@using (Ajax.BeginForm(
+    new AjaxOptions
+        {
+            HttpMethod = "GET",
+            InsertionMode = InsertionMode.Replace,
+            UpdateTargetId = "movieTable"
+        }))
+{
+    <input type="search" name="searchTerm" 
+           data-autocomplete="@Url.Action("SearchAutoComplete")" />
+    <input type="submit" name="Search" />
+}
+
+@Html.Partial("_MovieTable", Model)
+
+
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/mustache")
+
+    <script type="text/html" id="detailTemplate">
+        <table>
+            <tr>
+                <td>Length</td>
+                <td>{{Length}}</td>
+            </tr>
+            <tr>
+                <td>Director</td>
+                <td>{{Director}}</td>
+            </tr>
+            <tr>
+                <td>Reviews</td>
+                <td>{{ReviewCount}}</td>
+            </tr>
+            <tr>
+                <td>Average Review</td>
+                <td>{{AverageReview}}</td>
+            </tr>
+        </table>
+    </script>
+
+    <script>
+
+        $(function() {
+            $(".movieLink").click(function(evt) {
+                evt.preventDefault();
+                var url = $(this).attr("href");
+                var cell = $(this).parent();
+                $.get(url, function(data) {
+                    var template = $("#detailTemplate").html();
+                    var html = Mustache.to_html(template, data);
+                    cell.append(html);
+                });
+            });
+        });
+
+
+        $(function() {
+
+            var input = $("input[name='searchTerm']");
+            var url = input.attr("data-autocomplete");
+            input.autocomplete({
+                source: url
+            });
+        });
+
+
+        $(function() {
+
+            $("tr:odd").css("background-color", "#ddddFF");
+
+            $("#viewHeader").text("Movie List");
+
+
+            $("table").on("click", "td", function() {
+                $(this).fadeOut().fadeIn();
+            });
+
+        });
+
+    </script>
+}
