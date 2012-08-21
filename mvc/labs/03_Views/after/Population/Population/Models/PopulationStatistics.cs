@@ -66,7 +66,8 @@ namespace Population.Models
                 {
                     Country = e.Attribute("Name").Value,
                     Year = int.Parse(e.Attribute("Year").Value),
-                    Population = double.Parse(e.Attribute("Population").Value)
+                    Population = double.Parse(e.Attribute("Population").Value,
+				CultureInfo.GetCultureInfo("en-us").NumberFormat)
                 };
         }
 
