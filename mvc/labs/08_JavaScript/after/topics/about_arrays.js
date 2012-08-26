@@ -20,7 +20,7 @@ test("length", function() {
 test("splice", function() {
     var daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     var workingWeek = daysOfWeek.splice(0,5);
-    ok(workingWeek.equalTo(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']), 'what is the value of workingWeek?');
+    ok(workingWeek.equalTo(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']), 'what is the value of workingWeek?');
     ok(daysOfWeek.equalTo(['Saturday', 'Sunday']), 'what is the value of daysOfWeek?');
 });
 
