@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Views/Shared
+END
+Error.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Views/Shared/Error.aspx
+END
+LogOnUserControl.ascx
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Views/Shared/LogOnUserControl.ascx
+END
+Site.Master
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Views/Shared/Site.Master
+END

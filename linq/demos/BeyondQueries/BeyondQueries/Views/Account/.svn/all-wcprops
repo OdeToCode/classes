@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Views/Account
+END
+ChangePassword.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Views/Account/ChangePassword.aspx
+END
+LogOn.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Views/Account/LogOn.aspx
+END
+ChangePasswordSuccess.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Views/Account/ChangePasswordSuccess.aspx
+END
+Register.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Views/Account/Register.aspx
+END

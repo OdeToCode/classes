@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Domain/V30/Model/Flowchart
+END
+FluentExtensions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Domain/V30/Model/Flowchart/FluentExtensions.cs
+END
+Shape.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Domain/V30/Model/Flowchart/Shape.cs
+END
+FlowChart.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Domain/V30/Model/Flowchart/FlowChart.cs
+END
+Arrow.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Domain/V30/Model/Flowchart/Arrow.cs
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Domain/V30/Model/Mapping
+END
+FluentPropertyMapping.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Domain/V30/Model/Mapping/FluentPropertyMapping.cs
+END
+PropertySpecifier.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Domain/V30/Model/Mapping/PropertySpecifier.cs
+END
+MapEntry.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Domain/V30/Model/Mapping/MapEntry.cs
+END
+PropertyMapper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/acs/!svn/ver/35/v2/trunk/demos/BeyondQueries/Domain/V30/Model/Mapping/PropertyMapper.cs
+END

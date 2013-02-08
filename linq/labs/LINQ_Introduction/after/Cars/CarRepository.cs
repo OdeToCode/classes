@@ -18,11 +18,15 @@ namespace Cars
                            {
                                Manufacturer = columns[0],
                                Name         = columns[1],
-                               Displacement = Convert.ToDouble(columns[2]),
+                               Displacement = Convert.ToDouble(columns[2]
+                                       , new System.Globalization.CultureInfo("en-US")                                                              
+                               ),
                                Cylinders    = Convert.ToInt32(columns[3]),
                                Transmission = columns[4],
-                               CityMPG      = Convert.ToDouble(columns[6]),
-                               HighwayMPG   = Convert.ToDouble(columns[7])
+                               CityMPG      = Convert.ToDouble(columns[6],
+                                        new System.Globalization.CultureInfo("en-US")),
+                               HighwayMPG   = Convert.ToDouble(columns[7],
+                                        new System.Globalization.CultureInfo("en-US"))
                            };
             _cars = cars.ToList();                                    
         }

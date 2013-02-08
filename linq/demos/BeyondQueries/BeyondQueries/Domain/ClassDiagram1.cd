@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BeyondQueries.Domain.Flowchart&lt;T, TResult&gt;">
+    <Position X="0.75" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABAEAAAAAAKAAAAAAAAAAgAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Flowchart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BeyondQueries.Domain.Arrow&lt;T&gt;">
+    <Position X="4.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Domain\Arrow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BeyondQueries.Domain.Shape&lt;T, R&gt;">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAQAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Domain\Shape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BeyondQueries.Domain.EvaluationResults&lt;T, R&gt;">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\EvaluationResults.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
