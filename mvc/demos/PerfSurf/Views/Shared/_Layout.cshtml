@@ -1,0 +1,51 @@
+@using System.Web.Optimization
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title</title>
+        <meta name="viewport" content="width=device-width" />
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        @CssBundle("~/Content/DefaultCss")
+        @ScriptBundle("~/DefaultJs")   
+        @ScriptBundle("~/RGraph")        
+    </head>
+    <body>
+        <div id="page" data-role="page" data-theme="a">
+            
+            @if (IsSectionDefined("header"))
+            {
+                @RenderSection("header")
+            }
+            else
+            {
+                <div data-role="header">
+                    <div class="ui-title">PerfSurf</div>                
+                </div>
+            }
+            
+            <div data-role="content">
+                @RenderBody()                                               
+            </div>
+            
+            <div data-role="footer">
+                <div id="warning">
+                    Your browser doesn't support some required features.
+                </div>
+            </div>
+
+        </div>                
+        <script src="~/Scripts/jquery.signalR.js" type="text/javascript"></script>
+        <script src="~/signalr/hubs"></script>
+        <script src="~/Scripts/perfsurfr.js" type="text/javascript"></script>
+    </body>
+</html>
+
+@helper ScriptBundle(string name){
+    <script src="@BundleTable.Bundles.ResolveBundleUrl(name)"></script>
+}
+
+@helper CssBundle(string name){
+    <link href="@BundleTable.Bundles.ResolveBundleUrl(name)" rel="stylesheet" />   
+}

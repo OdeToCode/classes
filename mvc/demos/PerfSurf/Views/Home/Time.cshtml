@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Time";
+    Layout = null;
+}
+
+<script src="~/Scripts/jquery-1.6.4.js"></script>
+
+<script>
+
+    (function() {
+
+        var init = function() {
+            $("*[data-ajax-update]").click(loadTarget);
+        };
+
+        var loadTarget = function() {
+            var $this = $(this);
+            var url = $this.attr("href") || $this.attr("data-update-url");
+            var target = $this.attr("data-ajax-update");
+            $(target).load(url);
+            return false;
+        };
+
+        $(init);
+
+    }());
+
+</script>
+
+
+<h2>Time</h2>
+
+<div data-ajax-update="#me" id="me" 
+     data-update-url="@Url.Action("ServerTime")">
+    Click here to get the current server time
+</div>
+
+<a data-ajax-update="#serverTime" href="@Url.Action("ServerTime")" id="serverTime">Click here to get the current server time</a>

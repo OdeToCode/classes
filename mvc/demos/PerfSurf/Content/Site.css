@@ -1,0 +1,79 @@
+﻿/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+/* jQuery mobile styles
+-----------------------------------------------------------*/
+
+/* Make listview buttons fill the whole horizontal width of the screen */
+.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
+    padding-right: 15px;
+}
+
+.ui-bar-a, .ui-body-a, .ui-btn-up-a, .ui-btn-hover-a, .ui-btn-down-a,
+.ui-bar-b, .ui-body-b, .ui-btn-up-b, .ui-btn-hover-b, .ui-btn-down-b,
+.ui-bar-c, .ui-body-c, .ui-btn-up-c, .ui-btn-hover-c, .ui-btn-down-c,
+.ui-bar-d, .ui-body-d, .ui-btn-up-d, .ui-btn-hover-d, .ui-btn-down-d,
+.ui-bar-e, .ui-body-e, .ui-btn-up-e, .ui-btn-hover-e, .ui-btn-down-e,
+.ui-btn-active  {
+    text-shadow: none;
+}
+
+/* custom */
+
+.ui-body-b, .ui-dialog.ui-overlay-b {
+    border: 1px solid #cccc99;
+    background: #CCC;
+    color: #333;
+    text-shadow: 0 1px 0 white;
+    font-weight: normal;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#cccc99),to(#cccccc));
+    background-image: -webkit-linear-gradient(#cccc99,#cccccc);
+    background-image: -moz-linear-gradient(#cccc99,#cccccc);
+    background-image: -ms-linear-gradient(#cccc99,#cccccc);
+    background-image: -o-linear-gradient(#cccc99,#cccccc);
+    background-image: linear-gradient(#cccc99,#cccccc);
+}
+
+#warning {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.rgraph 
+{    
+    width: 100%;
+    height: 320px;
+}
+
+.no-canvas #warning {
+    display: block;
+    color: red;
+}

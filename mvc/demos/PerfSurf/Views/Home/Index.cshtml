@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "PerfSurf";
+}
+
+<select name="slider" id="toggler" data-role="slider">
+    <option value="on">Turn Off</option>
+    <option value="off" selected>Turn On</option>	
+</select>
+
+<div id="perfOutput" data-role="collapsible-set">
+  
+</div>
+
+<script id="counterTemplate" type="text/html">    
+    <div data-role="collapsible" id="${Name}">
+        <h3>${Name}            
+            <span class="sparkline"></span>
+        </h3>
+        <p><canvas class="rgraph" ></canvas></p>
+    </div>    
+</script>
+
