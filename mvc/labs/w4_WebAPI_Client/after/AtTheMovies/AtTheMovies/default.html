@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/mustache.js"></script>
+</head>
+<body>
+    
+    <h1>Movies</h1>
+    <ul id="movieList">
+        
+    </ul>
+    
+    <script id="movieTemplate" type="text/html">
+        {{#movies}}
+        <li>
+            {{Title}}
+        </li>
+        {{/movies}}
+    </script>
+    <script>
+        (function() {
+
+            var init = function() {
+                $.get("/api/movie").success(updateScreen);
+            };
+
+            var updateScreen = function(data) {
+                var template = $("#movieTemplate");
+                var list = $("#movieList");
+                var html = Mustache.to_html(template.html(), { movies: data });
+                list.empty().html(html);
+            };
+
+
+            $(init);
+
+        }());
+    </script>
+</body>
+</html>
