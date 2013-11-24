@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <title>Hello, Angular!</title>
+    <style>
+        [ng-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+<body ng-app ng-cloak class="container">
+
+    <div class="row" ng-controller="HelloController">
+
+        <div class="col-md-6">
+            <h1>Hello App</h1>
+            <form ng-submit="createMessage()">
+                <input type="text"
+                       ng-model="firstName"
+                       placeholder="First Name" />
+                <input type="submit" />
+            </form>
+
+            <span>{{ message }}</span>
+
+        </div>
+        
+        <div class="col-md-6">
+            <label>
+                Use Bootstrap Table Class
+                <input type="checkbox" ng-model="tableClass.table" />
+            </label>
+            <table ng-class="tableClass">
+                <tr ng-repeat="person in people">
+                    <td>{{person.firstName}}</td>
+                    <td>{{person.lastName}}</td>
+                    <td><button ng-click="delete($index)">Delete</button></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <script>
+        var HelloController = function ($scope) {
+
+            $scope.tableClass = {                
+                table:true  
+            };
+
+            $scope.createMessage = function () {
+                $scope.message = "Hello, " + $scope.firstName;              
+            };
+
+            $scope.delete = function (personIndex) {
+                $scope.people.splice(personIndex, 1);
+            };
+
+            $scope.people = [
+                { firstName: "Scott", lastName: "Allen" },
+                { firstName: "Joy", lastName: "Allen" },
+                { firstName: "Alex", lastName: "Allen" }
+            ];
+
+        };
+    </script>
+    <script src="scripts/angular.js"></script>
+</body>
+</html>
+
+
+
+
