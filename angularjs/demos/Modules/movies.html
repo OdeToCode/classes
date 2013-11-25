@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <title>Hello, Angular!</title>
+</head>
+<body data-ng-app="movieApp" class="container">
+
+    <div class="row" ng-controller="MovieListController">
+        <div class="col-md-6">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="movie in movies">
+                        <td>{{movie.title}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6"></div>        
+    </div>
+    
+    <script src="scripts/angular.js"></script>
+    <script src="movieApp/app.js"></script>
+    <script src="movieApp/controllers/movieListController.js"></script>
+</body>
+</html>
+
+
+
+
