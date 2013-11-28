@@ -3,9 +3,8 @@
 
     var app = angular.module("movieApp", []);
 
-    app.config(function () {
-        // configure the application
-        //  example: configure routes
+    app.config(function ($httpProvider) {
+        $httpProvider.defaults.headers.common["X-Config"] = "Configured";
     });
 
     app.run(function ($rootScope) {
@@ -13,4 +12,8 @@
     });
 
 }());
+
+angular.element(document).ready(function () {
+    angular.bootstrap(document, ['movieApp']);
+});
 

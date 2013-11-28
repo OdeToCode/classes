@@ -4,7 +4,7 @@
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <title>Hello, Angular!</title>
 </head>
-<body data-ng-app="movieApp" class="container">
+<body class="container">
 
     <div class="row" ng-controller="MovieListController">
         <div class="col-md-6">
@@ -21,12 +21,18 @@
                 </tbody>
             </table>
         </div>
-        <div class="col-md-6"></div>        
+        <div class="col-md-6">
+            <button class="btn" ng-click="refresh()">Refresh</button>
+            <pre>
+                {{ services | json }}
+            </pre>
+        </div>        
     </div>
     
     <script src="scripts/angular.js"></script>
     <script src="movieApp/app.js"></script>
     <script src="movieApp/controllers/movieListController.js"></script>
+    <script src="movieApp/services/movieService.js"></script>
 </body>
 </html>
 
