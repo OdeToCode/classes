@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <title>Hello, Angular!</title>
+</head>
+<body class="container" ng-app="viewApp">
+
+    <div class="row">
+        <div class="col-md-6">
+            <button ng-click="broadcastMessage()">Broadcast</button>
+            {{ count }}
+            <div ng-controller="SimpleController">
+
+                <h1>Simple</h1>
+                <input ng-model="firstName" type="text" placeholder="Name" />
+                <div>{{"Hello " + firstName}}</div>
+                <button ng-click="emitMessage()">Emit</button>
+                {{ args | json }}
+
+            </div>
+
+            <div ng-controller="SimpleController">
+                <h1>Simple</h1>
+                <input ng-model="firstName" type="text" placeholder="Name" />
+                <div>{{"Hello " + firstName}}</div>
+                <button ng-click="emitMessage()">Emit</button>
+                {{ count }}
+                {{simpleResult}}
+            </div>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+    </div>
+
+    <script src="scripts/angular.js"></script>
+    <script src="viewApp/app.js"></script>
+</body>
+</html>
+
+
+
+
