@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <title>Hello, Angular!</title>
+</head>
+<body class="container" ng-app="promiseApp">
+  
+    <h1>Promises</h1>
+    
+    <div ng-controller="PromiseController">
+        {{ result }}
+    </div>
+
+    <script src="scripts/angular.js"></script>
+    <script>
+        (function() {
+
+            var app = angular.module("promiseApp", []);
+
+            app.controller("PromiseController", function($scope, promiseServer) {
+                promiseServer
+                    .getValue()
+                    .then(function(result) {
+                        $scope.result = result;
+                    });
+
+                $scope.$watch("result", function(newValue, oldValue) {
+                    console.log(oldValue + " -> " + newValue);
+                    $scope.result += "w";
+                });
+
+            });
+
+            app.factory("promiseServer", function($q, $timeout) {
+                return {                    
+                    getValue: function() {
+                        var deferred = $q.defer();
+
+                        $timeout(function () {                           
+                            deferred.resolve("promise result complete!");
+                        }, 1000);
+
+                        return deferred.promise;
+                    }
+                };
+            });
+            
+        }());
+    </script>
+</body>
+</html>
+
+
+
+

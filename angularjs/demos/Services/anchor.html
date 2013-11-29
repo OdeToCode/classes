@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <title>Hello, Angular!</title>
+</head>
+<body class="container" ng-app>
+
+    <h1>Anchor</h1>
+
+    <div ng-controller="Controller">
+        <button ng-click="gotoFifty()">Go to 50</button>
+        <ul>
+            <li ng-repeat="item in listItems" id="{{item.id}}">
+                {{item.id}}
+            </li>
+        </ul>
+    </div>
+
+    <script src="scripts/angular.js"></script>
+    <script>
+
+        var Controller = function ($scope, $location, $anchorScroll) {
+
+            $scope.listItems = [];
+            for (var i = 0; i < 100; i++) {
+                $scope.listItems.push({ id: i });
+            }
+
+            $scope.gotoFifty = function() {
+                $location.hash("50");
+                $anchorScroll();
+            };
+
+        };
+
+    </script>
+</body>
+
+</html>
+
+
+
+

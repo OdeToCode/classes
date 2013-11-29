@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <title>Hello, Angular!</title>
+</head>
+<body class="container" ng-app="decorate">
+
+    <h1>Decorating Services</h1>
+
+    <div ng-controller="Controller">
+        
+        <input type="text" ng-model="message"/>
+        <button ng-click="alert(message)">Alert</button>
+    </div>
+ 
+    <script src="scripts/angular.js"></script>
+    <script>
+
+        var app = angular.module("decorate", []);
+        
+        app.config(function ($provide) {
+            $provide.decorator("$exceptionHandler", function ($delegate) {
+                return function (exception, cause) {
+                    $delegate(exception, cause);
+                    alert(exception.message);
+                };
+            });
+        });
+        
+        angular.module('myModule', [], function ($provide) {
+            $provide.factory('serviceId', function () {
+                var shinyNewServiceInstance;
+                //factory function body that constructs shinyNewServiceInstance
+                return shinyNewServiceInstance;
+            });
+        });
+
+        app.controller("Controller", function($scope, $window) {
+
+            $scope.alert = function(message) {
+                throw {
+                    message: "It all went wrong!"
+                };
+                $window.alert(message);
+            };
+        });
+                
+    </script>
+</body>
+
+</html>
+
+
+
+

@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <title>Hello, Angular!</title>
+</head>
+<body class="container" ng-app>
+
+    <h1>$cacheProvider</h1>
+
+    <div ng-controller="Controller">
+
+        <input type="text" ng-model="key" />
+        <button ng-click="addKey(key)">Add Item</button>
+
+        <pre>
+            CacheInfo: {{cacheInfo | json}}
+        </pre>
+    </div>
+
+    <div ng-controller="OtherController">
+        <input type="text" ng-model="key" />
+        <button ng-click="getKey(key)">Get Item</button>
+
+        <pre>
+            Item: {{ item | json }}
+        </pre>
+    </div>
+
+    <script src="scripts/angular.js"></script>
+    <script>
+
+        var Controller = function ($scope, $cacheFactory) {
+
+            var cache = $cacheFactory("myCache");
+
+            $scope.cacheInfo = cache.info();
+
+            $scope.addKey = function (key) {
+                cache.put(key, { key: key });
+                $scope.key = "";
+                $scope.cacheInfo = cache.info();
+            };
+        };
+        
+        var OtherController = function ($scope, $cacheFactory) {
+            var cache = $cacheFactory.get("myCache");
+            $scope.item = {};
+
+            $scope.getKey = function (key) {
+                $scope.item = cache.get(key);
+            };
+
+        };
+
+    </script>
+</body>
+
+</html>
+
+
+
+

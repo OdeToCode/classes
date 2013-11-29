@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <title>Hello, Angular!</title>
+</head>
+<body class="container" ng-app="myApp">
+
+    <h1>Provide</h1>
+
+    <div ng-controller="Controller">
+        <button ng-click="greet()">Alert</button>
+        
+        <pre>
+            {{ movies | json }}
+        </pre>
+        <pre>
+            {{ urlConfiguration | json }}
+        </pre>
+        <pre>
+            {{ user | json }}
+        </pre>
+    </div>
+
+    <script src="scripts/angular.js"></script>
+    <script>
+
+        var common = angular.module("common", []);
+
+        common.constant("urlConfiguration", {
+            api: "http://localhost/api",
+            templates: "http://localhost/templates"
+        });
+
+        common.value("user", { name: "Scott" });
+      
+        common.factory("movieService", function($q, $timeout) {
+
+            var getMovies = function() {
+                var deferred = $q.defer();
+
+                $timeout(function() {
+                    deferred.resolve([
+                        { title: "Star Wars" },
+                        { title: "E.T."}
+                    ]);
+                }, 2000);
+
+                return deferred.promise;
+            };
+
+            return {
+                get: getMovies
+            };
+
+        });
+        
+        common.service("movieService", function ($q, $timeout) {
+            this.get = function () {
+                var deferred = $q.defer();
+
+                $timeout(function () {
+                    deferred.resolve([
+                        { title: "Juniper" },
+                        { title: "Encor" }
+                    ]);
+                }, 2000);
+                return deferred.promise;
+            };
+        });
+
+
+        common.config(function ($provide) {
+            $provide.provider("GreetingService", function () {
+                var greeting = "Hello";
+                this.setGreeting = function (newGreeting) {
+                    greeting = newGreeting;
+                };
+
+                this.$get = function () {
+                    return {
+                        getGreeting: function () {
+                            return "*" + greeting + "*";
+                        }
+                    };
+                };
+            });
+        });
+
+
+        var app = angular.module("myApp", ["common"]);
+        app.config(function (GreetingServiceProvider) {
+            GreetingServiceProvider.setGreeting("Hello, World!");
+        });
+
+
+        myapp.factory('myHttpResponseInterceptor', ['$q', '$location', function ($q, $location) {
+            return {
+                response: function (response) {
+                    return promise.then(
+                      function success(response) {
+                          return response;
+                      },
+                    function error(response) {
+                        if (response.status === 401) {
+                            $location.path('/signin');
+                            return $q.reject(response);
+                        }
+                        else {
+                            return $q.reject(response);
+                        }
+                    });
+                }
+            }
+        }]);
+        
+        myapp.config(['$httpProvider', function ($httpProvider) {
+            $httpProvider.interceptors.push('myHttpResponseInterceptor');
+        }]);
+
+        app.controller("Controller", function (
+            $scope, $window, GreetingService,
+            urlConfiguration, user, movieService) {
+
+            var showMovies = function(movies) {
+                $scope.movies = movies;
+            };
+
+            movieService
+                .get()
+                .then(showMovies);
+            
+            $scope.urlConfiguration = urlConfiguration;
+            $scope.user = user;
+
+            $scope.greet = function (message) {
+                $window.alert(GreetingService.getGreeting());
+            };
+        });
+
+    </script>
+</body>
+
+</html>
+
+
+
+

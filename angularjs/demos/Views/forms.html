@@ -47,6 +47,12 @@
                 user = {{user | json}}
             </pre>
 
+            
+            <div ng-switch="selection">
+                <div ng-switch-when="settings">Settings Div</div>
+                <div ng-switch-when="home">Home Span</div>
+                <div ng-switch-default>default</div>
+            </div>
 
             <pre>master = {{master | json}}</pre>
         </form>

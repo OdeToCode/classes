@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <title>Hello, Angular!</title>
+</head>
+<body class="container" ng-app>
+
+    <h1>$window</h1>
+
+    <div ng-controller="Controller">
+        
+        <input type="text" ng-model="message"/>
+        <button ng-click="alert(message)">Alert</button>
+    </div>
+ 
+    <script src="scripts/angular.js"></script>
+    <script>
+     
+        var Controller = function ($scope, $window) {
+
+            $scope.alert = function(message) {                
+                $window.alert(message);
+            };
+        };
+        
+        angular.module('exceptionOverride', []).factory('$exceptionHandler', function () {
+            return function (exception, cause) {
+                exception.message += ' (caused by "' + cause + '")';
+                throw exception;
+            };
+        });
+
+    </script>
+</body>
+
+</html>
+
+
+
+
