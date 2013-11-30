@@ -1,0 +1,2 @@
+﻿1) NuGet Angular.Core, Bootstrap3, Jasmine
+2)
