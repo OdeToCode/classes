@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello, Angular!</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/animate.css" rel="stylesheet" />
+    <link href="Content/styles.css" rel="stylesheet" />
+</head>
+<body class="container">
+    <h1>At The Movies</h1>
+    <div class="row" ng-controller="MovieListController">
+        <div class="col-md-6">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="movie in movies" class="repeat-item">
+                        <td>{{movie.title}}</td>
+                        <td><button ng-click="delete($index)">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <button class="btn" ng-click="refresh()">Refresh</button>
+            <button class="btn" ng-click="add()">Add</button>
+
+        </div>
+    </div>
+
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-animate.js"></script>
+    <script src="scripts/ui-bootstrap.js"></script>
+    <script src="movieApp/app.js"></script>
+    <script src="movieApp/controllers/movieListController.js"></script>
+    <script src="movieApp/services/movieService.js"></script>
+</body>
+</html>
+
+
+
+

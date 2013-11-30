@@ -1,0 +1,29 @@
+﻿
+    .visibleToggle {
+      transition:0.5s linear all;
+      opacity:1;
+    }
+
+    .visibleToggle.ng-hide {
+      opacity:0;
+    }
+
+    .visibleToggle.ng-hide-add, .visibleToggle.ng-hide-remove {
+      display:block!important;
+    }
+
+    .repeat-item.ng-enter,
+    .repeat-item.ng-leave {
+        -webkit-transition: 0.5s linear all;
+        transition: 0.5s linear all;
+    }
+
+        .repeat-item.ng-enter,
+        .repeat-item.ng-leave.ng-leave-active {
+            opacity: 0;
+        }
+
+            .repeat-item.ng-leave,
+            .repeat-item.ng-enter.ng-enter-active {
+                opacity: 1;
+            }
