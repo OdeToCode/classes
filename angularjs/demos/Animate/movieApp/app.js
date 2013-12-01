@@ -1,7 +1,7 @@
 ﻿"use strict";    
 (function () {
 
-    var app = angular.module("movieApp", ["ngAnimate"]);
+    var app = angular.module("movieApp", ["ngAnimate", "ui.bootstrap"]);
 
     app.config(function ($httpProvider) {
         $httpProvider.defaults.headers.common["X-Config"] = "Configured";

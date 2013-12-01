@@ -1,0 +1,17 @@
+﻿<div ng-controller="DetailsController" class="row">
+        
+    <div class="span12">
+        <h2>{{movie.title}}</h2>
+    </div>
+    <div class="span6">
+        <hr />
+        <div>{{movie.runtime}} minutes</div>
+        <div>Released in {{movie.releaseYear}}</div>
+        <button ng-click="edit()">Edit</button>
+    </div>    
+    <div class="span6">
+        <div>
+            <div ng-include="'/Client/views/edit.html'"></div>
+        </div>
+    </div>
+</div>

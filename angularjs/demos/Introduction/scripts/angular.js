@@ -1,3 +1,20 @@
+
+    app.config(['$routeProvider',
+      function ($routeProvider) {
+          $routeProvider.
+            when('/phones', {
+                templateUrl: 'partials/phone-list.html',
+                controller: 'PhoneListCtrl'
+            }).
+            when('/phones/:phoneId', {
+                templateUrl: 'partials/phone-detail.html',
+                controller: 'PhoneDetailCtrl'
+            }).
+            otherwise({
+                redirectTo: '/phones'
+            });
+      }]);
+
 /**
  * @license AngularJS v1.2.1
  * (c) 2010-2012 Google, Inc. http://angularjs.org

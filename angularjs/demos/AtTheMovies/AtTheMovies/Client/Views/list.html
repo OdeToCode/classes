@@ -1,0 +1,21 @@
+﻿<div ng-controller="ListController" class="row">
+    <div class="span6">       
+        <table class="table table-striped">
+            <tr ng-repeat="movie in movies">
+                <td>
+                    {{movie.title}}
+                </td>
+                <td>
+                    <button class="btn" ng-click="delete(movie)">Delete</button>
+                    <a href="#/details/{{movie.id}}" class="btn">Details</a> 
+                </td>
+            </tr>    
+        </table>        
+        <button class="btn" ng-click="create()">Create</button>
+    </div>
+    <div class="span6">
+        <div >
+            <div ng-include="'/Client/views/edit.html'"></div>
+        </div>
+    </div>
+</div>
