@@ -1,0 +1,25 @@
+Lab 01 : Introduction to Angular
+Estimated Time: 30 minutes
+
+This first lab is intended to get you familar with Angular JS. You'll need to 
+implement the following requirements using AngularJS in your development 
+environment. 
+
+Requirments:
+
+Write a web page that displays a list of movies to the user. 
+
+Example:
+
+Title         Length     Actions
+Star Wars V   120        |+ Length| |- Length|
+Star Wars III 120        |+ Length| |- Length|
+Star Wars I   120        |+ Length| |- Length|
+
+The |+ Length| and |- Length| text in the example represent buttons, the buttons
+should add 1 minute or remove 1 minute from the length of the respective movie. 
+
+You'll need to create a MovieController and use in-memory data (a JavaScript array)
+in this example. 
+
+

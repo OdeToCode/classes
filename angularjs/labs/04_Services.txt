@@ -1,0 +1,16 @@
+Lab 04 : Services
+Estimated Time: 30 minutes
+
+Continuing from Lab 03. 
+
+Requirements:
+
+1. Remove all $http references from the MovieController. 
+
+2. Add a custom service to the application (MoviesService) that will encapsulate 
+communication with the server. The controller should call the service, the service
+will use $http to talk to the server and return data using a promise. 
+
+3. The service should also be responsible for caching movies, and update a movie 
+with new information by exposing an Update method that will take a movie and copy 
+the new data into a cached movie object with the same ID. 

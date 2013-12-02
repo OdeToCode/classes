@@ -1,0 +1,35 @@
+Lab 02 : Modules
+Estimated Time: 30 minutes
+
+Continuing from Lab 01. 
+
+Requirements:
+
+1. Ensure there are no Angular controllers in the global namespace. You'll need to create a module
+for your application and use it with the ngApp directive. You'll also need to register
+the MovieController in the application module. 
+
+2. Ensure your script works when minified (use http://jscompress.com/ if you don't have an easier minification tool installed). 
+
+3. New feature - retrieve your movies from a .json file using the $http service directly 
+from the controller. The contents will look like the following:
+
+[
+    {
+        "title": "Indiana Jones", "length": 90
+    },
+    {
+        "title": "Star Wars", "length": 120
+    },
+    {
+        "title": "Hunger Games", "length": 100
+    }
+]
+
+Note: If using IIS / IIS Express, you might need to add the following to web.config:
+
+  <system.webServer>
+    <staticContent>
+      <mimeMap fileExtension="json" mimeType="application/json"/>
+    </staticContent>
+  </system.webServer>

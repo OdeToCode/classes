@@ -1,0 +1,9 @@
+Lab 06 : UI
+Estimated Time: 20 minutes
+
+Continuing from Lab 07
+
+Requirements:
+
+Using ngAnimate, create an animation for the application to use when transitioning 
+betweek views (list, details, and edit). 
