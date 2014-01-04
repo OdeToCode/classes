@@ -1,4 +1,5 @@
-﻿angular.module('ngViewExample', ['ngRoute'])
+﻿    
+angular.module('ngViewExample', ['ngRoute'])
 
 .config(function ($routeProvider, $locationProvider) {
     $routeProvider.when('/Book/:bookId', {

@@ -34,11 +34,11 @@
 
         common.value("user", { name: "Scott" });
       
-        common.factory("movieService", function($q, $timeout) {
+        common.factory("movieService", function ($q, $timeout, urlConfiguration) {
 
             var getMovies = function() {
                 var deferred = $q.defer();
-
+                var apiEndpoint = urlConfiguration.api;
                 $timeout(function() {
                     deferred.resolve([
                         { title: "Star Wars" },
@@ -70,7 +70,7 @@
         });
 
 
-        common.config(function ($provide) {
+        common.config(function ($provide, urlConfiguration) {
             $provide.provider("GreetingService", function () {
                 var greeting = "Hello";
                 this.setGreeting = function (newGreeting) {
@@ -90,11 +90,11 @@
 
         var app = angular.module("myApp", ["common"]);
         app.config(function (GreetingServiceProvider) {
-            GreetingServiceProvider.setGreeting("Hello, World!");
+            GreetingServiceProvider.setGreeting("Hello from NDC London!!");
         });
 
 
-        myapp.factory('myHttpResponseInterceptor', ['$q', '$location', function ($q, $location) {
+        app.factory('myHttpResponseInterceptor', ['$q', '$location', function ($q, $location) {
             return {
                 response: function (response) {
                     return promise.then(
@@ -114,7 +114,7 @@
             }
         }]);
         
-        myapp.config(['$httpProvider', function ($httpProvider) {
+        app.config(['$httpProvider', function ($httpProvider) {
             $httpProvider.interceptors.push('myHttpResponseInterceptor');
         }]);
 

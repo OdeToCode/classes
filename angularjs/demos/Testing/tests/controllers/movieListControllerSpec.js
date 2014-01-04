@@ -9,10 +9,21 @@ describe('MovieListController', function () {
     var movieServiceSpy;
     var moviesDeferred;
 
+    var fakeMovieService;
+
     beforeEach(inject(function ($controller, $rootScope, movieService, $q) {
         scope = $rootScope.$new();
         moviesDeferred = $q.defer();                
         movieServiceSpy = movieService;
+
+        fakeMovieService = {            
+          getAll: function() {
+              moviesDeferred = $q.defer();
+              moviesDeferred.resolve([{}, {}, {}, {}]);
+              return moviesDeferred;
+          }  
+        };
+
         spyOn(movieServiceSpy, "getAll").andReturn(moviesDeferred.promise);
         controller = $controller('MovieListController',
             { $scope: scope, movieService: movieServiceSpy });

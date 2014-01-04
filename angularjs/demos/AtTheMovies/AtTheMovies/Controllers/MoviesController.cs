@@ -17,7 +17,7 @@ namespace AtTheMovies.Controllers
         private MovieDb db = new MovieDb();
 
         // GET api/Movies
-        public IEnumerable<Movie> GetMovie()
+        public IEnumerable<Movie> GetMovies()
         {
             return db.Movies.AsEnumerable();
         }

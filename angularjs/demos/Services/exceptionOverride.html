@@ -27,22 +27,14 @@
                 };
             });
         });
-        
-        angular.module('myModule', [], function ($provide) {
-            $provide.factory('serviceId', function () {
-                var shinyNewServiceInstance;
-                //factory function body that constructs shinyNewServiceInstance
-                return shinyNewServiceInstance;
-            });
-        });
-
+               
         app.controller("Controller", function($scope, $window) {
 
             $scope.alert = function(message) {
                 throw {
                     message: "It all went wrong!"
                 };
-                $window.alert(message);
+                
             };
         });
                 

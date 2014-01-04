@@ -11,7 +11,7 @@
             });
         };
 
-        fetchMovies();
+       fetchMovies();
 
         $scope.refresh = function() {
             fetchMovies();
