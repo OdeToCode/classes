@@ -3,6 +3,8 @@ Estimated Time: 40 minutes
 
 Continuing from Lab 04. 
 
+
+
 Requirements:
 
 1. Add a "rating" data field to each movie, and display the rating in the table as
