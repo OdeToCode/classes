@@ -20,6 +20,6 @@ The |+ Length| and |- Length| text in the example represent buttons, the buttons
 should add 1 minute or remove 1 minute from the length of the respective movie. 
 
 You'll need to create a MovieController and use in-memory data (a JavaScript array)
-in this example. 
+in this example.
 
 
