@@ -1,0 +1,23 @@
+﻿Lab 05 : Directives
+Estimated Time: 40 minutes
+
+Continuing from Lab 04. 
+
+
+
+Requirements:
+
+1. Add a "rating" data field to each movie, and display the rating in the table as
+a series of stars (★★★ for a rating of 3).
+
+2. The rating should use a custom rating directive in the markup.
+
+Example:
+
+<td>
+  <div rating rating-value="rating"></div>
+<td>
+
+3. Optional bonus! Each time a user clicks on the rating, the rating will increase until
+it surpasses 5 stars, at which point the rating will wrap around to 1 star. 
+

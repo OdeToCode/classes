@@ -1,0 +1,15 @@
+Lab 06 : Testing
+Estimated Time: 40 minutes
+
+Continuing from Lab 05. 
+
+Requirements:
+
+Setup Jasmine and Angular mocks so you can write the following tests against
+the MovieController.
+
+1. The MovieController should request movie data from the correct server 
+endpoint when instantiated. 
+
+2. The MovieController populates a movies member on $scope when the server returns 
+movies on a succesful request. 

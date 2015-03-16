@@ -1,0 +1,16 @@
+Lab 06 : Routing
+Estimated Time: 40 minutes
+
+Continuing from Lab 06. 
+
+Requirements:
+
+The Movie application should now consist of three "views". 
+
+1) A list view (#/movies/list), which is the default view for the app. This view
+should display only movie title and display an Edit button beside each movie. 
+
+2) A details view (#/movies/:id), which displays all the information for a specific movie.
+
+3) An edit view (#/movies/:id/edit), which provides the ability to edit and save movie 
+information. 

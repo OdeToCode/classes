@@ -1,4 +1,4 @@
-Lab 06 : UI
+Lab 08 : UI
 Estimated Time: 20 minutes
 
 Continuing from Lab 07

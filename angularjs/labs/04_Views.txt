@@ -1,0 +1,16 @@
+Lab 03 : Views
+Estimated Time: 30 minutes
+
+Continuing from Lab 02. 
+
+Requirements:
+
+
+1. The user has changed thier mind! Remove the |+ Length| and |- Length| functionality from the application. 
+
+2. Instead of editing the length, the user would like to be able to edit any feature of a movie. Add an |Edit| button to each row of the movie display. 
+
+3. When the user clicks Edit, a new ngIncluded view should appear that allows the user
+to edit a movie. The title and length of the movie are required. The new view should include
+a Save and Cancel button, both of which will close (hide) the view. The Save button
+should also propogate changes back to the movie object in memory. 
