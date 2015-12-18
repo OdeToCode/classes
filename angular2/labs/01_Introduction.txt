@@ -9,13 +9,14 @@ environment:
 
 	Example:
 
-	Title         Length     Actions
-	Star Wars V   120        |+ Length| |- Length|
-	Star Wars III 120        |+ Length| |- Length|
-	Star Wars I   120        |+ Length| |- Length|
+	Title         Length     
+	Star Wars V   120        
+	Star Wars III 120        
+	Star Wars I   120        
 
-	The |+ Length| and |- Length| text in the example represent buttons, the buttons
-	should add 1 minute or remove 1 minute from the length of the respective movie. 
+
+Create the movies directly in the main application component. Don't worry about using classes
+as yet, just create the movies using object literals ({title: 'Star Wars', length: 120 });
 
 To get setup, you'll need to use npm to install Angular 2 and Angular dependencies (or
 use Yeoman, a seed project, or the demo files for this class). 

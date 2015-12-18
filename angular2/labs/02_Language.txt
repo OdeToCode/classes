@@ -1,0 +1,11 @@
+Lab 01 : Languages
+Estimated Time: 20 minutes
+
+Refactor your project and make a Movie class. Import the class into 
+your main application class and instantiate the class to make the model 
+data showing on the screen. 
+
+	Title         Length     
+	Star Wars V   120        
+	Star Wars III 120        
+	Star Wars I   120        
