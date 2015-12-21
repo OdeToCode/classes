@@ -1,4 +1,4 @@
-Lab 01 : Introduction to Angular
+Lab 01 : Introduction 
 Estimated Time: 50 minutes
 
 This first lab is intended to get you up and running with Angular 2. You'll need to 

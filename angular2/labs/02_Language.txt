@@ -1,4 +1,4 @@
-Lab 01 : Languages
+Lab 02 : Languages
 Estimated Time: 20 minutes
 
 Refactor your project and make a Movie class. Import the class into 

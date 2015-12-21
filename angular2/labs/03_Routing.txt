@@ -1,0 +1,10 @@
+Lab 03 : Routing
+Estimated Time: 40 minutes
+
+The project should support two pages and be able to route between the pages with navigation links.
+
+The two pages are the Movie List page, and the About page. 
+
+To make this work you'll need to introduce the routing services and directives of Angular 2. The top level
+App component will show the shell page and plug in child components with the <router-outlet> directive and 
+link between the two pages using [routerLink] directives inside of <a> tags. 
