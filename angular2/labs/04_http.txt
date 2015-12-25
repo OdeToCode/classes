@@ -1,10 +1,13 @@
 Lab 04 : HTTP
 Estimated Time: 30 minutes
 
-The project should now fetch movie data from an HTTP API and allow the user to click 
-on a movie for more details (the details should route to a new component). 
+The project should now fetch movie data from an HTTP API.
 
 The API is part of the starter project for the class. You can send a GET request to 
 /api/movies to retrieve all movies, and /api/movies/:id to retrieve a single movie. 
 
 If you are not using the starter project, you can also use the API at http://otc-movies.azurewebsites.net/movies
+
+For a bonus, transform the JSON reposne into Movie objects (where Movie is the class you 
+created earlier in the labs). 
+
