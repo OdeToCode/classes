@@ -1,0 +1,10 @@
+Lab 05 : Templates
+Estimated Time: 30 minutes
+
+The user should be able to click on a "Details" button and route to a movie detail page. 
+
+The detail page should include a link to navigate back to the full movie list. 
+
+The detail page should display the movie rating as a series of asteriks (or icons, if you want to be fancy). 
+
+
