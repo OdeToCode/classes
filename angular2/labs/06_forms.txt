@@ -1,0 +1,14 @@
+Lab 05 : Forms
+Estimated Time: 40 minutes
+
+The user should be able to click on a "Edit" button from the movie list and work with a form to edit movies. 
+
+The detail page should include a link to cancel and navigate back to the full movie list. Another button 
+should allow the users to save the edited movie (an HTTP PUT back to the server). After a save operation, 
+the application should automatically 'redirect' back to the movie details for the edited movie. 
+
+As a bonus, also add a link the the movie list for creating a new movie (an HTTP POST). The edit and create
+features should be able to share the same component and template.
+
+
+
