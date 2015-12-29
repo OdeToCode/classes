@@ -1,4 +1,4 @@
-Lab 05 : Forms
+Lab 06 : Forms
 Estimated Time: 40 minutes
 
 The user should be able to click on a "Edit" button from the movie list and work with a form to edit movies. 
