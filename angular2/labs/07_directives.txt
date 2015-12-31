@@ -1,6 +1,10 @@
-Lab 07 : Directives
+Lab 07 : Components & Directives
 Estimated Time: 30 minutes
 
+Build a MovieDisplay that you can use on the movie list template to show the details of each individual movie. 
+
+<movie-display *ngFor="#movie of movies" [movie]="movie">
+</movie-display>
 
 
 
