@@ -1,3 +1,8 @@
-Lab 08 : Testing
-Estimated Time: 40 minutes
+Lab 08 : Testing & Bundling
+Estimated Time: 50 minutes
+
+1) Set up your application to be bundled with WebPack or JSPM
+
+2) Write a unit test with Jasmine for the Movie class to make sure it increments and decrements the ratings correctly. 
+You can run the test in the browser, or install and configure Karma to run the test. 
 
