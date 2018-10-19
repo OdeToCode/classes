@@ -28,6 +28,7 @@ namespace Domain
                 case AggregationType.Mode:
                         result = Mode(measurements);
                     break;
+               
 
             }
             return result;

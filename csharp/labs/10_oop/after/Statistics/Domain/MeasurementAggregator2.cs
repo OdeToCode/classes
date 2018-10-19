@@ -11,7 +11,7 @@ namespace Domain
 
         public IEnumerable<Measurement> Aggregate(IGrouper grouper,
                                                   IAggregateCalculator calculator)
-        {
+        {           
             var partitions = grouper.Group(_measurements);
             foreach (var partition in partitions)
             {
