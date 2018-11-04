@@ -1,0 +1,20 @@
+﻿@page
+@model CoreMovies.Web.Pages.Movies.ListModel
+@{
+    ViewData["Title"] = "List";
+}
+
+<h2>Movies</h2>
+
+@foreach (var movie in Model.Movies)
+{
+    <partial name="_MovieSummary" model="movie" />
+}
+
+@if (Model.ActionMessage != null)
+{
+    <div class="alert alert-success">@Model.ActionMessage</div>
+}
+
+<a asp-page="./Edit" class="btn btn-primary">Add New</a>
+
