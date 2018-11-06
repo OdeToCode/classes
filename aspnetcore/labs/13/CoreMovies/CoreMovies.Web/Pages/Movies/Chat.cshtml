@@ -1,0 +1,46 @@
+﻿@page
+@model CoreMovies.Web.Pages.Movies.ChatModel
+@{
+    ViewData["Title"] = "Chat";
+}
+
+<h2>Chat</h2>
+
+<input type="text" class="form-control" id="message" />
+<button type="button" class="btn btn-primary" id="send">Send</button>
+
+<ul id="messages">
+
+</ul>
+
+
+@section scripts {
+    <script src="/node_modules/@@aspnet/signalr/dist/browser/signalr.js"></script>
+    <script>
+        (function () {
+
+            var connection = new signalR.HubConnectionBuilder().withUrl("/chat").build();
+
+            connection.on("ReceiveMessage", function (message) {
+                message = message.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                var li = document.createElement("li");
+                li.textContent = message;
+                document.getElementById("messages").appendChild(li);            
+            });
+
+            connection.start().catch(function (err) {
+                return alert(err.toString());
+            });
+
+            document.getElementById("send").addEventListener("click", function (event) {
+                var message = document.getElementById("message").value;
+                connection.invoke("SendMessage", message).catch(err => {
+                    return alert(err);
+                });
+                event.preventDefault();
+            });
+
+        }());    
+    </script>
+}
+

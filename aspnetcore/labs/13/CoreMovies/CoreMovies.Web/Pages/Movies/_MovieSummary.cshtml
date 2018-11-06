@@ -1,0 +1,23 @@
+﻿@using  CoreMovies.Entities
+
+@model Movie
+
+<div class="panel">
+    <div class="panel-heading">
+        <h3>@Model.Name</h3>
+    </div>
+    <div class="panel-body">
+        <div>@Model.Year</div>
+    </div>
+    <div class="panel-footer">
+        <a asp-page="./Detail" asp-route-id="@Model.Id">
+            <i class="glyphicon glyphicon-zoom-in"></i>
+        </a>
+        <a asp-page="./Edit" asp-route-id="@Model.Id">
+            <i class="glyphicon glyphicon-edit"></i>
+        </a>
+        <a asp-page="./Delete" asp-route-id="@Model.Id">
+            <i class="glyphicon glyphicon-trash"></i>
+        </a>
+    </div>
+</div>
