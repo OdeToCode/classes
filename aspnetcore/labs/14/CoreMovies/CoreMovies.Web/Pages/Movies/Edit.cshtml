@@ -1,0 +1,23 @@
+﻿@page "{id?}"
+@model CoreMovies.Web.Pages.Movies.EditModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Movie.Id" />
+    <div class="form-group">
+        <label asp-for="Movie.Name"></label>
+        <input asp-for="Movie.Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Movie.Year"></label>
+        <input asp-for="Movie.Year" class="form-control" />
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+</form>
+
