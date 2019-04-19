@@ -20,14 +20,9 @@
     <Exec Command="npm install" />
   </Target>
 
-  <PropertyGroup>
-    <DefaultItemExcludes>
-      $([System.String]::Copy($(DefaultItemExcludes)).Replace(';**\node_modules\**',''))
-    </DefaultItemExcludes>
-    <DefaultItemExcludes>
-      $([System.String]::Copy($(DefaultItemExcludes)).Replace(';node_modules\**',''))
-    </DefaultItemExcludes>
-  </PropertyGroup>
+<ItemGroup>
+  <Content Include="node_modules/**" CopyToPublishDirectory="PreserveNewest" />
+</ItemGroup>
 
 
 </Project>
