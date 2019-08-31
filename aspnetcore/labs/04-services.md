@@ -1,6 +1,6 @@
 # Making Movies
 
-The goal is to start adding movies to our CoreMovies application. In the UI, the only change will be to display the number of movies we know about, but there will be some work we need to do to display this number. 
+The goal is to start adding movies to our CoreMovies application. In the UI, we want to start by only showing the number of movies we know about, but there will be some work we need to complete before we can display this number. 
 
 ## Movie Entity
 

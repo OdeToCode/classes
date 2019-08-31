@@ -1,5 +1,5 @@
-﻿using CoreMovies.Entities;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using CoreMovies.Entities;
 using System.Linq;
 
 namespace CoreMovies.Data
@@ -13,16 +13,18 @@ namespace CoreMovies.Data
             new Movie { Id = 3, Name = "Cleopatra", Year = 1963 }
         };
 
+
         public int Count()
         {
-            return movies.Count();
+            return movies.Count();            
         }
 
         public IEnumerable<Movie> GetAll()
         {
-            return from m in movies
-                   orderby m.Year
-                   select m;
+            return 
+                from m in movies 
+                orderby m.Year descending
+                select m;
         }
     }
 }
