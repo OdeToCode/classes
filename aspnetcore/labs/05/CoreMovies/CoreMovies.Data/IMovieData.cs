@@ -1,5 +1,6 @@
-﻿using CoreMovies.Entities;
+﻿using System;
 using System.Collections.Generic;
+using CoreMovies.Entities;
 
 namespace CoreMovies.Data
 {
@@ -7,7 +8,5 @@ namespace CoreMovies.Data
     {
         int Count();
         IEnumerable<Movie> GetAll();
-        Movie GetById(int id);
-        IEnumerable<Movie> FindByNameMatch(string name);
     }
 }
