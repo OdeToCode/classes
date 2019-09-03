@@ -1,9 +1,8 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace CoreMovies.Entities
 {
-    public class Movie : IValidatableObject
+    public class Movie
     {
         public int Id { get; set; }
 
@@ -13,10 +12,5 @@ namespace CoreMovies.Entities
 
         [Range(1800, 2100)]
         public int Year { get; set; }
-
-        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
-        { 
-            yield return ValidationResult.Success;
-        }
     }
 }

@@ -56,7 +56,7 @@ namespace CoreMovies.Web.Controllers
         [HttpPut("{id:int}")]
         public ActionResult<Movie> Put(int id, [FromBody]Movie updatedMovie)
         {
-            if(id != updatedMovie.Id)
+            if (id != updatedMovie.Id)
             {
                 ModelState.AddModelError("id", "Route id does not match entity id");
                 return BadRequest();
