@@ -27,9 +27,8 @@ namespace CoreMovies.Tests.Integration
         {
             var client = GetClient();
 
-            var response = await client.GetAsync("/api/movies?name=Star");
-            var content = JsonConvert.DeserializeObject<Movie[]>(
-                await response.Content.ReadAsStringAsync());
+            var response = await client.GetAsync("api/movies/Star");
+            var content = JsonConvert.DeserializeObject<Movie[]>(await response.Content.ReadAsStringAsync());
 
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
             Assert.Equal(3, content.Length);

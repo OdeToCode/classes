@@ -2,10 +2,7 @@
 using CoreMovies.Entities;
 using CoreMovies.Web.Controllers;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace CoreMovies.Tests.Web
@@ -21,7 +18,6 @@ namespace CoreMovies.Tests.Web
 
             var result = controller.GetById(5);
             var notFound = result.Result as NotFoundResult;
-
             Assert.NotNull(notFound);
         }
     }
