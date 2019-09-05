@@ -6,15 +6,25 @@
 
 <h2>Movies</h2>
 
-@foreach (var movie in Model.Movies)
+@*<table class="table">
+    @foreach(var movie in Model.Movies)
+    {
+        <tr>
+            <td>@movie.Id</td>
+            <td>@movie.Name</td>
+            <td>@movie.Year</td>
+            <td>
+                <span>
+                    <a asp-page="./Detail" asp-route-id="@movie.Id">
+                        <i class="glyphicon glyphicon-zoom-in"></i>
+                    </a>
+                </span>
+            </td>
+        </tr>
+    }
+</table>*@
+
+@foreach(var movie in Model.Movies)
 {
     <partial name="_MovieSummary" model="movie" />
 }
-
-@if (Model.ActionMessage != null)
-{
-    <div class="alert alert-success">@Model.ActionMessage</div>
-}
-
-<a asp-page="./Edit" class="btn btn-primary">Add New</a>
-
