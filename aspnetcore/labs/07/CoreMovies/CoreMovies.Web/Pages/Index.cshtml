@@ -4,6 +4,13 @@
     ViewData["Title"] = "Home page";
 }
 
-<h3>@Model.Message</h3>
-
-<div>There are @Model.MovieCount movies in the database.</div>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div>
+    Message: @Model.Message
+</div>
+<div>
+    Also, there are @Model.MovieCount movies in the data source. 
+</div>

@@ -63,7 +63,7 @@ static void Main(string[] args)
 1. Change `lib01` to target .NET standard 1.0. You can do this by editing lib01.csproj directly, or in the project properties when using Visual Studio.
 
 ### NOTE
-You may see errors about assets files or projec.asstes.json files. Ignore these errors. Some tools are finicky when you change the TargetFramework up until you `dotnet restore`. 
+You may see errors about asset files. Ignore these errors. Some tools are finicky when you change the TargetFramework until you `dotnet restore`. 
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -78,27 +78,6 @@ You may see errors about assets files or projec.asstes.json files. Ignore these 
 2. Try `dotnet build`. You should recieve an error that `AppDomain` does not exist. *Why does this error happen?*
 
 3. Change the target framework for the class library back to netstandard2.0, then use `dotnet build` to make sure you are back to a successful compile.
-
-4. Change the target framework for the console application to `net45`. Again, ignore tooling errors.
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <ItemGroup>
-    <ProjectReference Include="..\lib01\lib01.csproj" />
-  </ItemGroup>
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net45</TargetFramework>
-  </PropertyGroup>
-
-</Project>
-```
-
-5. Run `dotnet build` again. *What is the real reason for this build to fail?*
-
-6. Change the app target back to `netcoreapp2.1`
 
 ## Extra Credit - The Self Contained Deployment
 

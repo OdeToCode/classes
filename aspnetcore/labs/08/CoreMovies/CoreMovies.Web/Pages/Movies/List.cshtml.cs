@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using CoreMovies.Data;
 using CoreMovies.Entities;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace CoreMovies.Web.Pages.Movies
@@ -9,9 +8,6 @@ namespace CoreMovies.Web.Pages.Movies
     public class ListModel : PageModel
     {
         public IEnumerable<Movie> Movies { get; private set; }
-
-        [TempData]
-        public string ActionMessage { get; set; }
 
         private readonly IMovieData movieData;
 

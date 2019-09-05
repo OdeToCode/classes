@@ -2,7 +2,6 @@
 using CoreMovies.Entities;
 using CoreMovies.Web.Controllers;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;

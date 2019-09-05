@@ -1,5 +1,6 @@
-﻿using CoreMovies.Entities;
+﻿using System;
 using System.Collections.Generic;
+using CoreMovies.Entities;
 
 namespace CoreMovies.Data
 {

@@ -1,0 +1,225 @@
+<html>
+<script src="qunit/jquery-1.6.4.js"></script>
+<script src="qunit/qunit.js"></script>
+<link rel="stylesheet" href="qunit/qunit.css">
+<meta charset="utf-8">
+
+<body>
+
+    <h1 id="qunit-header">QUnit Test Suite</h1>
+    <h2 id="qunit-banner"></h2>
+    <div id="qunit-testrunner-toolbar"></div>
+    <h2 id="qunit-userAgent"></h2>
+    <ol id="qunit-tests"></ol>
+    <div id="qunit-fixture">test markup</div>
+</body>
+
+
+
+<h1>Report</h1>
+<button id="theButton" name="theButton">CLick to see name</button>
+<div id="theOutput"></div>
+
+<script>
+    // IIFE
+    (function(globals) {
+
+        globals.countyName = "Gaston";
+
+        var message = "Hello!";
+
+        var theBtn = document.getElementById("theButton");
+        theBtn.addEventListener("click", function () {
+            var output = document.getElementById("theOutput");
+            output.innerText = message;
+        });
+    }(window));
+
+</script>
+
+
+<script>
+
+    class Person {
+        constructor(name) {
+            this.name = name
+        }
+
+        doWork() {
+
+            //var me = this;
+            // capture this implicitly
+            setTimeout(() => {
+                
+                document.write(`${this.name} has finished working!`);
+            },2000);
+        }
+    }
+
+    let p = new Person("Ben");
+    p.doWork();
+    
+
+
+    // var department = [
+    //     { firstName: "Scott", lastName: "Allen", printName : function() { } },
+    //     { firstName: "Scott", lastName: "Allen", printName : function() { } }
+    // ];
+
+    // var employee = {
+    //     firstName: "Scott",
+    //     lastName: "Allen",
+    //     printName: function() {
+    //         var output = document.getElementById("theOutput");
+    //         theOutput.innerText = employee.lastName;              
+    //     }
+    // };
+
+
+    // var theBtn = document.getElementById("theButton");    
+    // theBtn.lastName = "WAT?!";
+
+    // theBtn.addEventListener("click", employee.printName);
+
+</script>
+
+<script>
+
+
+
+
+ 
+    test("How to make a closure", function () {
+
+        var getPersonFactory = function (firstName) {
+
+
+            return function (lastName) {
+                return {
+                    firstName: firstName,
+                    lastName: lastName
+                }
+            }
+
+        };
+
+        var scottFactory = getPersonFactory("Scott");
+
+        var p1 = scottFactory("Allen#1");
+        var p2 = scottFactory("Allen#2");
+
+        equal(p1.firstName, "Scott");
+        equal(p2.firstName, "Scott");
+
+        equal(p1.lastName, "Allen#1");
+        equal(p2.lastName, "Allen#2");
+
+    });
+
+
+    test("WOrking with class keyword", function () {
+
+        class Employee {
+            constructor(firstName, lastName) {
+                this.lastName = lastName;
+                this.firstName = firstName;
+            }
+
+            getLastName() {
+                return this.lastName;
+            }
+        }
+
+
+    });
+
+    test("Building objects in JS", function () {
+
+        var Employee = function (firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+
+
+        };
+
+        Employee.prototype = {
+            getLastName: function () {
+                return this.lastName;
+            }
+        }
+
+        var department = [
+            new Employee("Scott", "Allen"),
+            new Employee("Alex", "Alex")
+        ]
+
+        equal(department[1].getLastName(), "Alex");
+
+
+    });
+
+    test("Creating objects with behavior", function () {
+
+        var movie = {
+            title: "Star Wars",
+            length: 90,
+            director: "",
+            setDirector: function (directorName) {
+                this.director = directorName;
+            }
+        }
+
+        var f = movie.setDirector;
+        f("George");
+
+        // equal(lunchTime, "soon");
+
+
+        //        movie.setDirector("George");
+        // equal(movie.director, "George");
+
+    });
+
+
+    test("Functions are object", function () {
+
+        function add() {
+            return arguments[0] + arguments[1];
+        };
+        add.message = "This is the add function";
+
+        var doWork = function (f, value) {
+            return f(value);
+        }
+
+        var square = function (x) {
+            return x * x;
+        }
+
+        equal(add.name, "add");
+        equal(doWork(square, 5), 25);
+        equal(add(5, 3), 8);
+        equal(add.message, "This is the add function");
+
+    });
+
+
+    test("JavaScript is liberal", function () {
+
+        var a = 1;
+        var b = "1";
+
+        ok(a == b);
+
+    });
+
+    test("Checking for true", function () {
+
+        var value = [];
+        ok(value);
+
+    });
+
+</script>
+
+</html>

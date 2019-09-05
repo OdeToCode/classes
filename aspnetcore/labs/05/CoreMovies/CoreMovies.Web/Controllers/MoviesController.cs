@@ -24,7 +24,7 @@ namespace CoreMovies.Web.Controllers
         public ActionResult<Movie> GetById(int id)
         {
             var result = movieData.GetById(id);
-            if(result == null)
+            if (result == null)
             {
                 return NotFound();
             }

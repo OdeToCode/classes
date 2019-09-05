@@ -1,6 +1,6 @@
 # Lab 02 - A New Project
 
-You've been given the requirement to start a new ASP.NET Core Web Application named `CoreMovies`. You'll want to start the application using the Razor pages (not MVC) template (`dotnet new razor`).
+You've been given the requirement to start a new ASP.NET Core Web Application named `CoreMovies`. You'll want to start the application using the `webapp` template (`dotnet new webapp`).
 
 ## A New Requirement
 

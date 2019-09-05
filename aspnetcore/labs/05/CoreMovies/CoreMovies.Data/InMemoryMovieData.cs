@@ -1,5 +1,5 @@
-﻿using CoreMovies.Entities;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using CoreMovies.Entities;
 using System.Linq;
 
 namespace CoreMovies.Data

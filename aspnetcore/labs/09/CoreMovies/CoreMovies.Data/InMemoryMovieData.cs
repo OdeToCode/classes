@@ -1,5 +1,5 @@
-﻿using CoreMovies.Entities;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using CoreMovies.Entities;
 using System.Linq;
 
 namespace CoreMovies.Data
@@ -67,7 +67,7 @@ namespace CoreMovies.Data
         public Movie Update(Movie updatedMovie)
         {
             var movie = GetById(updatedMovie.Id);
-            if(movie != null)
+            if (movie != null)
             {
                 movie.Name = updatedMovie.Name;
                 movie.Year = updatedMovie.Year;
