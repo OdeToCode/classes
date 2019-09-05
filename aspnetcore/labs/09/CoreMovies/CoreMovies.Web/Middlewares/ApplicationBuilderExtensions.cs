@@ -4,7 +4,7 @@ namespace Microsoft.AspNetCore.Builder
 {
     public static class ApplicationBuilderExtensions
     {
-        public static IApplicationBuilder SetDefaultCsp(this IApplicationBuilder app)
+        public static IApplicationBuilder UseDefaultCsp(this IApplicationBuilder app)
         {
             app.UseMiddleware<DefaultCsp>();
             return app;

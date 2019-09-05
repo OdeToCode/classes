@@ -38,7 +38,7 @@ namespace CoreMovies.Data
         public void Delete(int id)
         {
             var movie = GetById(id);
-            if(movie != null)
+            if (movie != null)
             {
                 movies.Remove(movie);
             }
