@@ -10,6 +10,7 @@ namespace CoreMovies.Web.Controllers
     [ApiController]
     [Produces("application/json")]
     [Route("api/[controller]")]
+    [EnableCors("MovieGet")]
     public class MoviesController : ControllerBase
     {
         private readonly IMovieData movieData;
@@ -20,7 +21,6 @@ namespace CoreMovies.Web.Controllers
         }
 
         [HttpGet]
-        [EnableCors("MovieGet")]
         public ActionResult<IEnumerable<Movie>> Get([FromQuery]string name)
         {
             var result = Enumerable.Empty<Movie>();
@@ -58,7 +58,7 @@ namespace CoreMovies.Web.Controllers
         [HttpPut("{id:int}")]
         public ActionResult<Movie> Put(int id, [FromBody]Movie updatedMovie)
         {
-            if(id != updatedMovie.Id)
+            if (id != updatedMovie.Id)
             {
                 ModelState.AddModelError("id", "Route id does not match entity id");
                 return BadRequest();

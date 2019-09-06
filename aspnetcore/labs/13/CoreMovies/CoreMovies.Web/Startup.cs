@@ -1,21 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CoreMovies.Data;
-using CoreMovies.Web.Configuration;
-using CoreMovies.Web.Hubs;
+using CoreMovies.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Swashbuckle.AspNetCore.Swagger;
+using Microsoft.Extensions.Hosting;
+using CoreMovies.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using CoreMovies.Web.Hubs;
 
-namespace CoreMovies.Web
+namespace CoreMovies
 {
     public class Startup
     {
@@ -29,14 +24,18 @@ namespace CoreMovies.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddRazorPages();
+            services.AddControllers();
             services.AddScoped<IMovieData, SqlMovieData>();
-
             services.AddDbContextPool<MovieDbContext>(options =>
             {
                 var connection = Configuration.GetConnectionString("MovieDb");
                 options.UseSqlServer(connection);
             });
-
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("movies", new OpenApiInfo { Title = "Movies", Version = "v1" });
+            });
             services.AddCors(setup =>
             {
                 setup.AddPolicy("MovieGet", builder =>
@@ -46,34 +45,22 @@ namespace CoreMovies.Web
 
                 });
             });
-
             services.AddSignalR(options =>
             {
                 options.EnableDetailedErrors = true;
             });
-
-            services.AddSwaggerGen(options =>
-            {
-                options.SwaggerDoc("movies", new Info { Title= "Movies", Version="v1" });
-            });
-            services.Configure<Greetings>(options =>
-            {
+            services.Configure<Greetings>(options => {
                 Configuration.Bind("Greetings", options);
             });
-            
-            services.Configure<CookiePolicyOptions>(options =>
+            services.AddAuthentication(options =>
             {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
-            });
-
-
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            }).AddCookie();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -82,24 +69,28 @@ namespace CoreMovies.Web
             else
             {
                 app.UseExceptionHandler("/Error");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
-            app.SetDefaultCsp();
+            app.UseStatusCodePages();
             app.UseHttpsRedirection();
+            app.UseDefaultCsp();
             app.UseStaticFiles();
-            app.UseNodeModules(env);
-            app.UseCookiePolicy();
+
+            app.UseRouting();
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.UseSwagger();
             app.UseSwaggerUI(setup =>
             {
                 setup.SwaggerEndpoint("movies/swagger.json", "Movies API");
             });
-            app.UseSignalR(config =>
+            app.UseEndpoints(endpoints =>
             {
-                config.MapHub<ChatHub>("/chat");
+                endpoints.MapRazorPages();
+                endpoints.MapControllers();
+                endpoints.MapHub<ChatHub>("/chat");
             });
-            app.UseMvc();
         }
     }
 }
