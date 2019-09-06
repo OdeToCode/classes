@@ -10,12 +10,12 @@
 <button type="button" class="btn btn-primary" id="send">Send</button>
 
 <ul id="messages">
-
 </ul>
 
 
 @section scripts {
-    <script src="/node_modules/@@aspnet/signalr/dist/browser/signalr.js"></script>
+    <script src="~/lib/@@aspnet/signalr/dist/browser/signalr.js"></script>
+    
     <script>
         (function () {
 
@@ -25,7 +25,7 @@
                 message = message.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
                 var li = document.createElement("li");
                 li.textContent = message;
-                document.getElementById("messages").appendChild(li);            
+                document.getElementById("messages").appendChild(li);
             });
 
             connection.start().catch(function (err) {
@@ -40,7 +40,7 @@
                 event.preventDefault();
             });
 
-        }());    
+        }());
     </script>
 }
 
