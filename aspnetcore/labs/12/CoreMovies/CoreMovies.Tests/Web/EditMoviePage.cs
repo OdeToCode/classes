@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using CoreMovies.Data;
+﻿using CoreMovies.Data;
 using CoreMovies.Entities;
 using CoreMovies.Web.Pages.Movies;
 using Microsoft.AspNetCore.Mvc;

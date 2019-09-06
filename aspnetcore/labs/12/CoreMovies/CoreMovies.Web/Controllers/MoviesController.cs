@@ -1,6 +1,5 @@
 ﻿using CoreMovies.Data;
 using CoreMovies.Entities;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +19,6 @@ namespace CoreMovies.Web.Controllers
         }
 
         [HttpGet]
-        [EnableCors("MovieGet")]
         public ActionResult<IEnumerable<Movie>> Get([FromQuery]string name)
         {
             var result = Enumerable.Empty<Movie>();
@@ -58,7 +56,7 @@ namespace CoreMovies.Web.Controllers
         [HttpPut("{id:int}")]
         public ActionResult<Movie> Put(int id, [FromBody]Movie updatedMovie)
         {
-            if(id != updatedMovie.Id)
+            if (id != updatedMovie.Id)
             {
                 ModelState.AddModelError("id", "Route id does not match entity id");
                 return BadRequest();
