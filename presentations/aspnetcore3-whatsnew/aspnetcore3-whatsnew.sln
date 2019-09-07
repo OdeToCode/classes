@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29230.61
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemInfo", "src\SystemInfo\SystemInfo.csproj", "{1D984B45-D0E8-4564-8EBE-B33D0F699F37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SystemInfo", "src\SystemInfo\SystemInfo.csproj", "{1D984B45-D0E8-4564-8EBE-B33D0F699F37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemInfo.Client", "src\SystemInfo.Client\SystemInfo.Client.csproj", "{11A2D23F-02C4-47DD-8795-7F6F2EC5A11A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SystemInfo.Client", "src\SystemInfo.Client\SystemInfo.Client.csproj", "{11A2D23F-02C4-47DD-8795-7F6F2EC5A11A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmark", "src\Benchmark\Benchmark.csproj", "{5C268941-6574-444A-ABBF-163F9271A4B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,18 @@ Global
 		{11A2D23F-02C4-47DD-8795-7F6F2EC5A11A}.Release|x64.Build.0 = Release|Any CPU
 		{11A2D23F-02C4-47DD-8795-7F6F2EC5A11A}.Release|x86.ActiveCfg = Release|Any CPU
 		{11A2D23F-02C4-47DD-8795-7F6F2EC5A11A}.Release|x86.Build.0 = Release|Any CPU
+		{5C268941-6574-444A-ABBF-163F9271A4B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C268941-6574-444A-ABBF-163F9271A4B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C268941-6574-444A-ABBF-163F9271A4B6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5C268941-6574-444A-ABBF-163F9271A4B6}.Debug|x64.Build.0 = Debug|Any CPU
+		{5C268941-6574-444A-ABBF-163F9271A4B6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5C268941-6574-444A-ABBF-163F9271A4B6}.Debug|x86.Build.0 = Debug|Any CPU
+		{5C268941-6574-444A-ABBF-163F9271A4B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C268941-6574-444A-ABBF-163F9271A4B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C268941-6574-444A-ABBF-163F9271A4B6}.Release|x64.ActiveCfg = Release|Any CPU
+		{5C268941-6574-444A-ABBF-163F9271A4B6}.Release|x64.Build.0 = Release|Any CPU
+		{5C268941-6574-444A-ABBF-163F9271A4B6}.Release|x86.ActiveCfg = Release|Any CPU
+		{5C268941-6574-444A-ABBF-163F9271A4B6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

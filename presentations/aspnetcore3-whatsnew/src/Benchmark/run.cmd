@@ -1,0 +1,1 @@
+dotnet run -c Release -f netcoreapp2.1 --runtimes netcoreapp2.1 netcoreapp3.0 --filter "*Program*"
