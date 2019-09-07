@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "SystemInfo";
+
+service SystemInfo {
+	rpc GetMemoryInfo (MemoryRequest) returns (MemoryResponse);
+}
+
+message MemoryRequest {
+
+}
+
+message MemoryResponse {
+	sint32 ProcessId = 1;
+	sint64 WorkintSet = 2;
+}
+
+
+

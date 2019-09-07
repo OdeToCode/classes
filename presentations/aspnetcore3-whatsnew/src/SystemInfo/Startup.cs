@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SystemInfo.Services;
 
 namespace SystemInfo
 {
@@ -31,7 +32,8 @@ namespace SystemInfo
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGrpcService<GreeterService>();                
+                endpoints.MapGrpcService<GreeterService>();
+                endpoints.MapGrpcService<SystemInfoService>();
 
                 endpoints.MapGet("/", async context =>
                 {
