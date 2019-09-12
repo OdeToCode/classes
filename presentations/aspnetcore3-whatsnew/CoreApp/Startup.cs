@@ -14,7 +14,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Http;
 using CoreApp.Middleware;
-using Microsoft.AspNetCore.Mvc.RazorPages.Internal;
 
 namespace CoreApp
 {
@@ -23,7 +22,6 @@ namespace CoreApp
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            PageHandlerPageFilter
         }
 
         public IConfiguration Configuration { get; }
@@ -37,6 +35,7 @@ namespace CoreApp
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
+            services.AddHealthChecks();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -65,11 +64,12 @@ namespace CoreApp
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHealthChecks("/health");
                 endpoints.MapRazorPages();
                 endpoints.MapGet("/secret", async context =>
                 {
                     await context.Response.WriteAsync("You found it!");
-                });
+                });                
             });
         }
     }

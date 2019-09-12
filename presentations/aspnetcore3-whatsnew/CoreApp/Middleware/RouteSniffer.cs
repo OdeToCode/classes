@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace CoreApp.Middleware
@@ -21,10 +24,11 @@ namespace CoreApp.Middleware
             var feature = context.Features.Get<IEndpointFeature>();
             
             logger.LogInformation($"{feature.Endpoint.DisplayName}");
-            foreach(var data in feature.Endpoint.Metadata) 
-            {
-                logger.LogInformation($"{ data.GetType().ToString()}");
-            }
+
+            var logMessage = feature.Endpoint.Metadata
+                                    .Select(m => $"{m.GetType()}{Environment.NewLine}")
+                                    .Aggregate(new StringBuilder(), (sb, s) => sb.Append(s), sb => sb.ToString());            
+            logger.LogInformation(logMessage);            
 
             await next(context);
         }
