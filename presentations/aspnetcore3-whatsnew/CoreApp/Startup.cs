@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Http;
 using CoreApp.Middleware;
+using Microsoft.AspNetCore.Mvc.RazorPages.Internal;
 
 namespace CoreApp
 {
@@ -22,6 +23,7 @@ namespace CoreApp
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            PageHandlerPageFilter
         }
 
         public IConfiguration Configuration { get; }
