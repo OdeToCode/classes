@@ -1,8 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <UserSecretsId>aspnet-CoreApp-8C672ACA-86F3-4061-8F6A-4586E7A800A3</UserSecretsId>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
 

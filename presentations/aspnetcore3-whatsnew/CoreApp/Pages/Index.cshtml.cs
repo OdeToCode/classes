@@ -6,8 +6,11 @@ namespace CoreApp.Pages
 {
     public class IndexModel : PageModel
     {
-        public Endpoint Endpoint { get; set; }
 
+        #nullable disable
+        public Endpoint Endpoint { get; set; }
+        #nullable restore
+ 
         public void OnGet()
         {
             Endpoint = HttpContext.Features.Get<IEndpointFeature>().Endpoint;
