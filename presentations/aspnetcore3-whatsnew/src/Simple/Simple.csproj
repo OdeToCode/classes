@@ -15,4 +15,8 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0-preview9-19453-02" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\BlazorComponents\BlazorComponents.csproj" />
+  </ItemGroup>
+
 </Project>

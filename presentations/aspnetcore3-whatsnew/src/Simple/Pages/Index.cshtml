@@ -5,4 +5,10 @@
 }
 
 <h1>Index</h1>
+<div>Hello, from Razor Pages!</div>
+<div>
 
+    @(await Html.RenderComponentAsync<BlazorComponents.Greetings>(RenderMode.ServerPrerendered))
+
+</div>
+<script src="/_framework/blazor.server.js"></script>
