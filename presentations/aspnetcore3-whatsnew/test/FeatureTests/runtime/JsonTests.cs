@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.IO;
 using System.Text;
 using System.Text.Json;
 using Xunit;
@@ -48,7 +47,7 @@ namespace FeatureTests.runtime
 
         public class Person
         {
-            public string FirstName { get; set; }
+            public string FirstName { get; set; } = "";
             public int Age { get; set; }
         }
 

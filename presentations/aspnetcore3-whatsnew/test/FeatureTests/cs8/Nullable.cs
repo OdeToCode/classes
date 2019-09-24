@@ -2,7 +2,7 @@
 using Xunit;
 
 namespace FeatureTests
-{
+{    
     public class Nullable
     {
         [Fact]
