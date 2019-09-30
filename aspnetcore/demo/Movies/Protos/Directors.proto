@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "Movies.Protos";
+
+service Directors {
+	rpc FetchAllDirectors (DirectorRequest) returns (DirectorResult);
+}
+
+message DirectorRequest {
+
+}
+
+message DirectorResult {
+	int32 id = 1;
+	string name = 2;
+	string country = 3;
+}
+

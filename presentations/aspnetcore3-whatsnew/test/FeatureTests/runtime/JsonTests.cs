@@ -55,7 +55,8 @@ namespace FeatureTests.runtime
         public void Can_Serialize()
         {
             var person = new Person { FirstName = "Lisa", Age = 42 };
-            var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
+            var options = new JsonSerializerOptions { 
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
             
             var json = JsonSerializer.Serialize(person, options);
 

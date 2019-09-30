@@ -6,7 +6,13 @@ namespace FeatureTests
 
     public class Person
     {
-        public string FirstName { get; set; } = null!;
+        public Person()
+        {
+            FirstName = "";
+        }
+
+        public string FirstName { get; set; }
+        public string? LastName { get; set; }
     }
 
     public class Nullable
@@ -14,12 +20,17 @@ namespace FeatureTests
         [Fact]
         public void NullableContexts()
         {
-
             var p = new Person();
-            if (p.FirstName != null)
+            if (p.LastName == null)
             {
-                var l = p.FirstName.Length;
+
             }
+            else
+            {
+                Assert.Equal(5, p.LastName.Length);
+            }
+            
+           
 
 #nullable enable
             string x = null;
