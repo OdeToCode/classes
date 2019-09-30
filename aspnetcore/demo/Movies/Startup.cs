@@ -2,8 +2,10 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Movies.Services;
 using System;
 
 namespace Movies
@@ -17,10 +19,17 @@ namespace Movies
             this.configuration = configuration;
         }
 
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddControllers();
+            services.AddSingleton<IGreeter, Greeter>();
+        }
+
         public void Configure(
             IApplicationBuilder app, 
             ILogger<Startup> logger, 
-            IWebHostEnvironment environment)
+            IWebHostEnvironment environment,
+            IGreeter greeter)
         {
             if(environment.IsDevelopment())
             {
@@ -39,6 +48,8 @@ namespace Movies
 
             app.UseEndpoints(e =>
             {
+                e.MapControllers();
+
                 e.MapGet("/error", ctx =>
                 {
                     throw new Exception("Ouch!");
@@ -47,7 +58,7 @@ namespace Movies
                 e.MapGet("/speak", async ctx =>
                 {
                     logger.LogInformation("I wil speak...");
-                    await ctx.Response.WriteAsync(configuration["Greeting"] ?? "No message");
+                    await ctx.Response.WriteAsync(greeter.GetGreeting());
                 });
             });
 
