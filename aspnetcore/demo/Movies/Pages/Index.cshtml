@@ -8,10 +8,21 @@
 
 <html>
 <head>
+    <meta href="/" />
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
 </head>
 <body>
     <div>The message is @Model.Message</div>
+
+    <img src="_content/BlazorComponent/background.png" />
+
+    @(await Html.RenderComponentAsync<BlazorComponent.Counter>(
+                RenderMode.ServerPrerendered))
+
+    @(await Html.RenderComponentAsync<BlazorComponent.Counter>(
+              RenderMode.ServerPrerendered))
+
+    <script src="_framework/blazor.server.js"></script>
 </body>
 </html>

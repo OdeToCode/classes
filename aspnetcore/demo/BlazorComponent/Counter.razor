@@ -1,0 +1,16 @@
+﻿<h3>Counter</h3>
+
+<div>The count is @counter</div>
+
+<button @onclick="Increment">
+    [+]
+</button>
+
+@code {
+    int counter = 1;
+
+    void Increment()
+    {
+        counter += 1;
+    }
+}

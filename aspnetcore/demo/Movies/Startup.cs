@@ -25,6 +25,7 @@ namespace Movies
             services.AddControllers();
             services.AddRazorPages();
             services.AddGrpc();
+            services.AddServerSideBlazor();
             services.AddSingleton<IGreeter, Greeter>();
         }
 
@@ -53,6 +54,7 @@ namespace Movies
             {
                 e.MapControllers();
                 e.MapRazorPages();
+                e.MapBlazorHub();
                 e.MapGrpcService<DirectorService>();
 
                 e.MapGet("/error", ctx =>
