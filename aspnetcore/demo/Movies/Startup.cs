@@ -35,14 +35,16 @@ namespace Movies
             IWebHostEnvironment environment,
             IGreeter greeter)
         {
-            if(environment.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler();
-            }
+            app.UseDeveloperExceptionPage();
+
+            //if (environment.IsDevelopment())
+            //{
+            //    app.UseDeveloperExceptionPage();
+            //}
+            //else
+            //{
+            //    app.UseExceptionHandler("/error");
+            //}
             
             app.UseStatusCodePages();
 
