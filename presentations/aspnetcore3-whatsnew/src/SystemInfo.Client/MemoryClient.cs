@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SystemInfo.Client
 {
-    public class MemoryClient : IHostedService
+    public class MemoryClient : BackgroundService
     {
         private readonly IConfiguration configuration;
         private readonly ILogger logger;
@@ -19,23 +19,15 @@ namespace SystemInfo.Client
             this.logger = logger;
         }
 
-        public Task StartAsync(CancellationToken cancellationToken)
+        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            logger.LogInformation($"{nameof(StartAsync)}");
-
-            _ = Execute(cancellationToken);
-
-            return Task.CompletedTask;
-        }
-
-        private async Task Execute(CancellationToken cancellationToken)
-        {
-            while (!cancellationToken.IsCancellationRequested)
+            while (!stoppingToken.IsCancellationRequested)
             {
-                await GetMemoryInfo(cancellationToken);
-                await Task.Delay(500, cancellationToken);
+                await GetMemoryInfo(stoppingToken);
+                await Task.Delay(500, stoppingToken);
             }
         }
+
 
         private async Task GetMemoryInfo(CancellationToken cancellationToken)
         {
@@ -47,12 +39,6 @@ namespace SystemInfo.Client
 
             Console.WriteLine($"Process: {reply.ProcessId}");
             Console.WriteLine($"WorkingSet: {reply.WorkintSet:n0}");
-        }
-
-        public Task StopAsync(CancellationToken cancellationToken)
-        {
-            logger.LogInformation($"{nameof(StopAsync)}");
-            return Task.CompletedTask;
         }
     }
 }

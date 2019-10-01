@@ -10,14 +10,16 @@ namespace SystemInfo.Client
     {
         static async Task Main(string[] args)
         {
-            var builder = new HostBuilder()
+            var host = Host.CreateDefaultBuilder()
+               .UseWindowsService()
                .ConfigureAppConfiguration((hostingContext, config) =>
                {
                    config.AddJsonFile("appsettings.json", optional: false);
                    config.AddEnvironmentVariables();
                    config.AddCommandLine(args);
                })
-               .ConfigureLogging((hostingContext, logging) => {
+               .ConfigureLogging((hostingContext, logging) =>
+               {
                    logging.AddConsole();
                    logging.SetMinimumLevel(LogLevel.Debug);
                })
@@ -26,8 +28,11 @@ namespace SystemInfo.Client
                {
                    services.AddHostedService<MemoryClient>();
                    services.AddHostedService<GreeterClient>();
-               });
-            await builder.Build().RunAsync();
+               })
+               
+               .Build(); // or .UseSystemd();
+
+            await host.RunAsync();
             
         }
     }
