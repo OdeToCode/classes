@@ -9,10 +9,11 @@ namespace FeatureTests
         public Person()
         {
             FirstName = "";
+            LastName = "";
         }
 
         public string FirstName { get; set; }
-        public string? LastName { get; set; }
+        public string LastName { get; set; }
     }
 
     public class Nullable

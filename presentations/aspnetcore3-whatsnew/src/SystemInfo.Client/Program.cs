@@ -11,7 +11,7 @@ namespace SystemInfo.Client
         static async Task Main(string[] args)
         {
             var host = Host.CreateDefaultBuilder()
-               .UseWindowsService()
+               
                .ConfigureAppConfiguration((hostingContext, config) =>
                {
                    config.AddJsonFile("appsettings.json", optional: false);
